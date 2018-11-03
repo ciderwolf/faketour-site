@@ -1,0 +1,43 @@
+{
+	"grn": {
+		"mythic": 0.125,
+		"rare": 0.875,
+		"uncommon": 3,
+		"common": 10,
+		"gates": 1
+	},
+
+	"rtr": {
+		"mythic": 0.125,
+		"rare": 0.875,
+		"uncommon": 3,
+		"common": 10
+	},
+	"gtc": {
+		"mythic": 0.125,
+		"rare": 0.875,
+		"uncommon": 3,
+		"common": 10
+	},
+	"dgm": {
+		"mythic": 0.125,
+		"rare": 0.875,
+		"uncommon": 3,
+		"common": 10
+	},
+	"rav": {
+		"rare": 1,
+		"uncommon": 3,
+		"common": 10
+	},
+	"gpt": {
+		"rare": 1,
+		"uncommon": 3,
+		"common": 10
+	},
+	"dis": {
+		"rare": 1,
+		"uncommon": 3,
+		"common": 10
+	}
+}

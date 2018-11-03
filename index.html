@@ -1,0 +1,38 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Faketour GRN</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<div class="content"></div>
+<h1>FakeTour</h1>
+<img src="grn-logo.png"/>
+<div align="center" id="buttons">
+	<button id="button1" onclick="window.location.href='matches';">Matches</button>
+	<button id="button2" onclick="window.location.href='matches/standings';">Standings</button>
+</div>
+
+<div class="footer" onclick="window.location.href='https://twitter.com/bram_sels'">Artwork by @bram_sels</div>
+
+<script type="text/javascript">
+	let request = new XMLHttpRequest();
+	request.open("GET", "/php/loggedIn.php?page=menu", false);
+	request.send();
+
+	if(request.responseText == "null") {
+		let button1 = document.getElementById("button1");
+		button1.innerHTML = "Create Account";
+		button1.onclick = function(e) {
+			window.location.href = "account/create/?";
+		}
+		button2.innerHTML = "Login";
+		button2.onclick = function(e) {
+			window.location.href = "account/login/?";
+		}
+	}
+</script>
+</html>

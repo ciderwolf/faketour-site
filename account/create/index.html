@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display:none;"></iframe>
+<head>
+    <title>Create Account</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/menu/styles.css">
+	<script type="text/javascript" src="/menu/loadMenu.js"></script>
+</head>
+<body>
+<div class="topnav"></div>
+<script type="text/javascript">loadMenu("Create Account");</script>
+<div class="content"></div>
+<h2 style="margin-left:10%">Create New Account</h2>
+<h2 style="color:red; text-align:center; background-color: rgba(51,51,51,50)">Warning: This site features negative encryption, so don't reuse a password from somewhere else</h2>
+<form onsubmit="login();" target="dummyframe">
+	<div class="imgcontainer">
+		<img src="login_avatar.png" alt="Avatar" class="avatar">
+	</div>
+    <p id="incorrect" style="text-align:center;color:red"></p>
+	<div class="container">
+		<label for="uname"><b>Username</b></label>
+		<input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+		<label for="psw"><b>Password</b></label>
+		<input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+		<label for="psw"><b>Reenter Password</b></label>
+		<input id="psw2" type="password" placeholder="Reenter Password" name="psw" required>
+		<button type="submit">New Account</button>
+	</div>
+</form>
+
+<div class="footer" onclick="window.location.href='https://twitter.com/velinovart'">Artwork by @velinovart</div>
+
+<script>
+    function login() {
+        let button = document.getElementById("submit");
+        let uname = document.getElementById("uname").value;
+        let psw = document.getElementById("psw").value;
+        let psw2 = document.getElementById("psw2").value;
+
+        let error = document.getElementById("incorrect");
+        if(psw != psw2) {
+        	error.innerHTML = "Passwords do not match";
+        }
+        let data = getData("newaccount.php?uname=" + uname + "&psw=" + psw);
+        console.log(data);
+        let loggedIn = JSON.parse(data);
+        if(loggedIn) {
+            window.location.href = window.location.origin;
+        } else {
+            error.innerHTML = "Please choose a different username";
+        }
+    }
+    
+    function getData(yourUrl) {
+        var Httpreq = new XMLHttpRequest();
+    	Httpreq.open("GET", yourUrl, false);
+    	Httpreq.send();
+    	return Httpreq.responseText;          
+    }
+</script>
+
+</body>
+</html>

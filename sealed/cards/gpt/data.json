@@ -1,0 +1,1157 @@
+{
+  "Ulasht, the Hate Seed": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/136.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/136/ulasht-the-hate-seed?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Infiltrator's Magemark": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/28.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/28/infiltrators-magemark?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Graven Dominator": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/7.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/7/graven-dominator?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Moratorium Stone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/154.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/gpt/154/moratorium-stone?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Storm Herd": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/19.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/19/storm-herd?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Tin Street Hooligan": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/78.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/78/tin-street-hooligan?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Abyssal Nocturnus": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/43.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/43/abyssal-nocturnus?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Shattering Spree": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/75.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/75/shattering-spree?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Vacuumelt": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/40.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/40/vacuumelt?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Seize the Soul": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/61.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/61/seize-the-soul?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Orzhov Pontiff": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/124.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/124/orzhov-pontiff?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Godless Shrine": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/157.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/gpt/157/godless-shrine?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Cremate": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/45.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/45/cremate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Train of Thought": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/39.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/39/train-of-thought?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Feral Animist": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/112.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/112/feral-animist?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Skarrgan Firebird": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/77.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/77/skarrgan-firebird?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Ostiary Thrull": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/55.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/55/ostiary-thrull?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Silhana Starfletcher": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/95.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/95/silhana-starfletcher?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Pillory of the Sleepless": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/125.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/125/pillory-of-the-sleepless?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Caustic Rain": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/44.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/44/caustic-rain?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Wreak Havoc": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/139.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/139/wreak-havoc?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Wild Cantor": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/149.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/149/wild-cantor?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Guardian's Magemark": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/8.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/8/guardians-magemark?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Primeval Light": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/93.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/93/primeval-light?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Savage Twister": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/127.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/127/savage-twister?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Martyred Rusalka": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/12.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/12/martyred-rusalka?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Thunderheads": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/37.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/37/thunderheads?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Orzhov Basilica": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/161.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/gpt/161/orzhov-basilica?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Stratozeppelid": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/36.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/36/stratozeppelid?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Gruul Signet": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/150.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/gpt/150/gruul-signet?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Gruul Turf": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/158.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/gpt/158/gruul-turf?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Benediction of Moons": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/3.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/3/benediction-of-moons?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Smogsteed Rider": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/63.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/63/smogsteed-rider?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Shadow Lance": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/14.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/14/shadow-lance?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Crystal Seer": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/23.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/23/crystal-seer?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Withstand": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/21.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/21/withstand?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Gigadrowse": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/26.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/26/gigadrowse?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Skarrgan Skybreaker": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/130.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/130/skarrgan-skybreaker?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Conjurer's Ban": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/108.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/108/conjurers-ban?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Silhana Ledgewalker": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/94.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/94/silhana-ledgewalker?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Izzet Guildmage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/145.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/145/izzet-guildmage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Pyromatics": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/72.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/72/pyromatics?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Dryad Sophisticate": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/83.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/83/dryad-sophisticate?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Borborygmos": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/103.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/103/borborygmos?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Poisonbelly Ogre": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/57.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/57/poisonbelly-ogre?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Schismotivate": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/129.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/129/schismotivate?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Siege of Towers": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/76.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/76/siege-of-towers?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Leap of Flame": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/121.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/121/leap-of-flame?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Rumbling Slum": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/126.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/126/rumbling-slum?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Goblin Flectomancer": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/116.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/116/goblin-flectomancer?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Hatching Plans": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/27.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/27/hatching-plans?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Wurmweaver Coil": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/99.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/99/wurmweaver-coil?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Aetherplasm": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/22.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/22/aetherplasm?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Killer Instinct": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/120.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/120/killer-instinct?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Predatory Focus": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/92.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/92/predatory-focus?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Ogre Savant": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/70.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/70/ogre-savant?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Leyline of Singularity": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/29.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/29/leyline-of-singularity?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Skarrgan Pit-Skulk": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/96.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/96/skarrgan-pit-skulk?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Gruul War Plow": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/151.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/gpt/151/gruul-war-plow?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Gruul Nodorog": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/88.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/88/gruul-nodorog?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Bioplasm": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/81.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/81/bioplasm?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Blind Hunter": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/102.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/102/blind-hunter?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Glint-Eye Nephilim": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/115.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/115/glint-eye-nephilim?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Gruul Scrapper": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/89.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/89/gruul-scrapper?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Debtors' Knell": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/141.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/141/debtors-knell?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Cry of Contrition": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/46.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/46/cry-of-contrition?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Burning-Tree Shaman": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/105.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/105/burning-tree-shaman?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Djinn Illuminatus": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/142.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/142/djinn-illuminatus?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Ghor-Clan Bloodscale": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/66.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/66/ghor-clan-bloodscale?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Leyline of the Void": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/52.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/52/leyline-of-the-void?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Parallectric Feedback": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/71.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/71/parallectric-feedback?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Mizzium Transreliquat": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/153.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/gpt/153/mizzium-transreliquat?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Battering Wurm": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/79.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/79/battering-wurm?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Angel of Despair": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/101.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/101/angel-of-despair?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Mortify": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/122.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/122/mortify?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Burning-Tree Bloodscale": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/104.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/104/burning-tree-bloodscale?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Lionheart Maverick": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/11.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/11/lionheart-maverick?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Droning Bureaucrats": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/4.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/4/droning-bureaucrats?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Gruul Guildmage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/144.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/144/gruul-guildmage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Ink-Treader Nephilim": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/117.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/117/ink-treader-nephilim?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Tibor and Lumia": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/135.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/135/tibor-and-lumia?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Drowned Rusalka": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/24.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/24/drowned-rusalka?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Orzhov Euthanist": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/54.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/54/orzhov-euthanist?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Dune-Brood Nephilim": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/110.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/110/dune-brood-nephilim?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Petrahydrox": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/148.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/148/petrahydrox?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Scorched Rusalka": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/74.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/74/scorched-rusalka?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Absolver Thrull": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/1.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/1/absolver-thrull?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Vedalken Plotter": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/41.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/41/vedalken-plotter?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Douse in Gloom": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/49.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/49/douse-in-gloom?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Izzet Signet": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/152.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/gpt/152/izzet-signet?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Earth Surge": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/84.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/84/earth-surge?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Starved Rusalka": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/97.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/97/starved-rusalka?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Necromancer's Magemark": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/53.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/53/necromancers-magemark?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Mimeofacture": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/30.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/30/mimeofacture?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Izzet Boilerworks": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/159.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/gpt/159/izzet-boilerworks?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Ghost Warden": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/5.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/5/ghost-warden?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Sword of the Paruns": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/156.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/gpt/156/sword-of-the-paruns?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Exhumer Thrull": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/50.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/50/exhumer-thrull?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Beastmaster's Magemark": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/80.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/80/beastmasters-magemark?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Ghor-Clan Savage": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/86.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/86/ghor-clan-savage?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Culling Sun": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/109.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/109/culling-sun?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Repeal": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/32.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/32/repeal?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Steamcore Weird": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/35.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/35/steamcore-weird?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Leyline of Lifeforce": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/90.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/90/leyline-of-lifeforce?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Vertigo Spawn": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/42.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/42/vertigo-spawn?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Sky Swallower": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/34.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/34/sky-swallower?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Cryptwailing": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/47.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/47/cryptwailing?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Wee Dragonauts": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/137.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/137/wee-dragonauts?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Leyline of the Meek": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/10.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/10/leyline-of-the-meek?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Belfry Spirit": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/2.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/2/belfry-spirit?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Giant Solifuge": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/143.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/143/giant-solifuge?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Shrieking Grotesque": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/15.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/15/shrieking-grotesque?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Steam Vents": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/164.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/gpt/164/steam-vents?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Skarrg, the Rage Pits": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/163.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/gpt/163/skarrg-the-rage-pits?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Restless Bones": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/58.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/58/restless-bones?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Cerebral Vortex": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/107.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/107/cerebral-vortex?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Rabble-Rouser": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/73.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/73/rabble-rouser?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Wildsize": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/98.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/98/wildsize?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Petrified Wood-Kin": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/91.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/91/petrified-wood-kin?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Hissing Miasma": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/51.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/51/hissing-miasma?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Orzhov Signet": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/155.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/gpt/155/orzhov-signet?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Electrolyze": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/111.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/111/electrolyze?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Castigate": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/106.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/106/castigate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Skyrider Trainee": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/17.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/17/skyrider-trainee?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Gatherer of Graces": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/85.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/85/gatherer-of-graces?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Quicken": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/31.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/31/quicken?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Ghost Council of Orzhova": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/114.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/114/ghost-council-of-orzhova?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Sinstriker's Will": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/16.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/16/sinstrikers-will?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Spelltithe Enforcer": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/18.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/18/spelltithe-enforcer?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Mourning Thrull": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/146.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/146/mourning-thrull?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Bloodscale Prowler": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/64.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/64/bloodscale-prowler?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Crash Landing": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/82.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/82/crash-landing?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Fencer's Magemark": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/65.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/65/fencers-magemark?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Runeboggle": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/33.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/33/runeboggle?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Ghostway": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/6.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/6/ghostway?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Izzet Chronarch": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/119.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/119/izzet-chronarch?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Revenant Patriarch": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/59.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/59/revenant-patriarch?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Nivix, Aerie of the Firemind": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/160.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/gpt/160/nivix-aerie-of-the-firemind?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Leyline of Lightning": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/68.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/68/leyline-of-lightning?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Witch-Maw Nephilim": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/138.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/138/witch-maw-nephilim?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Yore-Tiller Nephilim": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/140.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/140/yore-tiller-nephilim?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Teysa, Orzhov Scion": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/134.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/134/teysa-orzhov-scion?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Streetbreaker Wurm": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/133.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/133/streetbreaker-wurm?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Invoke the Firemind": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/118.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/118/invoke-the-firemind?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Orzhova, the Church of Deals": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/162.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/gpt/162/orzhova-the-church-of-deals?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Sanguine Praetor": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/60.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/60/sanguine-praetor?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Orzhov Guildmage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/147.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/147/orzhov-guildmage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Stitch in Time": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/132.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/gpt/132/stitch-in-time?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Niv-Mizzet, the Firemind": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/123.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/123/niv-mizzet-the-firemind?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Harrier Griffin": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/9.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/9/harrier-griffin?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Stomping Ground": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/165.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/gpt/165/stomping-ground?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Order of the Stars": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/13.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/13/order-of-the-stars?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Agent of Masks": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/100.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/100/agent-of-masks?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Hypervolt Grasp": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/67.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/gpt/67/hypervolt-grasp?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Daggerclaw Imp": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/48.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/48/daggerclaw-imp?utm_source=api", 
+    "rarity": 2
+  }, 
+  "To Arms!": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/20.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/20/to-arms!?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Torch Drake": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/38.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/38/torch-drake?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Souls of the Faultless": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/131.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/131/souls-of-the-faultless?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Scab-Clan Mauler": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/128.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/128/scab-clan-mauler?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Plagued Rusalka": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/56.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/56/plagued-rusalka?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Skeletal Vampire": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/62.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/62/skeletal-vampire?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Living Inferno": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/69.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/69/living-inferno?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Gristleback": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/87.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/87/gristleback?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Gelectrode": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/113.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/gpt/113/gelectrode?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Frazzle": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/gpt/25.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/gpt/25/frazzle?utm_source=api", 
+    "rarity": 2
+  }
+}

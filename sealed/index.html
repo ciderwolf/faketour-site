@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sealed</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css"></head>
+	<link rel="stylesheet" href="css/keyrune.css">
+    <link rel="stylesheet" href="/menu/styles.css">
+    <script type="text/javascript" src="/menu/loadMenu.js"></script>
+</head>
+
+<body>
+    <div class="topnav"></div>
+    <script type="text/javascript">loadMenu("Sealed");</script>
+	<div class="title">
+		<h1>FakeTour Sealed</h1>
+		<h2>3 packs of <i class="ss ss-grn"></i> and 3 packs at <br>random of
+			<i class="ss ss-rav"></i> <i class="ss ss-gpt"></i> <i class="ss ss-dis"></i> 
+			<i class="ss ss-rtr"></i> <i class="ss ss-gtc"></i> <i class="ss ss-dgm"></i> 
+		</h2>
+            
+	</div>
+    <div align="right" id="packs">
+        <a href="javascript:void(0)" id="dlbtn"><button id="generate" onclick="buttonPressed();">Generate Sealed Pool</button></a>
+		<h2>Sort pool by: 
+			<select name="Sort Pool" id="sort" onchange="sortPool(this.value);">
+				<option value="set">Set</option>
+				<option value="rarity">Rarity</option>
+				<option value="color">Color</option>
+				<option value="type">Card Type</option>
+			</select>
+		</h2>
+	</div>
+	<div align="center" id="generated"></div>
+	<div align="center" id="cards"></div>
+</body>
+
+<script src="sealed.js" type="text/javascript"></script>
+
+</html>

@@ -1,0 +1,82 @@
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #272a33;
+	color: white;
+}
+
+.content:before {
+	overflow: auto;	
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	display: block;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("simic-land.jpg");
+	background-size:cover;
+	width: 100%;
+	height: 100%;
+	filter: blur(5px);
+}
+
+#backdrop {
+	background-color: #272a33;
+	padding: 50px;
+	width: fit-content;
+	border-radius: 25px;
+	margin: 0 auto;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	margin: 50px;
+	padding-right: 10px;
+}
+
+h3 {
+	padding-top: 0.75em;
+	padding-right: 25px;
+}
+
+h2 {
+	margin-left: 30px;
+}
+
+.standing {
+	font-size: 16pt;
+}
+.cell {
+	padding-left: 75px;
+	padding-right: 75px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.light {
+	background-color: #373A43;
+}
+
+h4 {
+	font-size: 20pt;
+}
+
+.title {
+	padding: 30px;
+	padding-bottom: 0px;
+}
+
+
+
+.footer {
+	position: fixed;
+	margin-left: 2%;
+	margin-bottom: 5%;
+	top: 90vh;
+	opacity: .6;
+	cursor: pointer;
+	color: white;
+	font-family: 'Nunito', sans-serif;
+}

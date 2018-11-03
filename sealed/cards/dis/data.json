@@ -1,0 +1,1262 @@
+{
+  "Riot Spikes": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/146.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/146/riot-spikes?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Pride of the Clouds": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/125.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/125/pride-of-the-clouds?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Minister of Impediments": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/144.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/144/minister-of-impediments?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Vigean Intuition": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/136.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/136/vigean-intuition?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Rakdos the Defiler": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/129.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/129/rakdos-the-defiler?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Jagged Poppet": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/115.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/115/jagged-poppet?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Ogre Gatecrasher": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/67.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/67/ogre-gatecrasher?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Cytoplast Root-Kin": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/81.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/81/cytoplast-root-kin?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Cytospawn Shambler": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/82.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/82/cytospawn-shambler?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Psychic Possession": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/30.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/30/psychic-possession?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Thrive": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/98.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/98/thrive?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Vigean Graftmage": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/35.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/35/vigean-graftmage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Assault Zeppelid": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/103.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/103/assault-zeppelid?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Dread Slag": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/109.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/109/dread-slag?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Tidespout Tyrant": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/34.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/34/tidespout-tyrant?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Brain Pry": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/39.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/39/brain-pry?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Research // Development": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/155a.jpg?1520204673", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/155/research-development?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Guardian of the Guildpact": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/10.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/10/guardian-of-the-guildpact?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Stormscale Anarch": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/74.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/74/stormscale-anarch?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Trial // Error": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/158a.jpg?1527465603", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/158/trial-error?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Crypt Champion": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/40.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/40/crypt-champion?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Simic Growth Chamber": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/180.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/180/simic-growth-chamber?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Indrik Stomphowler": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/86.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/86/indrik-stomphowler?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Pillar of the Paruns": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/176.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/176/pillar-of-the-paruns?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Patagia Viper": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/89.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/89/patagia-viper?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Simic Sky Swallower": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/130.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/130/simic-sky-swallower?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Rise // Fall": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/156aa.jpg?1520204730", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/156a/rise-fall?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Azorius Ploy": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/106.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/106/azorius-ploy?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Cackling Flames": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/59.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/59/cackling-flames?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Shielding Plax": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/147.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/147/shielding-plax?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Stalking Vengeance": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/73.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/73/stalking-vengeance?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Twinstrike": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/134.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/134/twinstrike?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Rakdos Ickspitter": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/128.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/128/rakdos-ickspitter?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Hallowed Fountain": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/174.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/174/hallowed-fountain?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Ragamuffyn": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/51.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/51/ragamuffyn?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Cytoshape": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/108.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/108/cytoshape?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Avatar of Discord": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/140.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/140/avatar-of-discord?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Biomantic Mastery": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/142.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/142/biomantic-mastery?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Simic Basilisk": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/91.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/91/simic-basilisk?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Novijen Sages": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/27.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/27/novijen-sages?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Voidslime": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/137.jpg?1528842379", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/137/voidslime?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Vigean Hydropon": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/135.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/135/vigean-hydropon?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Mistral Charger": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/13.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/13/mistral-charger?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Ignorant Bliss": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/64.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/64/ignorant-bliss?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Paladin of Prahv": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/14.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/14/paladin-of-prahv?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Simic Ragworm": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/93.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/93/simic-ragworm?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Flash Foliage": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/85.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/85/flash-foliage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Whiptail Moloch": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/79.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/79/whiptail-moloch?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Gobhobbler Rats": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/111.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/111/gobhobbler-rats?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Plaxcaster Frogling": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/123.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/123/plaxcaster-frogling?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Enemy of the Guildpact": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/44.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/44/enemy-of-the-guildpact?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Brace for Impact": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/5.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/5/brace-for-impact?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Haazda Shield Mate": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/12.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/12/haazda-shield-mate?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Rain of Gore": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/126.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/126/rain-of-gore?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Plaxmanta": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/29.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/29/plaxmanta?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Azorius First-Wing": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/105.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/105/azorius-first-wing?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Rakdos Guildmage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/145.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/145/rakdos-guildmage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Prahv, Spires of Order": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/177.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/177/prahv-spires-of-order?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Plumes of Peace": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/124.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/124/plumes-of-peace?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Palliation Accord": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/122.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/122/palliation-accord?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Swift Silence": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/132.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/132/swift-silence?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Azorius Herald": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/2.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/2/azorius-herald?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Kill-Suit Cultist": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/65.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/65/kill-suit-cultist?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Silkwing Scout": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/31.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/31/silkwing-scout?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Simic Guildmage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/148.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/148/simic-guildmage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Ghost Quarter": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/173.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/173/ghost-quarter?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Writ of Passage": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/37.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/37/writ-of-passage?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Crime // Punishment": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/150a.jpg?1520204515", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/150/crime-punishment?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Simic Initiate": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/92.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/92/simic-initiate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Govern the Guildless": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/25.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/25/govern-the-guildless?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Flame-Kin War Scout": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/61.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/61/flame-kin-war-scout?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Nihilistic Glee": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/50.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/50/nihilistic-glee?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Sandstorm Eidolon": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/70.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/70/sandstorm-eidolon?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Street Savvy": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/97.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/97/street-savvy?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Experiment Kraj": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/110.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/110/experiment-kraj?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Pain Magnification": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/121.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/121/pain-magnification?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Beacon Hawk": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/3.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/3/beacon-hawk?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Hit // Run": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/152a.jpg?1520204581", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/152/hit-run?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Fertile Imagination": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/84.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/84/fertile-imagination?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Demon's Jester": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/42.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/42/demons-jester?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Supply // Demand": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/157a.jpg?1520204752", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/157/supply-demand?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Court Hussar": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/22.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/22/court-hussar?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Bound // Determined": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/149a.jpg?1520204496", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/149/bound-determined?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Azorius Signet": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/159.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dis/159/azorius-signet?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Elemental Resonance": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/83.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/83/elemental-resonance?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Slaughterhouse Bouncer": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/54.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/54/slaughterhouse-bouncer?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Squealing Devil": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/72.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/72/squealing-devil?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Azorius Guildmage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/141.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/141/azorius-guildmage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Proclamation of Rebirth": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/15.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/15/proclamation-of-rebirth?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Sporeback Troll": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/94.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/94/sporeback-troll?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Flaring Flame-Kin": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/62.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/62/flaring-flame-kin?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Enigma Eidolon": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/24.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/24/enigma-eidolon?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Condemn": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/8.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/8/condemn?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Proper Burial": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/16.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/16/proper-burial?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Aquastrand Spider": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/80.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/80/aquastrand-spider?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Drekavac": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/43.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/43/drekavac?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Walking Archive": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/169.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/169/walking-archive?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Hide // Seek": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/151a.jpg?1520204544", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/151/hide-seek?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Freewind Equenaut": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/9.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/9/freewind-equenaut?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Breeding Pool": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/172.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/172/breeding-pool?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Coiling Oracle": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/107.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/107/coiling-oracle?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Pure // Simple": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/154a.jpg?1531191480", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/154/pure-simple?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Entropic Eidolon": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/45.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/45/entropic-eidolon?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Nightcreep": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/49.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/49/nightcreep?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Rakdos Riteknife": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/164.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dis/164/rakdos-riteknife?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Taste for Mayhem": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/75.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/75/taste-for-mayhem?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Spell Snare": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/33.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/33/spell-snare?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Overrule": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/120.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/120/overrule?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Azorius Chancery": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/170.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/170/azorius-chancery?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Rakdos Carnarium": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/178.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/178/rakdos-carnarium?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Protean Hulk": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/90.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/90/protean-hulk?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Evolution Vat": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/161.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dis/161/evolution-vat?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Stomp and Howl": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/96.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/96/stomp-and-howl?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Celestial Ancient": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/7.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/7/celestial-ancient?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Delirium Skeins": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/41.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/41/delirium-skeins?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Leafdrake Roost": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/116.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/116/leafdrake-roost?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Isperia the Inscrutable": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/114.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/114/isperia-the-inscrutable?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Anthem of Rakdos": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/102.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/102/anthem-of-rakdos?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Bond of Agony": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/38.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/38/bond-of-agony?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Rakdos Signet": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/165.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dis/165/rakdos-signet?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Muse Vessel": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/163.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dis/163/muse-vessel?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Novijen, Heart of Progress": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/175.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/175/novijen-heart-of-progress?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Bronze Bombshell": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/160.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/160/bronze-bombshell?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Unliving Psychopath": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/56.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/56/unliving-psychopath?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Simic Signet": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/166.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dis/166/simic-signet?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Stoic Ephemera": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/19.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/19/stoic-ephemera?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Gnat Alley Creeper": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/63.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/63/gnat-alley-creeper?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Wrecking Ball": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/139.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/139/wrecking-ball?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Psychotic Fury": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/68.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/68/psychotic-fury?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Aethermage's Touch": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/101.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/101/aethermages-touch?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Slithering Shade": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/55.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/55/slithering-shade?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Demonfire": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/60.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/60/demonfire?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Wit's End": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/58.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/58/wits-end?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Weight of Spires": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/78.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/78/weight-of-spires?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Cytoplast Manipulator": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/23.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/23/cytoplast-manipulator?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Rakdos Pit Dragon": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/69.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/69/rakdos-pit-dragon?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Utvara Scalper": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/76.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/76/utvara-scalper?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Infernal Tutor": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/46.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/46/infernal-tutor?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Soulsworn Jury": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/17.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/17/soulsworn-jury?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Loaming Shaman": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/87.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/87/loaming-shaman?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Rakdos Augermage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/127.jpg?1528749692", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/127/rakdos-augermage?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Blood Crypt": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/171.jpg?1535415823", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/171/blood-crypt?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Aurora Eidolon": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/1.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/1/aurora-eidolon?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Haazda Exonerator": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/11.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/11/haazda-exonerator?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Grand Arbiter Augustin IV": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/112.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/112/grand-arbiter-augustin-iv?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Windreaver": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/138.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/138/windreaver?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Utopia Sprawl": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/99.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/99/utopia-sprawl?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Verdant Eidolon": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/100.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/100/verdant-eidolon?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Skullmead Cauldron": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/167.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dis/167/skullmead-cauldron?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Seal of Fire": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/71.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/71/seal-of-fire?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Might of the Nephilim": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/88.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/88/might-of-the-nephilim?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Ratcatcher": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/52.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/52/ratcatcher?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Nettling Curse": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/48.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/48/nettling-curse?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Ocular Halo": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/28.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/28/ocular-halo?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Sprouting Phytohydra": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/95.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/95/sprouting-phytohydra?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Magewright's Stone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/162.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dis/162/magewrights-stone?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Transguild Courier": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/168.jpg?1528641374", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/168/transguild-courier?utm_source=api", 
+    "rarity": 2
+  }, 
+  "War's Toll": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/77.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/77/wars-toll?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Momir Vig, Simic Visionary": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/118.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/118/momir-vig-simic-visionary?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Steeling Stance": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/18.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/18/steeling-stance?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Carom": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/6.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/6/carom?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Blessing of the Nephilim": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/4.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/4/blessing-of-the-nephilim?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Macabre Waltz": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/47.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/47/macabre-waltz?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Omnibian": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/119.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/119/omnibian?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Rix Maadi, Dungeon Palace": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/179.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dis/179/rix-maadi-dungeon-palace?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Valor Made Real": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/20.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/20/valor-made-real?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Kindle the Carnage": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/66.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/66/kindle-the-carnage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Lyzolda, the Blood Witch": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/117.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/117/lyzolda-the-blood-witch?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Vesper Ghoul": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/57.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/57/vesper-ghoul?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Vision Skeins": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/36.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/36/vision-skeins?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Sky Hussar": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/131.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/131/sky-hussar?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Skyscribing": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/32.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dis/32/skyscribing?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Seal of Doom": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/53.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/53/seal-of-doom?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Dovescape": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/143.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dis/143/dovescape?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Odds // Ends": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/153a.jpg?1520204615", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dis/153/odds-ends?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Hellhole Rats": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/113.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/113/hellhole-rats?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Wakestone Gargoyle": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/21.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/21/wakestone-gargoyle?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Helium Squirter": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/26.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/26/helium-squirter?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Trygon Predator": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/133.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/133/trygon-predator?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Azorius Aethermage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dis/104.jpg?1531565377", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dis/104/azorius-aethermage?utm_source=api", 
+    "rarity": 2
+  }
+}

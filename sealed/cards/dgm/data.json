@@ -1,0 +1,1094 @@
+{
+  "Bane Alley Blackguard": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/21.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/21/bane-alley-blackguard?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Renounce the Guilds": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/5.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/5/renounce-the-guilds?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Warped Physique": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/117.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/117/warped-physique?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Render Silent": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/96.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/96/render-silent?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Kraul Warrior": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/42.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/42/kraul-warrior?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Species Gorger": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/105.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/105/species-gorger?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Gleam of Battle": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/73.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dgm/73/gleam-of-battle?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Zhur-Taa Druid": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/120.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/120/zhur-taa-druid?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Blood Scrivener": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/22.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/22/blood-scrivener?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Teysa, Envoy of Ghosts": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/108.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/108/teysa-envoy-of-ghosts?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Legion's Initiative": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/81.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dgm/81/legions-initiative?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Feral Animist": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/70.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/70/feral-animist?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Battering Krasis": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/41.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/41/battering-krasis?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Maze's End": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/152.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/152/mazes-end?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Advent of the Wurm": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/51.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/51/advent-of-the-wurm?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Rakdos Drake": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/28.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/28/rakdos-drake?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Simic Cluestone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/145.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dgm/145/simic-cluestone?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Renegade Krasis": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/47.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/47/renegade-krasis?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Toil // Trouble": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/133a.jpg?1520204246", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/133/toil-trouble?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Council of the Absolute": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/62.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/62/council-of-the-absolute?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Varolz, the Scar-Striped": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/112.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/112/varolz-the-scar-striped?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Wear // Tear": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/135a.jpg?1520204292", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/135/wear-tear?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Pilfered Plans": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/90.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/90/pilfered-plans?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Zhur-Taa Ancient": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/119.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/119/zhur-taa-ancient?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Restore the Peace": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/97.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/97/restore-the-peace?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Vorel of the Hull Clade": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/115.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/115/vorel-of-the-hull-clade?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Putrefy": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/93.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/93/putrefy?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Skylasher": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/49.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/49/skylasher?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Turn // Burn": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/134a.jpg?1520204270", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/134/turn-burn?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Reap Intellect": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/95.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/95/reap-intellect?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Sunspire Gatekeepers": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/9.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/9/sunspire-gatekeepers?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Down // Dirty": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/126a.jpg?1520204342", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/126/down-dirty?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Ubul Sar Gatekeepers": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/30.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/30/ubul-sar-gatekeepers?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Profit // Loss": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/130a.jpg?1520204136", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/130/profit-loss?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Debt to the Deathless": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/64.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/64/debt-to-the-deathless?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Rakdos Guildgate": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/154.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/154/rakdos-guildgate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Boros Cluestone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/137.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dgm/137/boros-cluestone?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Golgari Cluestone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/139.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dgm/139/golgari-cluestone?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Breaking // Entering": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/124a.jpg?1520205430", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/124/breaking-entering?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Wake the Reflections": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/10.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/10/wake-the-reflections?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Nivix Cyclops": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/87.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/87/nivix-cyclops?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Tithe Drinker": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/109.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/109/tithe-drinker?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Blood Baron of Vizkopa": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/57.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/57/blood-baron-of-vizkopa?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Beck // Call": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/123a.jpg?1520203874", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/123/beck-call?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Boros Battleshaper": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/58.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/58/boros-battleshaper?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Deputy of Acquittals": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/65.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/65/deputy-of-acquittals?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Orzhov Cluestone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/142.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dgm/142/orzhov-cluestone?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Ruric Thar, the Unbowed": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/99.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/99/ruric-thar-the-unbowed?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Mutant's Prey": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/45.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/45/mutants-prey?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Fluxcharger": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/71.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/71/fluxcharger?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Trostani's Summoner": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/110.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/110/trostanis-summoner?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Wind Drake": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/20.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/20/wind-drake?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Far // Away": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/127a.jpg?1520204326", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/127/far-away?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Blaze Commando": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/56.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/56/blaze-commando?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Progenitor Mimic": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/92.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/92/progenitor-mimic?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Saruli Gatekeepers": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/48.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/48/saruli-gatekeepers?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Selesnya Cluestone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/144.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dgm/144/selesnya-cluestone?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Morgue Burst": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/86.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/86/morgue-burst?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Mirko Vosk, Mind Drinker": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/85.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/85/mirko-vosk-mind-drinker?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Obzedat's Aid": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/89.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/89/obzedats-aid?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Fatal Fumes": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/24.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/24/fatal-fumes?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Armed // Dangerous": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/122a.jpg?1520204367", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/122/armed-dangerous?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Lyev Decree": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/3.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/3/lyev-decree?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Simic Guildgate": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/156.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/156/simic-guildgate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Pontiff of Blight": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/27.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/27/pontiff-of-blight?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Woodlot Crawler": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/118.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/118/woodlot-crawler?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Gruul War Chant": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/75.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dgm/75/gruul-war-chant?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Thrashing Mossdog": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/50.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/50/thrashing-mossdog?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Crypt Incursion": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/23.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/23/crypt-incursion?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Maze Sentinel": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/4.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/4/maze-sentinel?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Sinister Possession": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/29.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dgm/29/sinister-possession?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Drown in Filth": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/67.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/67/drown-in-filth?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Bred for the Hunt": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/59.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dgm/59/bred-for-the-hunt?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Korozda Gorgon": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/78.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/78/korozda-gorgon?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Possibility Storm": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/34.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dgm/34/possibility-storm?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Phytoburst": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/46.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/46/phytoburst?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Sin Collector": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/103.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/103/sin-collector?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Flesh // Blood": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/128a.jpg?1520204058", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/128/flesh-blood?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Voice of Resurgence": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/114.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/114/voice-of-resurgence?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Boros Guildgate": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/147.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/147/boros-guildgate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Warleader's Helix": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/116.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/116/warleaders-helix?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Clear a Path": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/32.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/32/clear-a-path?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Dimir Guildgate": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/148.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/148/dimir-guildgate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Rot Farm Skeleton": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/98.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/98/rot-farm-skeleton?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Maze Behemoth": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/43.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/43/maze-behemoth?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Tajic, Blade of the Legion": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/107.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/107/tajic-blade-of-the-legion?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Golgari Guildgate": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/149.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/149/golgari-guildgate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Trait Doctoring": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/18.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/18/trait-doctoring?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Mindstatic": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/14.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/14/mindstatic?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Selesnya Guildgate": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/155.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/155/selesnya-guildgate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Savageborn Hydra": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/100.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/100/savageborn-hydra?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Hired Torturer": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/25.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/25/hired-torturer?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Izzet Guildgate": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/151.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/151/izzet-guildgate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Master of Cruelties": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/82.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/82/master-of-cruelties?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Boros Mastiff": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/1.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/1/boros-mastiff?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Opal Lake Gatekeepers": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/16.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/16/opal-lake-gatekeepers?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Hidden Strings": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/12.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/12/hidden-strings?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Rubblebelt Maaka": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/38.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/38/rubblebelt-maaka?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Melek, Izzet Paragon": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/84.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/84/melek-izzet-paragon?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Haunter of Nightveil": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/76.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/76/haunter-of-nightveil?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Maze Rusher": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/33.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/33/maze-rusher?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Smelt-Ward Gatekeepers": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/39.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/39/smelt-ward-gatekeepers?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Jelenn Sphinx": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/77.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/77/jelenn-sphinx?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Orzhov Guildgate": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/153.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/153/orzhov-guildgate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Exava, Rakdos Blood Witch": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/69.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/69/exava-rakdos-blood-witch?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Weapon Surge": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/40.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/40/weapon-surge?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Viashino Firstblade": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/113.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/113/viashino-firstblade?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Blast of Genius": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/55.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/55/blast-of-genius?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Carnage Gladiator": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/61.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/61/carnage-gladiator?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Azorius Guildgate": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/146.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/146/azorius-guildgate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Alive // Well": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/121a.jpg?1520204382", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/121/alive-well?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Azorius Cluestone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/136.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dgm/136/azorius-cluestone?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Gruul Guildgate": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/150.jpg?1517813031", 
+    "type": 6, 
+    "uri": "https://scryfall.com/card/dgm/150/gruul-guildgate?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Runner's Bane": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/17.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dgm/17/runners-bane?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Krasis Incubation": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/79.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dgm/79/krasis-incubation?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Uncovered Clues": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/19.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/19/uncovered-clues?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Plasm Capture": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/91.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/91/plasm-capture?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Showstopper": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/102.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/102/showstopper?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Lavinia of the Tenth": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/80.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/80/lavinia-of-the-tenth?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Pyrewild Shaman": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/36.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/36/pyrewild-shaman?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Aetherling": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/11.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/11/aetherling?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Mending Touch": {
+    "color": 4, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/44.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/44/mending-touch?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Murmuring Phantasm": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/15.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/15/murmuring-phantasm?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Steeple Roc": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/8.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/8/steeple-roc?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Maw of the Obzedat": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/83.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/83/maw-of-the-obzedat?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Unflinching Courage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/111.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dgm/111/unflinching-courage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Izzet Cluestone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/141.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dgm/141/izzet-cluestone?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Awe for the Guilds": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/31.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/31/awe-for-the-guilds?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Scion of Vitu-Ghazi": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/7.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/7/scion-of-vitu-ghazi?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Ral Zarek": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/94.jpg?1517813031", 
+    "type": 5, 
+    "uri": "https://scryfall.com/card/dgm/94/ral-zarek?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Riot Piker": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/37.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/37/riot-piker?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Gaze of Granite": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/72.jpg?1517813031", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/72/gaze-of-granite?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Haazda Snare Squad": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/2.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/2/haazda-snare-squad?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Maze Glider": {
+    "color": 1, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/13.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/13/maze-glider?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Emmara Tandris": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/68.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/68/emmara-tandris?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Give // Take": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/129a.jpg?1520204306", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/129/give-take?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Beetleform Mage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/54.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/54/beetleform-mage?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Notion Thief": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/88.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/88/notion-thief?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Rakdos Cluestone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/143.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dgm/143/rakdos-cluestone?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Spike Jester": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/106.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/106/spike-jester?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Scab-Clan Giant": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/101.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/101/scab-clan-giant?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Protect // Serve": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/131a.jpg?1520204158", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/131/protect-serve?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Maze Abomination": {
+    "color": 2, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/26.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/26/maze-abomination?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Ascended Lawmage": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/53.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/53/ascended-lawmage?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Goblin Test Pilot": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/74.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/74/goblin-test-pilot?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Armored Wolf-Rider": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/52.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/52/armored-wolf-rider?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Dimir Cluestone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/138.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dgm/138/dimir-cluestone?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Ready // Willing": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/132a.jpg?1520204201", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/132/ready-willing?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Bronzebeak Moa": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/60.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/60/bronzebeak-moa?utm_source=api", 
+    "rarity": 2
+  }, 
+  "Riot Control": {
+    "color": 0, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/6.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/6/riot-control?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Gruul Cluestone": {
+    "color": 7, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/140.jpg?1517813031", 
+    "type": 4, 
+    "uri": "https://scryfall.com/card/dgm/140/gruul-cluestone?utm_source=api", 
+    "rarity": 3
+  }, 
+  "Catch // Release": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/125a.jpg?1520203967", 
+    "type": 2, 
+    "uri": "https://scryfall.com/card/dgm/125/catch-release?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Dragonshift": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/66.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/66/dragonshift?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Sire of Insanity": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/104.jpg?1517813031", 
+    "type": 0, 
+    "uri": "https://scryfall.com/card/dgm/104/sire-of-insanity?utm_source=api", 
+    "rarity": 1
+  }, 
+  "Deadbridge Chant": {
+    "color": 6, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/63.jpg?1517813031", 
+    "type": 3, 
+    "uri": "https://scryfall.com/card/dgm/63/deadbridge-chant?utm_source=api", 
+    "rarity": 0
+  }, 
+  "Punish the Enemy": {
+    "color": 3, 
+    "image_uri": "https://img.scryfall.com/cards/normal/en/dgm/35.jpg?1517813031", 
+    "type": 1, 
+    "uri": "https://scryfall.com/card/dgm/35/punish-the-enemy?utm_source=api", 
+    "rarity": 3
+  }
+}

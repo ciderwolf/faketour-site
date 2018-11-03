@@ -1,0 +1,5 @@
+<label for="games_won"><b>Number of games you won</b></label>
+<input type="number" placeholder="Games Won" name="games_won" required>
+<label for="games_lost"><b>Number of games you lost</b></label>
+<input type="number" placeholder="Games Lost" name="games_lost" required>
+<button style="width:100%;margin-left:0;">Report</button>

@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Account</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css"></head>
+	<link rel="stylesheet" href="/menu/styles.css">
+	<script type="text/javascript" src="/menu/loadMenu.js"></script>
+</head>
+<body>
+	<div class="topnav"></div>
+	<script type="text/javascript">loadMenu("Account");</script>
+	<div class="content"></div>
+	<h1 id="title">Your Account</h1>
+	<div style="padding-left: 25%">
+		<h2>Avatar</h2>
+		<div class="flex">
+			<img id="avatar-img" class="avatar">
+			<button onclick="changeAvatar();">Change Avatar</button>
+			<div class="modal" id="change-avatar">
+				<span class="close" title="Cancel" onclick="document.getElementById('change-avatar').style.display='none'">&times;</span>
+				<div class="container modal-content">
+					<h1>Change Avatar</h1>
+					<div id="avatar-images" align="center"></div>
+				</div>
+			</div>
+		</div>
+		<h2>Password</h2>
+		<input onfocus="this.classList.remove('required');" type="password" id="password" placeholder="Enter Password" required>
+		<input onfocus="this.classList.remove('required');" type="password" id="password2" placeholder="Reenter Password" required>
+		<div class="bar"></div>
+		<button onclick="uploadChanges();" class="save wide">Save Changes</button>
+		<button onclick="logout();" class="logout wide">Log Out</button>
+	</div>
+	<div class="footer" onclick="window.location.href='https://twitter.com/JennRavenna'">Artwork by @JennRavenna</div>
+
+</body>
+
+<script type="text/javascript" src="account.js"></script>
+
+</html>
