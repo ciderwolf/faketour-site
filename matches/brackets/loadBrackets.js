@@ -1,11 +1,9 @@
-
 const formats = ["constructed", "sealed"];
 getData();
 
-
 function getData() {
 	let request = new XMLHttpRequest();
-	request.open("GET", "getMatches.php", false);
+	request.open("GET", "getMatches.php", true);
 	request.onload = function (e) {
 	 	if (request.readyState === 4) {
 			if (request.status === 200) {

@@ -1,5 +1,6 @@
 <?php
-		
+	error_reporting(E_ALL);
+	ini_set("display_errors", 1);
 	global $json;
 	global $pack;
 
@@ -18,8 +19,6 @@
 	}
 	$output = json_encode($pack);
     echo $output;
-
-
 
 	function buildPack($rarity, $number) {
 		$basics = ["Plains", "Island", "Mountain", "Swamp", "Forest"];

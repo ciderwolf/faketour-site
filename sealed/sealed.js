@@ -1,8 +1,11 @@
 let oldSets = ["rav", "gpt", "dis", "rtr", "gtc", "dgm"];
 let pool = [];
 let poolCreated = false;
-const loggedIn = logIn();
+let loggedIn;
 let cardData = {};
+let sets = [];
+
+logIn();
 
 function getCardImage(card) {
 	getDataWait("https://api.scryfall.com/cards/named?fuzzy=" + card.alt, function(response) {
@@ -12,9 +15,8 @@ function getCardImage(card) {
 	}); 
 }
 
-
 function logIn() {
-	let responseJSON = getDataWait("/php/loggedIn.php?page=generate_sealed", function(response) {
+	getDataWait("/php/loggedIn.php?page=generate_sealed", function(response) {
 		let hasPool = false;
 		if(response != "true" && response != "false") {
 			response = response.substring(1,response.length-1);
@@ -23,75 +25,64 @@ function logIn() {
 		let responseJSON = JSON.parse(response);
 		if(hasPool) {
 			document.getElementById("generate").innerHTML = "Save Pool";
+			let setDisplay = document.getElementById("generated");
+			for(set in responseJSON) {
+				if(set == "grn") {
+					setDisplay.innerHTML += createSymbol(set) + createSymbol(set);
+				}
+				setDisplay.innerHTML += createSymbol(set);
+				sets.push(set);
+			}
 			drawPool(responseJSON);
 			for(set in responseJSON) {
 				getSetData(set);
 			}
 		}
-		return responseJSON;
+		loggedIn = responseJSON;
 	});
-
-	return responseJSON;
-}
-
-function getDataWait(url, callback) {
-	let request = new XMLHttpRequest();
-	request.open("GET", url, true);
-	request.onload = function (e) {
-		if (request.readyState === 4) {
-			if (request.status === 200) {
-				callback(request.responseText);
-			} else {
-				console.log(request.responseText);
-			}
-		}
-	};  
-	request.send();	
 }
 
 function generate() {
 	let viewer = document.getElementById("cards");
-	let cards = {"grn": []};
 	let nums = Array.apply(null, {length: oldSets.length}).map(Number.call, Number);
 	let display = document.getElementById("generated");
+	let packSets = [];
 	for(let i = 0; i < 3; i++) {
 		display.innerHTML += createSymbol("grn");
+		packSets.push("grn");
 	}
 	for (let i = 0; i < 3; i++) {
-		cards["grn"].push(...JSON.parse(createPack("grn")));
 		let index = Math.floor(Math.random()*nums.length);
 		let oldCode = oldSets[nums.splice(index, 1)];
-		cards[oldCode] = JSON.parse(createPack(oldCode));
+		packSets.push(oldCode)
 		display.innerHTML += createSymbol(oldCode);
 	}
-	updatePool(cards);
-	drawPool(cards);
-	const y = viewer.getBoundingClientRect().top + window.scrollY;
-	window.scroll({
-		top: y,
-		behavior: 'smooth'
+	
+	sets = packSets;
+
+	document.getElementById("viewer").innerHTML = "<p>Loading Pool...</p>"
+
+	getDataWait("generatePool.php?sets=" + packSets.join(","), function(response) {
+		let cards = JSON.parse(response);
+		updatePool(cards);
+		drawPool(cards);
+		const y = viewer.getBoundingClientRect().top + window.scrollY;
+		window.scroll({
+			top: y,
+			behavior: 'smooth'
+		});
 	});
 }
 
-function createPack(set) {
-	return getData("generatePacks.php?set=" + set);
-}
-
-function loadCardData(set) {
-	return JSON.parse(getData("cards/" + set + "/data.json"));
-}
+// function loadCardData(set) {
+// 	return JSON.parse(getData("cards/" + set + "/data.json"));
+// }
 
 function getSetData(set) {
-	let data = getDataWait("cards/" + set + "/data.json", function(response) {
+	getDataWait("cards/" + set + "/data.json", function(response) {
 		cardData[set] = JSON.parse(response);
+		drawPool(loggedIn);
 	});
-}
-
-function getData(url) {
-	let request = new XMLHttpRequest();
-	request.open("GET", url, false);
-	request.send();
-	return request.responseText;
 }
 
 function createSymbol(set) {
@@ -132,20 +123,23 @@ function buttonPressed() {
 		button.innerHTML = "Export Pool";
 	}
 	else {
-		  var file = new Blob(Object.keys(pool), {type: "text/plain"});
+		  let file = new Blob(Object.keys(pool), {type: "text/plain"});
 		  button.href = URL.createObjectURL(file);
 		  button.download = "pool.txt";
 	}
-
 }
 
 function drawPool(cards) {
 	let viewer = document.getElementById("cards");
+	viewer.innerHTML = "";
 	let poolStr = "";
 	for(set in cards) {
 		if(!Object.keys(cardData).includes(set)) {
-			cardData[set] = loadCardData(set);
+			cardData[set] = getSetData(set);
+			return;
 		}
+	}
+	for(set in cards) {
 		let data = cardData[set];
 		for(card of cards[set]) {
 			let image = document.createElement("img");
@@ -172,7 +166,6 @@ function drawPool(cards) {
 		poolStr += card.name + "\r\n";
 	}
 	create(poolStr, "pool.txt", "text/plain");
-	
 }
 
 function create(text, name, type) {
@@ -181,4 +174,3 @@ function create(text, name, type) {
 	dlbtn.href = URL.createObjectURL(file);
 	dlbtn.download = name;
 }
-

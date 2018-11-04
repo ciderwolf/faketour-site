@@ -6,7 +6,7 @@ getData();
 
 function getData() {
 	let request = new XMLHttpRequest();
-	request.open("GET", "getStandings.php", false);
+	request.open("GET", "getStandings.php", true);
 	request.onload = function (e) {
 	 	if (request.readyState === 4) {
 			if (request.status === 200) {

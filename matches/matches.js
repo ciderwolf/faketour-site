@@ -1,28 +1,54 @@
-const loggedIn = logIn();
 let matches = {};
 let buttonClicked = null;
 const formats = ["sealed", "constructed"];
+
+//load data asynchronously
+let loggedIn;
+let matchData = {};
+let staticForm;
+logIn();
+getDataWait("staticForm.txt", function(response) {
+	staticForm = response;
+	checkLoaded();
+});
 for(format of formats) {
-    loadMatches(format);
+	loadMatchData(format);
+}
+
+function loadMatchData(format) {
+	getDataWait("getMatches.php?format=" + format, function(response) {
+		matchData[format] = JSON.parse(response);
+		checkLoaded();
+	})
 }
 
 function logIn() {
-	let response = getData("/php/loggedIn.php?page=matches");
-	if(response == "true " || response == "false") {
-		return JSON.parse(response);
-	} else {
-		return response;
+	getDataWait("/php/loggedIn.php?page=matches", function(response) {
+		if(response == "true " || response == "false") {
+			loggedIn = JSON.parse(response);
+		} else {
+			loggedIn = response;
+		}
+		checkLoaded();
+	});
+	
+}
+
+function checkLoaded() {
+	if(loggedIn != undefined && matchData.hasOwnProperty("sealed") && matchData.hasOwnProperty("constructed") && staticForm != undefined) {
+		for(format of formats) {
+			loadMatches(format);
+		}
 	}
 }
 
 function loadMatches(format) {
 	let display = document.getElementById(format);
 	if(loggedIn === false) {
-		display.innerHTML += "You need to be logged in to view your matches";
+		display.innerHTML += "<p>You need to be logged in to view your matches</p>";
 		return;
 	}
-	let data = JSON.parse(getData("getMatches.php?format=" + format));
-    let match = data[loggedIn];
+    let match = matchData[format][loggedIn];
     if(match.rounds_completed != match.opponents.length) {
 		let opponent = match.opponents[match.opponents.length-1];
 		matches[format] = match;
@@ -70,7 +96,7 @@ function loadMatches(format) {
 		radio2.id = opponent;
 		container.appendChild(radio2);
 		container.innerHTML += opponent;
-		container.innerHTML += "<br><br>" + getData("staticForm.txt");
+		container.innerHTML += "<br><br>" + staticForm;
 		form.appendChild(container);
 		modal.appendChild(form);
 		display.appendChild(modal);
@@ -85,19 +111,8 @@ function loadMatches(format) {
 		display.appendChild(matchDisplay);
 	}
 	else {
-		display.innerHTML += "No " + format + " matches right now";
+		display.innerHTML += "<p>No " + format + " matches right now</p>";
 	}
-}
-
-function loadExternalData(url) {
-	return getData("loadURL.php?url=" + url);
-}
-
-function getData(url) {
-	let request = new XMLHttpRequest();
-	request.open("GET", url, false);
-	request.send();
-	return request.responseText;
 }
 
 function updateMatch(format, round, opponent, opponentWins, youWins) {
@@ -128,10 +143,8 @@ function submit(form) {
 	updateMatch(format, round, opponent, opponentWins, userWins);
 }
 
-// Get the modal
-var modals = document.getElementsByClassName('modal');
-
-// When the user clicks anywhere outside of the modal, close it
+// dismiss form on background clicked
+let modals = document.getElementsByClassName('modal');
 window.onclick = function(event) {
 	let dismiss = false;
 	if(event == null) {

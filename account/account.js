@@ -1,82 +1,96 @@
-const accountData = logIn();
-const avatars = JSON.parse(getData("avatar_names.json"));
-
-document.getElementById("title").innerHTML += " &ndash; " + accountData.username;
-
-let avatarImg = document.getElementById('avatar-img');
-avatarImg.src = "avatars/art_crop/" + avatars.filenames[accountData.avatar];
-avatarImg.name = avatars.cardnames[accountData.avatar];
-let avatarSelect = document.getElementById("avatar-images");
-for(filename of avatars.filenames) {
-	let img = document.createElement("img");
-	let preview = document.createElement("img");
-	preview.src = "avatars/card_image/" + filename;
-	preview.classList.add("card-preview");
-	img.classList.add("avatar")
-	img.id = filename;
-	img.src = "avatars/art_crop/" + filename;
-	img.addEventListener('mouseover', function(e) {
-		preview.style.display = "inline";
-		preview.style.left = e.pageX;
-		let newY = e.pageY;
-		if(newY + preview.height > window.innerHeight) {
-			newY = window.innerHeight - preview.height;
-		}
-		preview.style.top = newY
-	});
-	img.addEventListener('mouseleave', function(e) {
-		preview.style.display = "none";
-	});
-	img.onmousemove = function(e) {
-		preview.style.left = e.pageX;
-		let newY = e.pageY;
-		if(newY + preview.height > window.innerHeight) {
-			newY = window.innerHeight - preview.height;
-		}
-		preview.style.top = newY
+let accountData;
+let avatars;
+const thingsToLoad = 2;
+let loaded = 0;
+getDataWait("avatar_names.json", function(response) {
+	avatars = JSON.parse(response);
+	loaded ++;
+	if(loaded == thingsToLoad) {
+		initialize();
 	}
-	img.addEventListener('click', function(e) {
-		let selected = document.getElementsByClassName("selected");
-		for(sel of selected) {
-			sel.classList.remove("selected");
+});
+logIn();
+
+
+function logIn() {
+	getDataWait("/php/loggedIn.php?page=account", function(response) {
+		if(response == "true " || response == "false") {
+			window.location.href = "login/?";
+		} else {
+			accountData = JSON.parse(response);
+			loaded ++;
+			if(loaded == thingsToLoad) {
+				initialize();
+			}
 		}
-		this.classList.add("selected");
-		avatarImg.src = "avatars/art_crop/" + this.id;
-		avatarImg.name = avatars.cardnames[avatars.filenames.indexOf(this.id)];
 	});
-	img.addEventListener('dblclick', function(e) {
-		document.getElementById('change-avatar').style.display='none';
-	});
-	avatarSelect.appendChild(img);
-	avatarSelect.appendChild(preview);
-	if(img.src == avatarImg.src) {
-		img.classList.add("selected")
+	
+}
+
+function initialize() {
+	document.getElementById("title").innerHTML += " &ndash; " + accountData.username;
+	let avatarImg = document.getElementById('avatar-img');
+	avatarImg.src = "avatars/art_crop/" + avatars.filenames[accountData.avatar];
+	avatarImg.name = avatars.cardnames[accountData.avatar];
+	let avatarSelect = document.getElementById("avatar-images");
+	for(filename of avatars.filenames) {
+		let img = document.createElement("img");
+		let preview = document.createElement("img");
+		preview.src = "avatars/card_image/" + filename;
+		preview.classList.add("card-preview");
+		img.classList.add("avatar")
+		img.id = filename;
+		img.src = "avatars/art_crop/" + filename;
+		img.addEventListener('mouseover', function(e) {
+			preview.style.display = "inline";
+			preview.style.left = e.pageX;
+			let newY = e.pageY;
+			if(newY + preview.height > window.innerHeight) {
+				newY = window.innerHeight - preview.height;
+			}
+			preview.style.top = newY
+		});
+		img.addEventListener('mouseleave', function(e) {
+			preview.style.display = "none";
+		});
+		img.onmousemove = function(e) {
+			preview.style.left = e.pageX;
+			let newY = e.pageY;
+			if(newY + preview.height > window.innerHeight) {
+				newY = window.innerHeight - preview.height;
+			}
+			preview.style.top = newY
+		}
+		img.addEventListener('click', function(e) {
+			let selected = document.getElementsByClassName("selected");
+			for(sel of selected) {
+				sel.classList.remove("selected");
+			}
+			this.classList.add("selected");
+			avatarImg.src = "avatars/art_crop/" + this.id;
+			avatarImg.name = avatars.cardnames[avatars.filenames.indexOf(this.id)];
+		});
+		img.addEventListener('dblclick', function(e) {
+			document.getElementById('change-avatar').style.display='none';
+		});
+		avatarSelect.appendChild(img);
+		avatarSelect.appendChild(preview);
+		if(img.src == avatarImg.src) {
+			img.classList.add("selected")
+		}
 	}
 }
 
-function logIn() {
-	let response = getData("/php/loggedIn.php?page=account");
-	if(response == "true " || response == "false") {
-		window.location.href = "login/?";
-	} else {
-		return JSON.parse(response);
-	}
+function putData(url) {
+	getDataWait(url, function(response){})
 }
 
 function changeAvatar() {
 	document.getElementById("change-avatar").style.display = "block";
 }
 
-function getData(url) {
-	console.log(url)
-	let request = new XMLHttpRequest();
-	request.open("GET", url, false);
-	request.send();
-	return request.responseText;
-}
-
 function logout() {
-	getData("logout.php");
+	putData("logout.php");
 	window.location.href = window.location.origin;
 }
 
@@ -126,7 +140,7 @@ function uploadChanges() {
 		queries.push("avatar=" + newAvatar);
 	}
 	if(queries.length != 0) {
-		getData("updateInformation.php?" + queries.join("&"));
+		putData("updateInformation.php?" + queries.join("&"));
 	}
 }
 

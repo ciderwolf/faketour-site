@@ -4,8 +4,8 @@
 	<title>Faketour GRN</title>
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
 
 <div class="content"></div>
@@ -19,20 +19,20 @@
 <div class="footer" onclick="window.location.href='https://twitter.com/bram_sels'">Artwork by @bram_sels</div>
 
 <script type="text/javascript">
-	let request = new XMLHttpRequest();
-	request.open("GET", "/php/loggedIn.php?page=menu", false);
-	request.send();
+	getDataWait("/php/loggedIn.php?page=menu", function(response) {
+		if(response == "null") {
+			let button1 = document.getElementById("button1");
+			button1.innerHTML = "Create Account";
+			button1.onclick = function(e) {
+				window.location.href = "account/create/?";
+			}
+			button2.innerHTML = "Login";
+			button2.onclick = function(e) {
+				window.location.href = "account/login/?";
+			}
+		}
+	});
 
-	if(request.responseText == "null") {
-		let button1 = document.getElementById("button1");
-		button1.innerHTML = "Create Account";
-		button1.onclick = function(e) {
-			window.location.href = "account/create/?";
-		}
-		button2.innerHTML = "Login";
-		button2.onclick = function(e) {
-			window.location.href = "account/login/?";
-		}
-	}
+	
 </script>
 </html>
