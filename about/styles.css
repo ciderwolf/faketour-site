@@ -1,0 +1,70 @@
+.content:before {
+	overflow: auto;	
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	display: block;
+	background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url("saproling-token.jpg");
+	background-size:cover;
+	width: 100%;
+	height: 100%;
+	filter: blur(15px);
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #dfe0d9;
+}
+
+b {
+    font-size: larger;
+}
+
+.text {
+    width: 50%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 16pt;
+    text-indent: 2em;
+}
+
+a {
+    color: forestgreen;
+    cursor: pointer;
+}
+
+a:hover { 
+    text-decoration: black underline;
+}
+
+li {
+    text-indent: 1em;
+    font-size: 16pt;
+    
+}
+
+.footer {
+    position: fixed;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    top: 90vh;
+    opacity: .6;
+    cursor: pointer;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* @keyframes foldout {
+    from { 
+        height: 0;
+        transform: scale(1, 0) translate(0, -50%); 
+    }
+    to { 
+        height: 50vh;
+        transform: scale(1, 1) translate(0, 0); 
+    }
+} */
