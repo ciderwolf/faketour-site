@@ -33,10 +33,7 @@ function logIn() {
 				setDisplay.innerHTML += createSymbol(set);
 				sets.push(set);
 			}
-			drawPool(responseJSON);
-			for(set in responseJSON) {
-				getSetData(set);
-			}
+			constructPool(responseJSON);
 		}
 		loggedIn = responseJSON;
 	});
@@ -65,7 +62,7 @@ function generate() {
 	getDataWait("generatePool.php?sets=" + packSets.join(","), function(response) {
 		let cards = JSON.parse(response);
 		updatePool(cards);
-		drawPool(cards);
+		constructPool(cards);
 		const y = viewer.getBoundingClientRect().top + window.scrollY;
 		window.scroll({
 			top: y,
@@ -74,14 +71,10 @@ function generate() {
 	});
 }
 
-// function loadCardData(set) {
-// 	return JSON.parse(getData("cards/" + set + "/data.json"));
-// }
-
 function getSetData(set) {
 	getDataWait("cards/" + set + "/data.json", function(response) {
 		cardData[set] = JSON.parse(response);
-		drawPool(loggedIn);
+		constructPool(loggedIn);
 	});
 }
 
@@ -118,7 +111,7 @@ function buttonPressed() {
 		} else if(loggedIn === false) {
 			alert("You need to be logged in to generate a sealed pool.");
 		} else {
-			drawPool(loggedIn);
+			constructPool(loggedIn);
 		}
 		button.innerHTML = "Export Pool";
 	}
@@ -129,16 +122,17 @@ function buttonPressed() {
 	}
 }
 
-function drawPool(cards) {
+function constructPool(cards) {
 	let viewer = document.getElementById("cards");
 	viewer.innerHTML = "";
 	let poolStr = "";
 	for(set in cards) {
 		if(!Object.keys(cardData).includes(set)) {
-			cardData[set] = getSetData(set);
+			getSetData(set);
 			return;
 		}
 	}
+	pool = [];
 	for(set in cards) {
 		let data = cardData[set];
 		for(card of cards[set]) {
