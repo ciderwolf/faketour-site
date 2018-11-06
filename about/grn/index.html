@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>About Faketour GRN</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="/menu/loadMenu.js"></script>
+        <link rel="stylesheet" href="/menu/styles.css">
+        <link rel="stylesheet" href="/css/keyrune.css">
+    </head>
+
+    <body>
+        <div class="content">
+        <div class="topnav"></div>
+        <script type="text/javascript">loadMenu();</script>
+        <h1>Faketour</h1>
+        <img src="grn-logo.png"/>
+        
+        <div id="bg">
+            <h2>Standard</h2>
+            <p>Submit a deck made up of cards from the following sets: &ensp;<i class="ss ss-grn"></i>&ensp;<i class="ss ss-m19"></i>&ensp;
+                <i class="ss ss-dom"></i>&ensp;<i class="ss ss-rix"></i>&ensp;<i class="ss ss-xln"></i><br>
+                <a class="underlight" href="https://scryfall.com/search?as=grid&order=name&q=%28set%3Agrn+OR+set%3Adom+OR+set%3Arix+OR+set%3Axln+OR+set%3Am19%29"><i>(Guilds of Ravnica, Core 2019, Dominaria, Rivals of Ixalan, and Ixalan)</i></a>
+            </p>  
+            <h2>Sealed</h2>
+            <p>Created a sealed pool 3 packs of <i class="ss ss-grn"></i> and 3 packs selected at random from among: &ensp;
+                <i class="ss ss-rav"></i> <i class="ss ss-gpt"></i> <i class="ss ss-dis"></i> 
+                <i class="ss ss-rtr"></i> <i class="ss ss-gtc"></i> <i class="ss ss-dgm"></i> <br>
+                <a class="underlight" href="https://scryfall.com/search?q=%28set%3Agrn+OR+set%3Arav+OR+set%3Agpt+OR+set%3Adis+OR+set%3Artr+OR+set%3Agtc+OR+set%3Adgm%29&unique=cards&as=grid&order=name"><i>(Guilds of Ravnica, Ravnica: City of Guilds, Guildpact, Dissension, Return to Ravnica, Gatecrash, or Dragon's Maze)</i></a>
+            </p>
+            <div align="center">
+                <button onclick="window.location.href='/sealed'">Create Sealed Pool</button>
+                <button onclick="window.location.href='/constructed'">Submit Constructed Deck</button>
+            </div>
+        </div>
+    </body>
+
+</html>

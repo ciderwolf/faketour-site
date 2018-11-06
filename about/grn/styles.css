@@ -1,0 +1,90 @@
+.content:before {
+	overflow: auto;	
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	display: block;
+	background-image: url("bg_splash_dark.jpg");
+	background-size:cover;
+	width: 100%;
+	height: 100%;
+	filter: blur(5px);
+}
+
+body {
+    background-color: #1c090a; 
+    font-family: 'Nunito', sans-serif;
+}
+
+#bg {
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-size: 72pt;
+    color: white;
+    text-align: center;
+    font-family: Beleren;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 16pt;
+}
+
+img {
+	margin: auto;
+	margin-top: -70px;
+	display: flex;
+}
+
+button {
+    font-family: 'Nunito', sans-serif;
+	margin: 25px;
+    background-color: white;
+    border-radius: 8px;
+    border: 5px solid #1c090a;
+    color: #1c090a;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16pt;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #1c090a;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    top: 90vh;
+    opacity: .6;
+    cursor: pointer;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.underlight {
+    color: gray;
+    opacity: 0.7;
+}
+
+@font-face {
+    font-family: Beleren;
+    src: url("BelerenBold.woff");
+}
