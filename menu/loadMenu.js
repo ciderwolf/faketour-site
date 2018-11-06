@@ -71,3 +71,44 @@ function getData(url) {
 	request.send();
 	return request.responseText;
 }
+
+function alert(text, title, kind) {
+	let alertBody = document.getElementById("alerts");
+	if(alertBody == undefined) {
+		alertBody = document.createElement("div");
+		alertBody.id = "alerts";
+		document.body.appendChild(alertBody);
+	}
+
+	let alertElement = document.createElement("div");
+	alertElement.classList.add("alert");
+	alertElement.classList.add(kind);
+	let closeButton = document.createElement("span");
+	closeButton.classList.add("close-alert");
+	closeButton.innerHTML = "&times;";
+	closeButton.onclick =  function(e) {
+		var div = this.parentElement;
+        div.style.opacity = "0";
+		setTimeout(function(){ div.style.display = "none"; }, 600);
+	};
+	alertElement.appendChild(closeButton);
+	let titleElement = document.createElement("strong");
+	titleElement.innerHTML = title;
+	alertElement.appendChild(titleElement);
+	alertElement.innerHTML += "&emsp;" + text;
+	alertBody.appendChild(alertElement);
+	let close = document.getElementsByClassName("close-alert");
+
+    for (closeButton of close) {
+        closeButton.onclick = function(){
+            let div = this.parentElement;
+            div.style.opacity = "0";
+            setTimeout(function(){ 
+                div.style.display = "none"; 
+                div.remove();
+            }, 600);
+            
+        }
+        // console.log(closeButton.onclick)
+    }
+}
