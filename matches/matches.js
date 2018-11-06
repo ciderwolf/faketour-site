@@ -104,6 +104,7 @@ function loadMatches(format) {
 		let button = document.createElement("button");
 		button.addEventListener('click', function(e) {
 			document.getElementById('submit_' + format).style.display='block';
+			buttonClicked = this;
 		});
 		button.innerHTML = "Submit Results";
 		matchDisplay.appendChild(button);
@@ -123,10 +124,10 @@ function updateMatch(format, round, opponent, opponentWins, youWins) {
 	request.onload = function (e) {
 	  if (request.readyState === 4) {
 		if (request.status === 200) {
-			alert("Match submitted successfully.");
+			alert("Success!", "Match submitted successfully.", "success");
 		} else {
 			console.log(request.responseText);
-			alert("Encountered an error. Check the console for more information.");
+			alert("Encountered an error", " Check the console for more information.", "error");
 		}
 	  }
 	};

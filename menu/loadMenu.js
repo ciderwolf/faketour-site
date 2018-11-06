@@ -72,7 +72,7 @@ function getData(url) {
 	return request.responseText;
 }
 
-function alert(text, title, kind) {
+function alert(title, text, kind) {
 	let alertBody = document.getElementById("alerts");
 	if(alertBody == undefined) {
 		alertBody = document.createElement("div");

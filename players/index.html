@@ -3,18 +3,18 @@
 	<title>Players</title>
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css"></head>
-    <link rel="stylesheet" href="/menu/styles.css">
-    <script type="text/javascript" src="/menu/loadMenu.js"></script>
+	<link rel="stylesheet" href="/menu/styles.css">
+	<script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
 <body>
-    <div class="topnav"></div>
-    <script type="text/javascript">loadMenu("Players");</script>
-    <div class="content"></div>
-    <div class="centered">
-    	<h1>Registered FakeTour Players</h1>
-    	<div id="players"></div>
+	<div class="topnav"></div>
+	<script type="text/javascript">loadMenu("Players");</script>
+	<div class="content"></div>
+	<div class="centered">
+		<h1>Registered FakeTour Players</h1>
+		<div id="players"></div>
 	</div>
-    <div class="footer" onclick="window.location.href='https://twitter.com/velinovart'">Artwork by @velinovart</div>
+	<div class="footer" onclick="window.location.href='https://twitter.com/velinovart'">Artwork by @velinovart</div>
 
 </body>
 
@@ -23,24 +23,26 @@
 	xhr.open("GET", "getPlayers.php", true);
 	xhr.onload = function (e) {
 	  if (xhr.readyState === 4) {
-	    if (xhr.status === 200) {
-	    	let players = JSON.parse(xhr.responseText);
-	    	if(players.length == 0) {
-	    		players.push("none");
-	    	}
-	    	let display = document.getElementById("players");
-	    	for(player of players) {
-	    		let play = document.createElement("p");
-	    		play.innerHTML = player;
-	    		display.appendChild(play);
-	    	}
-	    } else {
-	      console.error(xhr.statusText);
-	    }
+		if (xhr.status === 200) {
+			let players = JSON.parse(xhr.responseText);
+			if(players.length == 0) {
+				players.push("none");
+			}
+			let display = document.getElementById("players");
+			for(player of players) {
+				let play = document.createElement("p");
+				play.innerHTML = player;
+				display.appendChild(play);
+			}
+		} else {
+			console.error(xhr.statusText);
+			alert("Encountered an error", "Check the console for more information", "error");
+		}
 	  }
 	};
 	xhr.onerror = function (e) {
-	  console.error(xhr.statusText);
+		alert("Encountered an error", "Check the console for more information", "error");
+		console.error(xhr.statusText);
 	};
 	xhr.send(null);
 </script>

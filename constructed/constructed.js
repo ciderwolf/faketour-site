@@ -61,11 +61,11 @@ function uploadDeck(cardList) {
 			button.innerHTML = "Deck submitted successfully!";
 			setInterval(function() {button.innerHTML = 'Submit Deck'}, 2000);
 			if(request.responseText.trim() != "true") {
-				alert(request.responseText);
+				alert("Failed to submit deck", request.responseText, "error")
 			}
 		} else {
 			console.log(request.responseText);
-			alert("Encountered an error. Check the console for more information.");
+			alert("Encountered an error",  "Check the console for more information.", "error");
 		}
 	  }
 	};
@@ -80,10 +80,10 @@ function submit() {
 		"sideboard": sideboard
 	};
 	if(loggedIn === false) {
-		alert("You need to be logged in to submit your deck.");
+		alert("Error", "You need to be logged in to submit your deck.", "error");
 	}
 	else if (due < 0) {
-		alert("Deck submission is no longer available.");
+		alert("Deck submission is no longer available.", "", "warning");
 	}
 	else {
 		uploadDeck(upload);

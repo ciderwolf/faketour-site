@@ -137,10 +137,10 @@ function sendData(format, data) {
 		// console.log(request.responseText);
 		if (request.readyState === 4) {
 			if (request.status === 200) {
-				alert("Pairings for " + format + " submitted successfully.");
+				alert(format, "Pairings submitted successfully.", "success");
 			} else {
 				console.log(request.responseText);
-				alert("Encountered an error. Check the console for more information.");
+				alert("Encountered an error", "Check the console for more information.", "error");
 			}
 		}
 	};

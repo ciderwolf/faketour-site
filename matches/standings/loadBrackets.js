@@ -13,7 +13,7 @@ function getData() {
 				createStandings(request.responseText);
 			} else {
 				console.log(request.responseText);
-				alert("Encountered an error. Check the console for more information.");
+				alert("Encountered an error", " Check the console for more information.", "error");
 			}
 	  	}
 	};	request.send();
