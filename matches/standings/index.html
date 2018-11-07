@@ -9,20 +9,43 @@
 </head>
 
 <body>
+    <div class="content"></div>
+
     <div class="topnav"></div>
     <script type="text/javascript">loadMenu();</script>
-    <div class="content"></div>
-	<div class="title">
+	<div style="display: flex;" class="title">
 		<h1>Standings</h1>
-		<h3>By game record, not official order</h3>
+		<h3 style="position:absolute; right: 0;">By game record, not official order</h3>
 	</div>
-	<div id="backdrop" align="center">
-		<table id="standings">
-			<tr>
-				<th><h4>Player</h4></th> <th><h4>Standard</h4></th> <th><h4>Sealed</h4></th> <th><h4>Total</h4></th>
-			</tr>
-		</table>
-	</div>
+
+	<div id="standings">
+		<div class="tab">
+			<button id="initial" class="tablinks" onclick="showTab(event, 'sealed-content')">Sealed</button>
+			<button class="tablinks" onclick="showTab(event, 'constructed-content')">Constructed</button>
+			<button class="tablinks" onclick="showTab(event, 'total-content')">Total</button>
+		</div>		  
+		<div class="backdrop tabcontent" id="sealed-content" align="center">
+			<table id="sealed">
+				<tr>
+					<th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+				</tr>
+			</table>
+		</div>
+		<div class="backdrop tabcontent" id="constructed-content" align="center">
+			<table id="constructed">
+				<tr>
+					<th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+				</tr>
+			</table>
+		</div>
+		<div class="backdrop tabcontent" id="total-content" align="center">
+			<table id="total">
+				<tr>
+					<th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+				</tr>
+			</table>
+		</div>
+	<div>
 	<div class="footer" onclick="window.location.href='https://twitter.com/JennRavenna'">Artwork by @JennRavenna</div>
 </body>
 <script type="text/javascript" src="loadBrackets.js"></script>
