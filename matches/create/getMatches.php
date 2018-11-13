@@ -4,7 +4,7 @@
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
     $output = "";
     $output["sealed"] = getData("sealed", $conn);
-    $output["std"] = getData("constructed", $conn);
+    $output["constructed"] = getData("constructed", $conn);
     echo json_encode($output);
     $conn->close();
 

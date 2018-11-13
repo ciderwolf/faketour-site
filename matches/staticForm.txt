@@ -1,3 +1,9 @@
+<label for="round_name"><b>Top 8 round</b></label>
+<select name="round_name">
+<option value="none">--</option>
+<option value="Semifinals">Semifinals</option>
+<option value="Finals">Finals</option>
+</select> <br>
 <label for="games_won"><b>Number of games you won</b></label>
 <input type="number" placeholder="Games Won" name="games_won" required>
 <label for="games_lost"><b>Number of games you lost</b></label>

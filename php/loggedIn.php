@@ -19,6 +19,9 @@
 	else if($responseText == "account") {
 		echo loggedInAccount($loggedIn);
 	}
+	else if($responseText == "create_pairings") {
+		echo loggedInCreatePairings($loggedIn);
+	}
 
 	function logInSealed($loggedIn) {
 		if(!$loggedIn) {
@@ -95,6 +98,15 @@
 		}
 		else {
 			return "false";
+		}
+	}
+
+	function loggedInCreatePairings($loggedIn) {
+		if($loggedIn) {
+			return json_encode($_SESSION["username"] == "certi42" || $_SESSION["username"] == "Manlin Never Lucky");
+		}
+		else {
+			return json_encode($loggedIn);
 		}
 	}
 ?>

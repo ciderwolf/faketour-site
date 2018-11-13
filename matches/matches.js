@@ -96,7 +96,7 @@ function loadMatches(format) {
 		radio2.id = opponent;
 		container.appendChild(radio2);
 		container.innerHTML += opponent;
-		container.innerHTML += "<br><br>" + staticForm;
+		container.innerHTML += "<br>" + staticForm;
 		form.appendChild(container);
 		modal.appendChild(form);
 		display.appendChild(modal);
@@ -140,7 +140,10 @@ function submit(form) {
 	let userWins = inputs[2].value;
 	let opponentWins = inputs[3].value;
 	let format = form.classList[1];
-    let round = matches[format].rounds_completed + 1;
+	let round = matches[format].rounds_completed + 1;
+	if(inputs[3].value != "none") {
+		round = inputs[3].value;
+	}
 	updateMatch(format, round, opponent, opponentWins, userWins);
 }
 

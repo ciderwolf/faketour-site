@@ -55,6 +55,19 @@ button:hover {
     color: white;
 }
 
+select {
+	margin: 6px;
+	background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    border: 2px solid #555555;
+    color: #555555;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
 
 * {box-sizing: border-box;}
 
