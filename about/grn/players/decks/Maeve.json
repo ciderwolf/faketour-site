@@ -1,0 +1,138 @@
+{
+  "constructed_deck": {
+    "Sideboard": [
+      {
+        "count": 3, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/179.jpg?1527430183", 
+        "name": "Carnage Tyrant", 
+        "scryfall_uri": "https://scryfall.com/card/xln/179/carnage-tyrant?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/a/9/a995200f-1e9d-4ff3-9e04-4a4309e0e09c.jpg?1538878182", 
+        "name": "Citywide Bust", 
+        "scryfall_uri": "https://scryfall.com/card/grn/4/citywide-bust?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/c/f/cf2a9e82-8670-4b7f-b5f0-8e10f8aeff1c.jpg?1538878242", 
+        "name": "Dawn of Hope", 
+        "scryfall_uri": "https://scryfall.com/card/grn/8/dawn-of-hope?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/34.jpg?1527427957", 
+        "name": "Settle the Wreckage", 
+        "scryfall_uri": "https://scryfall.com/card/xln/34/settle-the-wreckage?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/dom/35.jpg?1524790337", 
+        "name": "Shalai, Voice of Plenty", 
+        "scryfall_uri": "https://scryfall.com/card/dom/35/shalai-voice-of-plenty?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/248.jpg?1527431310", 
+        "name": "Sorcerous Spyglass", 
+        "scryfall_uri": "https://scryfall.com/card/xln/248/sorcerous-spyglass?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/m19/208.jpg?1531451082", 
+        "name": "Vivien Reid", 
+        "scryfall_uri": "https://scryfall.com/card/m19/208/vivien-reid?utm_source=api"
+      }
+    ], 
+    "Land": [
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/257.jpg?1527431487", 
+        "name": "Sunpetal Grove", 
+        "scryfall_uri": "https://scryfall.com/card/xln/257/sunpetal-grove?utm_source=api"
+      }, 
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/2/b/2b9b0195-beda-403e-bc27-7ae3be9f318c.jpg?1538881306", 
+        "name": "Temple Garden", 
+        "scryfall_uri": "https://scryfall.com/card/grn/258/temple-garden?utm_source=api"
+      }, 
+      {
+        "count": 6, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/5/c/5c6b733c-b67f-472b-aea3-c59e1f78dc55.jpg?1541002751", 
+        "name": "Forest", 
+        "scryfall_uri": "https://scryfall.com/card/gk1/76/forest?utm_source=api"
+      }, 
+      {
+        "count": 6, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/9/3/93653b18-3821-485e-afeb-edafb0a9e84e.jpg?1541002853", 
+        "name": "Plains", 
+        "scryfall_uri": "https://scryfall.com/card/gk1/100/plains?utm_source=api"
+      }
+    ], 
+    "Instant": [
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/2/c/2cc2b646-0181-4f0a-a141-00ca56069a06.jpg?1538880412", 
+        "name": "March of the Multitudes", 
+        "scryfall_uri": "https://scryfall.com/card/grn/188/march-of-the-multitudes?utm_source=api"
+      }
+    ], 
+    "Enchantment": [
+      {
+        "count": 3, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/dom/21.jpg?1524790190", 
+        "name": "History of Benalia", 
+        "scryfall_uri": "https://scryfall.com/card/dom/21/history-of-benalia?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/dom/31.jpg?1524790290", 
+        "name": "Seal Away", 
+        "scryfall_uri": "https://scryfall.com/card/dom/31/seal-away?utm_source=api"
+      }, 
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/22a.jpg?1527427791", 
+        "name": "Legion's Landing", 
+        "scryfall_uri": "https://scryfall.com/card/xln/22/legions-landing-adanto-the-first-fort?utm_source=api"
+      }
+    ], 
+    "Sorcery": [
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/f/e/feb4b39f-d309-49ba-b427-240b7fdc1099.jpg?1539735483", 
+        "name": "Flower / Flourish", 
+        "scryfall_uri": "https://scryfall.com/card/grn/226/flower-flourish?utm_source=api"
+      }
+    ], 
+    "Planeswalker": [
+      {
+        "count": 3, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/rix/159.jpg?1524752200", 
+        "name": "Huatli, Radiant Champion", 
+        "scryfall_uri": "https://scryfall.com/card/rix/159/huatli-radiant-champion?utm_source=api"
+      }
+    ], 
+    "Creature": [
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/3/0/3028075c-5fc5-4942-a984-1ffcf7a8933d.jpg?1538880355", 
+        "name": "Knight of Autumn", 
+        "scryfall_uri": "https://scryfall.com/card/grn/183/knight-of-autumn?utm_source=api"
+      }, 
+      {
+        "count": 3, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/197.jpg?1527430496", 
+        "name": "Merfolk Branchwalker", 
+        "scryfall_uri": "https://scryfall.com/card/xln/197/merfolk-branchwalker?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/f/a/fa1190a4-3d7e-4500-991f-e36ec3d1d9dc.jpg?1538880646", 
+        "name": "Trostani Discordant", 
+        "scryfall_uri": "https://scryfall.com/card/grn/208/trostani-discordant?utm_source=api"
+      }
+    ]
+  }
+}

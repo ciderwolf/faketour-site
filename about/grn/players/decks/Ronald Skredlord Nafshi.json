@@ -1,0 +1,228 @@
+{
+  "constructed_deck": {
+    "Sideboard": [
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/m19/190.jpg?1531450895", 
+        "name": "Naturalize", 
+        "scryfall_uri": "https://scryfall.com/card/m19/190/naturalize?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/0/e/0e13a295-0d51-4b56-8c58-0896eb41c567.jpg?1538878595", 
+        "name": "Chemister's Insight", 
+        "scryfall_uri": "https://scryfall.com/card/grn/32/chemisters-insight?utm_source=api"
+      }, 
+      {
+        "count": 3, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/1/5/15dfd5f2-5298-4cf4-80fe-43db9be24f57.jpg?1538880975", 
+        "name": "Chamber Sentry", 
+        "scryfall_uri": "https://scryfall.com/card/grn/232/chamber-sentry?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/44.jpg?1527428093", 
+        "name": "Wakening Sun's Avatar", 
+        "scryfall_uri": "https://scryfall.com/card/xln/44/wakening-suns-avatar?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/2/6/269af993-4894-4bf1-b55a-af4d736cb3cc.jpg?1538879195", 
+        "name": "Ritual of Soot", 
+        "scryfall_uri": "https://scryfall.com/card/grn/84/ritual-of-soot?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/m19/306.jpg?1534628441", 
+        "name": "Nexus of Fate", 
+        "scryfall_uri": "https://scryfall.com/card/m19/306/nexus-of-fate?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/187.jpg?1527430307", 
+        "name": "Drover of the Mighty", 
+        "scryfall_uri": "https://scryfall.com/card/xln/187/drover-of-the-mighty?utm_source=api"
+      }
+    ], 
+    "Land": [
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/7/d/7d4595f2-9297-40dc-b2dd-7144bbb401f7.jpg?1538881314", 
+        "name": "Watery Grave", 
+        "scryfall_uri": "https://scryfall.com/card/grn/259/watery-grave?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/e/f/eff1f52c-5c43-4260-aaa0-6920846a191c.jpg?1538881237", 
+        "name": "Overgrown Tomb", 
+        "scryfall_uri": "https://scryfall.com/card/grn/253/overgrown-tomb?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/b/7/b7b598d0-535d-477d-a33d-d6a10ff5439a.jpg?1538881252", 
+        "name": "Sacred Foundry", 
+        "scryfall_uri": "https://scryfall.com/card/grn/254/sacred-foundry?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/2/b/2b9b0195-beda-403e-bc27-7ae3be9f318c.jpg?1538881306", 
+        "name": "Temple Garden", 
+        "scryfall_uri": "https://scryfall.com/card/grn/258/temple-garden?utm_source=api"
+      }, 
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/c18/245.jpg?1535505351", 
+        "name": "Evolving Wilds", 
+        "scryfall_uri": "https://scryfall.com/card/c18/245/evolving-wilds?utm_source=api"
+      }, 
+      {
+        "count": 1, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/5/c/5c6b733c-b67f-472b-aea3-c59e1f78dc55.jpg?1541002751", 
+        "name": "Forest", 
+        "scryfall_uri": "https://scryfall.com/card/gk1/76/forest?utm_source=api"
+      }, 
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/9/3/93653b18-3821-485e-afeb-edafb0a9e84e.jpg?1541002853", 
+        "name": "Plains", 
+        "scryfall_uri": "https://scryfall.com/card/gk1/100/plains?utm_source=api"
+      }, 
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/2/3/23300152-6da8-4444-b368-1fb00e74a4b2.jpg?1541002792", 
+        "name": "Island", 
+        "scryfall_uri": "https://scryfall.com/card/gk1/24/island?utm_source=api"
+      }, 
+      {
+        "count": 1, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/5/5/55fce17b-f57f-4863-bf74-71e45bec4040.jpg?1541002797", 
+        "name": "Swamp", 
+        "scryfall_uri": "https://scryfall.com/card/gk1/25/swamp?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/8/4/84c3e407-2828-40e5-b335-7a0a3df1e5ad.jpg?1541002913", 
+        "name": "Mountain", 
+        "scryfall_uri": "https://scryfall.com/card/gk1/49/mountain?utm_source=api"
+      }
+    ], 
+    "Instant": [
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/34.jpg?1527427957", 
+        "name": "Settle the Wreckage", 
+        "scryfall_uri": "https://scryfall.com/card/xln/34/settle-the-wreckage?utm_source=api"
+      }
+    ], 
+    "Enchantment": [
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/m19/65.jpg?1531451394", 
+        "name": "Omniscience", 
+        "scryfall_uri": "https://scryfall.com/card/m19/65/omniscience?utm_source=api"
+      }, 
+      {
+        "count": 3, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/m19/184.jpg?1531450843", 
+        "name": "Gift of Paradise", 
+        "scryfall_uri": "https://scryfall.com/card/m19/184/gift-of-paradise?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/74a.jpg?1527428520", 
+        "name": "Search for Azcanta", 
+        "scryfall_uri": "https://scryfall.com/card/xln/74/search-for-azcanta-azcanta-the-sunken-ruin?utm_source=api"
+      }
+    ], 
+    "Sorcery": [
+      {
+        "count": 1, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/71.jpg?1527428461", 
+        "name": "River's Rebuke", 
+        "scryfall_uri": "https://scryfall.com/card/xln/71/rivers-rebuke?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/m19/129.jpg?1531452272", 
+        "name": "Apex of Power", 
+        "scryfall_uri": "https://scryfall.com/card/m19/129/apex-of-power?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/2/6/269af993-4894-4bf1-b55a-af4d736cb3cc.jpg?1538879195", 
+        "name": "Ritual of Soot", 
+        "scryfall_uri": "https://scryfall.com/card/grn/84/ritual-of-soot?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/dom/114.jpg?1526949290", 
+        "name": "Yawgmoth's Vile Offering", 
+        "scryfall_uri": "https://scryfall.com/card/dom/114/yawgmoths-vile-offering?utm_source=api"
+      }
+    ], 
+    "Artifact": [
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/kld/112.jpg?1517813031", 
+        "name": "Combustible Gearhulk", 
+        "scryfall_uri": "https://scryfall.com/card/kld/112/combustible-gearhulk?utm_source=api"
+      }, 
+      {
+        "count": 3, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/e/a/ea123356-3055-4e42-b816-ac3c4e9087d1.jpg?1538880985", 
+        "name": "Chromatic Lantern", 
+        "scryfall_uri": "https://scryfall.com/card/grn/233/chromatic-lantern?utm_source=api"
+      }
+    ], 
+    "Creature": [
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/c18/87.jpg?1535503108", 
+        "name": "Djinn of Wishes", 
+        "scryfall_uri": "https://scryfall.com/card/c18/87/djinn-of-wishes?utm_source=api"
+      }, 
+      {
+        "count": 3, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/187.jpg?1527430307", 
+        "name": "Drover of the Mighty", 
+        "scryfall_uri": "https://scryfall.com/card/xln/187/drover-of-the-mighty?utm_source=api"
+      }, 
+      {
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/dom/198.jpg?1524791992", 
+        "name": "Jodah, Archmage Eternal", 
+        "scryfall_uri": "https://scryfall.com/card/dom/198/jodah-archmage-eternal?utm_source=api"
+      }, 
+      {
+        "count": 1, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/rix/30.jpg?1524750417", 
+        "name": "Zetalpa, Primal Dawn", 
+        "scryfall_uri": "https://scryfall.com/card/rix/30/zetalpa-primal-dawn?utm_source=api"
+      }, 
+      {
+        "count": 1, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/rix/100.jpg?1524751359", 
+        "name": "Etali, Primal Storm", 
+        "scryfall_uri": "https://scryfall.com/card/rix/100/etali-primal-storm?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/rix/174.jpg?1524752477", 
+        "name": "Zacama, Primal Calamity", 
+        "scryfall_uri": "https://scryfall.com/card/rix/174/zacama-primal-calamity?utm_source=api"
+      }, 
+      {
+        "count": 1, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/rix/45.jpg?1524750598", 
+        "name": "Nezahal, Primal Tide", 
+        "scryfall_uri": "https://scryfall.com/card/rix/45/nezahal-primal-tide?utm_source=api"
+      }, 
+      {
+        "count": 1, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/rix/154.jpg?1524752117", 
+        "name": "Azor, the Lawbringer", 
+        "scryfall_uri": "https://scryfall.com/card/rix/154/azor-the-lawbringer?utm_source=api"
+      }
+    ]
+  }
+}
