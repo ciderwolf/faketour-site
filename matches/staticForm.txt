@@ -1,4 +1,4 @@
-<label for="round_name"><b>Top 8 round</b></label>
+<label for="round_name"><b>Top 4 round</b></label>
 <select name="round_name">
 <option value="none">--</option>
 <option value="Semifinals">Semifinals</option>

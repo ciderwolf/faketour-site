@@ -1,23 +1,59 @@
 {
+  "matches": {
+    "sealed": [
+      {
+        "record": "2-0", 
+        "opponent": "Bye"
+      }, 
+      {
+        "record": "2-1", 
+        "opponent": "PVTRyan"
+      }, 
+      {
+        "record": "0-2", 
+        "opponent": "Ronald Skredlord Nafshi"
+      }
+    ], 
+    "constructed": [
+      {
+        "record": "1-2", 
+        "opponent": "Maeve"
+      }, 
+      {
+        "record": "2-1", 
+        "opponent": "Registered Fake Tour Player"
+      }, 
+      {
+        "record": "2-0", 
+        "opponent": "Bye"
+      }
+    ]
+  }, 
   "constructed_deck": {
-    "Sorcery": [
+    "Instant": [
       {
-        "count": 3, 
-        "image_uri": "https://img.scryfall.com/cards/normal/front/7/c/7ce226ad-cb1d-47f5-90fc-27704e181884.jpg?1538880631", 
-        "name": "Thought Erasure", 
-        "scryfall_uri": "https://scryfall.com/card/grn/206/thought-erasure?utm_source=api"
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/dom/81.jpg?1524790780", 
+        "name": "Cast Down", 
+        "scryfall_uri": "https://scryfall.com/card/dom/81/cast-down?utm_source=api"
       }, 
       {
-        "count": 3, 
-        "image_uri": "https://img.scryfall.com/cards/normal/front/a/c/ace631d1-897a-417e-8628-0170713f03d3.jpg?1539735502", 
-        "name": "Discovery // Dispersal", 
-        "scryfall_uri": "https://scryfall.com/card/grn/223/discovery-dispersal?utm_source=api"
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/129.jpg?1527429358", 
+        "name": "Vraska's Contempt", 
+        "scryfall_uri": "https://scryfall.com/card/xln/129/vraskas-contempt?utm_source=api"
       }, 
       {
-        "count": 4, 
-        "image_uri": "https://img.scryfall.com/cards/normal/front/f/4/f4db287e-34c1-459b-882d-3db58f13eade.jpg?1538880466", 
-        "name": "Notion Rain", 
-        "scryfall_uri": "https://scryfall.com/card/grn/193/notion-rain?utm_source=api"
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/0/1/0193dfa3-8409-44be-b4be-6c3cad42d4a4.jpg?1538878647", 
+        "name": "Disdainful Stroke", 
+        "scryfall_uri": "https://scryfall.com/card/grn/37/disdainful-stroke?utm_source=api"
+      }, 
+      {
+        "count": 2, 
+        "image_uri": "https://img.scryfall.com/cards/normal/en/m19/54.jpg?1531451298", 
+        "name": "Essence Scatter", 
+        "scryfall_uri": "https://scryfall.com/card/m19/54/essence-scatter?utm_source=api"
       }
     ], 
     "Sideboard": [
@@ -102,30 +138,24 @@
         "scryfall_uri": "https://scryfall.com/card/gk1/24/island?utm_source=api"
       }
     ], 
-    "Instant": [
+    "Sorcery": [
       {
-        "count": 2, 
-        "image_uri": "https://img.scryfall.com/cards/normal/en/dom/81.jpg?1524790780", 
-        "name": "Cast Down", 
-        "scryfall_uri": "https://scryfall.com/card/dom/81/cast-down?utm_source=api"
+        "count": 3, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/7/c/7ce226ad-cb1d-47f5-90fc-27704e181884.jpg?1538880631", 
+        "name": "Thought Erasure", 
+        "scryfall_uri": "https://scryfall.com/card/grn/206/thought-erasure?utm_source=api"
       }, 
       {
-        "count": 2, 
-        "image_uri": "https://img.scryfall.com/cards/normal/en/xln/129.jpg?1527429358", 
-        "name": "Vraska's Contempt", 
-        "scryfall_uri": "https://scryfall.com/card/xln/129/vraskas-contempt?utm_source=api"
+        "count": 3, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/a/c/ace631d1-897a-417e-8628-0170713f03d3.jpg?1539735502", 
+        "name": "Discovery // Dispersal", 
+        "scryfall_uri": "https://scryfall.com/card/grn/223/discovery-dispersal?utm_source=api"
       }, 
       {
-        "count": 2, 
-        "image_uri": "https://img.scryfall.com/cards/normal/front/0/1/0193dfa3-8409-44be-b4be-6c3cad42d4a4.jpg?1538878647", 
-        "name": "Disdainful Stroke", 
-        "scryfall_uri": "https://scryfall.com/card/grn/37/disdainful-stroke?utm_source=api"
-      }, 
-      {
-        "count": 2, 
-        "image_uri": "https://img.scryfall.com/cards/normal/en/m19/54.jpg?1531451298", 
-        "name": "Essence Scatter", 
-        "scryfall_uri": "https://scryfall.com/card/m19/54/essence-scatter?utm_source=api"
+        "count": 4, 
+        "image_uri": "https://img.scryfall.com/cards/normal/front/f/4/f4db287e-34c1-459b-882d-3db58f13eade.jpg?1538880466", 
+        "name": "Notion Rain", 
+        "scryfall_uri": "https://scryfall.com/card/grn/193/notion-rain?utm_source=api"
       }
     ], 
     "Creature": [

@@ -57,9 +57,8 @@ function createStandings(data) {
 		light = !light;
 		totalTable.appendChild(totalRows[playerName]);
 	}
-
+	
 	document.getElementById("initial").click();
-
 }
 
 function createFormatRow(player, format) {
