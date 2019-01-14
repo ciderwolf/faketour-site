@@ -7,9 +7,9 @@
 	<script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
 <body>
-	<div class="topnav"></div>
-	<script type="text/javascript">loadMenu("Account");</script>
 	<div class="content"></div>
+	<div class="topnav"></div>
+	<script type="text/javascript">loadMenu("My Account");</script>
 	<h1 id="title">Your Account</h1>
 	<div style="padding-left: 25%">
 		<h2>Avatar</h2>
@@ -24,9 +24,11 @@
 				</div>
 			</div>
 		</div>
-		<h2>Password</h2>
+		<h2>Change Password</h2>
 		<input onfocus="this.classList.remove('required');" type="password" id="password" placeholder="Enter Password" required>
 		<input onfocus="this.classList.remove('required');" type="password" id="password2" placeholder="Reenter Password" required>
+		<h2>Events</h2>
+		<div id="events"></div>
 		<div class="bar"></div>
 		<button onclick="uploadChanges();" class="save wide">Save Changes</button>
 		<button onclick="logout();" class="logout wide">Log Out</button>

@@ -1,6 +1,7 @@
 let accountData;
 let avatars;
-const thingsToLoad = 2;
+let events;
+const thingsToLoad = 3;
 let loaded = 0;
 getDataWait("avatar_names.json", function(response) {
 	avatars = JSON.parse(response);
@@ -9,6 +10,16 @@ getDataWait("avatar_names.json", function(response) {
 		initialize();
 	}
 });
+
+getDataWait("events.php", function(response) {
+	events = JSON.parse(response);
+	console.log(events);
+	loaded ++;
+	if(loaded == thingsToLoad) {
+		initialize();
+	}
+});
+
 logIn();
 
 
@@ -79,6 +90,47 @@ function initialize() {
 			img.classList.add("selected")
 		}
 	}
+
+	let eventsContainer = document.getElementById("events");
+	eventsContainer.style["padding-left"] = "20px";
+	for(event of events) {
+		let eventDisplay = createEvent(event);
+		eventsContainer.appendChild(eventDisplay);
+	}
+}
+
+function createEvent(event) {
+	let eventDisplay = document.createElement("div");
+	eventDisplay.style.display = "flex";
+	let title = document.createElement("h3");
+	title.innerHTML += event.name + "&emsp;";
+	eventDisplay.appendChild(title);
+	if(event.open) {
+		let registerButton = document.createElement("button");
+		registerButton.innerHTML = "Register";
+		registerButton.id = event.code;
+		registerButton.style["margin-top"] = "7px";
+		registerButton.onclick = function(e) {
+			getDataWait("events.php?reg=" + event.code, function(response) {
+				console.log(response);
+				if(response == "success") {
+					alert("Registered", "Successfully registered for event: " + event.name, "success");
+					registerButton.disabled = true;
+				}
+				else if(response == "duplicate") {
+					alert("Error", "Already registered for event: " + event.name, "warning");
+				}
+				else {
+					alert("Error", "Failed to register for event: " + event.name, "error");
+				}
+			});
+		}
+		eventDisplay.appendChild(registerButton);
+	}
+	else {
+		title.innerHTML += "&mdash;&emsp;closed";
+	}
+	return eventDisplay;
 }
 
 function putData(url) {
@@ -103,11 +155,11 @@ function changePassword() {
 		passwords[blankIndex].classList.add("required");
 		return null;
 	} else if(passwords[0].value != passwords[1].value) {
-		alert("Passwords need to match");
+		alert("Invalid", "Passwords need to match", "warning");
 		return null;
 	}
 	else if(passwords[0].value.length > 30) {
-		alert("Password maximum length exceeded");
+		alert("Invalid", "Password maximum length exceeded", "warning");
 		return null;
 	} else {
 		return passwords[1].value;

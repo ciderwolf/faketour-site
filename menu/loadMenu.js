@@ -16,9 +16,7 @@ function loadMenu(activeClass) {
 				"Create Account": "/account/create/?"
 			};
 		} else {
-			let loginString = "Logged in as " + login;
-			loginPages = {};
-			loginPages[loginString] = "/account/";
+			loginPages = {"My Account": "/account/"};
 		}
 		for(page of Object.keys(pages)) {
 			let name = page;
@@ -36,7 +34,7 @@ function loadMenu(activeClass) {
 			let name = page;
 			let link = loginPages[name];
 			let menuItem = document.createElement("a");
-			if(activeClass == name || (name.includes("Logged in") && activeClass == "Account")) {
+			if(activeClass == name) {
 				menuItem.classList.add("active");
 			} else {
 				menuItem.href = link;
