@@ -1,7 +1,6 @@
 let pages = {
 	"Home": "/",
 	"About": "/about/",
-	"Sealed": "/sealed/",
 	"Constructed": "/constructed/",
 	"Players": "/players/",
 	"Matches": "/matches/"

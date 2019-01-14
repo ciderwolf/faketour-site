@@ -6,7 +6,7 @@
 	right: 0;
 	z-index: -1;
 	display: block;
-	background-image: url("bg_splash_dark.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("bg_splash.jpg");
 	background-size:cover;
 	width: 100%;
 	height: 100%;
@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: #1c090a; 
+    background-color: #080725; 
     font-family: 'Nunito', sans-serif;
 }
 
@@ -40,8 +40,9 @@ p {
 
 img {
 	margin: auto;
-	margin-top: -70px;
-	display: flex;
+	margin-top: -40px;
+    display: flex;
+    transform: scale(.75);
 }
 
 button {
@@ -49,8 +50,8 @@ button {
 	margin: 25px;
     background-color: white;
     border-radius: 8px;
-    border: 5px solid #1c090a;
-    color: #1c090a;
+    border: 5px solid #080725;
+    color: #080725;
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
@@ -60,7 +61,7 @@ button {
 }
 
 button:hover {
-    background-color: #1c090a;
+    background-color: #080725;
     color: white;
 }
 

@@ -6,7 +6,7 @@ logIn();
 getTimer();
 
 function getTimer() {
-	let due = new Date("Fri Oct 07 2018 23:59:59");
+	let due = new Date("Fri Jan 25 2019 23:59:59");
 	let now = new Date();
 	let difference = (due.getTime() - now.getTime())/1000;
 	let days = Math.floor(difference/(3600*24));
