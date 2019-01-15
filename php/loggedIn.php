@@ -48,9 +48,10 @@
 		if(!$loggedIn) {
 			return json_encode($loggedIn);
 		} else {
-			$username = $_SESSION["username"];
-			$sql = "SELECT * FROM grn_constructed WHERE username='$username'";
 			require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
+			$table_name = $set . "_constructed";
+			$username = $_SESSION["username"];
+			$sql = "SELECT * FROM $table_name WHERE username='$username'";
 			$result = $conn->query($sql);
 			$pool = "";
 			while ($row = $result->fetch_assoc()) {

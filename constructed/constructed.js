@@ -1,12 +1,12 @@
 let loggedIn;
 let timer = document.getElementById("timer");
+let due = new Date("Sun Jan 20 2019 23:59:59");
 setInterval("getTimer();", 1000);
 
 logIn();
 getTimer();
 
 function getTimer() {
-	let due = new Date("Fri Jan 25 2019 23:59:59");
 	let now = new Date();
 	let difference = (due.getTime() - now.getTime())/1000;
 	let days = Math.floor(difference/(3600*24));
@@ -57,12 +57,7 @@ function uploadDeck(cardList) {
 	request.onload = function (e) {
 	  if (request.readyState === 4) {
 		if (request.status === 200) {
-			let button = document.getElementById("submit");
-			button.innerHTML = "Deck submitted successfully!";
-			setInterval(function() {button.innerHTML = 'Submit Deck'}, 2000);
-			if(request.responseText.trim() != "true") {
-				alert("Failed to submit deck", request.responseText, "error")
-			}
+			alert("Deck submitted successfully", "", "success");
 		} else {
 			console.log(request.responseText);
 			alert("Encountered an error",  "Check the console for more information.", "error");
@@ -74,7 +69,7 @@ function uploadDeck(cardList) {
 function submit() {
 	let maindeck = document.getElementById("maindeck").value.split("\n");
 	let sideboard = document.getElementById("sideboard").value.split("\n");
-	let due = new Date("Fri Oct 06 2018 23:59:59").getTime() - new Date().getTime();
+	let dueTime = due.getTime() - new Date().getTime();
 	let upload = {
 		"maindeck": maindeck,
 		"sideboard": sideboard
@@ -82,7 +77,7 @@ function submit() {
 	if(loggedIn === false) {
 		alert("Error", "You need to be logged in to submit your deck.", "error");
 	}
-	else if (due < 0) {
+	else if (dueTime < 0) {
 		alert("Deck submission is no longer available.", "", "warning");
 	}
 	else {
