@@ -1,43 +1,30 @@
 let players = {};
 
-const formats = ["constructed", "sealed"];
-getData();
-
-function getData() {
-	let request = new XMLHttpRequest();
-	request.open("GET", "getStandings.php", true);
-	request.onload = function (e) {
-	 	if (request.readyState === 4) {
-			if (request.status === 200) {
-				createStandings(request.responseText);
-			} else {
-				console.log(request.responseText);
-				alert("Encountered an error", " Check the console for more information.", "error");
-			}
-	  	}
-	};	request.send();
-} 
+const formats = ["constructed", "limited"];
+getDataWait("getStandings.php", function(response) {
+	createStandings(response);
+});
 
 function createStandings(data) {
 	let players = JSON.parse(data);
-	let sealedRows = {};
+	let limitedRows = {};
 	let constructedRows = {};
 	let totalRows = {};
-	for(playerName of Object.keys(players)) {
+	for(playerName in players) {
 		let player = players[playerName];
-		sealedRows[playerName] = createFormatRow(player, "sealed");
+		limitedRows[playerName] = createFormatRow(player, "limited");
 		constructedRows[playerName] = createFormatRow(player, "constructed");
 		totalRows[playerName] = createTotalRow(player);
 	}
 	
 	let light = false;
-	let sealedTable = document.getElementById("sealed");
-	for(playerName of createFormatOrder(players, "sealed")) {
+	let limitedTable = document.getElementById("limited");
+	for(playerName of createFormatOrder(players, "limited")) {
 		if(light) {
-			sealedRows[playerName].classList.add("light");
+			limitedRows[playerName].classList.add("light");
 		}
 		light = !light;
-		sealedTable.appendChild(sealedRows[playerName]);
+		limitedTable.appendChild(limitedRows[playerName]);
 	}
 	light = false;
 	let constructedTable = document.getElementById("constructed");
@@ -107,7 +94,7 @@ function createTotalOrder(players) {
 		let greatestRecord = 0;
 		let winner = "";
 		for(player of playerNames) {
-			let playerRecord = (players[player].constructed.games.wins + players[player].sealed.games.wins)/(players[player].constructed.games.losses + players[player].sealed.games.losses);
+			let playerRecord = (players[player].constructed.games.wins + players[player].limited.games.wins)/(players[player].constructed.games.losses + players[player].limited.games.losses);
 			if(playerRecord > greatestRecord) {
 				greatestRecord = playerRecord;
 				winner = player;
@@ -126,10 +113,10 @@ function createTotalRow(player) {
 	name.innerHTML = playerName;
 	name.style.color = "orange";
 	let matchScore = document.createElement("td");
-	matchScore.innerHTML = player.sealed.matches.wins + player.constructed.matches.wins + "-" + (player.sealed.matches.losses + player.constructed.matches.losses);
+	matchScore.innerHTML = player.limited.matches.wins + player.constructed.matches.wins + "-" + (player.limited.matches.losses + player.constructed.matches.losses);
 	matchScore.classList.add("cell");
 	let gameScore = document.createElement("td");
-	gameScore.innerHTML = player.sealed.games.wins + player.constructed.games.wins + "-" + (player.sealed.games.losses + player.constructed.games.losses);
+	gameScore.innerHTML = player.limited.games.wins + player.constructed.games.wins + "-" + (player.limited.games.losses + player.constructed.games.losses);
 	gameScore.classList.add("cell");
 	playerRow.appendChild(name);
 	playerRow.appendChild(matchScore);

@@ -2,22 +2,19 @@
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
 	$format = $_REQUEST["format"];
-    if($format == "std") {
-        $format = "constructed";
-    }
+    $round = $_REQUEST["round"];
     $pairings = json_decode($_SERVER["HTTP_BODY"]);
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-    $table_name = "grn_" . $format;
-    foreach($pairings as $user => $oppList) {
-#        echo $key . " => " . json_encode($value) . "<br>"; 
-        $opp = json_encode($oppList);
-        $sql = "UPDATE $table_name SET opponents='$opp' WHERE username='$user'";
+    $table_name = $set . "_matches";
+    foreach($pairings as $pairingData) {
+        $pairing = json_decode(json_encode($pairingData), true);
+        $player_one = $pairing["player_one"];
+        $player_two = $pairing["player_two"];
+        $sql = "INSERT INTO $table_name (format, round, player_one, player_two) VALUES ('$format', '$round', '$player_one', '$player_two')";
         if ($conn->query($sql) === TRUE) {
     	    echo $sql;
     	} else {
     		die("Error updating record: " . $conn->error);
-    	}
+        }
     }
-
-
 ?>	

@@ -2,8 +2,8 @@
 	error_reporting(E_ALL);
 	ini_set("display_errors", 1);
 	require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-
-	$sql = "SELECT format, round, player_one, player_two, record FROM grn_matches";
+	$table_name = $set . "_matches";
+	$sql = "SELECT format, round, player_one, player_two, score FROM $table_name";
 	$result = $conn->query($sql);
 
 	$output = "";
@@ -14,12 +14,12 @@
 			$pTwo = $row["player_two"];
 			$format = $row["format"];
 			if(!isset($output[$pOne])) {
-				$output[$pOne] = array("constructed" => emptyResultObj(), "sealed" => emptyResultObj());
+				$output[$pOne] = array("constructed" => emptyResultObj(), "limited" => emptyResultObj());
 			}
 			if(!isset($output[$pTwo])) {
-				$output[$pTwo] = array("constructed" => emptyResultObj(), "sealed" => emptyResultObj());
+				$output[$pTwo] = array("constructed" => emptyResultObj(), "limited" => emptyResultObj());
 			}
-			$scores = explode("-", $row["record"]);
+			$scores = explode("-", $row["score"]);
 
 			if((int)$scores[0] > (int)$scores[1]) {
 				$output[$pOne][$format]["matches"]["wins"] += 1;
@@ -38,7 +38,7 @@
 		unset($output[""]);
 		echo json_encode($output);
 	} else {
-		echo "0 results";
+		echo "{}";
 	}
 	$conn->close();
 

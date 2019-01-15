@@ -1,20 +1,18 @@
-const formats = ["constructed", "sealed"];
-getData();
+const formats = ["constructed", "limited"];
 
-function getData() {
-	let request = new XMLHttpRequest();
-	request.open("GET", "getMatches.php", true);
-	request.onload = function (e) {
-	 	if (request.readyState === 4) {
-			if (request.status === 200) {
-				createMatches(request.responseText);
-			} else {
-				console.log(request.responseText);
-				alert("Encountered an error. Check the console for more information.");
-			}
-	  	}
-	};	request.send();
-} 
+getDataWait("getMatches.php", function(response) {
+	if(response !== "0 results") {
+		createMatches(response);
+	}
+	else {
+		for(format of formats) {
+			let formatBox = document.getElementById(format + "_matches");
+			let message = document.createElement("h3");
+			message.innerHTML += "No " + format + " matches";
+			formatBox.appendChild(message);
+		}
+	}
+});
 
 function createMatches(data) {
 	let matches = JSON.parse(data);

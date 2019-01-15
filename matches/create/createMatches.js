@@ -1,25 +1,22 @@
 let options = {
-	"sealed": [],
+	"limited": [],
 	"constructed": []
 };
 let count = 0;
-
-const playerData = getPlayers();
-let players = Object.keys(playerData.sealed);
-if(players.length % 2 == 1) {
-	players.push("Bye");	
-}
-
-logIn();
-
-function logIn() {
-	let response = JSON.parse(getData("/php/loggedIn.php?page=create_pairings"));
+let players = [];
+getDataWait("/php/loggedIn.php?page=create_pairings", function(response) {
+	let valid = JSON.parse(response);
 	if(!response) {
 		alert("You need to be logged in as an administrator to upload pairings.");
 		window.location.href = window.location.origin;
 	}
-	return response;
-}
+});
+getDataWait("/players/getPlayers.php", function(response) {
+	players = JSON.parse(response);
+	if(players.length % 2 == 1) {
+		players.push("Bye");	
+	}
+});
 
 function addMatchElement(format) {
 	let container = document.getElementById(format);
@@ -65,12 +62,6 @@ function createSelector(format, number) {
 	return select;
 }
 
-function getPlayers() {
-	let data = JSON.parse(getData("getMatches.php"));
-	// let players = ["certi42", "Maeve", "Ronald Skredlord Nafshi", "PVT Ryan", "Registered Fake Tour Player", "Aiden", "Manlin Never Lucky", "Bye"];
-	return data;
-}
-
 function updateSelectedPlayers(format) {
 	let selectedPlayers = getPlayersSelected(format);
 	for(option of options[format]) {
@@ -80,7 +71,6 @@ function updateSelectedPlayers(format) {
 		else {
 			option.disabled = false;
 		}
-
 	}
 }
 
@@ -97,44 +87,31 @@ function getPlayersSelected(format) {
 }
 
 function uploadPairings() {
-	let upload = {};
+	let roundName = document.getElementById("round-name").value;
 	for(format of Object.keys(options)) {
-		upload[format] = {};
+		let upload = [];
 		let selectors = document.getElementsByClassName(format + "Selector");
 		for(i = 0; i < selectors.length; i+=2) {
 			let pOneName = selectors[i].value;
 			if(pOneName == "Bye") pOneName = "";
 			let pTwoName = selectors[i+1].value;
 			if(pTwoName == "Bye") pTwoName = "";
-			// console.log(pOneName, pTwoName);
-			let playerOne;
-			let playerTwo;
-			if(playerData[format][pOneName] != undefined) {
-				playerOne = playerData[format][pOneName].opponents.flat();
-			}
-			if(playerData[format][pTwoName] != undefined) {
-				playerTwo = playerData[format][pTwoName].opponents.flat();
-			}
-			if(playerOne != undefined) {
-				playerOne.push(pTwoName);
-				upload[format][pOneName] = playerOne;
-			}
-			if(playerTwo != undefined) {
-				playerTwo.push(pOneName);
-				upload[format][pTwoName] = playerTwo;
-			}
+			let data = {};
+			data.player_one = pOneName;
+			data.player_two = pTwoName;
+			upload.push(data);
 		}
-		sendData(format, upload[format]);
+		sendData(format, roundName, upload);
+		console.log(upload);
 	}
-	console.log(upload);
 }
 
-function sendData(format, data) {
+function sendData(format, roundName, data) {
 	let request = new XMLHttpRequest();
-	request.open("POST", "uploadPairings.php?format=" + format, true);
+	request.open("POST", "uploadPairings.php?format=" + format + "&round=" + roundName, true);
 	request.setRequestHeader("body", JSON.stringify(data));
 	request.onload = function (e) {
-		// console.log(request.responseText);
+		console.log(request.responseText);
 		if (request.readyState === 4) {
 			if (request.status === 200) {
 				alert(format, "Pairings submitted successfully.", "success");
@@ -146,12 +123,3 @@ function sendData(format, data) {
 	};
 	request.send();
 }
-
-function getData(url) {
-	let request = new XMLHttpRequest();
-	request.open("GET", url, false);
-	request.send();
-	return request.responseText;
-}
-
-

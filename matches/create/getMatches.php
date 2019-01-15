@@ -3,13 +3,13 @@
 	ini_set("display_errors", 1);
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
     $output = "";
-    $output["sealed"] = getData("sealed", $conn);
+    $output["sealed"] = getData("limited", $conn);
     $output["constructed"] = getData("constructed", $conn);
     echo json_encode($output);
     $conn->close();
 
-    function getData($format, $conn) {
-        $table_name = "grn_" . $format;
+    function getData($format, $conn, $set) {
+        $table_name = $set . "_matches";
     	$sql = "SELECT username, opponents FROM $table_name";
     	$result = $conn->query($sql);
     

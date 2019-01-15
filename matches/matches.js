@@ -1,6 +1,6 @@
 let matches = {};
 let buttonClicked = null;
-const formats = ["sealed", "constructed"];
+const formats = ["limited", "constructed"];
 
 //load data asynchronously
 let loggedIn;
@@ -35,7 +35,7 @@ function logIn() {
 }
 
 function checkLoaded() {
-	if(loggedIn != undefined && matchData.hasOwnProperty("sealed") && matchData.hasOwnProperty("constructed") && staticForm != undefined) {
+	if(loggedIn != undefined && matchData.hasOwnProperty("limited") && matchData.hasOwnProperty("constructed") && staticForm != undefined) {
 		for(format of formats) {
 			loadMatches(format);
 		}
@@ -48,12 +48,16 @@ function loadMatches(format) {
 		display.innerHTML += "<p>You need to be logged in to view your matches</p>";
 		return;
 	}
-    let match = matchData[format][loggedIn];
-    if(match.rounds_completed != match.opponents.length) {
-		let opponent = match.opponents[match.opponents.length-1];
+    let match = matchData[format];
+    if(!(Object.keys(match).length === 0 && match.constructor === Object)) {
+		let opponent = match.player_one == loggedIn ? match.player_two : match.player_one;
+		let roundName = match.round;
+		if(!isNaN(roundName)) {
+			roundName = "Round " + roundName;
+		}
 		matches[format] = match;
 		let matchDisplay = document.createElement("p");
-		matchDisplay.innerHTML = loggedIn + " vs. " + opponent;
+		matchDisplay.innerHTML = roundName + ": " + loggedIn + " vs. " + opponent;
 		let modal = document.createElement("div");
 		modal.classList.add("modal");
 		modal.id = "submit_" + format;
@@ -116,15 +120,15 @@ function loadMatches(format) {
 	}
 }
 
-function updateMatch(format, round, opponent, opponentWins, youWins) {
-	let url = "updateMatch.php?format=" + format + "&round=" + round + "&opponentWins=" + opponentWins + "&youWins=" + youWins + "&opponent=" + opponent;
+function updateMatch(id, score) {
+	let url = "updateMatch.php?id=" + id + "&score=" + score;
     console.log(url);
 	let request = new XMLHttpRequest();
 	request.open("GET", url, true);
 	request.onload = function (e) {
 	  if (request.readyState === 4) {
 		if (request.status === 200) {
-			alert("Success!", "Match submitted successfully.", "success");
+			alert("Success!", "Match result submitted successfully.", "success");
 		} else {
 			console.log(request.responseText);
 			alert("Encountered an error", " Check the console for more information.", "error");
@@ -136,15 +140,14 @@ function updateMatch(format, round, opponent, opponentWins, youWins) {
 
 function submit(form) {
 	let inputs = form.firstElementChild.getElementsByTagName("input");
-    let opponent = inputs[1].id;
 	let userWins = inputs[2].value;
 	let opponentWins = inputs[3].value;
-	let format = form.classList[1];
-	let round = matches[format].rounds_completed + 1;
-	if(inputs[3].value != "none") {
-		round = inputs[3].value;
+	let score = userWins + "-" + opponentWins;
+	if(opponentWins > userWins) {
+		score = opponentWins + "-" + userWins;
 	}
-	updateMatch(format, round, opponent, opponentWins, userWins);
+	let id = matches[format].id;
+	updateMatch(id, score);
 }
 
 // dismiss form on background clicked
