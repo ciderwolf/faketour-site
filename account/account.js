@@ -13,7 +13,6 @@ getDataWait("avatar_names.json", function(response) {
 
 getDataWait("events.php", function(response) {
 	events = JSON.parse(response);
-	console.log(events);
 	loaded ++;
 	if(loaded == thingsToLoad) {
 		initialize();
@@ -112,7 +111,6 @@ function createEvent(event) {
 		registerButton.style["margin-top"] = "7px";
 		registerButton.onclick = function(e) {
 			getDataWait("events.php?reg=" + event.code, function(response) {
-				console.log(response);
 				if(response == "success") {
 					alert("Registered", "Successfully registered for event: " + event.name, "success");
 					registerButton.disabled = true;
@@ -133,17 +131,15 @@ function createEvent(event) {
 	return eventDisplay;
 }
 
-function putData(url) {
-	getDataWait(url, function(response){})
-}
-
 function changeAvatar() {
 	document.getElementById("change-avatar").style.display = "block";
 }
 
 function logout() {
-	putData("logout.php");
-	window.location.href = window.location.origin;
+	alert("Logging out", "", "info");
+	getDataWait("logout.php", function() {
+		window.location.href = window.location.origin;
+	});
 }
 
 function changePassword() {
@@ -167,6 +163,7 @@ function changePassword() {
 }
 
 function getNewAvatar() {
+	let avatarImg = document.getElementById("avatar-img");
 	let newIndex = avatars.cardnames.indexOf(avatarImg.name);
 	if(newIndex != accountData.avatar) {
 		return newIndex;
@@ -187,12 +184,19 @@ function uploadChanges() {
 	}
 
 	let newAvatar = getNewAvatar();
-	console.log(newAvatar);
 	if(newAvatar != undefined) {
 		queries.push("avatar=" + newAvatar);
 	}
 	if(queries.length != 0) {
-		putData("updateInformation.php?" + queries.join("&"));
+		getDataWait("updateInformation.php?" + queries.join("&"), function(response) {
+			if(response == "") {
+				alert("Success", "Account data updated", "success");
+			}
+			else {
+				console.log(response);
+				alert("Encountered an error", "Check the console for more information", "error");
+			}
+		});
 	}
 }
 
