@@ -1,4 +1,6 @@
 let loggedIn;
+const maindeckSize = 60;
+const sideboardSize = 15;
 let timer = document.getElementById("timer");
 let due = new Date("Sun Jan 20 2019 23:59:59");
 setInterval("getTimer();", 1000);
@@ -68,7 +70,35 @@ function uploadDeck(cardList) {
 
 function submit() {
 	let maindeck = document.getElementById("maindeck").value.split("\n");
+	let maindeckCount = 0;
+	for(line of maindeck) {
+		let elements = line.split(' ');
+		if(isNaN(elements[0])) {
+			maindeckCount ++;
+		}
+		else {
+			maindeckCount += Number(elements[0]);
+		}
+	}
+	if(maindeckCount <= maindeckSize) {
+		alert("Deck too small", "You maindeck has only " + maindeckCount + " cards.", "warning");
+		return;
+	}
 	let sideboard = document.getElementById("sideboard").value.split("\n");
+	let sideboardCount = 0;
+	for(line of maindeck) {
+		let sideboard = line.split(' ');
+		if(isNaN(elements[0])) {
+			sideboardCount ++;
+		}
+		else {
+			sideboardCount += Number(elements[0]);
+		}
+	}
+	if(sideboardCount >= sideboardSize) {
+		alert("Sideboard too large", "You sideboard has " + maindeckCount + " cards.", "warning");
+
+	}
 	let dueTime = due.getTime() - new Date().getTime();
 	let upload = {
 		"maindeck": maindeck,
