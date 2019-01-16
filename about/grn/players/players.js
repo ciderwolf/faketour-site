@@ -183,25 +183,25 @@ function createRow(name, decklist) {
         preview.classList.add("card-preview");
         preview.src = card.image_uri;
         cardLink.addEventListener('mouseover', function(e) {
-			preview.style.display = "inline";
-			preview.style.left = e.pageX;
-			let newY = e.pageY;
-			if(newY + preview.height > window.innerHeight) {
-				newY = window.innerHeight - preview.height;
-			}
-			preview.style.top = newY
-		});
-		cardLink.addEventListener('mouseleave', function(e) {
-			preview.style.display = "none";
-		});
-		cardLink.onmousemove = function(e) {
-			preview.style.left = e.pageX;
-			let newY = e.pageY;
-			if(newY + preview.height > window.innerHeight) {
-				newY = window.innerHeight - preview.height;
-			}
-			preview.style.top = newY
-		}
+            preview.style.display = "inline";
+            preview.style.left = e.pageX;
+            let newY = e.pageY;
+            if(newY + preview.height > window.innerHeight) {
+                newY = window.innerHeight - preview.height;
+            }
+            preview.style.top = newY
+        });
+        cardLink.addEventListener('mouseleave', function(e) {
+            preview.style.display = "none";
+        });
+        cardLink.onmousemove = function(e) {
+            preview.style.left = e.pageX;
+            let newY = e.pageY;
+            if(newY + preview.height > window.innerHeight) {
+                newY = window.innerHeight - preview.height;
+            }
+            preview.style.top = newY
+        }
         type.appendChild(cardLink);
         type.appendChild(preview);
         count += card.count;

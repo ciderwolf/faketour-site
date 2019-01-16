@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Standings</title>
-	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css"></head>
+    <title>Standings</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"></head>
     <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
@@ -13,40 +13,40 @@
 
     <div class="topnav"></div>
     <script type="text/javascript">loadMenu();</script>
-	<div style="display: flex;" class="title">
-		<h1>Standings</h1>
-		<h3 style="position:absolute; right: 0;">By game record, not official order</h3>
-	</div>
+    <div style="display: flex;" class="title">
+        <h1>Standings</h1>
+        <h3 style="position:absolute; right: 0;">By game record, not official order</h3>
+    </div>
 
-	<div id="standings">
-		<div class="tab">
-			<button id="initial" class="tablinks" onclick="showTab(event, 'limited-content')">Limited</button>
-			<button class="tablinks" onclick="showTab(event, 'constructed-content')">Constructed</button>
-			<button class="tablinks" onclick="showTab(event, 'total-content')">Total</button>
-		</div>		  
-		<div class="backdrop tabcontent" id="limited-content" align="center">
-			<table id="limited">
-				<tr>
-					<th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
-				</tr>
-			</table>
-		</div>
-		<div class="backdrop tabcontent" id="constructed-content" align="center">
-			<table id="constructed">
-				<tr>
-					<th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
-				</tr>
-			</table>
-		</div>
-		<div class="backdrop tabcontent" id="total-content" align="center">
-			<table id="total">
-				<tr>
-					<th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
-				</tr>
-			</table>
-		</div>
-	<div>
-	<div class="footer" onclick="window.location.href='https://twitter.com/JennRavenna'">Artwork by @JennRavenna</div>
+    <div id="standings">
+        <div class="tab">
+            <button id="initial" class="tablinks" onclick="showTab(event, 'limited-content')">Limited</button>
+            <button class="tablinks" onclick="showTab(event, 'constructed-content')">Constructed</button>
+            <button class="tablinks" onclick="showTab(event, 'total-content')">Total</button>
+        </div>		  
+        <div class="backdrop tabcontent" id="limited-content" align="center">
+            <table id="limited">
+                <tr>
+                    <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+                </tr>
+            </table>
+        </div>
+        <div class="backdrop tabcontent" id="constructed-content" align="center">
+            <table id="constructed">
+                <tr>
+                    <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+                </tr>
+            </table>
+        </div>
+        <div class="backdrop tabcontent" id="total-content" align="center">
+            <table id="total">
+                <tr>
+                    <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+                </tr>
+            </table>
+        </div>
+    <div>
+    <div class="footer" onclick="window.location.href='https://twitter.com/JennRavenna'">Artwork by @JennRavenna</div>
 </body>
 <script type="text/javascript" src="loadBrackets.js"></script>
 

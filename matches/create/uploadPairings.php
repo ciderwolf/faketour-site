@@ -1,7 +1,7 @@
 <?php
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
-	$format = $_REQUEST["format"];
+    $format = $_REQUEST["format"];
     $round = $_REQUEST["round"];
     $pairings = json_decode($_SERVER["HTTP_BODY"]);
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
@@ -12,9 +12,9 @@
         $player_two = $pairing["player_two"];
         $sql = "INSERT INTO $table_name (format, round, player_one, player_two) VALUES ('$format', '$round', '$player_one', '$player_two')";
         if ($conn->query($sql) === TRUE) {
-    	    echo $sql;
-    	} else {
-    		die("Error updating record: " . $conn->error);
+            echo $sql;
+        } else {
+            die("Error updating record: " . $conn->error);
         }
     }
 ?>	

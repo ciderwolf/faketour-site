@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/menu/styles.css">
-	<script type="text/javascript" src="/menu/loadMenu.js"></script>
+    <script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
 <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display:none;"></iframe>
 
@@ -15,17 +15,17 @@
 <script type="text/javascript">loadMenu("Log In");</script>
 <h2>Login Form</h2>
 <form onsubmit="login();" target="dummyframe">
-	<div class="imgcontainer">
-		<img src="login_avatar.png" alt="Avatar" class="avatar">
-	</div>
+    <div class="imgcontainer">
+        <img src="login_avatar.png" alt="Avatar" class="avatar">
+    </div>
     <p id="incorrect" style="text-align:center;color:red"></p>
-	<div class="container">
-		<label for="uname"><b>Username</b></label>
-		<input id="uname" type="text" placeholder="Enter Username" name="uname" required>
-		<label for="psw"><b>Password</b></label>
-		<input id="psw" type="password" placeholder="Enter Password" name="psw" required>
-		<button  type="submit">Login</button>
-	</div>
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b>Password</b></label>
+        <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+        <button  type="submit">Login</button>
+    </div>
 </form>
 <div class="footer">
   <p onclick='window.location.href = "https://twitter.com/DaarkenArt"'>Artwork by @DaarkenArt</p>
@@ -47,9 +47,9 @@
     
     function getData(yourUrl) {
         var Httpreq = new XMLHttpRequest();
-    	Httpreq.open("GET", yourUrl, false);
-    	Httpreq.send();
-    	return Httpreq.responseText;          
+        Httpreq.open("GET", yourUrl, false);
+        Httpreq.send();
+        return Httpreq.responseText;          
     }
 </script>
 

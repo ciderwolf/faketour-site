@@ -1,16 +1,16 @@
 .content:before {
-	overflow: auto;	
-	content: "";
-	position: fixed;
-	left: 0;
-	right: 0;
-	z-index: -1;
-	display: block;
-	background-image: url("bg_splash_dark.jpg");
-	background-size:cover;
-	width: 100%;
-	height: 100%;
-	filter: blur(5px);
+    overflow: auto;	
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url("bg_splash_dark.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
 }
 
 body {
@@ -39,14 +39,14 @@ p {
 }
 
 img {
-	margin: auto;
-	margin-top: -70px;
-	display: flex;
+    margin: auto;
+    margin-top: -70px;
+    display: flex;
 }
 
 button {
     font-family: 'Nunito', sans-serif;
-	margin: 25px;
+    margin: 25px;
     background-color: white;
     border-radius: 8px;
     border: 5px solid #1c090a;

@@ -1,125 +1,125 @@
 let options = {
-	"limited": [],
-	"constructed": []
+    "limited": [],
+    "constructed": []
 };
 let count = 0;
 let players = [];
 getDataWait("/php/loggedIn.php?page=create_pairings", function(response) {
-	let valid = JSON.parse(response);
-	if(!response) {
-		alert("You need to be logged in as an administrator to upload pairings.");
-		window.location.href = window.location.origin;
-	}
+    let valid = JSON.parse(response);
+    if(!response) {
+        alert("You need to be logged in as an administrator to upload pairings.");
+        window.location.href = window.location.origin;
+    }
 });
 getDataWait("/players/getPlayers.php", function(response) {
-	players = JSON.parse(response);
-	if(players.length % 2 == 1) {
-		players.push("Bye");	
-	}
+    players = JSON.parse(response);
+    if(players.length % 2 == 1) {
+        players.push("Bye");	
+    }
 });
 
 function addMatchElement(format) {
-	let container = document.getElementById(format);
-	let matchForm = document.createElement("div");
-	count ++;
-	let number = String(count);
-	let line = document.createElement("p");
-	line.classList.add("format");
-	line.appendChild(createSelector(format, number));
-	let text = document.createElement("p");
-	text.innerHTML = "&emsp;vs.&emsp;";
-	line.appendChild(text);
-	line.appendChild(createSelector(format, number));
-	let remove = document.createElement("button");
-	remove.classList.add("delete");
-	remove.addEventListener('click', function(e) {
-		options[format] = options[format].filter(option => option.name != number);
-		matchForm.removeChild(line);
-	});
-	remove.innerHTML = "Remove Pairing";
-	line.appendChild(remove);
-	matchForm.appendChild(line);
-	container.appendChild(matchForm);
+    let container = document.getElementById(format);
+    let matchForm = document.createElement("div");
+    count ++;
+    let number = String(count);
+    let line = document.createElement("p");
+    line.classList.add("format");
+    line.appendChild(createSelector(format, number));
+    let text = document.createElement("p");
+    text.innerHTML = "&emsp;vs.&emsp;";
+    line.appendChild(text);
+    line.appendChild(createSelector(format, number));
+    let remove = document.createElement("button");
+    remove.classList.add("delete");
+    remove.addEventListener('click', function(e) {
+        options[format] = options[format].filter(option => option.name != number);
+        matchForm.removeChild(line);
+    });
+    remove.innerHTML = "Remove Pairing";
+    line.appendChild(remove);
+    matchForm.appendChild(line);
+    container.appendChild(matchForm);
 }
 
 function createSelector(format, number) {
-	let select = document.createElement("select");
-	select.classList.add(format + "Selector");
-	let defaultOption = document.createElement("option");
-	defaultOption.innerHTML = "Select a player";
-	select.appendChild(defaultOption);
-	for(player of players) {
-		let option = document.createElement("option");
-		option.value = player;
-		option.innerHTML = player;
-		option.name = number;
-		select.appendChild(option);
-		options[format].push(option);
-	}
-	select.onchange = function() { updateSelectedPlayers(format) };
-	defaultOption.disabled = true;
-	updateSelectedPlayers(format);
-	return select;
+    let select = document.createElement("select");
+    select.classList.add(format + "Selector");
+    let defaultOption = document.createElement("option");
+    defaultOption.innerHTML = "Select a player";
+    select.appendChild(defaultOption);
+    for(player of players) {
+        let option = document.createElement("option");
+        option.value = player;
+        option.innerHTML = player;
+        option.name = number;
+        select.appendChild(option);
+        options[format].push(option);
+    }
+    select.onchange = function() { updateSelectedPlayers(format) };
+    defaultOption.disabled = true;
+    updateSelectedPlayers(format);
+    return select;
 }
 
 function updateSelectedPlayers(format) {
-	let selectedPlayers = getPlayersSelected(format);
-	for(option of options[format]) {
-		if(selectedPlayers.includes(option.value)) {
-			option.disabled = true;
-		}
-		else {
-			option.disabled = false;
-		}
-	}
+    let selectedPlayers = getPlayersSelected(format);
+    for(option of options[format]) {
+        if(selectedPlayers.includes(option.value)) {
+            option.disabled = true;
+        }
+        else {
+            option.disabled = false;
+        }
+    }
 }
 
 function getPlayersSelected(format) {
-	let selected = []
-	let selectors = document.getElementsByClassName(format + "Selector");
-	for(select in selectors) {
-		let index = players.indexOf(selectors[select].value);
-		if(index >= 0) {
-			selected.push(players[index]);
-		}
-	}
-	return selected;
+    let selected = []
+    let selectors = document.getElementsByClassName(format + "Selector");
+    for(select in selectors) {
+        let index = players.indexOf(selectors[select].value);
+        if(index >= 0) {
+            selected.push(players[index]);
+        }
+    }
+    return selected;
 }
 
 function uploadPairings() {
-	let roundName = document.getElementById("round-name").value;
-	for(format of Object.keys(options)) {
-		let upload = [];
-		let selectors = document.getElementsByClassName(format + "Selector");
-		for(i = 0; i < selectors.length; i+=2) {
-			let pOneName = selectors[i].value;
-			if(pOneName == "Bye") pOneName = "";
-			let pTwoName = selectors[i+1].value;
-			if(pTwoName == "Bye") pTwoName = "";
-			let data = {};
-			data.player_one = pOneName;
-			data.player_two = pTwoName;
-			upload.push(data);
-		}
-		sendData(format, roundName, upload);
-		console.log(upload);
-	}
+    let roundName = document.getElementById("round-name").value;
+    for(format of Object.keys(options)) {
+        let upload = [];
+        let selectors = document.getElementsByClassName(format + "Selector");
+        for(i = 0; i < selectors.length; i+=2) {
+            let pOneName = selectors[i].value;
+            if(pOneName == "Bye") pOneName = "";
+            let pTwoName = selectors[i+1].value;
+            if(pTwoName == "Bye") pTwoName = "";
+            let data = {};
+            data.player_one = pOneName;
+            data.player_two = pTwoName;
+            upload.push(data);
+        }
+        sendData(format, roundName, upload);
+        console.log(upload);
+    }
 }
 
 function sendData(format, roundName, data) {
-	let request = new XMLHttpRequest();
-	request.open("POST", "uploadPairings.php?format=" + format + "&round=" + roundName, true);
-	request.setRequestHeader("body", JSON.stringify(data));
-	request.onload = function (e) {
-		console.log(request.responseText);
-		if (request.readyState === 4) {
-			if (request.status === 200) {
-				alert(format, "Pairings submitted successfully.", "success");
-			} else {
-				console.log(request.responseText);
-				alert("Encountered an error", "Check the console for more information.", "error");
-			}
-		}
-	};
-	request.send();
+    let request = new XMLHttpRequest();
+    request.open("POST", "uploadPairings.php?format=" + format + "&round=" + roundName, true);
+    request.setRequestHeader("body", JSON.stringify(data));
+    request.onload = function (e) {
+        console.log(request.responseText);
+        if (request.readyState === 4) {
+            if (request.status === 200) {
+                alert(format, "Pairings submitted successfully.", "success");
+            } else {
+                console.log(request.responseText);
+                alert("Encountered an error", "Check the console for more information.", "error");
+            }
+        }
+    };
+    request.send();
 }

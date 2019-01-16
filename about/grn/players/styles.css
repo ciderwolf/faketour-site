@@ -1,30 +1,30 @@
 body {
-	font-family: 'Nunito', sans-serif;
-	background-color: #241429;
-	color: black;
+    font-family: 'Nunito', sans-serif;
+    background-color: #241429;
+    color: black;
 }
 
 .content:before {
-	overflow: auto;	
-	content: "";
-	position: fixed;
-	left: 0;
-	right: 0;
-	z-index: -1;
-	display: block;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("niv-mizzet.jpg");
-	background-size:cover;
-	width: 100%;
-	height: 100%;
-	filter: blur(5px);
+    overflow: auto;	
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("niv-mizzet.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
 }
 
 .backdrop {
-	background-color:#f4eee7;
-	padding: 50px;
-	width: 70%;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+    background-color:#f4eee7;
+    padding: 50px;
+    width: 70%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     margin: 0 auto;
     overflow: auto;
     color: black;
@@ -32,7 +32,7 @@ body {
 }
 
 .deck {
-	display: flex;
+    display: flex;
 }
 
 a {
@@ -42,18 +42,18 @@ a {
 
 .tab {
     overflow: scroll;
-	background-color: #49274a;
-	width: 70%;
+    background-color: #49274a;
+    width: 70%;
     margin: 0 auto;
     margin-top: 50px;
-	align-items: center;
-	color: white;
-	/* border: 1px solid #373A43;
-	border-bottom: none; */
+    align-items: center;
+    color: white;
+    /* border: 1px solid #373A43;
+    border-bottom: none; */
 }
 
 .tab button {
-	align-self: center;
+    align-self: center;
     background-color: inherit;
     float: left;
     border: none;
@@ -61,28 +61,28 @@ a {
     cursor: pointer;
     padding: 14px 14.5px;
     transition: 0.3s;
-	font-size: 17px;
-	font-family: inherit;
-	color: inherit;
+    font-size: 17px;
+    font-family: inherit;
+    color: inherit;
 }
 
 .tab button:hover {
-	background-color: #c5bccc;
+    background-color: #c5bccc;
     color:black;
 }
 
 .tab button.active {
-	background-color: #e6d2e6;
-	opacity: 0.8;
-	color: black;
+    background-color: #e6d2e6;
+    opacity: 0.8;
+    color: black;
 }
 
 .tabcontent {
     display: none;
     padding: 0px;
     border: 1px solid #373A43;
-	border-top: none;
-	max-height: 80%;
+    border-top: none;
+    max-height: 80%;
 }
 
 .type {
@@ -94,40 +94,40 @@ a {
 }
 
 .card-preview {
-	display: none;
-	background-size: 224px auto;
-	width: 224px;
-	height: 310px; 
-	position: absolute;
-	z-index: 2;
-	border: 3px solid white;
-	border-radius: 5px;
-	pointer-events: none;
+    display: none;
+    background-size: 224px auto;
+    width: 224px;
+    height: 310px; 
+    position: absolute;
+    z-index: 2;
+    border: 3px solid white;
+    border-radius: 5px;
+    pointer-events: none;
 }
 
 .footer {
-	position: fixed;
-	margin-left: 1%;
-	margin-bottom: 5%;
-	top: 90vh;
-	opacity: .6;
-	cursor: pointer;
-	color: white;
-	font-family: 'Nunito', sans-serif;
+    position: fixed;
+    margin-left: 1%;
+    margin-bottom: 5%;
+    top: 90vh;
+    opacity: .6;
+    cursor: pointer;
+    color: white;
+    font-family: 'Nunito', sans-serif;
 }
 
 table {
-	border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 td {
-	margin: 50px;
-	padding-right: 10px;
+    margin: 50px;
+    padding-right: 10px;
 }
 
 h3 {
-	padding-top: 0.75em;
-	padding-right: 25px;
+    padding-top: 0.75em;
+    padding-right: 25px;
 }
 
 h2 {
@@ -139,50 +139,50 @@ h2 {
 }
 
 .format {
-	margin-left: 70px;
+    margin-left: 70px;
 }
 
 .round {
-	display: flex;
+    display: flex;
 }
 
 .match {
-	border: 2px solid black;
-	border-radius: 5px;
-	margin: 10px;
-	color: white;
-	min-width: 100px;
-	padding-left: 5px;
-	background-color: #f4decb;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+    min-width: 100px;
+    padding-left: 5px;
+    background-color: #f4decb;
 }
 
 .split {
-	border-bottom: 1px solid rgba(0,0,0,.5);
-	min-width: 70px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    min-width: 70px;
 }
 
 .player {
-	margin: 5px;
+    margin: 5px;
 }
 
 .winner {
-	color: #94618e;
-	font-weight: bold;
+    color: #94618e;
+    font-weight: bold;
 }
 
 .score {
-	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background: #f5e8d9;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #f5e8d9;
 }
 
 .top {
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .bottom {
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }

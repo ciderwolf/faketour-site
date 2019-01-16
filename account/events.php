@@ -1,7 +1,7 @@
 <?php
-	error_reporting(E_ALL);
-	ini_set("display_errors", 1);
-	session_start();
+    error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+    session_start();
     if(isset($_REQUEST["reg"])) {
         registerForEvent($_REQUEST["reg"]);
     }
@@ -13,8 +13,8 @@
         if($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 $row["open"] = $row["open"] == "1";
-    			$output[] = $row;
-    		}
+                $output[] = $row;
+            }
         }
         echo json_encode($output);
     }
