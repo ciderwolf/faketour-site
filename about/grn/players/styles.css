@@ -1,6 +1,6 @@
 body {
 	font-family: 'Nunito', sans-serif;
-	background-color: #94618e;
+	background-color: #241429;
 	color: black;
 }
 
@@ -12,7 +12,7 @@ body {
 	right: 0;
 	z-index: -1;
 	display: block;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("simic-land.jpg");
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("niv-mizzet.jpg");
 	background-size:cover;
 	width: 100%;
 	height: 100%;
@@ -107,7 +107,7 @@ a {
 
 .footer {
 	position: fixed;
-	margin-left: 2%;
+	margin-left: 1%;
 	margin-bottom: 5%;
 	top: 90vh;
 	opacity: .6;

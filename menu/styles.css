@@ -65,6 +65,7 @@ body {
 	margin-left: 25%;
     margin-bottom: 15px;
 	bottom: 0vh;
+	z-index: 2;
 }
 
 @keyframes fadein {
