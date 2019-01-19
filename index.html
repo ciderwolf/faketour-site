@@ -1,14 +1,14 @@
-</!DOCTYPE html>
 <html>
 <head>
     <title>Faketour RNA</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
-
 <div class="content"></div>
+<div class="topnav" style="font-family: Nunito"></div>
+<script type="text/javascript">loadMenu("Home");</script>
 <h1>FakeTour</h1>
 <img src="/about/rna/rna-logo.png"/>
 <div align="center" id="buttons">
@@ -19,20 +19,33 @@
 <div class="footer" onclick="window.location.href='https://twitter.com/DaarkenArt'">Artwork by @DaarkenArt</div>
 
 <script type="text/javascript">
-    getDataWait("/php/loggedIn.php?page=menu", function(response) {
-        if(response == "null") {
+    function loadButtons() {
+        getDataWait("/php/loggedIn.php?page=menu", function(response) {
             let button1 = document.getElementById("button1");
-            button1.innerHTML = "Create Account";
-            button1.onclick = function(e) {
-                window.location.href = "account/create/?";
+            let button2 = document.getElementById("button2");
+            if(response == "null") {
+                button1.innerHTML = "Create Account";
+                button1.onclick = function(e) {
+                    window.location.href = "account/create/?";
+                }
+                button2.innerHTML = "Login";
+                button2.onclick = function(e) {
+                    window.location.href = "account/login/?";
+                }
             }
-            button2.innerHTML = "Login";
-            button2.onclick = function(e) {
-                window.location.href = "account/login/?";
+            else {
+                button1.innerHTML = "Register";
+                button1.onclick = function(e) {
+                    window.location.href = "account";
+                }
+                button2.innerHTML = "About";
+                button2.onclick = function(e) {
+                    window.location.href = "about/rna";
+                }
             }
-        }
-    });
-
-    
+        });
+    }
+    loadButtons();
+    setInterval(loadButtons, 5000);
 </script>
 </html>
