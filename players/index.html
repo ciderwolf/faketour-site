@@ -36,12 +36,12 @@
             }
         } else {
             console.error(xhr.statusText);
-            alert("Encountered an error", "Check the console for more information", "error");
+            showAlert("Encountered an error", "Check the console for more information", "error");
         }
       }
     };
     xhr.onerror = function (e) {
-        alert("Encountered an error", "Check the console for more information", "error");
+        showAlert("Encountered an error", "Check the console for more information", "error");
         console.error(xhr.statusText);
     };
     xhr.send(null);

@@ -128,10 +128,10 @@ function updateMatch(id, score) {
     request.onload = function (e) {
       if (request.readyState === 4) {
         if (request.status === 200) {
-            alert("Success!", "Match result submitted successfully.", "success");
+            showAlert("Success!", "Match result submitted successfully.", "success");
         } else {
             console.log(request.responseText);
-            alert("Encountered an error", " Check the console for more information.", "error");
+            showAlert("Encountered an error", " Check the console for more information.", "error");
         }
       }
     };

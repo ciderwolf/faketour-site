@@ -59,10 +59,10 @@ function uploadDeck(cardList) {
     request.onload = function (e) {
       if (request.readyState === 4) {
         if (request.status === 200) {
-            alert("Deck submitted successfully", "", "success");
+            showAlert("Deck submitted successfully", "", "success");
         } else {
             console.log(request.responseText);
-            alert("Encountered an error",  "Check the console for more information.", "error");
+            showAlert("Encountered an error",  "Check the console for more information.", "error");
         }
       }
     };
@@ -81,7 +81,7 @@ function submit() {
         }
     }
     if(maindeckCount <= maindeckSize) {
-        alert("Deck too small", "You maindeck has only " + maindeckCount + " cards.", "warning");
+        showAlert("Deck too small", "You maindeck has only " + maindeckCount + " cards.", "warning");
         return;
     }
     let sideboard = document.getElementById("sideboard").value.split("\n");
@@ -96,7 +96,7 @@ function submit() {
         }
     }
     if(sideboardCount >= sideboardSize) {
-        alert("Sideboard too large", "You sideboard has " + maindeckCount + " cards.", "warning");
+        showAlert("Sideboard too large", "You sideboard has " + maindeckCount + " cards.", "warning");
 
     }
     let dueTime = due.getTime() - new Date().getTime();
@@ -105,10 +105,10 @@ function submit() {
         "sideboard": sideboard
     };
     if(loggedIn === false) {
-        alert("Error", "You need to be logged in to submit your deck.", "error");
+        showAlert("Error", "You need to be logged in to submit your deck.", "error");
     }
     else if (dueTime < 0) {
-        alert("Deck submission is no longer available.", "", "warning");
+        showAlert("Deck submission is no longer available.", "", "warning");
     }
     else {
         uploadDeck(upload);

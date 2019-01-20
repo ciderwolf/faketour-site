@@ -112,14 +112,14 @@ function createEvent(event) {
         registerButton.onclick = function(e) {
             getDataWait("events.php?reg=" + event.code, function(response) {
                 if(response == "success") {
-                    alert("Registered", "Successfully registered for event: " + event.name, "success");
+                    showAlert("Registered", "Successfully registered for event: " + event.name, "success");
                     registerButton.disabled = true;
                 }
                 else if(response == "duplicate") {
-                    alert("Error", "Already registered for event: " + event.name, "warning");
+                    showAlert("Error", "Already registered for event: " + event.name, "warning");
                 }
                 else {
-                    alert("Error", "Failed to register for event: " + event.name, "error");
+                    showAlert("Error", "Failed to register for event: " + event.name, "error");
                 }
             });
         }
@@ -136,7 +136,7 @@ function changeAvatar() {
 }
 
 function logout() {
-    alert("Logging out", "", "info");
+    showAlert("Logging out", "", "info");
     getDataWait("logout.php", function() {
         window.location.href = window.location.origin;
     });
@@ -151,11 +151,11 @@ function changePassword() {
         passwords[blankIndex].classList.add("required");
         return null;
     } else if(passwords[0].value != passwords[1].value) {
-        alert("Invalid", "Passwords need to match", "warning");
+        showAlert("Invalid", "Passwords need to match", "warning");
         return null;
     }
     else if(passwords[0].value.length > 30) {
-        alert("Invalid", "Password maximum length exceeded", "warning");
+        showAlert("Invalid", "Password maximum length exceeded", "warning");
         return null;
     } else {
         return passwords[1].value;
@@ -190,11 +190,11 @@ function uploadChanges() {
     if(queries.length != 0) {
         getDataWait("updateInformation.php?" + queries.join("&"), function(response) {
             if(response == "") {
-                alert("Success", "Account data updated", "success");
+                showAlert("Success", "Account data updated", "success");
             }
             else {
                 console.log(response);
-                alert("Encountered an error", "Check the console for more information", "error");
+                showAlert("Encountered an error", "Check the console for more information", "error");
             }
         });
     }

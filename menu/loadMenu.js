@@ -69,7 +69,7 @@ function getData(url) {
     return request.responseText;
 }
 
-function alert(title, text, kind) {
+function showAlert(title, text, kind) {
     let alertBody = document.getElementById("alerts");
     if(alertBody == undefined) {
         alertBody = document.createElement("div");

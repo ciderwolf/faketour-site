@@ -4,14 +4,14 @@ let options = {
 };
 let count = 0;
 let players = [];
-getDataWait("/php/loggedIn.php?page=create_pairings", function(response) {
+getDataAsync("/php/loggedIn.php?page=create_pairings", function(response) {
     let valid = JSON.parse(response);
-    if(!response) {
+    if(!valid) {
         alert("You need to be logged in as an administrator to upload pairings.");
         window.location.href = window.location.origin;
     }
 });
-getDataWait("/players/getPlayers.php", function(response) {
+getDataAsync("/players/getPlayers.php", function(response) {
     players = JSON.parse(response);
     if(players.length % 2 == 1) {
         players.push("Bye");	
@@ -114,10 +114,10 @@ function sendData(format, roundName, data) {
         console.log(request.responseText);
         if (request.readyState === 4) {
             if (request.status === 200) {
-                alert(format, "Pairings submitted successfully.", "success");
+                showAlert(format, "Pairings submitted successfully.", "success");
             } else {
                 console.log(request.responseText);
-                alert("Encountered an error", "Check the console for more information.", "error");
+                showAlert("Encountered an error", "Check the console for more information.", "error");
             }
         }
     };
