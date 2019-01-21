@@ -51,7 +51,7 @@ function validateDeck(maindeck, sideboard) {
         return false;
     }
     for(card in deck) {
-        if(!standardLegal.includes(card)) {
+        if(!isStandardLegal(card)) {
             showAlert("Illegal card", "'" + card + "' isn't standard legal", "warning");
             return false;
         }
@@ -61,5 +61,17 @@ function validateDeck(maindeck, sideboard) {
         }
     }
     return true;
+}
+
+function isStandardLegal(card) {
+    if(card.trim() == "") {
+        return true;
+    }
+    for(cardName of standardLegal) {
+        if(cardName.toLowerCase() == card.toLowerCase()) {
+            return true;
+        }
+    }
+    return false;
 }
 
