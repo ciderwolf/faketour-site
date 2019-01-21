@@ -4,14 +4,16 @@ let options = {
 };
 let count = 0;
 let players = [];
-getDataAsync("/php/loggedIn.php?page=create_pairings", function(response) {
+getDataWait("/php/loggedIn.php?page=create_pairings", function(response) {
     let valid = JSON.parse(response);
     if(!valid) {
         alert("You need to be logged in as an administrator to upload pairings.");
         window.location.href = window.location.origin;
+    } else {
+        document.body.style.display = "block";
     }
 });
-getDataAsync("/players/getPlayers.php", function(response) {
+getDataWait("/players/getPlayers.php", function(response) {
     players = JSON.parse(response);
     if(players.length % 2 == 1) {
         players.push("Bye");	

@@ -104,7 +104,17 @@
 
     function loggedInCreatePairings($loggedIn) {
         if($loggedIn) {
-            return json_encode($_SESSION["username"] == "certi42" || $_SESSION["username"] == "Manlin Never Lucky");
+            $username = $_SESSION["username"];
+            $sql = "SELECT admin FROM users WHERE username='$username' LIMIT 1";
+            require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
+            $result = $conn->query($sql);
+            $output = "";
+            if($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    $output = json_encode($row["admin"] == "1");
+                }
+            }
+            return $output;
         }
         else {
             return json_encode($loggedIn);

@@ -15,6 +15,18 @@ for(format of formats) {
     loadMatchData(format);
 }
 
+getDataWait("/php/loggedIn.php?page=create_pairings", function(response) {
+    let admin = JSON.parse(response);
+    if(admin) {
+        let createButton = document.createElement("button");
+        createButton.innerHTML = "Create Pairings";
+        createButton.onclick = function(e) {
+            window.location.href = 'create';
+        };
+        document.getElementById("buttons").appendChild(createButton);
+    }
+});
+
 function loadMatchData(format) {
     getDataWait("getMatches.php?format=" + format, function(response) {
         matchData[format] = JSON.parse(response);
@@ -31,7 +43,6 @@ function logIn() {
         }
         checkLoaded();
     });
-    
 }
 
 function checkLoaded() {
