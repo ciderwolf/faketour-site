@@ -99,13 +99,20 @@ function showAlert(title, text, kind) {
     for (closeButton of close) {
         closeButton.onclick = function(){
             let div = this.parentElement;
-            div.style.opacity = "0";
-            setTimeout(function(){ 
-                div.style.display = "none"; 
-                div.remove();
-            }, 600);
-            
+            removeAlert(div);
         }
-        // console.log(closeButton.onclick)
     }
+    if(kind === "warning") {
+        setTimeout(function() {
+            removeAlert(alertElement);
+        }, 5000);
+    }
+}
+
+function removeAlert(alert) {
+    alert.style.opacity = "0";
+    setTimeout(function() { 
+        alert.style.display = "none"; 
+        alert.remove();
+    }, 600);
 }
