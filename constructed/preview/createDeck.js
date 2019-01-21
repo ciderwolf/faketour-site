@@ -1,8 +1,6 @@
 let deckData;
 let decklist = {};
 let standardLegal;
-logIn();
-let event;
 
 getDataWait("cards.json", function(response) {
     standardLegal = JSON.parse(response);
@@ -11,31 +9,35 @@ getDataWait("cards.json", function(response) {
     }
 });
 
-function logIn() {
-    getDataWait("/php/loggedIn.php?page=submit_constructed", function(response) {
-        let hasDeck = false;
-        if(response != "true" && response != "false") {
-            response = response.substring(1,response.length-1);
-            hasDeck = true;
-        }
-        let responseJSON = JSON.parse(response);
-        if(hasDeck) {
-            deckData = responseJSON;
-        } else {
-            let text = "Submit you deck to see it here";
-            if(responseJSON == false) {
-                text = "You need to be logged in to see your deck";
-            }
-            let message = document.createElement("h2");
-            message.innerHTML = text;
-            document.getElementById("bg").appendChild(message);
-        }
-
-        if(standardLegal != undefined) {
-            createDecklist();
-        }
-    });
+let url = "/php/loggedIn.php?page=submit_constructed";
+let player = new URL(window.location.href).searchParams.get("user");
+if(player != null) {
+    url = "getDeck.php?user=" + decodeURI(player);
 }
+
+getDataWait(url, function(response) {
+    let hasDeck = false;
+    if(response != "true" && response != "false") {
+        response = response.substring(1,response.length-1);
+        hasDeck = true;
+    }
+    let responseJSON = JSON.parse(response);
+    if(hasDeck) {
+        deckData = responseJSON;
+    } else {
+        let text = "Submit your deck to see it here";
+        if(responseJSON == false) {
+            text = "You need to be logged in to see your deck";
+        }
+        let message = document.createElement("h2");
+        message.innerHTML = text;
+        document.getElementById("bg").appendChild(message);
+    }
+
+    if(standardLegal != undefined) {
+        createDecklist();
+    }
+});
 
 function getLineInfo(line) {
     let elements = line.split(' ');
@@ -55,26 +57,31 @@ function createDecklist() {
         let data = getLineInfo(line);
         let name = data[0];
         let count = data[1];
-        let type = standardLegal[name].type;
+        let cardObject = getCard(name);
+        let type = cardObject.type;
         if(!decklist.hasOwnProperty(type)) {
             decklist[type] = [];
         }
         decklist[type].push({
             "count": count,
             "name": name,
-            "image_uri": standardLegal[name].image_uri
+            "image_uri": cardObject.image_uri
         });
     }
 
     decklist.Sideboard = [];
     for(line of deckData.sideboard) {
+        if(line == "") {
+            continue;
+        }
         let data = getLineInfo(line);
         let name = data[0];
         let count = data[1];
+        let cardObject = getCard(name);
         decklist.Sideboard.push({
             "name": name,
             "count": count,
-            "image_uri": standardLegal[name].image_uri
+            "image_uri": cardObject.image_uri
         });
     }
 
@@ -150,8 +157,6 @@ function createRow(name, decklist) {
             preview.style.display = "inline";
             preview.style.left = e.pageX;
             preview.style.top = normalizePreviewY(e, preview);
-            event = e;
-            console.log(e);
         });
         cardLine.addEventListener('mouseleave', function(e) {
             preview.style.display = "none";
@@ -174,4 +179,13 @@ function normalizePreviewY(e, preview) {
         newY = window.innerHeight + window.scrollY - preview.height;
     }
     return newY;
+}
+
+function getCard(name) {
+    for(card in standardLegal) {
+        if(card.toLowerCase() == name.toLowerCase()) {
+            return standardLegal[card];
+        }
+    }
+    return undefined;
 }
