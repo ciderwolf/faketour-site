@@ -1,0 +1,58 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #6e7b85;
+}
+
+.content:before {
+    overflow: auto;	
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url("azorius-mage.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+}
+
+
+#bg {
+    background: white;
+    width: 75%;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.card-preview {
+    display: none;
+    background-size: 224px auto;
+    width: 224px;
+    height: 310px; 
+    position: absolute;
+    z-index: 2;
+    border: 3px solid white;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.deck {
+    display: flex;
+}
+
+.row {
+    min-width: 33%;
+}
+
+.card-line {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.type {
+    padding: 20px;
+}

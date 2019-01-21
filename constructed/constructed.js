@@ -1,6 +1,4 @@
 let loggedIn;
-const maindeckSize = 60;
-const sideboardSize = 15;
 let timer = document.getElementById("timer");
 let due = new Date("Sun Jan 20 2019 23:59:59");
 setInterval("getTimer();", 1000);
@@ -59,7 +57,7 @@ function uploadDeck(cardList) {
     request.onload = function (e) {
       if (request.readyState === 4) {
         if (request.status === 200) {
-            showAlert("Deck submitted successfully", "", "success");
+            showAlert("Deck submitted successfully", "Click <a href='preview'>here</a> to see a preview", "success");
         } else {
             console.log(request.responseText);
             showAlert("Encountered an error",  "Check the console for more information.", "error");
@@ -70,34 +68,20 @@ function uploadDeck(cardList) {
 
 function submit() {
     let maindeck = document.getElementById("maindeck").value.split("\n");
-    let maindeckCount = 0;
-    for(line of maindeck) {
-        let elements = line.split(' ');
-        if(isNaN(elements[0])) {
-            maindeckCount ++;
-        }
-        else {
-            maindeckCount += Number(elements[0]);
-        }
-    }
-    if(maindeckCount <= maindeckSize) {
-        showAlert("Deck too small", "You maindeck has only " + maindeckCount + " cards.", "warning");
-        return;
-    }
     let sideboard = document.getElementById("sideboard").value.split("\n");
-    let sideboardCount = 0;
-    for(line of maindeck) {
-        let sideboard = line.split(' ');
-        if(isNaN(elements[0])) {
-            sideboardCount ++;
-        }
-        else {
-            sideboardCount += Number(elements[0]);
-        }
+    let valid = false;
+    if(standardLegal == undefined) {
+        showAlert("Validating deck", "", "info");
+        getDataWait("cards.json", function(response) {
+            standardLegal = JSON.parse(response);
+            submit();
+        });
+        return;
+    } else {
+        valid = validateDeck(maindeck, sideboard);
     }
-    if(sideboardCount >= sideboardSize) {
-        showAlert("Sideboard too large", "You sideboard has " + maindeckCount + " cards.", "warning");
-
+    if(!valid) {
+        return;
     }
     let dueTime = due.getTime() - new Date().getTime();
     let upload = {
