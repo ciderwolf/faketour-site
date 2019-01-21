@@ -59,7 +59,7 @@ function loadMatches(format) {
         display.innerHTML += "<p>You need to be logged in to view your matches</p>";
         return;
     }
-    let match = matchData[format];
+    let match = matchData[format][0];
     if(!(Object.keys(match).length === 0 && match.constructor === Object)) {
         let opponent = match.player_one == loggedIn ? match.player_two : match.player_one;
         let roundName = match.round;
