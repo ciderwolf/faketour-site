@@ -170,8 +170,8 @@ function createRow(name, decklist) {
 
 function normalizePreviewY(e, preview) {
     let newY = e.pageY;
-    if(newY + preview.height > window.innerHeight) {
-        newY = window.innerHeight - preview.height;
+    if(newY + preview.height > window.innerHeight + window.scrollY) {
+        newY = window.innerHeight + window.scrollY - preview.height;
     }
     return newY;
 }
