@@ -1,0 +1,158 @@
+{
+  "Sideboard": [
+    {
+      "count": 1, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/bfz/43.jpg?1517813031", 
+      "name": "Quarantine Field"
+    }, 
+    {
+      "count": 1, 
+      "image_uri": "https://img.scryfall.com/cards/normal/front/5/4/54dd4948-dc79-4fe5-b4a0-fb257058f9dd.jpg?1543698446", 
+      "name": "Skywhaler's Shot"
+    }, 
+    {
+      "count": 2, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/233.jpg?1517813031", 
+      "name": "Tireless Tracker"
+    }, 
+    {
+      "count": 1, 
+      "image_uri": "https://img.scryfall.com/cards/normal/front/5/b/5bf09deb-2607-4eb0-94a7-9584e771fdfb.jpg?1543698333", 
+      "name": "Fragmentize"
+    }, 
+    {
+      "count": 1, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/215a.jpg?1518205411", 
+      "name": "Lambholt Pacifist // Lambholt Butcher"
+    }, 
+    {
+      "count": 1, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/5a.jpg?1518204266", 
+      "name": "Archangel Avacyn // Avacyn, the Purifier"
+    }, 
+    {
+      "count": 1, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/250.jpg?1517813031", 
+      "name": "Sigarda, Heron's Grace"
+    }, 
+    {
+      "count": 2, 
+      "image_uri": "https://img.scryfall.com/cards/normal/front/5/c/5c026c39-b09c-408a-844f-fb5eb785862a.jpg?1543699422", 
+      "name": "Blossoming Defense"
+    }, 
+    {
+      "count": 3, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/224.jpg?1517813031", 
+      "name": "Root Out"
+    }, 
+    {
+      "count": 2, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/200.jpg?1517813031", 
+      "name": "Stitcher's Graft"
+    }
+  ], 
+  "Land": [
+    {
+      "count": 4, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/bfz/234.jpg?1517813031", 
+      "name": "Canopy Vista"
+    }, 
+    {
+      "count": 4, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/274.jpg?1517813031", 
+      "name": "Fortified Village"
+    }, 
+    {
+      "count": 1, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/281a.jpg?1518206333", 
+      "name": "Westvale Abbey // Ormendahl, Profane Prince"
+    }, 
+    {
+      "count": 6, 
+      "image_uri": "https://img.scryfall.com/cards/normal/front/5/8/58fe058d-7796-4233-8d74-2a12f9bd0023.jpg?1543675077", 
+      "name": "Forest"
+    }, 
+    {
+      "count": 9, 
+      "image_uri": "https://img.scryfall.com/cards/normal/front/f/e/feada93b-aabf-45d6-ac46-98b33caf9112.jpg?1543675002", 
+      "name": "Plains"
+    }
+  ], 
+  "Instant": [
+    {
+      "count": 1, 
+      "image_uri": "https://img.scryfall.com/cards/normal/front/5/4/54dd4948-dc79-4fe5-b4a0-fb257058f9dd.jpg?1543698446", 
+      "name": "Skywhaler's Shot"
+    }, 
+    {
+      "count": 2, 
+      "image_uri": "https://img.scryfall.com/cards/normal/front/5/c/5c026c39-b09c-408a-844f-fb5eb785862a.jpg?1543699422", 
+      "name": "Blossoming Defense"
+    }
+  ], 
+  "Enchantment": [
+    {
+      "count": 4, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/ogw/140.jpg?1517813031", 
+      "name": "Oath of Nissa"
+    }, 
+    {
+      "count": 2, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/bfz/50.jpg?1517813031", 
+      "name": "Stasis Snare"
+    }
+  ], 
+  "Sorcery": [
+    {
+      "count": 2, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/12.jpg?1517813031", 
+      "name": "Declaration in Stone"
+    }
+  ], 
+  "Artifact": [
+    {
+      "count": 4, 
+      "image_uri": "https://img.scryfall.com/cards/normal/front/0/1/0130b99e-5b2f-4482-b141-752e59b72c31.jpg?1543699643", 
+      "name": "Verdurous Gearhulk"
+    }
+  ], 
+  "Planeswalker": [
+    {
+      "count": 4, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/bfz/29.jpg?1517813031", 
+      "name": "Gideon, Ally of Zendikar"
+    }, 
+    {
+      "count": 3, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/ddr/1.jpg?1517813031", 
+      "name": "Nissa, Voice of Zendikar"
+    }
+  ], 
+  "Creature": [
+    {
+      "count": 4, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/ddu/23.jpg?1523060800", 
+      "name": "Sylvan Advocate"
+    }, 
+    {
+      "count": 1, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/46.jpg?1517813031", 
+      "name": "Thalia, Heretic Cathar"
+    }, 
+    {
+      "count": 4, 
+      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/40.jpg?1517813031", 
+      "name": "Selfless Spirit"
+    }, 
+    {
+      "count": 4, 
+      "image_uri": "https://img.scryfall.com/cards/normal/front/b/9/b94b1649-2ce7-40f3-8dff-87bf60d274df.jpg?1543674546", 
+      "name": "Aerial Responder"
+    }, 
+    {
+      "count": 1, 
+      "image_uri": "https://img.scryfall.com/cards/normal/front/f/3/f3920f7d-8559-40f8-95be-860c16bf7700.jpg?1543698255", 
+      "name": "Angel of Invention"
+    }
+  ]
+}
