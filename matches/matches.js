@@ -60,7 +60,7 @@ function loadMatches(format) {
         return;
     }
     let match = matchData[format][0];
-    if(!(Object.keys(match).length === 0 && match.constructor === Object)) {
+    if(match != undefined && !(Object.keys(match).length === 0 && match.constructor === Object)) {
         let opponent = match.player_one == loggedIn ? match.player_two : match.player_one;
         let roundName = match.round;
         if(!isNaN(roundName)) {
@@ -153,12 +153,13 @@ function submit(form) {
     let inputs = form.firstElementChild.getElementsByTagName("input");
     let userWins = inputs[2].value;
     let opponentWins = inputs[3].value;
+    let format = form.classList[1];
+    let match = matches[format];
     let score = userWins + "-" + opponentWins;
-    if(opponentWins > userWins) {
+    if(loggedIn == match.player_two) {
         score = opponentWins + "-" + userWins;
     }
-    let id = matches[format].id;
-    updateMatch(id, score);
+    updateMatch(match.id, score);
 }
 
 // dismiss form on background clicked
