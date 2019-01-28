@@ -19,7 +19,12 @@
             if(!isset($output[$pTwo])) {
                 $output[$pTwo] = array("constructed" => emptyResultObj(), "limited" => emptyResultObj());
             }
-            $scores = explode("-", $row["score"]);
+            $scores = "";
+            if($row["score"] == "") {
+                $scores = array(0,0);
+            } else {
+                $scores = explode("-", $row["score"]);
+            }
 
             if((int)$scores[0] > (int)$scores[1]) {
                 $output[$pOne][$format]["matches"]["wins"] += 1;

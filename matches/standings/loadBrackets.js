@@ -19,6 +19,7 @@ function createStandings(data) {
     
     let light = false;
     let limitedTable = document.getElementById("limited");
+    console.log(createFormatOrder(players, "limited"));
     for(playerName of createFormatOrder(players, "limited")) {
         if(light) {
             limitedRows[playerName].classList.add("light");
@@ -72,9 +73,12 @@ function createFormatOrder(players, format) {
     let playerCount = playerNames.length;
     while(playerOrder.length < playerCount) {
         let greatestRecord = 0;
-        let winner = "";
+        let winner = playerNames[0];
         for(player of playerNames) {
             let playerRecord = players[player][format].games.wins/players[player][format].games.losses;
+            if(players[player][format].games.losses == 0) {
+                playerRecord = Infinity;
+            }
             if(playerRecord > greatestRecord) {
                 greatestRecord = playerRecord;
                 winner = player;
@@ -92,9 +96,12 @@ function createTotalOrder(players) {
     let playerCount = playerNames.length;
     while(playerOrder.length < playerCount) {
         let greatestRecord = 0;
-        let winner = "";
+        let winner = playerNames[0];
         for(player of playerNames) {
             let playerRecord = (players[player].constructed.games.wins + players[player].limited.games.wins)/(players[player].constructed.games.losses + players[player].limited.games.losses);
+            if(players[player].constructed.games.losses + players[player].limited.games.losses == 0) {
+                playerRecord = Infinity;
+            }
             if(playerRecord > greatestRecord) {
                 greatestRecord = playerRecord;
                 winner = player;
