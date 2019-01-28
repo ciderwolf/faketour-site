@@ -23,11 +23,12 @@ function createMatches(data) {
             roundBox.classList.add("round")
             let title = document.createElement("h3");
             if(isNaN(round)) {
-                title = round;
+                title.innerHTML = round;
             }
             else {
                 title.innerHTML = "Round " + round;
             }
+            console.log(title);
             roundBox.appendChild(title);
             for(match of matches[format][round]) {
                 if(match.playerTwo == "") {
