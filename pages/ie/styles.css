@@ -1,0 +1,40 @@
+body {
+    font-family: "Helvetica Neue";
+    
+}
+
+.title {
+    text-align: center;
+    margin: 5% 10% 0 10%;
+}
+
+h1 {
+    font-size: 40pt;
+    font-weight: 500;
+}
+
+h2 {
+    color: #2f2f2f;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+img {
+    width: 256px;
+    height: 256px;
+}
+
+.browser-name {
+    text-align: center;
+}
+
+#browsers {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.browser {
+    padding: 20px;
+    margin: 0 auto;
+}
