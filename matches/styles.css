@@ -151,3 +151,33 @@ input[type=number]:focus {
     color: white;
     font-family: 'Nunito', sans-serif;
 }
+
+.selector {
+    font-size: 17.5pt;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 15px;
+    margin: 15px;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, white 50%, cornflowerblue 50%);
+    transition: background-position .15s;
+}
+
+.selector.selected {
+    transition: 0.15s;
+    color: white;
+}
+
+.selector.selected.left {
+    background-position: -100% 0;
+}
+.selector.selected.right {
+    background-position: 100% 0;
+}
+
+.selector-bar {
+    display: flex;
+}

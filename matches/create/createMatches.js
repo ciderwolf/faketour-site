@@ -90,6 +90,11 @@ function getPlayersSelected(format) {
 
 function uploadPairings() {
     let roundName = document.getElementById("round-name").value;
+    let games = document.getElementById("games").value;
+    if(games % 2 == 0) {
+        showAlert("Invalid game number", "An even number of games was selected", "warning");
+        return;
+    }
     for(format of Object.keys(options)) {
         let upload = [];
         let selectors = document.getElementsByClassName(format + "Selector");
@@ -103,14 +108,14 @@ function uploadPairings() {
             data.player_two = pTwoName;
             upload.push(data);
         }
-        sendData(format, roundName, upload);
+        sendData(format, roundName, games, upload);
         console.log(upload);
     }
 }
 
-function sendData(format, roundName, data) {
+function sendData(format, roundName, games, data) {
     let request = new XMLHttpRequest();
-    request.open("POST", "uploadPairings.php?format=" + format + "&round=" + roundName, true);
+    request.open("POST", "uploadPairings.php?format=" + format + "&round=" + roundName + "&games=" + games, true);
     request.setRequestHeader("body", JSON.stringify(data));
     request.onload = function (e) {
         console.log(request.responseText);

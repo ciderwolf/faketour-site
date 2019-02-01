@@ -91,27 +91,28 @@ function loadMatches(format) {
             }
         });
         form.target = "dummyframe";
+
         let container = document.createElement("div");
         container.classList.add("container");
         let title = document.createElement("h1");
         title.innerHTML = "Report Result";
         container.appendChild(title);
-        container.innerHTML += "<label><b>Match winner</b><br></label>"
-        let radio1 = document.createElement("input");
-        radio1.type = "radio";
-        radio1.name = "winner";
-        radio1.required = true;
-        radio1.id = loggedIn;
-        container.appendChild(radio1);
-        container.innerHTML += loggedIn;
-        let radio2 = document.createElement("input");
-        radio2.type = "radio";
-        radio2.name = "winner";
-        radio2.required = true;
-        radio2.id = opponent;
-        container.appendChild(radio2);
-        container.innerHTML += opponent;
-        container.innerHTML += "<br>" + staticForm;
+        let maxGameWins = Math.floor(match.games/2) + 1;
+        let playerOneScoreBar = createNumberBar(maxGameWins);
+        let playerOneLabel = document.createElement("label");
+        playerOneLabel.innerHTML = "Number of games you won: ";
+        container.appendChild(playerOneLabel);
+        container.appendChild(playerOneScoreBar);
+        let playerTwoScoreBar = createNumberBar(maxGameWins);
+        let playerTwoLabel = document.createElement("label");
+        playerTwoLabel.innerHTML =  "Number of games " + opponent + " won: ";
+        container.appendChild(playerTwoLabel);
+        container.appendChild(playerTwoScoreBar);
+
+        let submitButton = document.createElement("button");
+        submitButton.style = "width:100%;margin-left:0;";
+        submitButton.innerHTML = "Report";
+        container.appendChild(submitButton);
         form.appendChild(container);
         modal.appendChild(form);
         display.appendChild(modal);
@@ -131,9 +132,41 @@ function loadMatches(format) {
     }
 }
 
+function createNumberBar(maxGameWins) {
+    let scoreBar = document.createElement("div");
+    scoreBar.classList.add("selector-bar");
+    for(let i = 0; i <= maxGameWins; i++) {
+        let score = document.createElement("div");
+        score.classList.add("selector");
+        if(i == 0) {
+            score.classList.add("selected");
+            score.classList.add("right");
+        }
+        score.value = i;
+        score.innerHTML = i;
+        score.onclick = function(e) {
+            let oldValue = 0;
+            if(e.srcElement.parentElement.getElementsByClassName("selected").length > 0) {
+                let selected = e.srcElement.parentElement.getElementsByClassName("selected")[0];
+                selected.className = "selector";
+                oldValue = selected.value;
+            }
+            score.classList.add("selected");
+            if(oldValue > score.value) {
+                score.classList.add("right");
+            } else {
+                score.classList.add("left");
+            }
+            scoreBar.value = score.value;
+        }
+        scoreBar.appendChild(score);
+    }
+    scoreBar.value = 0;
+    return scoreBar;
+}
+
 function updateMatch(id, score) {
     let url = "updateMatch.php?id=" + id + "&score=" + score;
-    console.log(url);
     let request = new XMLHttpRequest();
     request.open("GET", url, true);
     request.onload = function (e) {
@@ -150,9 +183,9 @@ function updateMatch(id, score) {
 }
 
 function submit(form) {
-    let inputs = form.firstElementChild.getElementsByTagName("input");
-    let userWins = inputs[2].value;
-    let opponentWins = inputs[3].value;
+    let inputs = form.firstElementChild.getElementsByClassName("selector-bar");
+    let userWins = inputs[0].value;
+    let opponentWins = inputs[1].value;
     let format = form.classList[1];
     let match = matches[format];
     let score = userWins + "-" + opponentWins;

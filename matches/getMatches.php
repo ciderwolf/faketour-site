@@ -7,7 +7,7 @@
     if(isset($_SESSION["username"])) {
         $username = $_SESSION["username"];
         $table_name = $set . "_matches";
-        $sql = "SELECT id, round, player_one, player_two, score FROM $table_name WHERE format='$format' AND (player_one='$username' OR player_two='$username') AND score=''";
+        $sql = "SELECT id, round, games, player_one, player_two, score FROM $table_name WHERE format='$format' AND (player_one='$username' OR player_two='$username') AND score=''";
         $result = $conn->query($sql);
         $output = "";
 
