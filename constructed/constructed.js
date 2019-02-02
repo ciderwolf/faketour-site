@@ -1,7 +1,7 @@
 let loggedIn;
 let timer = document.getElementById("timer");
 let due = new Date("Mon Jan 21 2019 23:59:59");
-setInterval("getTimer();", 1000);
+let updateTimer = setInterval("getTimer();", 1000);
 
 logIn();
 getTimer();
@@ -9,6 +9,11 @@ getTimer();
 function getTimer() {
     let now = new Date();
     let difference = (due.getTime() - now.getTime())/1000;
+    if(difference < 0) {
+        timer.innerHTML = "Decklists were due " +  due.toString().substring(0, due.toString().indexOf(" GMT"));
+        clearInterval(updateTimer);
+        return;
+    }
     let days = Math.floor(difference/(3600*24));
     let hours = Math.floor(difference/(3600)) - days*24;
     let minutes = Math.floor(difference/60) - hours*60 - days*24*60;
@@ -97,5 +102,4 @@ function submit() {
     else {
         uploadDeck(upload);
     }
-
 }

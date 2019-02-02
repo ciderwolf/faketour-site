@@ -64,7 +64,8 @@ function validateDeck(maindeck, sideboard) {
 }
 
 function isStandardLegal(card) {
-    if(card.trim() == "") {
+    card = card.trim();
+    if(card == "") {
         return true;
     }
     for(cardName of standardLegal) {
