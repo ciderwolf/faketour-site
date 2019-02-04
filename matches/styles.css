@@ -148,8 +148,12 @@ input[type=number]:focus {
     top: 90vh;
     opacity: .6;
     cursor: pointer;
-    color: white;
     font-family: 'Nunito', sans-serif;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
 
 .selector {

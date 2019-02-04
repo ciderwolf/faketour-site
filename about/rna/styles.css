@@ -65,15 +65,19 @@ button:hover {
     color: white;
 }
 
+
 .footer {
     position: fixed;
     margin-left: 5%;
     margin-bottom: 5%;
     top: 90vh;
     opacity: .6;
-    cursor: pointer;
-    color: white;
     font-family: 'Nunito', sans-serif;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
 
 a {

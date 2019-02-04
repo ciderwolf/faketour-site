@@ -76,12 +76,18 @@ span.psw {
 }
 
 .footer {
-   position: fixed;
-   margin-left: 5%;
-   margin-bottom: 20%;
-   width: 100%;
-   opacity: 0.6;
-   cursor: pointer;
+    position: fixed;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    top: 90vh;
+    opacity: .6;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Change styles for span and cancel button on extra small screens */

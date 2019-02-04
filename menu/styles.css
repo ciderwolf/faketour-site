@@ -59,6 +59,14 @@ body {
     color: black;
 }
 
+.alert-link {
+    color: white;
+}
+
+.alert-link:hover {
+    text-decoration: black underline;
+}
+
 #alerts {
     position: fixed;
     width: 50%;

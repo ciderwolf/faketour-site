@@ -62,7 +62,7 @@ function uploadDeck(cardList) {
     request.onload = function (e) {
       if (request.readyState === 4) {
         if (request.status === 200) {
-            showAlert("Deck submitted successfully", "Click <a href='preview'>here</a> to see a preview", "success");
+            showAlert("Deck submitted successfully", "Click <a class='alert-link' href='preview'>here</a> to see a preview", "success");
         } else {
             console.log(request.responseText);
             showAlert("Encountered an error",  "Check the console for more information.", "error");

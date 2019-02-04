@@ -41,6 +41,10 @@ body {
     margin-bottom: 5%;
     top: 90vh;
     opacity: .6;
-    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer a {
     color: white;
+    text-decoration: none;
 }
