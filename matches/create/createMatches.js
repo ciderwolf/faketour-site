@@ -95,6 +95,10 @@ function uploadPairings() {
         showAlert("Invalid game number", "An even number of games was selected", "warning");
         return;
     }
+    if(roundName == "") {
+        showAlert("Round Name can't be blank", "Please choose a round name or number", "warning");
+        return;
+    }
     for(format of Object.keys(options)) {
         let upload = [];
         let selectors = document.getElementsByClassName(format + "Selector");
