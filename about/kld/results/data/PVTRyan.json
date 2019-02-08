@@ -1,102 +1,118 @@
 {
-  "Enchantment": [
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/200.jpg?1517813031", 
-      "name": "Cryptolith Rite"
-    }
-  ], 
   "Sideboard": [
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/93.jpg?1517813031", 
+      "number": "93",
+      "set": "emn",
+      "count": 4,
       "name": "Liliana, the Last Hope"
-    }, 
+    },
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/f/c/fc2de819-1e93-4112-96e8-fb60be3c0707.jpg?1543674801", 
+      "number": "126",
+      "set": "bfz",
+      "count": 4,
       "name": "Zulaport Cutthroat"
-    }, 
+    },
     {
-      "count": 3, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/c18/117.jpg?1535503568", 
+      "number": "123",
+      "set": "bfz",
+      "count": 3,
       "name": "Ruinous Path"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/103.jpg?1517813031", 
+      "number": "103",
+      "set": "soi",
+      "count": 2,
       "name": "Call the Bloodline"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/126.jpg?1517813031", 
+      "number": "126",
+      "set": "soi",
+      "count": 2,
       "name": "Murderous Compulsion"
     }
-  ], 
-  "Land": [
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/9/0/90da33d4-fe9c-42fe-b326-2fe337dc3ecd.jpg?1543700258", 
-      "name": "Blooming Marsh"
-    }, 
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/ogw/171.jpg?1517813031", 
-      "name": "Hissing Quagmire"
-    }, 
-    {
-      "count": 10, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/5/8/58fe058d-7796-4233-8d74-2a12f9bd0023.jpg?1543675077", 
-      "name": "Forest"
-    }, 
-    {
-      "count": 6, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/8/b/8bc682cd-b13b-4670-913c-70542f161316.jpg?1543675036", 
-      "name": "Swamp"
-    }
-  ], 
-  "Artifact": [
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/c/9/c9bff744-873b-4fa1-8088-5f28bbcdc7b8.jpg?1543700009", 
-      "name": "Ghirapur Orrery"
-    }, 
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/197.jpg?1517813031", 
-      "name": "Lupine Prototype"
-    }
-  ], 
+  ],
   "Creature": [
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/164.jpg?1517813031", 
+      "number": "164",
+      "set": "emn",
+      "count": 4,
       "name": "Noose Constrictor"
-    }, 
+    },
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/1/4/145d0f7a-8418-455a-aa0c-02e8c9ad7820.jpg?1547516986", 
+      "number": "100",
+      "set": "emn",
+      "count": 4,
       "name": "Olivia's Dragoon"
-    }, 
+    },
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/203a.jpg?1518204802", 
+      "number": "203",
+      "set": "soi",
+      "count": 4,
       "name": "Duskwatch Recruiter // Krallenhorde Howler"
-    }, 
+    },
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/111a.jpg?1518206313", 
+      "number": "111",
+      "set": "emn",
+      "count": 4,
       "name": "Voldaren Pariah // Abolisher of Bloodlines"
-    }, 
+    },
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/216.jpg?1517813031", 
+      "number": "216",
+      "set": "soi",
+      "count": 4,
       "name": "Loam Dryad"
-    }, 
+    },
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/99.jpg?1517813031", 
+      "number": "99",
+      "set": "soi",
+      "count": 4,
       "name": "Asylum Visitor"
+    }
+  ],
+  "Enchantment": [{
+    "number": "200",
+    "set": "soi",
+    "count": 4,
+    "name": "Cryptolith Rite"
+  }],
+  "Artifact": [
+    {
+      "number": "216",
+      "set": "kld",
+      "count": 4,
+      "name": "Ghirapur Orrery"
+    },
+    {
+      "number": "197",
+      "set": "emn",
+      "count": 4,
+      "name": "Lupine Prototype"
+    }
+  ],
+  "Land": [
+    {
+      "number": "243",
+      "set": "kld",
+      "count": 4,
+      "name": "Blooming Marsh"
+    },
+    {
+      "number": "171",
+      "set": "ogw",
+      "count": 4,
+      "name": "Hissing Quagmire"
+    },
+    {
+      "number": "270",
+      "set": "bfz",
+      "count": 10,
+      "name": "Forest"
+    },
+    {
+      "number": "260",
+      "set": "bfz",
+      "count": 6,
+      "name": "Swamp"
     }
   ]
 }

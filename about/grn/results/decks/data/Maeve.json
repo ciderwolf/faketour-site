@@ -1,0 +1,130 @@
+{
+  "Sideboard": [
+    {
+      "number": "179",
+      "set": "xln",
+      "count": 3,
+      "name": "Carnage Tyrant"
+    },
+    {
+      "number": "4",
+      "set": "grn",
+      "count": 2,
+      "name": "Citywide Bust"
+    },
+    {
+      "number": "8",
+      "set": "grn",
+      "count": 2,
+      "name": "Dawn of Hope"
+    },
+    {
+      "number": "34",
+      "set": "xln",
+      "count": 2,
+      "name": "Settle the Wreckage"
+    },
+    {
+      "number": "35",
+      "set": "dom",
+      "count": 2,
+      "name": "Shalai, Voice of Plenty"
+    },
+    {
+      "number": "248",
+      "set": "xln",
+      "count": 2,
+      "name": "Sorcerous Spyglass"
+    },
+    {
+      "number": "208",
+      "set": "m19",
+      "count": 2,
+      "name": "Vivien Reid"
+    }
+  ],
+  "Creature": [
+    {
+      "number": "183",
+      "set": "grn",
+      "count": 4,
+      "name": "Knight of Autumn"
+    },
+    {
+      "number": "197",
+      "set": "xln",
+      "count": 3,
+      "name": "Merfolk Branchwalker"
+    },
+    {
+      "number": "208",
+      "set": "grn",
+      "count": 2,
+      "name": "Trostani Discordant"
+    }
+  ],
+  "Planeswalker": [{
+    "number": "159",
+    "set": "rix",
+    "count": 3,
+    "name": "Huatli, Radiant Champion"
+  }],
+  "Instant": [{
+    "number": "188",
+    "set": "grn",
+    "count": 4,
+    "name": "March of the Multitudes"
+  }],
+  "Sorcery": [{
+    "number": 226,
+    "set": "grn",
+    "count": 4,
+    "name": "Flower // Flourish"
+  }],
+  "Enchantment": [
+    {
+      "number": "21",
+      "set": "dom",
+      "count": 3,
+      "name": "History of Benalia"
+    },
+    {
+      "number": "31",
+      "set": "dom",
+      "count": 2,
+      "name": "Seal Away"
+    },
+    {
+      "number": "22",
+      "set": "xln",
+      "count": 4,
+      "name": "Legion's Landing"
+    }
+  ],
+  "Land": [
+    {
+      "number": "257",
+      "set": "xln",
+      "count": 4,
+      "name": "Sunpetal Grove"
+    },
+    {
+      "number": "258",
+      "set": "grn",
+      "count": 4,
+      "name": "Temple Garden"
+    },
+    {
+      "number": "76",
+      "set": "gk1",
+      "count": 6,
+      "name": "Forest"
+    },
+    {
+      "number": "100",
+      "set": "gk1",
+      "count": 6,
+      "name": "Plains"
+    }
+  ]
+}

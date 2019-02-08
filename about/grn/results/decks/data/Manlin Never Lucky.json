@@ -1,0 +1,174 @@
+{
+  "Sideboard": [
+    {
+      "number": "84",
+      "set": "grn",
+      "count": 3,
+      "name": "Ritual of Soot"
+    },
+    {
+      "number": "90",
+      "set": "dom",
+      "count": 2,
+      "name": "The Eldest Reborn"
+    },
+    {
+      "number": "63",
+      "set": "grn",
+      "count": 2,
+      "name": "Blood Operative"
+    },
+    {
+      "number": "94",
+      "set": "dom",
+      "count": 2,
+      "name": "Fungal Infection"
+    },
+    {
+      "number": "248",
+      "set": "xln",
+      "count": 1,
+      "name": "Sorcerous Spyglass"
+    },
+    {
+      "number": "90",
+      "set": "xln",
+      "count": 1,
+      "name": "Arguel's Blood Fast // Temple of Aclazotz"
+    },
+    {
+      "number": "94",
+      "set": "m19",
+      "count": 2,
+      "name": "Duress"
+    },
+    {
+      "number": "44",
+      "set": "rix",
+      "count": 2,
+      "name": "Negate"
+    }
+  ],
+  "Creature": [
+    {
+      "number": "191",
+      "set": "grn",
+      "count": 2,
+      "name": "Nightveil Predator"
+    },
+    {
+      "number": "82",
+      "set": "rix",
+      "count": 2,
+      "name": "Ravenous Chupacabra"
+    },
+    {
+      "number": "82",
+      "set": "grn",
+      "count": 2,
+      "name": "Plaguecrafter"
+    },
+    {
+      "number": "69",
+      "set": "grn",
+      "count": 3,
+      "name": "Doom Whisperer"
+    },
+    {
+      "number": "38",
+      "set": "grn",
+      "count": 1,
+      "name": "Dream Eater"
+    },
+    {
+      "number": "205",
+      "set": "grn",
+      "count": 4,
+      "name": "Thief of Sanity"
+    },
+    {
+      "number": "184",
+      "set": "grn",
+      "count": 4,
+      "name": "Lazav, the Multifarious"
+    }
+  ],
+  "Instant": [
+    {
+      "number": "81",
+      "set": "dom",
+      "count": 2,
+      "name": "Cast Down"
+    },
+    {
+      "number": "129",
+      "set": "xln",
+      "count": 2,
+      "name": "Vraska's Contempt"
+    },
+    {
+      "number": "37",
+      "set": "grn",
+      "count": 2,
+      "name": "Disdainful Stroke"
+    },
+    {
+      "number": "54",
+      "set": "m19",
+      "count": 2,
+      "name": "Essence Scatter"
+    }
+  ],
+  "Sorcery": [
+    {
+      "number": "206",
+      "set": "grn",
+      "count": 3,
+      "name": "Thought Erasure"
+    },
+    {
+      "number": "223",
+      "set": "grn",
+      "count": 3,
+      "name": "Discovery // Dispersal"
+    },
+    {
+      "number": "193",
+      "set": "grn",
+      "count": 4,
+      "name": "Notion Rain"
+    }
+  ],
+  "Land": [
+    {
+      "number": "254",
+      "set": "xln",
+      "count": 3,
+      "name": "Field of Ruin"
+    },
+    {
+      "number": "253",
+      "set": "xln",
+      "count": 4,
+      "name": "Drowned Catacomb"
+    },
+    {
+      "number": "259",
+      "set": "grn",
+      "count": 4,
+      "name": "Watery Grave"
+    },
+    {
+      "number": "25",
+      "set": "gk1",
+      "count": 8,
+      "name": "Swamp"
+    },
+    {
+      "number": "24",
+      "set": "gk1",
+      "count": 5,
+      "name": "Island"
+    }
+  ]
+}

@@ -15,9 +15,6 @@ function createTab(player) {
             console.log(e, player)
         }
 
-        let decklist = data.constructed_deck;
-        let matches = data.matches;
-
         // create button
         let tabRow = document.getElementById("tabs");
         let tabButton = document.createElement("button");
@@ -33,17 +30,7 @@ function createTab(player) {
         tab.classList.add("tabcontent");
         tab.classList.add("backdrop");
         tab.id = player + "-content";
-
-        let standardTitle = document.createElement("h2");
-        standardTitle.innerHTML = "Constructed";
-        tab.appendChild(standardTitle);
-        tab.appendChild(createMatches(matches.constructed, player));
-        tab.appendChild(createDecklist(decklist));
-
-        let sealedTitle = document.createElement("h2");
-        sealedTitle.innerHTML = "Sealed";
-        tab.appendChild(sealedTitle);
-        tab.appendChild(createMatches(matches.sealed, player));
+        tab.appendChild(createDecklist(data));
 
         tabRow.appendChild(tabButton);
         tabContent.appendChild(tab);
@@ -53,69 +40,6 @@ function createTab(player) {
             tabButton.click();
         }
     });
-}
-
-function createMatches(matches, player) {
-    let matchesContainer = document.createElement("div");
-    matchesContainer.style.display = "flex";
-    matchesContainer.style.width = "fit-content";
-    matchesContainer.style.margin = "0 auto";
-    for(match of matches) {
-        let score = match.record.split("-");
-        let winner;
-        if(score.length == 2) {
-            winner = score[0] > score[1] ? player : match.opponent;
-        } else {
-            winner = "none";
-            score[0] = "0";
-            score[1] = "0"
-        }
-        console.log(winner);
-        let matchBox = document.createElement("table");
-        let oneBox = document.createElement("td");
-        oneBox.classList.add("player")
-        if(winner == player) {
-            oneBox.classList.add("winner");
-        }
-        oneBox.innerHTML += player;
-
-        let twoBox = document.createElement("td");
-        twoBox.classList.add("player")
-        if(winner == match.opponent) {
-            twoBox.classList.add("winner");
-        }
-        twoBox.innerHTML += match.opponent;
-
-        let scoreOne = document.createElement("td");
-        scoreOne.classList.add("score");
-        scoreOne.classList.add("top");
-        scoreOne.innerHTML = score[0];
-        let scoreTwo = document.createElement("td");
-        scoreTwo.classList.add("score");
-        scoreTwo.classList.add("bottom");
-        scoreTwo.innerHTML = score[1];
-
-        if(winner == player) {
-            scoreOne.classList.add("winner");
-        } else if(winner == match.opponent) {
-            scoreTwo.classList.add("winner");
-        }
-
-        let rowOne = document.createElement("tr");
-        rowOne.appendChild(oneBox);
-        oneBox.classList.add("split");
-        rowOne.appendChild(scoreOne);
-        let rowTwo = document.createElement("tr");
-        rowTwo.appendChild(twoBox);
-        rowTwo.appendChild(scoreTwo);
-        matchBox.appendChild(rowOne);
-        matchBox.appendChild(rowTwo);
-        let borderBox = document.createElement("div");
-        borderBox.classList.add("match");
-        borderBox.appendChild(matchBox);
-        matchesContainer.appendChild(borderBox);
-    }
-    return matchesContainer;
 }
 
 function createDecklist(decklist) {
@@ -178,29 +102,21 @@ function createRow(name, decklist) {
     for(card of decklist[name]) {
         let cardLink = document.createElement("a");
         cardLink.innerHTML = card.count + " " + card.name + "<br>";
-        cardLink.href = card.scryfall_uri;
+        cardLink.href = "https://scryfall.com/card/" + card.set + "/" + card.number;
         let preview = document.createElement("img");
         preview.classList.add("card-preview");
-        preview.src = card.image_uri;
+        preview.src = "https://api.scryfall.com/cards/" + card.set + "/" + card.number + "?format=image&version=normal";
         cardLink.addEventListener('mouseover', function(e) {
             preview.style.display = "inline";
             preview.style.left = e.pageX;
-            let newY = e.pageY;
-            if(newY + preview.height > window.innerHeight) {
-                newY = window.innerHeight - preview.height;
-            }
-            preview.style.top = newY
+            preview.style.top = normalizePreviewY(e, preview);
         });
         cardLink.addEventListener('mouseleave', function(e) {
             preview.style.display = "none";
         });
         cardLink.onmousemove = function(e) {
             preview.style.left = e.pageX;
-            let newY = e.pageY;
-            if(newY + preview.height > window.innerHeight) {
-                newY = window.innerHeight - preview.height;
-            }
-            preview.style.top = newY
+            preview.style.top = normalizePreviewY(e, preview);
         }
         type.appendChild(cardLink);
         type.appendChild(preview);
@@ -222,4 +138,12 @@ function showTab(evt, tab) {
     }
     document.getElementById(tab).style.display = "block";
     evt.currentTarget.classList.add("active");
+}
+
+function normalizePreviewY(e, preview) {
+    let newY = e.pageY;
+    if(newY + preview.height > window.innerHeight + window.scrollY) {
+        newY = window.innerHeight + window.scrollY - preview.height;
+    }
+    return newY;
 }

@@ -1,0 +1,142 @@
+{
+  "Sideboard": [
+    {
+      "number": "130",
+      "set": "m19",
+      "count": 2,
+      "name": "Banefire"
+    },
+    {
+      "number": "33",
+      "set": "m19",
+      "count": 2,
+      "name": "Remorseful Cleric"
+    },
+    {
+      "number": "35",
+      "set": "dom",
+      "count": 2,
+      "name": "Shalai, Voice of Plenty"
+    },
+    {
+      "number": "165",
+      "set": "grn",
+      "count": 2,
+      "name": "Deafening Clarion"
+    },
+    {
+      "number": "6",
+      "set": "grn",
+      "count": 2,
+      "name": "Conclave Tribunal"
+    },
+    {
+      "number": "34",
+      "set": "xln",
+      "count": 2,
+      "name": "Settle the Wreckage"
+    }
+  ],
+  "Creature": [
+    {
+      "number": "23",
+      "set": "dom",
+      "count": 4,
+      "name": "Knight of Grace"
+    },
+    {
+      "number": "203",
+      "set": "grn",
+      "count": 4,
+      "name": "Swiftblade Vindicator"
+    },
+    {
+      "number": "34",
+      "set": "m19",
+      "count": 3,
+      "name": "Resplendent Angel"
+    },
+    {
+      "number": "111",
+      "set": "rix",
+      "count": 4,
+      "name": "Rekindling Phoenix"
+    },
+    {
+      "number": "19",
+      "set": "grn",
+      "count": 1,
+      "name": "Light of the Legion"
+    },
+    {
+      "number": "204",
+      "set": "grn",
+      "count": 2,
+      "name": "Tajic, Legion's Edge"
+    },
+    {
+      "number": "153",
+      "set": "grn",
+      "count": 2,
+      "name": "Aurelia, Exemplar of Justice"
+    },
+    {
+      "number": "26",
+      "set": "dom",
+      "count": 3,
+      "name": "Lyra Dawnbringer"
+    }
+  ],
+  "Instant": [
+    {
+      "number": "156",
+      "set": "m19",
+      "count": 3,
+      "name": "Shock"
+    },
+    {
+      "number": "182",
+      "set": "grn",
+      "count": 2,
+      "name": "Justice Strike"
+    },
+    {
+      "number": "227",
+      "set": "grn",
+      "count": 3,
+      "name": "Integrity // Intervention"
+    }
+  ],
+  "Enchantment": [{
+    "number": "21",
+    "set": "dom",
+    "count": 4,
+    "name": "History of Benalia"
+  }],
+  "Land": [
+    {
+      "number": "239",
+      "set": "dom",
+      "count": 4,
+      "name": "Clifftop Retreat"
+    },
+    {
+      "number": "254",
+      "set": "grn",
+      "count": 4,
+      "name": "Sacred Foundry"
+    },
+    {
+      "number": "49",
+      "set": "gk1",
+      "count": 8,
+      "name": "Mountain"
+    },
+    {
+      "number": "100",
+      "set": "gk1",
+      "count": 9,
+      "name": "Plains"
+    }
+  ]
+}

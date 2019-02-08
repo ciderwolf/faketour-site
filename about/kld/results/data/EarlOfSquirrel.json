@@ -1,127 +1,148 @@
 {
-  "Sorcery": [
-    {
-      "count": 3, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/116.jpg?1517813031", 
-      "name": "Alchemist's Greeting"
-    }, 
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/c/6/c68a6226-6dd7-4e1a-9e8a-124eef2caa13.jpg?1543699059", 
-      "name": "Cathartic Reunion"
-    }, 
-    {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/5/a/5abc82e3-465c-4c54-8e87-6cd6d99eaff2.jpg?1543674861", 
-      "name": "Tormenting Voice"
-    }, 
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/76.jpg?1517813031", 
-      "name": "Take Inventory"
-    }, 
-    {
-      "count": 3, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/141.jpg?1517813031", 
-      "name": "Shreds of Sanity"
-    }, 
-    {
-      "count": 3, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/79.jpg?1517813031", 
-      "name": "Pore Over the Pages"
-    }, 
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/c/d/cdbca952-b4e8-4833-aee3-7da8ae82906e.jpg?1547516468", 
-      "name": "Rise from the Tides"
-    }
-  ], 
   "Sideboard": [
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/244.jpg?1517813031", 
+      "number": "244",
+      "set": "soi",
+      "count": 4,
       "name": "Fevered Visions"
-    }, 
+    },
     {
-      "count": 3, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/1/2/120f0fb0-4831-4759-b58c-05c4be90a4af.jpg?1543698702", 
+      "number": "63",
+      "set": "kld",
+      "count": 3,
       "name": "Select for Inspection"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/ogw/104.jpg?1517813031", 
+      "number": "104",
+      "set": "ogw",
+      "count": 2,
       "name": "Chandra, Flamecaller"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/149.jpg?1517813031", 
+      "number": "149",
+      "set": "emn",
+      "count": 2,
       "name": "Weaver of Lightning"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/xln/141.jpg?1527429526", 
+      "number": "153",
+      "set": "soi",
+      "count": 2,
       "name": "Dual Shot"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/0/8/08c5ed8e-4804-4042-8a1d-ad24c6846816.jpg?1543698524", 
+      "number": "40",
+      "set": "kld",
+      "count": 2,
       "name": "Ceremonious Rejection"
     }
-  ], 
-  "Land": [
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/ogw/182.jpg?1517813031", 
-      "name": "Wandering Fumarole"
-    }, 
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/4/e/4e587ea7-0632-4789-ba75-3c410da2bb96.jpg?1543700306", 
-      "name": "Spirebluff Canal"
-    }, 
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/c18/255.jpg?1535505484", 
-      "name": "Highland Lake"
-    }, 
-    {
-      "count": 5, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/4/9/49ac3fd1-f732-4d96-ac93-560e4e86051e.jpg?1543675054", 
-      "name": "Mountain"
-    }, 
-    {
-      "count": 5, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/0/b/0ba8851d-0b25-4232-acd3-594b5b25f16e.jpg?1543675020", 
-      "name": "Island"
-    }
-  ], 
+  ],
+  "Planeswalker": [{
+    "number": "110",
+    "set": "kld",
+    "count": 3,
+    "name": "Chandra, Torch of Defiance"
+  }],
   "Instant": [
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/2/6/2610d0e0-2824-4d40-816b-e487ac8f0e03.jpg?1547517232", 
+      "number": "156",
+      "set": "soi",
+      "count": 4,
       "name": "Fiery Temper"
-    }, 
+    },
     {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/5/9/59e40878-358d-48ec-a35f-3d9867728143.jpg?1547516348", 
+      "number": "71",
+      "set": "soi",
+      "count": 1,
       "name": "Just the Wind"
-    }, 
+    },
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/129.jpg?1517813031", 
+      "number": "129",
+      "set": "emn",
+      "count": 4,
       "name": "Galvanic Bombardment"
-    }, 
+    },
     {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/f/9/f9be9b5c-eed4-4a5d-962f-3482da5a6f1d.jpg?1543699140", 
+      "number": "117",
+      "set": "kld",
+      "count": 4,
       "name": "Harnessed Lightning"
     }
-  ], 
-  "Planeswalker": [
+  ],
+  "Sorcery": [
     {
-      "count": 3, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/f/f/ff8086cd-b868-4f4e-823e-2635ad7ebc07.jpg?1543699067", 
-      "name": "Chandra, Torch of Defiance"
+      "number": "116",
+      "set": "emn",
+      "count": 3,
+      "name": "Alchemist's Greeting"
+    },
+    {
+      "number": "109",
+      "set": "kld",
+      "count": 4,
+      "name": "Cathartic Reunion"
+    },
+    {
+      "number": "186",
+      "set": "soi",
+      "count": 1,
+      "name": "Tormenting Voice"
+    },
+    {
+      "number": "76",
+      "set": "emn",
+      "count": 4,
+      "name": "Take Inventory"
+    },
+    {
+      "number": "141",
+      "set": "emn",
+      "count": 3,
+      "name": "Shreds of Sanity"
+    },
+    {
+      "number": "79",
+      "set": "soi",
+      "count": 3,
+      "name": "Pore Over the Pages"
+    },
+    {
+      "number": "83",
+      "set": "soi",
+      "count": 4,
+      "name": "Rise from the Tides"
+    }
+  ],
+  "Land": [
+    {
+      "number": "182",
+      "set": "ogw",
+      "count": 4,
+      "name": "Wandering Fumarole"
+    },
+    {
+      "number": "249",
+      "set": "kld",
+      "count": 4,
+      "name": "Spirebluff Canal"
+    },
+    {
+      "number": "277",
+      "set": "soi",
+      "count": 4,
+      "name": "Highland Lake"
+    },
+    {
+      "number": "265",
+      "set": "bfz",
+      "count": 5,
+      "name": "Mountain"
+    },
+    {
+      "number": "255",
+      "set": "bfz",
+      "count": 5,
+      "name": "Island"
     }
   ]
 }

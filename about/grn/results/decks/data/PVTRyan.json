@@ -1,0 +1,122 @@
+{
+  "Sideboard": [
+    {
+      "number": "81",
+      "set": "dom",
+      "count": 4,
+      "name": "Cast Down"
+    },
+    {
+      "number": "225",
+      "set": "grn",
+      "count": 4,
+      "name": "Find // Finality"
+    },
+    {
+      "number": "99",
+      "set": "xln",
+      "count": 4,
+      "name": "Deadeye Tracker"
+    },
+    {
+      "number": "69",
+      "set": "grn",
+      "count": 3,
+      "name": "Doom Whisperer"
+    }
+  ],
+  "Creature": [
+    {
+      "number": "314",
+      "set": "m19",
+      "count": 4,
+      "name": "Llanowar Elves"
+    },
+    {
+      "number": "141",
+      "set": "grn",
+      "count": 4,
+      "name": "Pelt Collector"
+    },
+    {
+      "number": "203",
+      "set": "m19",
+      "count": 2,
+      "name": "Thorn Lieutenant"
+    },
+    {
+      "number": "182",
+      "set": "dom",
+      "count": 4,
+      "name": "Steel Leaf Champion"
+    },
+    {
+      "number": "138",
+      "set": "grn",
+      "count": 4,
+      "name": "Nullhide Ferox"
+    },
+    {
+      "number": "177",
+      "set": "m19",
+      "count": 4,
+      "name": "Druid of the Cowl"
+    },
+    {
+      "number": "148",
+      "set": "rix",
+      "count": 4,
+      "name": "Thrashing Brontodon"
+    },
+    {
+      "number": "160",
+      "set": "grn",
+      "count": 3,
+      "name": "Charnel Troll"
+    },
+    {
+      "number": "136",
+      "set": "grn",
+      "count": 2,
+      "name": "Kraul Harpooner"
+    },
+    {
+      "number": "130",
+      "set": "rix",
+      "count": 3,
+      "name": "Ghalta, Primal Hunger"
+    }
+  ],
+  "Instant": [{
+    "number": "152",
+    "set": "grn",
+    "count": 4,
+    "name": "Assassin's Trophy"
+  }],
+  "Land": [
+    {
+      "number": "253",
+      "set": "grn",
+      "count": 4,
+      "name": "Overgrown Tomb"
+    },
+    {
+      "number": "248",
+      "set": "dom",
+      "count": 4,
+      "name": "Woodland Cemetery"
+    },
+    {
+      "number": "25",
+      "set": "gk1",
+      "count": 4,
+      "name": "Swamp"
+    },
+    {
+      "number": "76",
+      "set": "gk1",
+      "count": 10,
+      "name": "Forest"
+    }
+  ]
+}

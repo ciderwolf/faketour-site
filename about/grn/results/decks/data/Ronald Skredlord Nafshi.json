@@ -1,0 +1,224 @@
+{
+  "Sideboard": [
+    {
+      "number": "190",
+      "set": "m19",
+      "count": 2,
+      "name": "Naturalize"
+    },
+    {
+      "number": "32",
+      "set": "grn",
+      "count": 2,
+      "name": "Chemister's Insight"
+    },
+    {
+      "number": "232",
+      "set": "grn",
+      "count": 3,
+      "name": "Chamber Sentry"
+    },
+    {
+      "number": "44",
+      "set": "xln",
+      "count": 2,
+      "name": "Wakening Sun's Avatar"
+    },
+    {
+      "number": "84",
+      "set": "grn",
+      "count": 2,
+      "name": "Ritual of Soot"
+    },
+    {
+      "number": "306",
+      "set": "m19",
+      "count": 2,
+      "name": "Nexus of Fate"
+    },
+    {
+      "number": "187",
+      "set": "xln",
+      "count": 2,
+      "name": "Drover of the Mighty"
+    }
+  ],
+  "Creature": [
+    {
+      "number": "52",
+      "set": "m19",
+      "count": 2,
+      "name": "Djinn of Wishes"
+    },
+    {
+      "number": "187",
+      "set": "xln",
+      "count": 3,
+      "name": "Drover of the Mighty"
+    },
+    {
+      "number": "198",
+      "set": "dom",
+      "count": 4,
+      "name": "Jodah, Archmage Eternal"
+    },
+    {
+      "number": "30",
+      "set": "rix",
+      "count": 1,
+      "name": "Zetalpa, Primal Dawn"
+    },
+    {
+      "number": "100",
+      "set": "rix",
+      "count": 1,
+      "name": "Etali, Primal Storm"
+    },
+    {
+      "number": "174",
+      "set": "rix",
+      "count": 2,
+      "name": "Zacama, Primal Calamity"
+    },
+    {
+      "number": "45",
+      "set": "rix",
+      "count": 1,
+      "name": "Nezahal, Primal Tide"
+    },
+    {
+      "number": "154",
+      "set": "rix",
+      "count": 1,
+      "name": "Azor, the Lawbringer"
+    }
+  ],
+  "Instant": [{
+    "number": "34",
+    "set": "xln",
+    "count": 4,
+    "name": "Settle the Wreckage"
+  }],
+  "Sorcery": [
+    {
+      "number": "71",
+      "set": "xln",
+      "count": 1,
+      "name": "River's Rebuke"
+    },
+    {
+      "number": "129",
+      "set": "m19",
+      "count": 2,
+      "name": "Apex of Power"
+    },
+    {
+      "number": "84",
+      "set": "grn",
+      "count": 2,
+      "name": "Ritual of Soot"
+    },
+    {
+      "number": "114",
+      "set": "dom",
+      "count": 2,
+      "name": "Yawgmoth's Vile Offering"
+    }
+  ],
+  "Enchantment": [
+    {
+      "number": "65",
+      "set": "m19",
+      "count": 2,
+      "name": "Omniscience"
+    },
+    {
+      "number": "184",
+      "set": "m19",
+      "count": 3,
+      "name": "Gift of Paradise"
+    },
+    {
+      "number": "74",
+      "set": "xln",
+      "count": 2,
+      "name": "Search for Azcanta"
+    }
+  ],
+  "Artifact": [
+    {
+      "number": "112",
+      "set": "kld",
+      "count": 2,
+      "name": "Combustible Gearhulk"
+    },
+    {
+      "number": "233",
+      "set": "grn",
+      "count": 3,
+      "name": "Chromatic Lantern"
+    }
+  ],
+  "Land": [
+    {
+      "number": "259",
+      "set": "grn",
+      "count": 2,
+      "name": "Watery Grave"
+    },
+    {
+      "number": "253",
+      "set": "grn",
+      "count": 2,
+      "name": "Overgrown Tomb"
+    },
+    {
+      "number": "254",
+      "set": "grn",
+      "count": 2,
+      "name": "Sacred Foundry"
+    },
+    {
+      "number": "258",
+      "set": "grn",
+      "count": 2,
+      "name": "Temple Garden"
+    },
+    {
+      "number": "186",
+      "set": "rix",
+      "count": 4,
+      "name": "Evolving Wilds"
+    },
+    {
+      "number": "76",
+      "set": "gk1",
+      "count": 1,
+      "name": "Forest"
+    },
+    {
+      "number": "100",
+      "set": "gk1",
+      "count": 4,
+      "name": "Plains"
+    },
+    {
+      "number": "24",
+      "set": "gk1",
+      "count": 4,
+      "name": "Island"
+    },
+    {
+      "number": "25",
+      "set": "gk1",
+      "count": 1,
+      "name": "Swamp"
+    },
+    {
+      "number": "49",
+      "set": "gk1",
+      "count": 2,
+      "name": "Mountain"
+    }
+  ]
+}

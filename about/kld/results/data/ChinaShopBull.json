@@ -1,213 +1,250 @@
 {
   "Sideboard": [
     {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/ogw/70.jpg?1517813031", 
+      "number": "70",
+      "set": "ogw",
+      "count": 1,
       "name": "Flaying Tendrils"
-    }, 
+    },
     {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/12.jpg?1517813031", 
+      "number": "12",
+      "set": "soi",
+      "count": 1,
       "name": "Declaration in Stone"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/bfz/101.jpg?1517813031", 
+      "number": "101",
+      "set": "bfz",
+      "count": 2,
       "name": "Transgress the Mind"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/79.jpg?1517813031", 
+      "number": "79",
+      "set": "emn",
+      "count": 2,
       "name": "Unsubstantiate"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/d/5/d5d0e447-d98e-43d5-9b53-166221c34be2.jpg?1543698904", 
+      "number": "88",
+      "set": "kld",
+      "count": 2,
       "name": "Lost Legacy"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/6/e/6ea63dad-6afe-464e-ab19-fabd9709c6f9.jpg?1543698686", 
+      "number": "61",
+      "set": "kld",
+      "count": 2,
       "name": "Revolutionary Rebuff"
-    }, 
+    },
     {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/4/9/49d61ddb-2662-427c-a97d-21e41b86130d.jpg?1543699734", 
+      "number": "183",
+      "set": "kld",
+      "count": 1,
       "name": "Kambal, Consul of Allocation"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/75.jpg?1517813031", 
+      "number": "75",
+      "set": "emn",
+      "count": 2,
       "name": "Summary Dismissal"
-    }, 
+    },
     {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/13.jpg?1517813031", 
+      "number": "13",
+      "set": "soi",
+      "count": 1,
       "name": "Descend upon the Sinful"
-    }, 
+    },
     {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/9/9/99c99736-5c9c-4d2f-946d-05606fcdd039.jpg?1543698787", 
+      "number": "73",
+      "set": "kld",
+      "count": 1,
       "name": "Demon of Dark Schemes"
     }
-  ], 
-  "Land": [
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/270.jpg?1517813031", 
-      "name": "Choked Estuary"
-    }, 
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/bfz/249.jpg?1517813031", 
-      "name": "Sunken Hollow"
-    }, 
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/bfz/244.jpg?1517813031", 
-      "name": "Shambling Vent"
-    }, 
-    {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/bfz/241.jpg?1517813031", 
-      "name": "Prairie Stream"
-    }, 
-    {
-      "count": 3, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/c18/245.jpg?1535505351", 
-      "name": "Evolving Wilds"
-    }, 
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/8/b/8bc682cd-b13b-4670-913c-70542f161316.jpg?1543675036", 
-      "name": "Swamp"
-    }, 
-    {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/f/e/feada93b-aabf-45d6-ac46-98b33caf9112.jpg?1543675002", 
-      "name": "Plains"
-    }, 
-    {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/0/b/0ba8851d-0b25-4232-acd3-594b5b25f16e.jpg?1543675020", 
-      "name": "Island"
-    }
-  ], 
-  "Instant": [
-    {
-      "count": 4, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/ogw/85.jpg?1517813031", 
-      "name": "Grasp of Darkness"
-    }, 
-    {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/m19/44.jpg?1531451180", 
-      "name": "Anticipate"
-    }, 
-    {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/13.jpg?1517813031", 
-      "name": "Blessed Alliance"
-    }, 
-    {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/242.jpg?1517813031", 
-      "name": "Anguished Unmaking"
-    }
-  ], 
-  "Enchantment": [
-    {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/3/2/324b2f55-1e09-490e-8f7e-bfde85a91ac4.jpg?1543698262", 
-      "name": "Authority of the Consuls"
-    }, 
-    {
-      "count": 3, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/ogw/60.jpg?1517813031", 
-      "name": "Oath of Jace"
-    }, 
-    {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/65.jpg?1517813031", 
-      "name": "Imprisoned in the Moon"
-    }
-  ], 
-  "Sorcery": [
-    {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/c17/118.jpg?1517813031", 
-      "name": "Painful Truths"
-    }, 
-    {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/c18/117.jpg?1535503568", 
-      "name": "Ruinous Path"
-    }, 
-    {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/cma/54.jpg?1519868624", 
-      "name": "Diabolic Tutor"
-    }, 
-    {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/f/0/f00f27a7-9e92-4fbf-baa8-f47a5eee48a6.jpg?1543698340", 
-      "name": "Fumigate"
-    }
-  ], 
-  "Artifact": [
-    {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/7/b/7b10947b-c276-41c4-b72c-efcddd94d13b.jpg?1543698291", 
-      "name": "Cataclysmic Gearhulk"
-    }, 
-    {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/9/f/9f86e5fe-8723-4494-b4cc-b7ac3a047bd1.jpg?1543698968", 
-      "name": "Noxious Gearhulk"
-    }, 
-    {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/a25/229.jpg?1521726118", 
-      "name": "Prophetic Prism"
-    }, 
-    {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/b/b/bbc87a27-93d9-4ce0-a022-0309242c1e89.jpg?1543700110", 
-      "name": "Perpetual Timepiece"
-    }
-  ], 
+  ],
+  "Creature": [{
+    "number": "6",
+    "set": "emn",
+    "count": 1,
+    "name": "Emrakul, the Promised End"
+  }],
   "Planeswalker": [
     {
-      "count": 3, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/93.jpg?1517813031", 
+      "number": "93",
+      "set": "emn",
+      "count": 3,
       "name": "Liliana, the Last Hope"
-    }, 
+    },
     {
-      "count": 2, 
-      "image_uri": "https://img.scryfall.com/cards/normal/front/2/3/2344e710-4570-41b6-af84-a3e7d784003a.jpg?1543699704", 
+      "number": "179",
+      "set": "kld",
+      "count": 2,
       "name": "Dovin Baan"
-    }, 
+    },
     {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/ddr/36.jpg?1517813031", 
+      "number": "119",
+      "set": "bfz",
+      "count": 1,
       "name": "Ob Nixilis Reignited"
-    }, 
+    },
     {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/69.jpg?1517813031", 
+      "number": "69",
+      "set": "soi",
+      "count": 1,
       "name": "Jace, Unraveler of Secrets"
-    }, 
+    },
     {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/soi/251.jpg?1517813031", 
+      "number": "251",
+      "set": "soi",
+      "count": 1,
       "name": "Sorin, Grim Nemesis"
     }
-  ], 
-  "Creature": [
+  ],
+  "Instant": [
     {
-      "count": 1, 
-      "image_uri": "https://img.scryfall.com/cards/normal/en/emn/6.jpg?1517813031", 
-      "name": "Emrakul, the Promised End"
+      "number": "85",
+      "set": "ogw",
+      "count": 4,
+      "name": "Grasp of Darkness"
+    },
+    {
+      "number": "69",
+      "set": "bfz",
+      "count": 2,
+      "name": "Anticipate"
+    },
+    {
+      "number": "13",
+      "set": "emn",
+      "count": 1,
+      "name": "Blessed Alliance"
+    },
+    {
+      "number": "242",
+      "set": "soi",
+      "count": 1,
+      "name": "Anguished Unmaking"
+    }
+  ],
+  "Sorcery": [
+    {
+      "number": "120",
+      "set": "bfz",
+      "count": 2,
+      "name": "Painful Truths"
+    },
+    {
+      "number": "123",
+      "set": "bfz",
+      "count": 2,
+      "name": "Ruinous Path"
+    },
+    {
+      "number": "75",
+      "set": "kld",
+      "count": 2,
+      "name": "Diabolic Tutor"
+    },
+    {
+      "number": "15",
+      "set": "kld",
+      "count": 2,
+      "name": "Fumigate"
+    }
+  ],
+  "Enchantment": [
+    {
+      "number": "5",
+      "set": "kld",
+      "count": 2,
+      "name": "Authority of the Consuls"
+    },
+    {
+      "number": "60",
+      "set": "ogw",
+      "count": 3,
+      "name": "Oath of Jace"
+    },
+    {
+      "number": "65",
+      "set": "emn",
+      "count": 1,
+      "name": "Imprisoned in the Moon"
+    }
+  ],
+  "Artifact": [
+    {
+      "number": "9",
+      "set": "kld",
+      "count": 1,
+      "name": "Cataclysmic Gearhulk"
+    },
+    {
+      "number": "96",
+      "set": "kld",
+      "count": 1,
+      "name": "Noxious Gearhulk"
+    },
+    {
+      "number": "229",
+      "set": "kld",
+      "count": 2,
+      "name": "Prophetic Prism"
+    },
+    {
+      "number": "227",
+      "set": "kld",
+      "count": 1,
+      "name": "Perpetual Timepiece"
+    }
+  ],
+  "Land": [
+    {
+      "number": "270",
+      "set": "soi",
+      "count": 4,
+      "name": "Choked Estuary"
+    },
+    {
+      "number": "249",
+      "set": "bfz",
+      "count": 4,
+      "name": "Sunken Hollow"
+    },
+    {
+      "number": "244",
+      "set": "bfz",
+      "count": 4,
+      "name": "Shambling Vent"
+    },
+    {
+      "number": "241",
+      "set": "bfz",
+      "count": 2,
+      "name": "Prairie Stream"
+    },
+    {
+      "number": "236",
+      "set": "bfz",
+      "count": 3,
+      "name": "Evolving Wilds"
+    },
+    {
+      "number": "260",
+      "set": "bfz",
+      "count": 4,
+      "name": "Swamp"
+    },
+    {
+      "number": "250",
+      "set": "bfz",
+      "count": 2,
+      "name": "Plains"
+    },
+    {
+      "number": "255",
+      "set": "bfz",
+      "count": 1,
+      "name": "Island"
     }
   ]
 }

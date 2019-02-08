@@ -102,29 +102,21 @@ function createRow(name, decklist) {
     for(card of decklist[name]) {
         let cardLink = document.createElement("a");
         cardLink.innerHTML = card.count + " " + card.name + "<br>";
-        cardLink.href = "https://scryfall.com/search?q=" + card.name;
+        cardLink.href = "https://scryfall.com/card/" + card.set + "/" + card.number;
         let preview = document.createElement("img");
         preview.classList.add("card-preview");
-        preview.src = card.image_uri;
+        preview.src = "https://api.scryfall.com/cards/" + card.set + "/" + card.number + "?format=image&version=normal";
         cardLink.addEventListener('mouseover', function(e) {
             preview.style.display = "inline";
             preview.style.left = e.pageX;
-            let newY = e.pageY;
-            if(newY + preview.height > window.innerHeight) {
-                newY = window.innerHeight - preview.height;
-            }
-            preview.style.top = newY
+            preview.style.top = normalizePreviewY(e, preview);
         });
         cardLink.addEventListener('mouseleave', function(e) {
             preview.style.display = "none";
         });
         cardLink.onmousemove = function(e) {
             preview.style.left = e.pageX;
-            let newY = e.pageY;
-            if(newY + preview.height > window.innerHeight) {
-                newY = window.innerHeight - preview.height;
-            }
-            preview.style.top = newY
+            preview.style.top = normalizePreviewY(e, preview);
         }
         type.appendChild(cardLink);
         type.appendChild(preview);
@@ -146,4 +138,12 @@ function showTab(evt, tab) {
     }
     document.getElementById(tab).style.display = "block";
     evt.currentTarget.classList.add("active");
+}
+
+function normalizePreviewY(e, preview) {
+    let newY = e.pageY;
+    if(newY + preview.height > window.innerHeight + window.scrollY) {
+        newY = window.innerHeight + window.scrollY - preview.height;
+    }
+    return newY;
 }

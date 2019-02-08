@@ -1,0 +1,166 @@
+{
+  "Sideboard": [
+    {
+      "number": "179",
+      "set": "xln",
+      "count": 2,
+      "name": "Carnage Tyrant"
+    },
+    {
+      "number": "148",
+      "set": "rix",
+      "count": 2,
+      "name": "Thrashing Brontodon"
+    },
+    {
+      "number": "196",
+      "set": "m19",
+      "count": 2,
+      "name": "Reclamation Sage"
+    },
+    {
+      "number": "90",
+      "set": "dom",
+      "count": 1,
+      "name": "The Eldest Reborn"
+    },
+    {
+      "number": "208",
+      "set": "m19",
+      "count": 2,
+      "name": "Vivien Reid"
+    },
+    {
+      "number": "94",
+      "set": "m19",
+      "count": 4,
+      "name": "Duress"
+    },
+    {
+      "number": "84",
+      "set": "grn",
+      "count": 2,
+      "name": "Ritual of Soot"
+    }
+  ],
+  "Creature": [
+    {
+      "number": "136",
+      "set": "rix",
+      "count": 4,
+      "name": "Jadelight Ranger"
+    },
+    {
+      "number": "121",
+      "set": "xln",
+      "count": 4,
+      "name": "Seekers' Squire"
+    },
+    {
+      "number": "203",
+      "set": "m19",
+      "count": 3,
+      "name": "Thorn Lieutenant"
+    },
+    {
+      "number": "69",
+      "set": "grn",
+      "count": 4,
+      "name": "Doom Whisperer"
+    },
+    {
+      "number": "175",
+      "set": "grn",
+      "count": 2,
+      "name": "Golgari Findbroker"
+    },
+    {
+      "number": "82",
+      "set": "rix",
+      "count": 3,
+      "name": "Ravenous Chupacabra"
+    }
+  ],
+  "Planeswalker": [{
+    "number": "232",
+    "set": "xln",
+    "count": 2,
+    "name": "Vraska, Relic Seeker"
+  }],
+  "Instant": [
+    {
+      "number": "152",
+      "set": "grn",
+      "count": 4,
+      "name": "Assassin's Trophy"
+    },
+    {
+      "number": "129",
+      "set": "xln",
+      "count": 4,
+      "name": "Vraska's Contempt"
+    },
+    {
+      "number": "81",
+      "set": "dom",
+      "count": 2,
+      "name": "Cast Down"
+    }
+  ],
+  "Sorcery": [{
+    "number": "225",
+    "set": "grn",
+    "count": 1,
+    "name": "Find // Finality"
+  }],
+  "Enchantment": [{
+    "number": "90",
+    "set": "dom",
+    "count": 2,
+    "name": "The Eldest Reborn"
+  }],
+  "Land": [
+    {
+      "number": "253",
+      "set": "grn",
+      "count": 4,
+      "name": "Overgrown Tomb"
+    },
+    {
+      "number": "248",
+      "set": "dom",
+      "count": 4,
+      "name": "Woodland Cemetery"
+    },
+    {
+      "number": "254",
+      "set": "xln",
+      "count": 2,
+      "name": "Field of Ruin"
+    },
+    {
+      "number": "248",
+      "set": "grn",
+      "count": 2,
+      "name": "Golgari Guildgate"
+    },
+    {
+      "number": "242",
+      "set": "dom",
+      "count": 2,
+      "name": "Memorial to Folly"
+    },
+    {
+      "number": "76",
+      "set": "gk1",
+      "count": 6,
+      "name": "Forest"
+    },
+    {
+      "number": "25",
+      "set": "gk1",
+      "count": 5,
+      "name": "Swamp"
+    }
+  ]
+}
