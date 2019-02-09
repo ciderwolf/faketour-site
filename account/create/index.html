@@ -13,13 +13,12 @@
 <div class="topnav"></div>
 <script type="text/javascript">loadMenu("Create Account");</script>
 <div class="content"></div>
-<h2 style="margin-left:10%">Create New Account</h2>
+<h2 style="margin-left:10%; color:white;">Create New Account</h2>
 <h2 style="color:red; text-align:center; background-color: rgba(51,51,51,50)">Warning: This site features negative encryption, so don't reuse a password from somewhere else</h2>
 <form onsubmit="login();" target="dummyframe">
     <div class="imgcontainer">
         <img src="login_avatar.png" alt="Avatar" class="avatar">
     </div>
-    <p id="incorrect" style="text-align:center;color:red"></p>
     <div class="container">
         <label for="uname"><b>Username</b></label>
         <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
@@ -35,23 +34,24 @@
 
 <script>
     function login() {
-        let button = document.getElementById("submit");
         let uname = document.getElementById("uname").value;
         let psw = document.getElementById("psw").value;
         let psw2 = document.getElementById("psw2").value;
-
-        let error = document.getElementById("incorrect");
         if(psw != psw2) {
-            error.innerHTML = "Passwords do not match";
+            showAlert("Error", "Passwords do not match", "error");
+            return;
+        } else if(psw.length > 30) {
+            showAlert("Error", "Password max length has been exceeded", "error");
+            return;
         }
-        let data = getData("newaccount.php?uname=" + uname + "&psw=" + psw);
-        console.log(data);
-        let loggedIn = JSON.parse(data);
-        if(loggedIn) {
-            window.location.href = window.location.origin;
-        } else {
-            error.innerHTML = "Please choose a different username";
-        }
+        getDataWait("newaccount.php?uname=" + uname + "&psw=" + psw, function(response) {
+            let loggedIn = JSON.parse(response);
+            if(loggedIn) {
+                window.location.href = "/account";
+            } else {
+                showAlert("Username already taken", "Please choose a unique username", "warning");
+            }
+        });
     }
     
     function getData(yourUrl) {
