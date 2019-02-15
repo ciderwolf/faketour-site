@@ -1,0 +1,73 @@
+.content:before {
+    overflow: auto;	
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url("azorius.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #838f93;
+}
+
+button {
+    margin-left: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    border: 2px solid #555555;
+    color: #555555;
+    padding: 10px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    font-family: 'Nunito', sans-serif;
+}
+button:hover {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+}
+button:disabled {
+    background-color: rgba(51, 51, 51, 0.7);
+    color: white;
+}
+
+.text {
+    width: 60%;
+    margin: 0 auto;
+    background: rgba(240, 248, 255, 0.5);
+    padding: 5%;
+    border-radius: 10px;
+}
+
+#active-event {
+    display: flex;
+    margin: 0 auto;
+}
+
+.symbol-link {
+    padding: 20px;
+}
+
+.footer {
+    position: fixed;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    top: 90vh;
+    opacity: .6;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}

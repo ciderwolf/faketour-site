@@ -1,18 +1,10 @@
 let accountData;
 let avatars;
 let events;
-const thingsToLoad = 3;
+const thingsToLoad = 2;
 let loaded = 0;
 getDataWait("avatar_names.json", function(response) {
     avatars = JSON.parse(response);
-    loaded ++;
-    if(loaded == thingsToLoad) {
-        initialize();
-    }
-});
-
-getDataWait("events.php", function(response) {
-    events = JSON.parse(response);
     loaded ++;
     if(loaded == thingsToLoad) {
         initialize();
@@ -89,46 +81,6 @@ function initialize() {
             img.classList.add("selected")
         }
     }
-
-    let eventsContainer = document.getElementById("events");
-    eventsContainer.style["padding-left"] = "20px";
-    for(event of events) {
-        let eventDisplay = createEvent(event);
-        eventsContainer.appendChild(eventDisplay);
-    }
-}
-
-function createEvent(event) {
-    let eventDisplay = document.createElement("div");
-    eventDisplay.style.display = "flex";
-    let title = document.createElement("h3");
-    title.innerHTML += event.name + "&emsp;";
-    eventDisplay.appendChild(title);
-    if(event.open) {
-        let registerButton = document.createElement("button");
-        registerButton.innerHTML = "Register";
-        registerButton.id = event.code;
-        registerButton.style["margin-top"] = "7px";
-        registerButton.onclick = function(e) {
-            getDataWait("events.php?reg=" + event.code, function(response) {
-                if(response == "success") {
-                    showAlert("Registered", "Successfully registered for event: " + event.name, "success");
-                    registerButton.disabled = true;
-                }
-                else if(response == "duplicate") {
-                    showAlert("Error", "Already registered for event: " + event.name, "warning");
-                }
-                else {
-                    showAlert("Error", "Failed to register for event: " + event.name, "error");
-                }
-            });
-        }
-        eventDisplay.appendChild(registerButton);
-    }
-    else {
-        title.innerHTML += "&mdash;&emsp;closed";
-    }
-    return eventDisplay;
 }
 
 function changeAvatar() {

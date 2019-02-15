@@ -7,7 +7,7 @@
     }
     else {
         require($_SERVER["DOCUMENT_ROOT"] . "/php/connect_db.php");
-        $sql = "SELECT `name`, `code`, `open` FROM events WHERE `open`=1";
+        $sql = "SELECT `name`, `code`, `open` FROM events";
         $output = "";
         $result = $conn->query($sql);
         if($result->num_rows > 0) {

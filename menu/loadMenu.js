@@ -1,8 +1,8 @@
 let pages = {
     "Home": "/",
     "About": "/about/",
+    "Events": "/events/",
     "Constructed": "/constructed/",
-    "Players": "/players/",
     "Matches": "/matches/"
 };
 
