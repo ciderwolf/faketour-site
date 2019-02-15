@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
     <script type="text/javascript" src="validate.js"></script>
+    <script type="text/javascript" src="import.js"></script>
 </head>
 
 <body>
@@ -17,11 +18,12 @@
     <script type="text/javascript">loadMenu("Constructed");</script>
 
     <div class="title">
-        <h1>FakeTour Constructed</h1>
-<h2 style="color:maroon"id="timer"></h2>
+        <h1>Faketour Constructed</h1>
+        <h2 style="color:maroon"id="timer"></h2>
         <h2>Submit a deck made up of cards from <i class="ss ss-rna ss-2x"></i>&ensp;<i class="ss ss-grn ss-2x"></i>&ensp;<i class="ss ss-m19 ss-2x"></i>&ensp;
             <i class="ss ss-dom ss-2x"></i>&ensp;<i class="ss ss-rix ss-2x"></i>&ensp;<i class="ss ss-xln ss-2x"></i>
-        </h2>  
+        </h2>
+        <button style="position: absolute; right: 5vw; top: 5vh;" onclick="showModal()">Import Deck</button>
     </div>
     <div style="display:inline-grid;">
         <div style="display:flex">
@@ -30,6 +32,19 @@
         </div>
         <button id="submit" onclick="submit();">Submit Deck</button>
     </div>
+
+    <div class="modal" id="import-deck">
+        <span class="close" title="Cancel" onclick="document.getElementById('import-deck').style.display='none'">&times;</span>
+        <div class="container modal-content">
+            <h1>Import Deck</h1>
+            <label for="url">Import from URL</label>
+            <input type="text" name="url" id="url" style="width: 50%;" placeholder="TappedOut or MTGGoldfish"></input><br/>
+            <label for="files">Import from text file</label>
+            <input name="files" id="files" type="file" accept="text/*"></input><br>
+            <button onclick="importDeck()" style="width:95%">Import</button>
+        </div>
+    </div>
+
     <div class="footer"><a href='http://jamespaickart.com'>Artwork by James Paick</a></div>
 
 </body>
