@@ -26,12 +26,21 @@ body {
     margin-bottom: 5%;
 }
 
+#kaladesh {
+    background: -webkit-linear-gradient(white, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
 h1 {
     font-size: 72pt;
     color: white;
     text-align: center;
     font-family: Beleren;
     margin-bottom: 0px;
+    font-weight: normal;
 }
 
 p {
