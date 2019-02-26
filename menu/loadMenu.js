@@ -7,7 +7,8 @@ let pages = {
 };
 
 function loadMenu(activeClass) {
-    let div = document.getElementsByClassName("topnav")[0]
+    let div = document.getElementsByClassName("topnav")[0];
+    div.id = "topnav";
     getDataWait("/php/loggedIn.php?page=menu", function(login) {
         let loginPages;
         if(login == "null") {
@@ -43,8 +44,24 @@ function loadMenu(activeClass) {
             menuItem.style.float = "right";
             div.appendChild(menuItem);
         }
+        let show = document.createElement('a');
+        show.href = 'javascript:void(0);';
+        show.classList.add("icon");
+        show.onclick = function(e) {
+            showMenuItems();
+        }
+        show.innerHTML = "&#9776;";
+        div.appendChild(show);
     });
+}
 
+function showMenuItems() {
+    let x = document.getElementById("topnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 }
 
 function getDataWait(url, callback) {

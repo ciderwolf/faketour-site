@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Constructed | Faketour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"></head>
     <link rel="stylesheet" href="/css/keyrune.css">
@@ -23,14 +24,14 @@
         <h2>Submit a deck made up of cards from <i class="ss ss-rna ss-2x"></i>&ensp;<i class="ss ss-grn ss-2x"></i>&ensp;<i class="ss ss-m19 ss-2x"></i>&ensp;
             <i class="ss ss-dom ss-2x"></i>&ensp;<i class="ss ss-rix ss-2x"></i>&ensp;<i class="ss ss-xln ss-2x"></i>
         </h2>
-        <button style="position: absolute; right: 5vw; top: 5vh;" onclick="showModal()">Import Deck</button>
     </div>
     <div style="display:inline-grid;">
-        <div style="display:flex">
+        <div id="sumbission-fields">
             <textarea class="text" id="maindeck" placeholder="Maindeck (60 cards)"></textarea>
             <textarea class="text" id="sideboard" placeholder="Sideboard (15 cards)"></textarea>
         </div>
         <button id="submit" onclick="submit();">Submit Deck</button>
+        <button id="import" onclick="showModal()">Import Deck</button>
     </div>
 
     <div class="modal" id="import-deck">
@@ -38,7 +39,7 @@
         <div class="container modal-content">
             <h1>Import Deck</h1>
             <label for="url">Import from URL</label>
-            <input type="text" name="url" id="url" style="width: 50%;" placeholder="TappedOut or MTGGoldfish"></input><br/>
+            <input type="text" name="url" id="url" placeholder="TappedOut or MTGGoldfish"></input><br/>
             <label for="files">Import from text file</label>
             <input name="files" id="files" type="file" accept="text/*"></input><br>
             <button onclick="importDeck()" style="width:95%">Import</button>

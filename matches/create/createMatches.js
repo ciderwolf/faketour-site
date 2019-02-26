@@ -13,8 +13,9 @@ getDataWait("/php/loggedIn.php?page=create_pairings", function(response) {
         document.body.style.display = "block";
     }
 });
-getDataWait("/players/getPlayers.php", function(response) {
+getDataWait("/events/getPlayers.php", function(response) {
     players = JSON.parse(response);
+    players.remove("");
     if(players.length % 2 == 1) {
         players.push("Bye");	
     }

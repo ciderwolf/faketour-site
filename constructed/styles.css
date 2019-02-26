@@ -60,6 +60,19 @@ button:hover {
     color: white;
 }
 
+#submission-fields {
+    display: flex;
+}
+#url {
+    width: 50%;
+}
+
+#import {
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
+}
+
 input {
     margin: 25px;
     border-radius: 3px;
@@ -117,4 +130,33 @@ input {
 .close:hover, .close:focus {
     color: #f44336;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #submission-fields {
+        display: block;
+    }
+
+    .modal-content {
+        width: auto;
+    }
+
+    #url {
+        width: 80%;
+    }
+
+    #files {
+        width: 80%;
+    }
+
+    .close {
+        top: 30px;
+        color: black;
+    }
+
+    #import {
+        position: initial;
+        right: auto;
+        top: auto;
+    }
 }

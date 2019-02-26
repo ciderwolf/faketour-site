@@ -6,16 +6,23 @@
     right: 0;
     z-index: -1;
     display: block;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/about/rna/bg_splash.jpg");
     background-size:cover;
     width: 100%;
     height: 100%;
-
     filter: blur(5px);
 }
 
 body {
-    background-color: #080725; 
+    background-color: var(--bg-color); 
+    font-family: 'Nunito', sans-serif;
+}
+
+#bg {
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+    margin-bottom: 5%;
 }
 
 h1 {
@@ -23,38 +30,36 @@ h1 {
     color: white;
     text-align: center;
     font-family: Beleren;
-    animation: fadein 2s;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 16pt;
 }
 
 img {
     margin: auto;
-    margin-top: -70px;
     display: flex;
-    animation: slidein 2s;
-}
-
-#buttons {
-    margin-top: 100px;
-    animation: fadein 5s;
 }
 
 button {
     font-family: 'Nunito', sans-serif;
     margin: 25px;
-    background-color: #080725;
+    background-color: white;
     border-radius: 8px;
-    border: 5px solid white;
-    color: white;
+    border: 5px solid var(--bg-color); 
+    color: var(--bg-color); 
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 25pt;
+    font-size: 16pt;
     transition-duration: 0.4s;
 }
+
 button:hover {
-    background-color: white;
-    color: #080725;
+    background-color: var(--bg-color); 
+    color: white;
 }
 
 .footer {
@@ -63,6 +68,7 @@ button:hover {
     margin-bottom: 5%;
     top: 90vh;
     opacity: .6;
+    cursor: pointer;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -71,26 +77,31 @@ button:hover {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+.underlight {
+    color: gray;
+    opacity: 0.7;
+}
+
 @font-face {
     font-family: Beleren;
     src: url("/fonts/BelerenBold.woff");
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes slidein {
-    from {	transform: translate(0, 170%);
-            opacity: 0;
-    }
-    to {	transform: translate(0, 0%);
-            opacity: 1; }
-}
-
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 48pt;
+    }
+
+    #bg {
+        width: 70%;
+        max-width: auto;
+    }
+
+    p {
+        font-size: 14pt;
     }
 }

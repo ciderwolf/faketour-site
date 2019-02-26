@@ -24,11 +24,19 @@ getDataWait("getPlayers.php", function(response) {
         play.innerHTML += player + "<br>";
     }
     display.appendChild(play);
+
+    getDataWait("/php/loggedIn.php?page=menu", function(loggedIn) {
+        if(loggedIn != "null") {
+            if(players.includes(loggedIn)) {
+                document.getElementById("register").disabled = true;
+            }
+        }
+    })
+
 });
 
 function configureButton(event) {
     let registerButton = document.getElementById("register");
-    registerButton.id = event.code;
     registerButton.onclick = function(e) {
         getDataWait("events.php?reg=" + event.code, function(response) {
             if(response == "success") {

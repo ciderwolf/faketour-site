@@ -33,7 +33,7 @@ body {
 .avatar {
     border: 5px solid black;
     border-radius: 5px;
-    width: 208px;
+    width: 208px !important;
     height: 157px;
     margin: 15px;
     position: relative;
@@ -176,3 +176,8 @@ button:hover {
 }
 
 
+@media screen and (max-width: 600px) {
+    .avatar {
+        height: auto;
+    }
+}

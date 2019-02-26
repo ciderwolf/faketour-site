@@ -54,6 +54,10 @@ button:disabled {
     margin: 0 auto;
 }
 
+#event-info {
+    width: 350px;
+}
+
 .symbol-link {
     padding: 20px;
 }
@@ -70,4 +74,18 @@ button:disabled {
 .footer a {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        width: auto;
+    }
+
+    #active-event {
+        display: block;
+    }
+
+    #event-info {
+        width: auto;
+    }
 }
