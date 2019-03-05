@@ -47,6 +47,9 @@ function configureButton(event) {
                 showAlert("Error", "Already registered for event: " + event.name, "warning");
                 registerButton.disabled = true;
             }
+            else if(response == "login") {
+                showAlert("Error", "Need to be logged in to register for events", "warning");
+            }
             else {
                 showAlert("Error", "Failed to register for event: " + event.name, "error");
             }

@@ -21,6 +21,10 @@
     
     function registerForEvent($event) {
         require($_SERVER["DOCUMENT_ROOT"] . "/php/connect_db.php");
+        if(!isset($_SESSION["username"])) {
+            echo "login";
+            return;
+        }
         $username = $_SESSION["username"];
         $sql = "SELECT * FROM events WHERE code='$event'";
         $result = $conn->query($sql);
