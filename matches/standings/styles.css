@@ -88,6 +88,7 @@ h4 {
     transition: 0.3s;
     font-size: 17px;
     color: white;
+    font-family: inherit;
 }
 
 .tab button:hover {
@@ -120,4 +121,50 @@ h4 {
 .footer a {
     color: white;
     text-decoration: none;
+}
+
+.format-name {
+    display: none;
+}
+
+#disclaimer {
+    position: absolute; 
+    right: 0;
+}
+
+
+@media screen and (max-width:600px) {
+    .tab {
+        display: none;
+    }
+
+    .tabcontent {
+        display: block;
+    }
+
+    .backdrop {
+        width: 100%;
+    }
+    .cell {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .backdrop {
+        margin-bottom: 15px;
+        border-radius: 25px;
+    }
+
+    .format-name {
+        display: block;
+    }
+
+    th {
+        padding: 15px;
+    }
+
+    #disclaimer {
+        padding-right: 0px;
+        position: static;
+    }
 }

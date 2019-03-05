@@ -55,6 +55,13 @@ button:hover {
     color: white;
 }
 
+#buttons {
+    position: absolute; 
+    right:10vw;
+    top: 50px;
+    display: grid;
+}
+
 #buttons button {
     min-width: 180px;
 }
@@ -189,4 +196,23 @@ input[type=number]:focus {
 
 .selector-bar {
     display: flex;
+}
+
+@media screen and (max-width:600px) {
+    .match {
+        margin-left: 0px;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 16pt;
+    }
+
+    #buttons {
+        position: unset;
+    }
+
+    button {
+        margin-top: 0px;
+    }
 }

@@ -19,7 +19,6 @@ function createStandings(data) {
     
     let light = false;
     let limitedTable = document.getElementById("limited");
-    console.log(createFormatOrder(players, "limited"));
     for(playerName of createFormatOrder(players, "limited")) {
         if(light) {
             limitedRows[playerName].classList.add("light");
@@ -45,8 +44,9 @@ function createStandings(data) {
         light = !light;
         totalTable.appendChild(totalRows[playerName]);
     }
-    
-    document.getElementById("initial").click();
+    if(document.getElementsByClassName("tab")[0].offsetParent !== null) {
+        document.getElementById("initial").click();
+    }
 }
 
 function createFormatRow(player, format) {
@@ -144,3 +144,15 @@ function showTab(evt, tab) {
     document.getElementById(tab).style.display = "block";
     evt.currentTarget.classList.add("active");
 }
+
+window.addEventListener("resize", function() {
+    let tabcontent = document.getElementsByClassName("tabcontent");
+    if (window.matchMedia("(min-width: 600px)").matches) {
+        console.log("resize");
+        document.getElementById("initial").click();
+    } else {
+        for(let content of tabcontent) {
+            content.style.display = "block";
+        }
+    }
+});

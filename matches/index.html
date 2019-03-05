@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Matches | Faketour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"></head>
     <link rel="stylesheet" href="/menu/styles.css">
@@ -13,10 +14,6 @@
     <div class="content"></div>
     <div class="topnav"></div>
     <script type="text/javascript">loadMenu("Matches");</script>
-    <div id="buttons" style="position: absolute; right:10vw; display: grid;">
-        <button onclick="window.location.href='brackets'">View Brackets</button>
-        <button onclick="window.location.href='standings'">View Standings</button>
-    </div>
     <div class="title">
         <h1>Faketour Matches</h1>
     </div>
@@ -27,6 +24,10 @@
         <div id="constructed" class="match">
             <h2>Constructed</h2>
         </div>
+    </div>
+    <div id="buttons">
+        <button onclick="window.location.href='brackets'">View Brackets</button>
+        <button onclick="window.location.href='standings'">View Standings</button>
     </div>
     <div class="footer"><a href='https://twitter.com/AdamPaquette'>Artwork by @AdamPaquette</a></div>
 

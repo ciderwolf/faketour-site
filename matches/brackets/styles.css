@@ -103,3 +103,13 @@ h2 {
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width:600px) {
+    .round {
+        display: block;
+    }
+
+    .match {
+        width: fit-content;
+    }
+}

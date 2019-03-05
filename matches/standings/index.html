@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Standings | Faketour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"></head>
     <link rel="stylesheet" href="/menu/styles.css">
@@ -15,7 +16,7 @@
     <script type="text/javascript">loadMenu();</script>
     <div style="display: flex;" class="title">
         <h1>Faketour Standings</h1>
-        <h3 style="position:absolute; right: 0;">By game record, not official order</h3>
+        <h3 id="disclaimer">By game record, not official order</h3>
     </div>
 
     <div id="standings">
@@ -23,7 +24,8 @@
             <button id="initial" class="tablinks" onclick="showTab(event, 'limited-content')">Limited</button>
             <button class="tablinks" onclick="showTab(event, 'constructed-content')">Constructed</button>
             <button class="tablinks" onclick="showTab(event, 'total-content')">Total</button>
-        </div>		  
+        </div>
+        <h2 class="format-name">Limited</h2>
         <div class="backdrop tabcontent" id="limited-content" align="center">
             <table id="limited">
                 <tr>
@@ -31,6 +33,7 @@
                 </tr>
             </table>
         </div>
+        <h2 class="format-name">Constructed</h2>
         <div class="backdrop tabcontent" id="constructed-content" align="center">
             <table id="constructed">
                 <tr>
@@ -38,6 +41,7 @@
                 </tr>
             </table>
         </div>
+        <h2 class="format-name">Total</h2>
         <div class="backdrop tabcontent" id="total-content" align="center">
             <table id="total">
                 <tr>
