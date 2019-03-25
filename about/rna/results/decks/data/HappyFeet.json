@@ -1,0 +1,98 @@
+{
+  "Creature": [{
+    "number": "44",
+    "set": "rna",
+    "name": "Persistent Petitioners",
+    "count": 22
+  }],
+  "Sideboard": [
+    {
+      "number": "207",
+      "set": "dom",
+      "name": "Teferi, Hero of Dominaria",
+      "count": 4
+    },
+    {
+      "number": "57",
+      "set": "rna",
+      "name": "Thought Collapse",
+      "count": 2
+    },
+    {
+      "number": "280",
+      "set": "xln",
+      "name": "Jace, Ingenious Mind-Mage",
+      "count": 3
+    },
+    {
+      "number": "39",
+      "set": "grn",
+      "name": "Drowned Secrets",
+      "count": 2
+    },
+    {
+      "number": "67",
+      "set": "m19",
+      "name": "Patient Rebuilding",
+      "count": 2
+    },
+    {
+      "number": "54",
+      "set": "m19",
+      "name": "Essence Scatter",
+      "count": 2
+    }
+  ],
+  "Instant": [
+    {
+      "number": "30",
+      "set": "xln",
+      "name": "Rallying Roar",
+      "count": 4
+    },
+    {
+      "number": "18",
+      "set": "rna",
+      "name": "Rally to Battle",
+      "count": 4
+    },
+    {
+      "number": "34",
+      "set": "xln",
+      "name": "Settle the Wreckage",
+      "count": 4
+    }
+  ],
+  "Sorcery": [{
+    "number": "74",
+    "set": "m19",
+    "name": "Sleep",
+    "count": 2
+  }],
+  "Land": [
+    {
+      "number": "255",
+      "set": "xln",
+      "name": "Glacial Fortress",
+      "count": 4
+    },
+    {
+      "number": "251",
+      "set": "rna",
+      "name": "Hallowed Fountain",
+      "count": 4
+    },
+    {
+      "number": "27",
+      "set": "gk2",
+      "name": "Island",
+      "count": 12
+    },
+    {
+      "number": "26",
+      "set": "gk2",
+      "name": "Plains",
+      "count": 6
+    }
+  ]
+}

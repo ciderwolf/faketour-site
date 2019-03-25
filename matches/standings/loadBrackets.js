@@ -1,4 +1,5 @@
 let players = {};
+let isMobile = true;
 
 const formats = ["constructed", "limited"];
 getDataWait("getStandings.php", function(response) {
@@ -45,6 +46,7 @@ function createStandings(data) {
         totalTable.appendChild(totalRows[playerName]);
     }
     if(document.getElementsByClassName("tab")[0].offsetParent !== null) {
+        isMobile = false;
         document.getElementById("initial").click();
     }
 }
@@ -146,11 +148,13 @@ function showTab(evt, tab) {
 }
 
 window.addEventListener("resize", function() {
-    let tabcontent = document.getElementsByClassName("tabcontent");
-    if (window.matchMedia("(min-width: 600px)").matches) {
-        console.log("resize");
+    let desktopSize = window.matchMedia("(min-width: 600px)").matches;
+    if (desktopSize && isMobile) {
+        isMobile = false;
         document.getElementById("initial").click();
-    } else {
+    } else if(!desktopSize && !isMobile) {
+        let tabcontent = document.getElementsByClassName("tabcontent");
+        isMobile = true;
         for(let content of tabcontent) {
             content.style.display = "block";
         }
