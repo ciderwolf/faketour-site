@@ -1,9 +1,17 @@
 getDataWait("events.php", function(response) {
     events = JSON.parse(response);
-    for(event of events) {
-        if(event.open) {
+    let foundOpen = false;
+    for(let i = 0; i < events.length; i++) {
+        let event = events[i];
+        if(event.open || (!foundOpen && i == events.length - 1)) {
+            foundOpen = true;
             title.innerHTML = "Faketour <i>" + event.name + "</i>";
-            configureButton(event);
+            if(event.open) {
+                configureButton(event);
+            } else {
+                let button = document.getElementById("register");
+                button.innerHTML = "<a href='/about/" + event.code + "/results'>View Results</a>";
+            }
             document.getElementById("current-symbol").appendChild(createSetLink(event));
         }
         else {

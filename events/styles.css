@@ -49,6 +49,11 @@ button:disabled {
     border-radius: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #active-event {
     display: flex;
     margin: 0 auto;
