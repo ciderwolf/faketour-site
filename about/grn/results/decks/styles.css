@@ -3,7 +3,7 @@ body {
 }
 
 .content:before {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("niv-mizzet.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("izzet-guildgate.jpg");
 }
 
 .backdrop {
