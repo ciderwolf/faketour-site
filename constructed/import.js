@@ -53,6 +53,8 @@ function readURL() {
             host = "m"
         } else if(url.host.includes("tappedout.net")) {
             host = "t";
+        } else if(url.host.includes("deckstats.net")) {
+            host = "d";
         }
         getDataWait("readDeck.php?mode=" + host + "&url=" + url.href, function(response) {
             if(response == "Invalid URL mode") {

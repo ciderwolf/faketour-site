@@ -1,3 +1,5 @@
+let disableButton;
+
 getDataWait("events.php", function(response) {
     events = JSON.parse(response);
     let foundOpen = false;
@@ -8,9 +10,12 @@ getDataWait("events.php", function(response) {
             title.innerHTML = "Faketour <i>" + event.name + "</i>";
             if(event.open) {
                 configureButton(event);
+                disableButton = true;
             } else {
                 let button = document.getElementById("register");
-                button.innerHTML = "<a href='/about/" + event.code + "/results'>View Results</a>";
+                button.innerHTML = "View Results";
+                button.outerHTML = "<a href='/about/" + event.code + "/results'>" + button.outerHTML + "</a>";
+                disableButton = false;
             }
             document.getElementById("current-symbol").appendChild(createSetLink(event));
         }
@@ -34,7 +39,7 @@ getDataWait("getPlayers.php", function(response) {
     display.appendChild(play);
 
     getDataWait("/php/loggedIn.php?page=menu", function(loggedIn) {
-        if(loggedIn != "null") {
+        if(loggedIn != "null" && disableButton == true) {
             if(players.includes(loggedIn)) {
                 document.getElementById("register").disabled = true;
             }

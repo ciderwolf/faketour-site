@@ -8,11 +8,21 @@
     else if($mode == "m") {
         $url = "https://www.mtggoldfish.com/deck/download/" . substr($url_raw, strrpos($url_raw, "/") + 1);
     }
+    else if($mode == "d") {
+        $url = $url_raw . "?export_txt=1";
+    }
     else {
         die("Invalid URL mode");
     }
     if($url != "") {
-        echo str_replace("\r", "", get_remote_data($url));
+        $response = str_replace("\r", "", get_remote_data($url));
+        if($mode == "d") {
+            $response = str_replace("SB: ", "", $response); // replace 'SB: ' tags for sidebaord cards
+            $response = trim(preg_replace('/^\w+\n/m','', $response)); // replace card type headings
+            $front = substr($response, 0, strrpos($response, "\n\n")); // remove type header new lines
+            $response = str_replace($front, str_replace("\n\n", "\n", $front) , $response); // replace original deck, leaving sideboard with a line break
+        }
+        echo $response;
     }
 
     function get_remote_data($url, $post_paramtrs=false)    {
