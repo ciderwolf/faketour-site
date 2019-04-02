@@ -12,14 +12,15 @@
 <script type="text/javascript">loadMenu("Home");</script>
 <h1>FakeTour</h1>
 <img src="/about/rna/rna-logo.png"/>
-<div align="center" id="buttons">
-    <button id="button1" onclick="window.location.href='matches';">Matches</button>
-    <button id="button2" onclick="window.location.href='about/rna';">About</button>
+<div id="buttons">
+    <button id="button1" onclick="navigate(0);">Results</button>
+    <button id="button2" onclick="navigate(1);">Decklists</button>
 </div>
 
 <div class="footer" ><a href='https://twitter.com/DaarkenArt'>Artwork by @DaarkenArt</a></div>
 
 <script type="text/javascript">
+    let buttonAddress = ["about/rna/results", "about/rna/results/decks"];
     function loadButtons() {
         getDataWait("/php/loggedIn.php?page=menu", function(response) {
             let button1 = document.getElementById("button1");
@@ -35,18 +36,24 @@
                 }
             }
             else {
-                button1.innerHTML = "Matches";
+                button1.innerHTML = "Results";
                 button1.onclick = function(e) {
-                    window.location.href = "matches";
+                    window.location.href = buttonAddress[0];
                 }
-                button2.innerHTML = "About";
+                button2.innerHTML = "Decklists";
                 button2.onclick = function(e) {
-                    window.location.href = "about/rna";
+                    window.location.href = buttonAddress[1];
                 }
             }
         });
     }
     loadButtons();
     setInterval(loadButtons, 5000);
+
+    function navigate(buttonIndex) {
+        if(buttonAddress[buttonIndex]) {
+            window.location.href = buttonAddress[buttonIndex];
+        }
+    }
 </script>
 </html>

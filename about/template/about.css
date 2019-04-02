@@ -42,6 +42,10 @@ img {
     display: flex;
 }
 
+.top-gap {
+    margin-top: -70px;
+}
+
 button {
     font-family: 'Nunito', sans-serif;
     margin: 25px;
@@ -104,4 +108,9 @@ a {
     p {
         font-size: 14pt;
     }
+
+    .top-gap {
+        margin-top: -30px !important;
+    }
+    
 }

@@ -5,13 +5,3 @@
 :root {
     --bg-color: #1c090a;
 }
-
-img {
-    margin-top: -70px;
-}
-
-@media screen and (max-width: 600px) {
-    img {
-        margin-top: -30px !important;
-    }
-}
