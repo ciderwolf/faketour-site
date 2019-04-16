@@ -1,6 +1,6 @@
 let loggedIn;
 let timer = document.getElementById("timer");
-let due = new Date("Mon Jan 21 2019 23:59:59");
+let due = new Date("Fri May 3 2019 23:59:59");
 let updateTimer = setInterval("getTimer();", 1000);
 
 logIn();

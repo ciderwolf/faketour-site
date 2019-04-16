@@ -49,7 +49,7 @@
             return json_encode($loggedIn);
         } else {
             require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-            $table_name = $set . "_constructed";
+            $table_name = $set . "_players";
             $username = $_SESSION["username"];
             $sql = "SELECT * FROM $table_name WHERE username='$username'";
             $result = $conn->query($sql);

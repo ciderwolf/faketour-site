@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Faketour RNA</title>
+    <title>Faketour WAR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -11,16 +11,16 @@
 <div class="topnav" style="font-family: Nunito"></div>
 <script type="text/javascript">loadMenu("Home");</script>
 <h1>FakeTour</h1>
-<img src="/about/rna/rna-logo.png"/>
+<img src="/about/war/war-logo.png"/>
 <div id="buttons">
     <button id="button1" onclick="navigate(0);">Results</button>
     <button id="button2" onclick="navigate(1);">Decklists</button>
 </div>
 
-<div class="footer" ><a href='https://twitter.com/DaarkenArt'>Artwork by @DaarkenArt</a></div>
+<div class="footer"><a href='http://www.raymondswanland.com/'>Artwork by Raymond Swanland</a></div>
 
 <script type="text/javascript">
-    let buttonAddress = ["about/rna/results", "about/rna/results/decks"];
+    let buttonAddress = ["about/war", "constructed"];
     function loadButtons() {
         getDataWait("/php/loggedIn.php?page=menu", function(response) {
             let button1 = document.getElementById("button1");
@@ -36,11 +36,11 @@
                 }
             }
             else {
-                button1.innerHTML = "Results";
+                button1.innerHTML = "About";
                 button1.onclick = function(e) {
                     window.location.href = buttonAddress[0];
                 }
-                button2.innerHTML = "Decklists";
+                button2.innerHTML = "Submit Decklist";
                 button2.onclick = function(e) {
                     window.location.href = buttonAddress[1];
                 }

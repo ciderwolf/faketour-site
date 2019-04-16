@@ -3,7 +3,7 @@
     ini_set("display_errors", 1);
     session_start();
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-    $table_name = $set . "_constructed";
+    $table_name = $set . "_players";
     $sql = "SELECT username FROM $table_name WHERE 1";
     $result = $conn->query($sql);
     $players = array();

@@ -5,12 +5,7 @@ const formats = ["limited", "constructed"];
 //load data asynchronously
 let loggedIn;
 let matchData = {};
-let staticForm;
 logIn();
-getDataWait("staticForm.txt", function(response) {
-    staticForm = response;
-    checkLoaded();
-});
 for(format of formats) {
     loadMatchData(format);
 }
@@ -46,7 +41,7 @@ function logIn() {
 }
 
 function checkLoaded() {
-    if(loggedIn != undefined && matchData.hasOwnProperty("limited") && matchData.hasOwnProperty("constructed") && staticForm != undefined) {
+    if(loggedIn != undefined && matchData.hasOwnProperty("limited") && matchData.hasOwnProperty("constructed")) {
         for(format of formats) {
             loadMatches(format);
         }

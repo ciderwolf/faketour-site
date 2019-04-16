@@ -182,8 +182,11 @@ function normalizePreviewY(e, preview) {
 }
 
 function getCard(name) {
+    if(standardLegal[name]) {
+        return standardLegal[name];
+    }
     for(card in standardLegal) {
-        if(card.toLowerCase() == name.toLowerCase()) {
+        if(card.toLowerCase().includes(name.toLowerCase())) {
             return standardLegal[card];
         }
     }
