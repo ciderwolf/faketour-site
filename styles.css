@@ -95,4 +95,10 @@ button:hover {
     h1 {
         font-size: 48pt;
     }
+    img {
+        margin-top: -70px;
+    }
+    button {
+        width: -webkit-fill-available;
+    }
 }
