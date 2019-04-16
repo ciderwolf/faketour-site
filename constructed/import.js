@@ -56,6 +56,7 @@ function readURL() {
         } else if(url.host.includes("deckstats.net")) {
             host = "d";
         }
+        showAlert("Loading Deck", "Importing decklist from " + urlSelector.value, "info");
         getDataWait("readDeck.php?mode=" + host + "&url=" + url.href, function(response) {
             if(response == "Invalid URL mode") {
                 showAlert("Invalid URL", "We don't support importing decks from " + url.host, "error");

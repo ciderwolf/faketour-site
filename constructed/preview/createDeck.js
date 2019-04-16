@@ -54,6 +54,9 @@ function getLineInfo(line) {
 
 function createDecklist() {
     for(line of deckData.maindeck) {
+        if(line == "") {
+            continue;
+        }
         let data = getLineInfo(line);
         let name = data[0];
         let count = data[1];

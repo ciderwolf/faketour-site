@@ -16,6 +16,9 @@
     }
     if($url != "") {
         $response = str_replace("\r", "", get_remote_data($url));
+        if($mode == "m") {
+            $response = str_replace("/", " // ", $response);    
+        }
         if($mode == "d") {
             $response = str_replace("SB: ", "", $response); // replace 'SB: ' tags for sidebaord cards
             $response = trim(preg_replace('/^\w+\n/m','', $response)); // replace card type headings

@@ -5,6 +5,9 @@ const sideboardSize = 15;
 const maxCardCount = 4;
 
 function validateDeck(maindeck, sideboard) {
+    if(document.getElementById("validate-checkbox").checked == false) {
+        return true;
+    }
     let deck = {};
     let maindeckCount = 0;
     for(line of maindeck) {
@@ -76,3 +79,6 @@ function isStandardLegal(card) {
     return false;
 }
 
+function validateClicked() {
+    document.getElementById("validate-checkbox").click();
+}

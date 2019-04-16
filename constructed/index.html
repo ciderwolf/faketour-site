@@ -31,7 +31,14 @@
             <textarea class="text" id="sideboard" placeholder="Sideboard (15 cards)"></textarea>
         </div>
         <button id="submit" onclick="submit();">Submit Deck</button>
-        <button id="import" onclick="showModal()">Import Deck</button>
+        <div id="floating">
+            <button onclick="showModal()">Import Deck</button><br>
+            <div class="checkbox">
+                <input type="checkbox" name="validate-deck" id="validate-checkbox" checked>
+                <label for="validate-deck" onclick="validateClicked()"></label>
+                <h3 id="checkbox-label">Validate Decklist</h3>
+            </div>
+        </div>
     </div>
 
     <div class="modal" id="import-deck">
