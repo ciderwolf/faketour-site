@@ -125,13 +125,13 @@
     "name": "Find // Finality",
     "count": 3
   }],
-  "Land": [
-    {
+  "Enchantment": [{
       "number": "158",
       "set": "rix",
       "name": "Hadana's Climb // Winged Temple of Orazca",
       "count": 2
-    },
+  }],
+  "Land": [
     {
       "number": "246",
       "set": "rna",

@@ -29,18 +29,7 @@
         $sql = "SELECT * FROM events WHERE code='$event'";
         $result = $conn->query($sql);
         if($result->num_rows > 0) {
-            $table_name = $set . "_limited";
-            $sql = "SELECT * FROM $table_name WHERE username='$username'";
-            $result = $conn->query($sql);
-            if($result->num_rows > 0) {
-                echo "duplicate";
-                return;
-            }
-            $sql = "INSERT INTO $table_name (`username`) VALUES ('$username')";
-            if ($conn->query($sql) === FALSE) {
-                echo "Error updating record: " . $conn->error;
-            }
-            $table_name = $set . "_constructed";
+            $table_name = $set . "_players";
             $sql = "INSERT INTO $table_name (`username`) VALUES ('$username')";
             if ($conn->query($sql) === FALSE) {
                 echo "Error updating record: " . $conn->error;
