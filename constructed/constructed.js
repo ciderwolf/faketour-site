@@ -1,10 +1,13 @@
 let loggedIn;
 let timer = document.getElementById("timer");
-let due = new Date("Fri May 3 2019 23:59:59");
+let due;
 let updateTimer = setInterval("getTimer();", 1000);
 
 logIn();
-getTimer();
+getDataWait("getDate.php", function(response) {
+    due = new Date(response);
+    getTimer();
+});
 
 function getTimer() {
     let now = new Date();
@@ -72,6 +75,9 @@ function uploadDeck(cardList) {
 }
 
 function submit() {
+    if(due === undefined) {
+        return;
+    }
     let maindeck = document.getElementById("maindeck").value.split("\n");
     let sideboard = document.getElementById("sideboard").value.split("\n");
     let valid = false;
