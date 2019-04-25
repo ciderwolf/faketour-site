@@ -5,7 +5,7 @@
     $sqlArgs = "";
     foreach($_REQUEST as $key => $value) {
         if(in_array($key, $params)) {
-            $sqlArgs[] = $key . "=" . $value;
+            $sqlArgs[] = $key . "='" . $value . "'";
         }
     }
     $sqlArgs = join($sqlArgs, ", ");

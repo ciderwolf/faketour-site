@@ -3,10 +3,23 @@ let timer = document.getElementById("timer");
 let due;
 let updateTimer = setInterval("getTimer();", 1000);
 
+let collectLegacyDeck = false;
+
 logIn();
 getDataWait("getDate.php", function(response) {
     due = new Date(response);
     getTimer();
+});
+
+getDataWait("/php/loggedIn.php?page=menu", function(username) {
+    if(username != "null") {
+        getDataWait("preview/getDeck.php?user=" + username + "&set=rna", function(deck) {
+            if(deck == "true") {
+                document.getElementById("sumbission-fields").innerHTML += "<textarea class='text' id='legacy-collection' placeholder='Put your Ravnica Allegiance deck here @" + username + "'></textarea>"
+                collectLegacyDeck = true;
+            }
+        });
+    }
 });
 
 function getTimer() {
@@ -57,9 +70,9 @@ function getData(url) {
     return request.responseText;
 }
 
-function uploadDeck(cardList) {
+function uploadDeck(cardList, setCode) {
     let request = new XMLHttpRequest();
-    request.open("POST", "uploadDeck.php", true);
+    request.open("POST", "uploadDeck.php" + (setCode !== undefined ? "?set=" + setCode : ""), true);
     request.setRequestHeader("body", JSON.stringify(cardList));
     request.send();
     request.onload = function (e) {
@@ -78,6 +91,14 @@ function submit() {
     if(due === undefined) {
         return;
     }
+    if(collectLegacyDeck) {
+        let text = document.getElementById("legacy-collection").value;
+        if(text.trim().length != 0) {
+            uploadDeck(text.split("\n"), "rna");
+        }
+    }
+    
+
     let maindeck = document.getElementById("maindeck").value.split("\n");
     let sideboard = document.getElementById("sideboard").value.split("\n");
     let valid = false;
