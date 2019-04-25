@@ -9,15 +9,19 @@ let pages = {
 function loadMenu(activeClass) {
     let div = document.getElementsByClassName("topnav")[0];
     div.id = "topnav";
-    getDataWait("/php/loggedIn.php?page=menu", function(login) {
+    getDataWait("/php/user.php?page=menu", function(response) {
         let loginPages;
-        if(login == "null") {
+        let login = JSON.parse(response);
+        if(login == null) {
             loginPages = {
                 "Log In": "/account/login/?",
                 "Create Account": "/account/create/?"
             };
         } else {
             loginPages = {"My Account": "/account/"};
+            if(login.admin == true) {
+                loginPages["Admin"] = "/admin/";
+            }
         }
         for(page of Object.keys(pages)) {
             let name = page;

@@ -18,9 +18,9 @@ function loadMatchData(format) {
 }
 
 function logIn() {
-    getDataWait("/php/loggedIn.php?page=matches", function(response) {
-        if(response == "true " || response == "false") {
-            loggedIn = JSON.parse(response);
+    getDataWait("/php/user.php?page=matches", function(response) {
+        if(response == "null") {
+            loggedIn = false;
         } else {
             loggedIn = response;
         }

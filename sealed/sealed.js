@@ -16,9 +16,9 @@ function getCardImage(card) {
 }
 
 function logIn() {
-    getDataWait("/php/loggedIn.php?page=generate_sealed", function(response) {
+    getDataWait("/php/user.php?page=generate_sealed", function(response) {
         let hasPool = false;
-        if(response != "true" && response != "false") {
+        if(response != "true" && response != "null") {
             response = response.substring(1,response.length-1);
             hasPool = true;
         }
@@ -35,7 +35,7 @@ function logIn() {
             }
             constructPool(responseJSON);
         }
-        loggedIn = responseJSON;
+        loggedIn = responseJSON == true;
     });
 }
 

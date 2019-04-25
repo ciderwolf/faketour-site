@@ -11,7 +11,7 @@ getDataWait("getDate.php", function(response) {
     getTimer();
 });
 
-getDataWait("/php/loggedIn.php?page=menu", function(username) {
+getDataWait("/php/user.php?value=username", function(username) {
     if(username != "null") {
         getDataWait("preview/getDeck.php?user=" + username + "&set=rna", function(deck) {
             if(deck == "true") {
@@ -45,9 +45,9 @@ function pad(num, size) {
 }
 
 function logIn() {
-    getDataWait("/php/loggedIn.php?page=submit_constructed", function(response) {
+    getDataWait("/php/user.php?page=submit_constructed", function(response) {
         let hasDeck = false;
-        if(response != "true" && response != "false") {
+        if(response != "true" && response != "null") {
             response = response.substring(1,response.length-1);
             hasDeck = true;
         }

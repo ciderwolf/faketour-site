@@ -9,7 +9,7 @@ getDataWait("cards.json", function(response) {
     }
 });
 
-let url = "/php/loggedIn.php?page=submit_constructed";
+let url = "/php/user.php?page=submit_constructed";
 let player = new URL(window.location.href).searchParams.get("user");
 if(player != null) {
     url = "getDeck.php?user=" + decodeURI(player);
@@ -17,7 +17,7 @@ if(player != null) {
 
 getDataWait(url, function(response) {
     let hasDeck = false;
-    if(response != "true" && response != "false") {
+    if(response != "true" && response != "null") {
         response = response.substring(1,response.length-1);
         hasDeck = true;
     }

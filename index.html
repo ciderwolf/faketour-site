@@ -22,10 +22,10 @@
 <script type="text/javascript">
     let buttonAddress = ["about/war", "constructed"];
     function loadButtons() {
-        getDataWait("/php/loggedIn.php?page=menu", function(response) {
+        getDataWait("/php/user.php?value=loggedIn", function(response) {
             let button1 = document.getElementById("button1");
             let button2 = document.getElementById("button2");
-            if(response == "null") {
+            if(response == "false") {
                 button1.innerHTML = "Create Account";
                 button1.onclick = function(e) {
                     window.location.href = "account/create/?";

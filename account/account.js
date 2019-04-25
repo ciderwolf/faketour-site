@@ -15,8 +15,8 @@ logIn();
 
 
 function logIn() {
-    getDataWait("/php/loggedIn.php?page=account", function(response) {
-        if(response == "true " || response == "false") {
+    getDataWait("/php/user.php?page=account", function(response) {
+        if(response == "null") {
             window.location.href = "login/?";
         } else {
             accountData = JSON.parse(response);

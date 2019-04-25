@@ -7,7 +7,7 @@
     $sql = "SELECT * FROM users WHERE username='$username'";
     $result = $conn->query($sql);
     $success = false;
-    if($result->num_rows > 0) {
+    if($result->num_rows > 0 || $username == "null") {
         echo "false";
         return;
     }
