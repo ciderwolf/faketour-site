@@ -1,3 +1,32 @@
+<?php
+    error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+    include $_SERVER["DOCUMENT_ROOT"] . "/php/administrator.php";
+
+    if(!$administrator) {
+        header("Location: /");
+    }
+
+    function isAdministrator($loggedIn) {
+        if($loggedIn) {
+            $username = $_SESSION["username"];
+            $sql = "SELECT admin FROM users WHERE username='$username' LIMIT 1";
+            require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
+            $result = $conn->query($sql);
+            $output = "";
+            if($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    $output = $row["admin"] == "1";
+                }
+            }
+            return $output;
+        }
+        else {
+            return $loggedIn;
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,8 +41,6 @@
 <body style="display: none">
     <div class="topnav"></div>
     <script type="text/javascript">loadMenu();</script>
-    <div class="content"></div>
-    <!-- <button style="position: absolute; right:10vw"onclick="window.location.href='brackets'"">View Brackets</button> -->
     <div class="title">
         <h1>Create Pairings</h1>
     </div>
