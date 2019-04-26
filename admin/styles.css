@@ -1,5 +1,7 @@
 body {
     font-family: 'Nunito', sans-serif;
+    color: white;
+    background-color: #272a33;
 }
 
 input {
@@ -8,6 +10,7 @@ input {
     color: black;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
+    background-color: rgba(255,255,255,0.8);
 }
 
 input[type=text] {
@@ -37,10 +40,8 @@ button:hover {
 }
 
 .danger {
-    border-color: maroon;
-}
-.danger:hover {
-    background-color: maroon;
+    background-color: rgba(135, 36, 0, 0.7);
+    color: white;
 }
 
 .section {

@@ -12,7 +12,6 @@
         $result = $conn->query($sql);
         $output = array();
         if ($result->num_rows > 0) {
-            // output data of each row
             while($row = $result->fetch_assoc()) {
                 $output[] = $row;
             }
@@ -84,8 +83,11 @@
         </p>
     </div>
     <div class='section'>
-        <h2>Match Creation</h2>
-        <div class='section'><a href='create'><button>Create Pairings</button></a></div>
+        <h2>Matches</h2>
+        <div class='section'>
+            <a href='create'><button>Create Pairings</button></a>
+            <a href='update'><button>Update Pairings</button></a>
+        </div>
     </div>
 </body>
 </html>

@@ -6,25 +6,6 @@
     if(!$administrator) {
         header("Location: /");
     }
-
-    function isAdministrator($loggedIn) {
-        if($loggedIn) {
-            $username = $_SESSION["username"];
-            $sql = "SELECT admin FROM users WHERE username='$username' LIMIT 1";
-            require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-            $result = $conn->query($sql);
-            $output = "";
-            if($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    $output = $row["admin"] == "1";
-                }
-            }
-            return $output;
-        }
-        else {
-            return $loggedIn;
-        }
-    }
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +17,7 @@
     <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
-<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display:none;"></iframe>
-
-<body style="display: none">
+<body>
     <div class="topnav"></div>
     <script type="text/javascript">loadMenu();</script>
     <div class="title">

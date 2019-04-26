@@ -1,0 +1,75 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #272a33;
+    color: white;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    border: 2px solid #555555;
+    color: #555555;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    font-family: 'Nunito', sans-serif;
+}
+
+button:hover {
+    background-color: rgba(51, 51, 51, 0.7);
+    color: white;
+}
+
+input {
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 3px;
+    border: 2px solid #333333;
+    color: #333333;
+    padding: 5px 5px;
+    font-size: 16px;
+    width: 200px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.short {
+    width: 100px;
+}
+
+select {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 3px;
+    border: 2px solid #555555;
+    color: #555555;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.format {
+    display: flex;
+}
+
+.delete {
+    background-color: rgba(135, 36, 0, 0.7);
+    border-radius: 3px;
+    border: 2px solid #555555;
+    color: white;
+    margin-left: 25px;
+}
+
+.button-container {
+    float: right;
+    margin-right: 5vw;
+}
+
+h2 {
+    margin-left: 30px;
+}
