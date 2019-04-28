@@ -38,7 +38,7 @@ getDataWait("getPlayers.php", function(response) {
     }
     display.appendChild(play);
 
-    getDataWait("/php/loggedIn.php?page=menu", function(loggedIn) {
+    getDataWait("/php/user.php?value=username", function(loggedIn) {
         if(loggedIn != "null" && disableButton == true) {
             if(players.includes(loggedIn)) {
                 document.getElementById("register").disabled = true;

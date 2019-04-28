@@ -30,11 +30,19 @@
         $result = $conn->query($sql);
         if($result->num_rows > 0) {
             $table_name = $set . "_players";
-            $sql = "INSERT INTO $table_name (`username`) VALUES ('$username')";
-            if ($conn->query($sql) === FALSE) {
-                echo "Error updating record: " . $conn->error;
+            $sql = "SELECT * FROM $table_name WHERE username='$username'";
+            $result = $conn->query($sql);
+            if($result->num_rows == 0) {
+                $sql = "INSERT INTO $table_name (`username`) VALUES ('$username')";
+                if ($conn->query($sql) === FALSE) {
+                    echo "Error updating record: " . $conn->error;
+                }
+                echo "success";
+            } else {
+                echo "duplicate";
             }
-            echo "success";
+        } else {
+            echo "invalid";
         }
     }
 ?>
