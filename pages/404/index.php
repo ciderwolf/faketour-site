@@ -21,7 +21,7 @@
     </div>
 
     <div class="footer"><a href='https://www.jasonchanart.com/'>Artwork by Jason Chan</a></div>
-    <div class="status">HTTP 404 Not Found</div>
+    <div class="status"><?php echo $_SERVER["SERVER_PROTOCOL"] ?> 404 Not Found</div>
 
     <script type="text/javascript">
         if(document.referrer.includes(window.location.origin)) {

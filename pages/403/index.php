@@ -22,7 +22,7 @@
     </div>
 
     <div class="footer"><a href='https://twitter.com/algenpfleger'>Artwork by @algenpfleger</a></div>
-    <div class="status">HTTP 403 Forbidden</div>
+    <div class="status"><?php echo $_SERVER["SERVER_PROTOCOL"] ?> 403 Forbidden</div>
 
     <script type="text/javascript">
         if(document.referrer.includes(window.location.origin)) {

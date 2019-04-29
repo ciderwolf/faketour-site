@@ -4,7 +4,7 @@
     include $_SERVER["DOCUMENT_ROOT"] . "/php/administrator.php";
 
     if(!$administrator) {
-        header("Location: /");
+        header("Location: /pages/403/");
     }
 
     function getData($sql) {
