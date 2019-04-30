@@ -7,6 +7,11 @@
         $set = $_REQUEST["set"];
     }
     $table_name = $set . "_players";
+    $sql = "SELECT $id FROM $table_name WHERE username='$username'";
+    if ($conn->query($sql) === FALSE) {
+        die("register");
+    }
+
     $sql = "UPDATE $table_name SET deck='$deck' WHERE username=\"$username\"";
     if ($conn->query($sql) === FALSE) {
         echo "Error updating record: " . $conn->error;

@@ -1,10 +1,22 @@
 {
   "Creature": [
     {
-      "number": "212",
+      "number": "165",
+      "set": "rna",
+      "name": "Deputy of Detention",
+      "count": 4
+    },
+    {
+      "number": "83",
       "set": "m19",
-      "name": "Arcades, the Strategist",
-      "count": 3
+      "name": "Wall of Mist",
+      "count": 2
+    },
+    {
+      "number": "30",
+      "set": "m19",
+      "name": "Novice Knight",
+      "count": 2
     },
     {
       "number": "19",
@@ -19,34 +31,22 @@
       "count": 4
     },
     {
-      "number": "139",
-      "set": "rna",
-      "name": "Saruli Caretaker",
-      "count": 4
-    },
-    {
       "number": "142",
       "set": "grn",
       "name": "Portcullis Vine",
       "count": 4
     },
     {
-      "number": "30",
-      "set": "m19",
-      "name": "Novice Knight",
-      "count": 2
-    },
-    {
-      "number": "165",
+      "number": "139",
       "set": "rna",
-      "name": "Deputy of Detention",
-      "count": 3
+      "name": "Saruli Caretaker",
+      "count": 4
     },
     {
-      "number": "10",
+      "number": "212",
       "set": "m19",
-      "name": "Daybreak Chaplain",
-      "count": 2
+      "name": "Arcades, the Strategist",
+      "count": 4
     }
   ],
   "Sideboard": [
@@ -54,12 +54,18 @@
       "number": "9",
       "set": "m19",
       "name": "Cleansing Nova",
-      "count": 3
+      "count": 2
     },
     {
       "number": "42",
       "set": "xln",
       "name": "Tocatli Honor Guard",
+      "count": 3
+    },
+    {
+      "number": "167",
+      "set": "rna",
+      "name": "Dovin, Grand Arbiter",
       "count": 3
     },
     {
@@ -69,74 +75,38 @@
       "count": 3
     },
     {
-      "number": "148",
-      "set": "rix",
-      "name": "Thrashing Brontodon",
-      "count": 2
-    },
-    {
-      "number": "69",
+      "number": "207",
       "set": "dom",
-      "name": "Tetsuko Umezawa, Fugitive",
-      "count": 2
-    },
-    {
-      "number": "54",
-      "set": "grn",
-      "name": "Sinister Sabotage",
-      "count": 2
+      "name": "Teferi, Hero of Dominaria",
+      "count": 4
     }
   ],
-  "Instant": [{
-    "number": "34",
-    "set": "xln",
-    "name": "Settle the Wreckage",
+  "Sorcery": [{
+    "number": "9",
+    "set": "m19",
+    "name": "Cleansing Nova",
     "count": 2
   }],
   "Enchantment": [
     {
-      "number": "182",
-      "set": "rna",
-      "name": "High Alert",
+      "number": "31",
+      "set": "dom",
+      "name": "Seal Away",
       "count": 4
     },
     {
-      "number": "6",
-      "set": "grn",
-      "name": "Conclave Tribunal",
-      "count": 4
+      "number": "182",
+      "set": "rna",
+      "name": "High Alert",
+      "count": 3
     }
   ],
   "Land": [
     {
-      "number": "246",
-      "set": "rna",
-      "name": "Breeding Pool",
-      "count": 3
-    },
-    {
-      "number": "106",
-      "set": "gk2",
-      "name": "Forest",
-      "count": 1
-    },
-    {
-      "number": "255",
+      "number": "254",
       "set": "xln",
-      "name": "Glacial Fortress",
-      "count": 3
-    },
-    {
-      "number": "251",
-      "set": "rna",
-      "name": "Hallowed Fountain",
+      "name": "Field of Ruin",
       "count": 4
-    },
-    {
-      "number": "240",
-      "set": "dom",
-      "name": "Hinterland Harbor",
-      "count": 3
     },
     {
       "number": "27",
@@ -151,10 +121,28 @@
       "count": 2
     },
     {
-      "number": "257",
+      "number": "106",
+      "set": "gk2",
+      "name": "Forest",
+      "count": 2
+    },
+    {
+      "number": "255",
       "set": "xln",
-      "name": "Sunpetal Grove",
+      "name": "Glacial Fortress",
       "count": 3
+    },
+    {
+      "number": "240",
+      "set": "dom",
+      "name": "Hinterland Harbor",
+      "count": 3
+    },
+    {
+      "number": "246",
+      "set": "rna",
+      "name": "Breeding Pool",
+      "count": 4
     },
     {
       "number": "258",

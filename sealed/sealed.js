@@ -11,7 +11,6 @@ function getCardImage(card) {
     getDataWait("https://api.scryfall.com/cards/named?fuzzy=" + card.alt, function(response) {
         let data = JSON.parse(response);
         card.src = data.image_uris.normal;
-        card.title = data.oracle_text;
     }); 
 }
 
@@ -35,7 +34,7 @@ function logIn() {
             }
             constructPool(responseJSON);
         }
-        loggedIn = responseJSON == true;
+        loggedIn = (responseJSON == null ? false : responseJSON);
     });
 }
 
