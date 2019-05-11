@@ -1,9 +1,8 @@
 <?php
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
-    include $_SERVER["DOCUMENT_ROOT"] . "/php/administrator.php";
-
-    if(!$administrator) {
+    session_start();
+    if(!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
         header("Location: /pages/403/");
     }
 ?>
@@ -32,8 +31,9 @@
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
                     $matches[] = $row;
-                    echo "<div class='match' id=" . $row["id"] . ">";
-                    echo "<label for='format-selector'>Format: </label><select id='format-selector'>";
+                    $id = $row["id"];
+                    echo "<div class='match' id=$id>";
+                    echo "<label for='format-selector'>Format: </label><select name='format-selector' id='format-selector$id'>";
                     foreach($formats as $format) {
                         echo "<option value='$format'";
                         if($format == $row["format"]) {
@@ -42,10 +42,10 @@
                         echo ">$format</option>";
                     }
                     echo "</select>";
-                    echo "<label for='round-name'>Round:</label><input type=text class=short id='round-name' value='" . $row["round"]. "'>";
-                    echo "<input type=text id='player-one-name' value='" . $row["player_one"]. "'>";
-                    echo "<label for='player-two-name'>vs</label><input type=text id='player-two-name' value='" . $row["player_two"]. "'>";
-                    echo "<div class=button-container><button onclick=updateMatch(this.parentElement)>Update Match</button><button class=delete onlclick=deleteMatch(this.parentElement)>Delete Match</button></div>";
+                    echo "<label for='round-name'>Round:</label><input type=text class=short name='round-name' id='round-name$id' value='" . $row["round"]. "'>";
+                    echo "<input type=text id='player-one-name$id' value='" . $row["player_one"]. "'>";
+                    echo "<label for='player-two-name'>vs</label><input type=text id='player-two-name$id' name='player-two-name' value='" . $row["player_two"]. "'>";
+                    echo "<div class=button-container><button onclick=updateMatch(this.parentElement.parentElement)>Update Match</button><button class=delete onclick=deleteMatch(this.parentElement.parentElement)>Delete Match</button></div>";
                     echo "</div>";
                 }
             } else {

@@ -1,9 +1,8 @@
 <?php
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
-    include $_SERVER["DOCUMENT_ROOT"] . "/php/administrator.php";
-
-    if(!$administrator) {
+    session_start();
+    if(!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
         header("Location: /pages/403/");
     }
 ?>

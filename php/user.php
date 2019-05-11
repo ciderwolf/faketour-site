@@ -5,6 +5,11 @@
         $page = $_REQUEST["page"];
         session_start();
         $loggedIn = isset($_SESSION["username"]);
+        if($loggedIn == false && isset($_COOKIE["SID"])) {
+            $silent = true;
+            require($_SERVER["DOCUMENT_ROOT"] . "/account/login/login.php");
+            $loggedIn = isset($_SESSION["username"]);
+        }
         if($loggedIn) {
             if($page == "generate_sealed") {
                 echo logInSealed();

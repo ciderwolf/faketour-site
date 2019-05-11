@@ -3,23 +3,10 @@ let timer = document.getElementById("timer");
 let due;
 let updateTimer = setInterval("getTimer();", 1000);
 
-let collectLegacyDeck = false;
-
 logIn();
 getDataWait("getDate.php", function(response) {
     due = new Date(response);
     getTimer();
-});
-
-getDataWait("/php/user.php?value=username", function(username) {
-    if(username != "null") {
-        getDataWait("preview/getDeck.php?user=" + username + "&set=rna", function(deck) {
-            if(deck == "true") {
-                document.getElementById("sumbission-fields").innerHTML += "<textarea class='text' id='legacy-collection' placeholder='Put your Ravnica Allegiance deck here @" + username + "'></textarea>"
-                collectLegacyDeck = true;
-            }
-        });
-    }
 });
 
 function getTimer() {
@@ -95,13 +82,6 @@ function submit() {
     if(due === undefined) {
         return;
     }
-    if(collectLegacyDeck) {
-        let text = document.getElementById("legacy-collection").value;
-        if(text.trim().length != 0) {
-            uploadDeck(text.split("\n"), "rna");
-        }
-    }
-    
 
     let maindeck = document.getElementById("maindeck").value.split("\n");
     let sideboard = document.getElementById("sideboard").value.split("\n");

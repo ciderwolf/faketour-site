@@ -1,13 +1,14 @@
 function updateMatch(match) {
-    let format = match.getElementById("format-selector").value;
-    let round = match.getElementById("round-name").value;
-    let playerOne = match.getElementById("player-one-name").value;
-    let playerTwo = match.getElementById("player-two-name").value;
     let id = match.id;
+    let format = document.getElementById("format-selector" + id).value;
+    let round = document.getElementById("round-name" + id).value;
+    let playerOne = document.getElementById("player-one-name" + id).value;
+    let playerTwo = document.getElementById("player-two-name" + id).value;
     getDataWait("updateMatch.php?" + params({id, format, round, playerOne, playerTwo}), function(response) {
         if(response == "") {
             showAlert("Success", "Match updated successfully", "success");
         } else {
+            console.log(response);
             showAlert("Failed to update match", "Check the console for more information", "warning");
         }
     });
@@ -24,8 +25,9 @@ function deleteMatch(match) {
 }
 
 function params(parameters) {
-    return parameters.map(e => {
-        let keys = Object.keys(e);
-        return keys[0] + "=" + keys[1];
-    }).join("&");
+    let joined = [];
+    for(let key in parameters) {
+        joined.push(key + "=" + parameters[key]);
+    }
+    return joined.join("&");
 }

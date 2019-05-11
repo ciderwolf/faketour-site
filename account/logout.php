@@ -16,6 +16,10 @@
         );
     }
 
+    if(isset($_COOKIE["SID"])) {
+        setcookie("SID", "", time() - 42000, "/");
+    }
+
     // Finally, destroy the session.
     session_destroy();
 ?>

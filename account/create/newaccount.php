@@ -11,7 +11,8 @@
         echo "false";
         return;
     }
-    $sql = "INSERT INTO users (username, password) VALUES (\"$username\", \"$password\")";
+    $token = bin2hex(openssl_random_pseudo_bytes(16));
+    $sql = "INSERT INTO users (username, password, token) VALUES ('$username', '$password', '$token')";
     if ($conn->query($sql) === TRUE) {
         $success = true;
     } else {
@@ -19,9 +20,8 @@
     }
 
     if($success) {
-        session_start();
-        $_SESSION["username"] = $username;
-        $_SESSION["logged_in"] = true;
+        $remember = false;
+        require("../login/start_session.php");
     }
 
     echo json_encode($success);

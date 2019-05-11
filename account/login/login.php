@@ -1,20 +1,39 @@
 <?php
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
-    $username = $_REQUEST["uname"];
-    $password = $_REQUEST["psw"];
+    if(!isset($silent)) {
+        $silent = false;
+    }
+    $sql = "";
+    $username = "";
+    if(isset($_REQUEST["psw"])) {
+        $password = $_REQUEST["psw"];
+        $username = $_REQUEST["uname"];
+        $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+    } else {
+        list($username, $token) = explode("-", $_COOKIE["SID"]);
+        $sql = "SELECT * FROM users WHERE username='$username' AND token='$token'";
+        $_REQUEST["rem"] = "true";
+    }
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
     
-    $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     $result = $conn->query($sql);
-    $success = false;
     if($result->num_rows == 1) {
-        session_start();
-        $_SESSION["username"] = $username;
-        $_SESSION["logged_in"] = true;
-        echo "true";
+        $remember = false;
+        $token = "";
+        if(isset($_REQUEST["rem"])) {
+            $remember = $_REQUEST["rem"] == "true";
+            if($remember) {
+                $row = $result->fetch_assoc();
+                $token = $row["token"];
+            }
+        }
+        require "start_session.php";
+        if(!$silent) {
+            echo "true";
+        }
     }
-    else {
+    else if(!$silent) {
         echo "false";
     }
 ?>

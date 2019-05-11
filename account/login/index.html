@@ -24,21 +24,24 @@
         <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
         <label for="psw"><b>Password</b></label>
         <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
-        <button  type="submit">Login</button>
+        <input type="checkbox" id='remember' name="remember" value="Remerber">
+        <label for="remember"><b>Remember Me</b></label>
+        <button type="submit">Login</button>
     </div>
 </form>
 <div class="footer"><a href="https://twitter.com/DaarkenArt">Artwork by @DaarkenArt</a></div>
 <script>
     function login() {
-        let button = document.getElementById("submit");
+        let remember = document.getElementById("remember").checked;
         let uname = document.getElementById("uname").value;
         let psw = document.getElementById("psw").value;
         showAlert("Logging in", "", "info");
-        getDataWait("login.php?uname=" + uname + "&psw=" + psw, function(response) {
-            let loggedIn = JSON.parse(response);
-            if(loggedIn) {
-                history.back();
+        getDataWait("login.php?uname=" + uname + "&psw=" + psw + "&rem=" + remember, function(response) {
+            if(response === "true") {
                 showAlert("Logged in", "Redirecting...", "success");
+                history.back();
+            } else if (response === "fadetrue") {
+                showAlert("Failed to remember", "Log in status not saved", "warning");
             } else {
                 showAlert("Failed to login", "Incorrect username or password", "error");
             }

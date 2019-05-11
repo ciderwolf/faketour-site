@@ -7,8 +7,9 @@
         $set = $_REQUEST["set"];
     }
     $table_name = $set . "_players";
-    $sql = "SELECT $id FROM $table_name WHERE username='$username'";
-    if ($conn->query($sql) === FALSE) {
+    $sql = "SELECT id FROM $table_name WHERE username='$username'";
+    $result = $conn->query($sql);
+    if ($result->num_rows == 0) {
         die("register");
     }
 

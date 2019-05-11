@@ -13,14 +13,14 @@
 <h1>FakeTour</h1>
 <img src="/about/war/war-logo.png"/>
 <div id="buttons">
-    <button id="button1" onclick="navigate(0);">Results</button>
-    <button id="button2" onclick="navigate(1);">Decklists</button>
+    <button id="button1" onclick="navigate(0);">Matches</button>
+    <button id="button2" onclick="navigate(1);">Brackets</button>
 </div>
 
 <div class="footer"><a href='http://www.raymondswanland.com/'>Artwork by Raymond Swanland</a></div>
 
 <script type="text/javascript">
-    let buttonAddress = ["about/war", "constructed"];
+    let buttonAddress = ["matches", "matches/brackets"];
     function loadButtons() {
         getDataWait("/php/user.php?value=loggedIn", function(response) {
             let button1 = document.getElementById("button1");
@@ -36,11 +36,11 @@
                 }
             }
             else {
-                button1.innerHTML = "About";
+                button1.innerHTML = "Matches";
                 button1.onclick = function(e) {
                     window.location.href = buttonAddress[0];
                 }
-                button2.innerHTML = "Submit Decklist";
+                button2.innerHTML = "Brackets";
                 button2.onclick = function(e) {
                     window.location.href = buttonAddress[1];
                 }

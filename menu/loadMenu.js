@@ -137,11 +137,3 @@ function removeAlert(alert) {
         alert.remove();
     }, 600);
 }
-
-if(window.navigator.userAgent.includes("Windows") && !window.navigator.userAgent.includes("Edge")) {
-    getDataWait("ignoreIE.php", function(response) {
-        if(response == "false") {
-            window.location.href = "/pages/ie";
-        }
-    });
-}
