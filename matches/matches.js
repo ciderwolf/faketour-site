@@ -2,56 +2,37 @@ let matches = {};
 let buttonClicked = null;
 const formats = ["limited", "constructed"];
 
-//load data asynchronously
-let loggedIn;
+let username;
 let matchData = {};
-logIn();
-for(format of formats) {
-    loadMatchData(format);
-}
+loadData();
 
-function loadMatchData(format) {
-    getDataWait("getMatches.php?format=" + format, function(response) {
-        matchData[format] = JSON.parse(response);
-        checkLoaded();
-    })
-}
-
-function logIn() {
-    getDataWait("/php/user.php?page=matches", function(response) {
-        if(response == "null") {
-            loggedIn = false;
-        } else {
-            loggedIn = response;
-        }
-        checkLoaded();
-    });
-}
-
-function checkLoaded() {
-    if(loggedIn != undefined && matchData.hasOwnProperty("limited") && matchData.hasOwnProperty("constructed")) {
-        for(format of formats) {
-            loadMatches(format);
-        }
+async function loadData() {
+    let response = await fetch("/php/user.php?value=username");
+    username = await response.text();
+    if(username == "null") username = null;
+    for(format of formats) {
+        let data = await fetch("getMatches.php?format=" + format);
+        matchData[format] = await data.json();
+        loadMatches(format);
     }
 }
 
 function loadMatches(format) {
     let display = document.getElementById(format);
-    if(loggedIn === false) {
+    if(username === null) {
         display.innerHTML += "<p>You need to be logged in to view your matches</p>";
         return;
     }
     let match = matchData[format][0];
     if(match != undefined && !(Object.keys(match).length === 0 && match.constructor === Object)) {
-        let opponent = match.player_one == loggedIn ? match.player_two : match.player_one;
+        let opponent = match.player_one == username ? match.player_two : match.player_one;
         let roundName = match.round;
         if(!isNaN(roundName)) {
             roundName = "Round " + roundName;
         }
         matches[format] = match;
         let matchDisplay = document.createElement("p");
-        matchDisplay.innerHTML = roundName + ": " + loggedIn + " vs. " + opponent;
+        matchDisplay.innerHTML = roundName + ": " + username + " vs. " + opponent;
         let modal = document.createElement("div");
         modal.classList.add("modal");
         modal.id = "submit_" + format;
@@ -172,15 +153,15 @@ function submit(form) {
     let format = form.classList[1];
     let match = matches[format];
     let score = userWins + "-" + opponentWins;
-    if(loggedIn == match.player_two) {
+    if(username == match.player_two) {
         score = opponentWins + "-" + userWins;
     }
     updateMatch(match.id, score);
 }
 
 // dismiss form on background clicked
-let modals = document.getElementsByClassName('modal');
 window.onclick = function(event) {
+    let modals = document.getElementsByClassName('modal');
     let dismiss = false;
     if(event == null) {
         event = new MouseEvent(null);
@@ -192,6 +173,3 @@ window.onclick = function(event) {
         }
     }
 }
-
-
-

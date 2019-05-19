@@ -61,7 +61,7 @@
         if($pool == "") {
             return "true";
         } else {
-            return str_replace('\\"', '"',json_encode($pool));
+            return str_replace('\\"', '"', $pool);
         }
     }
 
@@ -78,7 +78,7 @@
         if($pool == "") {
             return "true";
         } else {
-            return str_replace('\\"', '"',json_encode($pool));
+            return str_replace('\\"', '"', $pool);
         }
     }
 

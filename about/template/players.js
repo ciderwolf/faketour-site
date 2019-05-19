@@ -1,45 +1,50 @@
 let players;
-getDataWait("players.json", function(response) {
-    players = JSON.parse(response);
+loadData();
+
+window.onload = function(e) {
+    console.log(e);
+    document.getElementById("tab-bg").height = document.getElementById("players").offsetHeight;
+}
+
+async function loadData() {
+    let playerResponse = await fetch("players.json");
+    players = await playerResponse.json();
     for(player of players) {
-        createTab(player);
+        loadPlayer(player);
     }
-});
+}
 
-function createTab(player) {
-    getDataWait("data/" + player + ".json", function(response) {
-        let data;
-        try {
-            data = JSON.parse(response)
-        } catch(e) {
-            console.log(e, player)
-        }
+async function loadPlayer(player) {
+    let playerData = await fetch("data/" + player + ".json");
+    let playerJSON = await playerData.json();
+    createTab(player, playerJSON);
+}
 
-        // create button
-        let tabRow = document.getElementById("tabs");
-        let tabButton = document.createElement("button");
-        tabButton.classList.add("tablinks");
-        tabButton.onclick = function(e) {
-            showTab(e, player + "-content");
-        }
-        tabButton.innerHTML = player;
+function createTab(player, data) {
+    // create button
+    let tabRow = document.getElementById("tabs");
+    let tabButton = document.createElement("button");
+    tabButton.classList.add("tablinks");
+    tabButton.onclick = function(e) {
+        showTab(e, player + "-content");
+    }
+    tabButton.innerHTML = player;
 
-        // create content
-        let tabContent = document.getElementById("players");
-        let tab = document.createElement("div");
-        tab.classList.add("tabcontent");
-        tab.classList.add("backdrop");
-        tab.id = player + "-content";
-        tab.appendChild(createDecklist(data));
+    // create content
+    let tabContent = document.getElementById("players");
+    let tab = document.createElement("div");
+    tab.classList.add("tabcontent");
+    tab.classList.add("backdrop");
+    tab.id = player + "-content";
+    tab.appendChild(createDecklist(data));
 
-        tabRow.appendChild(tabButton);
-        tabContent.appendChild(tab);
+    tabRow.appendChild(tabButton);
+    tabContent.appendChild(tab);
 
-        if(tabRow.children.length == 1) {
-            tabButton.id == "initial";
-            tabButton.click();
-        }
-    });
+    if(tabRow.children.length == 1) {
+        tabButton.id == "initial";
+        tabButton.click();
+    }
 }
 
 function createDecklist(decklist) {

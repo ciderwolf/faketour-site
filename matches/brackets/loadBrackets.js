@@ -1,6 +1,9 @@
 const formats = ["constructed", "limited"];
+loadData();
 
-getDataWait("getMatches.php", function(response) {
+async function loadData() {
+    let data = await fetch("getMatches.php");
+    let response = await data.text();
     if(response !== "0 results") {
         createMatches(response);
     }
@@ -12,7 +15,7 @@ getDataWait("getMatches.php", function(response) {
             formatBox.appendChild(message);
         }
     }
-});
+}
 
 function createMatches(data) {
     let matches = JSON.parse(data);

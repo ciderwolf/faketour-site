@@ -34,7 +34,7 @@
 <div class="footer"><a href='https://twitter.com/velinovart'>Artwork by @velinovart</a></div>
 
 <script>
-    function login() {
+    async function login() {
         let uname = document.getElementById("uname").value;
         let psw = document.getElementById("psw").value;
         let psw2 = document.getElementById("psw2").value;
@@ -45,21 +45,13 @@
             showAlert("Error", "Password max length has been exceeded", "error");
             return;
         }
-        getDataWait("newaccount.php?uname=" + uname + "&psw=" + psw, function(response) {
-            let loggedIn = JSON.parse(response);
-            if(loggedIn) {
-                window.location.href = "/account";
-            } else {
-                showAlert("Username already taken", "Please choose a unique username", "warning");
-            }
-        });
-    }
-    
-    function getData(yourUrl) {
-        var Httpreq = new XMLHttpRequest();
-        Httpreq.open("GET", yourUrl, false);
-        Httpreq.send();
-        return Httpreq.responseText;          
+        let data = await fetch("newaccount.php?uname=" + uname + "&psw=" + psw);
+        let loggedIn = await data.json();
+        if(loggedIn) {
+            window.location.href = "/account";
+        } else {
+            showAlert("Username already taken", "Please choose a unique username", "warning");
+        }
     }
 </script>
 

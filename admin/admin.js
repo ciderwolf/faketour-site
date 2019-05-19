@@ -7,7 +7,9 @@ function uploadEvent() {
     let name = getInputValue("event-name-input");
     let code = getInputValue("event-code-input");
     if(dateString != "" && name != "" && code != "") {
-        getDataWait("updateEvent.php?date=" + dateString + "&name=" + name + "&code=" + code, function(response) {
+        fetch("updateEvent.php?date=" + dateString + "&name=" + name + "&code=" + code)
+        .then(response => response.text())
+        .then(response => {
             if(response == "") {
                 showAlert("Success", "Event created successfully", "success");
             } else {
@@ -37,13 +39,13 @@ function getInputValue(id) {
     return element.value;
 }
 
-function updateEvent(key, value) {
-    getDataWait("updateEvent.php?key=" + key + "&value=" + value, function(response) {
-        if(response == "") {
-            showAlert("Success", "Event updated successfully", "success");
-        } else {
-            showAlert("Failed to update event", "Check the console for more information", "error");
-            console.log(response);
-        }
-    });
+async function updateEvent(key, value) {
+    let data = await fetch("updateEvent.php?key=" + key + "&value=" + value);
+    let response = await data.text();
+    if(response == "") {
+        showAlert("Success", "Event updated successfully", "success");
+    } else {
+        showAlert("Failed to update event", "Check the console for more information", "error");
+        console.log(response);
+    }
 }

@@ -8,34 +8,29 @@ let sets = [];
 logIn();
 
 function getCardImage(card) {
-    getDataWait("https://api.scryfall.com/cards/named?fuzzy=" + card.alt, function(response) {
-        let data = JSON.parse(response);
+    fetch("https://api.scryfall.com/cards/named?fuzzy=" + card.alt)
+    .then(response => response.json())
+    .then(data => {
         card.src = data.image_uris.normal;
     }); 
 }
 
-function logIn() {
-    getDataWait("/php/user.php?page=generate_sealed", function(response) {
-        let hasPool = false;
-        if(response != "true" && response != "null") {
-            response = response.substring(1,response.length-1);
-            hasPool = true;
-        }
-        let responseJSON = JSON.parse(response);
-        if(hasPool) {
-            document.getElementById("generate").innerHTML = "Save Pool";
-            let setDisplay = document.getElementById("generated");
-            for(set in responseJSON) {
-                if(set == "grn") {
-                    setDisplay.innerHTML += createSymbol(set) + createSymbol(set);
-                }
-                setDisplay.innerHTML += createSymbol(set);
-                sets.push(set);
+async function logIn() {
+    let data = await fetch("/php/user.php?page=generate_sealed");
+    let response = await data.json();
+    if(response != true && response != null) {
+        document.getElementById("generate").innerHTML = "Save Pool";
+        let setDisplay = document.getElementById("generated");
+        for(set in response) {
+            if(set == "grn") {
+                setDisplay.innerHTML += createSymbol(set) + createSymbol(set);
             }
-            constructPool(responseJSON);
+            setDisplay.innerHTML += createSymbol(set);
+            sets.push(set);
         }
-        loggedIn = (responseJSON == null ? false : responseJSON);
-    });
+        constructPool(response);
+    }
+    loggedIn = (response == null ? false : response);
 }
 
 function generate() {
@@ -58,8 +53,9 @@ function generate() {
 
     document.getElementById("viewer").innerHTML = "<p>Loading Pool...</p>"
 
-    getDataWait("generatePool.php?sets=" + packSets.join(","), function(response) {
-        let cards = JSON.parse(response);
+    fetch("generatePool.php?sets=" + packSets.join(","))
+    .then(response => response.json())
+    .then(cards => {
         updatePool(cards);
         constructPool(cards);
         const y = viewer.getBoundingClientRect().top + window.scrollY;
@@ -71,14 +67,16 @@ function generate() {
 }
 
 function getSetData(set) {
-    getDataWait("cards/" + set + "/data.json", function(response) {
-        cardData[set] = JSON.parse(response);
+    fetch("cards/" + set + "/data.json")
+    .then(response => response.json())
+    .then(data => {
+        cardData[set] = data;
         constructPool(loggedIn);
     });
 }
 
 function createSymbol(set) {
-    return '<i style="margin-top:30px; margin-right:30px"class="ss ss-' + set + ' ss-3x"></i> ';
+    return '<i style="margin-top:30px; margin-right:30px" class="ss ss-' + set + ' ss-3x"></i> ';
 }
 
 function updatePool(cardList) {

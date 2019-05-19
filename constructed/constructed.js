@@ -3,11 +3,7 @@ let timer = document.getElementById("timer");
 let due;
 let updateTimer = setInterval("getTimer();", 1000);
 
-logIn();
-getDataWait("getDate.php", function(response) {
-    due = new Date(response);
-    getTimer();
-});
+loadData();
 
 function getTimer() {
     let now = new Date();
@@ -31,30 +27,20 @@ function pad(num, size) {
     return s;
 }
 
-function logIn() {
-    getDataWait("/php/user.php?page=submit_constructed", function(response) {
-        let hasDeck = false;
-        if(response != "true" && response != "null") {
-            response = response.substring(1,response.length-1);
-            hasDeck = true;
-        }
-        let responseJSON = JSON.parse(response);
-        if(hasDeck) {
-            let maindeck = document.getElementById("maindeck");
-            let sideboard = document.getElementById("sideboard");
-            maindeck.value = responseJSON.maindeck.join("\n");
-            sideboard.value = responseJSON.sideboard.join("\n");
-        }
-        loggedIn = responseJSON;
-    });
-}
+async function loadData() {
+    let data = await fetch("/php/user.php?page=submit_constructed");
+    let response = await data.json();
+    if(response != true && response != null) {
+        let maindeck = document.getElementById("maindeck");
+        let sideboard = document.getElementById("sideboard");
+        maindeck.value = response.maindeck.join("\n");
+        sideboard.value = response.sideboard.join("\n");
+    }
+    loggedIn = response;
 
-
-function getData(url) {
-    let request = new XMLHttpRequest();
-    request.open("GET", url, false);
-    request.send();
-    return request.responseText;
+    let dateData = await fetch("getDate.php");
+    let date = await dateData.text();
+    due = new Date(date);
 }
 
 function uploadDeck(cardList, setCode) {
@@ -78,7 +64,7 @@ function uploadDeck(cardList, setCode) {
     };
 }
 
-function submit() {
+async function submit() {
     if(due === undefined) {
         return;
     }
@@ -88,14 +74,10 @@ function submit() {
     let valid = false;
     if(standardLegal == undefined) {
         showAlert("Validating deck", "", "info");
-        getDataWait("cards.json", function(response) {
-            standardLegal = JSON.parse(response);
-            submit();
-        });
-        return;
-    } else {
-        valid = validateDeck(maindeck, sideboard);
-    }
+        let response = await fetch("cards.json");
+        standardLegal = await response.json();
+    }         
+    valid = validateDeck(maindeck, sideboard);
     if(!valid) {
         return;
     }
@@ -104,7 +86,7 @@ function submit() {
         "maindeck": maindeck,
         "sideboard": sideboard
     };
-    if(loggedIn === false) {
+    if(loggedIn === null) {
         showAlert("Error", "You need to be logged in to submit your deck.", "error");
     }
     else if (dueTime < 0) {

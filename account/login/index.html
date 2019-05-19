@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
-<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display:none;"></iframe>
+<iframe width="0" height="0" name="dummyframe" id="dummyframe" style="display:none;"></iframe>
 
 <body>
 <div class="topnav"></div>
@@ -31,21 +31,21 @@
 </form>
 <div class="footer"><a href="https://twitter.com/DaarkenArt">Artwork by @DaarkenArt</a></div>
 <script>
-    function login() {
+    async function login() {
         let remember = document.getElementById("remember").checked;
         let uname = document.getElementById("uname").value;
         let psw = document.getElementById("psw").value;
         showAlert("Logging in", "", "info");
-        getDataWait("login.php?uname=" + uname + "&psw=" + psw + "&rem=" + remember, function(response) {
-            if(response === "true") {
-                showAlert("Logged in", "Redirecting...", "success");
-                history.back();
-            } else if (response === "fadetrue") {
-                showAlert("Failed to remember", "Log in status not saved", "warning");
-            } else {
-                showAlert("Failed to login", "Incorrect username or password", "error");
-            }
-        });
+        let data = await fetch("login.php?uname=" + uname + "&psw=" + psw + "&rem=" + remember);
+        let response = await data.text();
+        if(response === "true") {
+            showAlert("Logged in", "Redirecting...", "success");
+            history.back();
+        } else if (response === "fadetrue") {
+            showAlert("Failed to remember", "Log in status not saved", "warning");
+        } else {
+            showAlert("Failed to login", "Incorrect username or password", "error");
+        }
     }
 </script>
 

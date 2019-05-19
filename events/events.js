@@ -1,33 +1,11 @@
-let disableButton;
+loadData();
 
-getDataWait("events.php", function(response) {
-    events = JSON.parse(response);
-    let foundOpen = false;
-    for(let i = 0; i < events.length; i++) {
-        let event = events[i];
-        if(event.open || (!foundOpen && i == events.length - 1)) {
-            foundOpen = true;
-            title.innerHTML = "Faketour <i>" + event.name + "</i>";
-            if(event.open) {
-                configureButton(event);
-                disableButton = true;
-            } else {
-                let button = document.getElementById("register");
-                button.innerHTML = "View Results";
-                button.outerHTML = "<a href='/about/" + event.code + "/results'>" + button.outerHTML + "</a>";
-                disableButton = false;
-            }
-            document.getElementById("current-symbol").appendChild(createSetLink(event));
-        }
-        else {
-            let setLink = createSetLink(event);
-            previous.appendChild(setLink);
-        }
-    }
-});
-
-getDataWait("getPlayers.php", function(response) {
-    let players = JSON.parse(response);
+async function loadData() {
+    let eventResponse = await fetch("events.php");
+    let events = await eventResponse.json();
+    configureEvents(events);
+    let playersResponse = await fetch("getPlayers.php");
+    let players = await playersResponse.json();
     if(players.length == 0) {
         players.push("none");
     }
@@ -37,21 +15,45 @@ getDataWait("getPlayers.php", function(response) {
         play.innerHTML += player + "<br>";
     }
     display.appendChild(play);
-
-    getDataWait("/php/user.php?value=username", function(loggedIn) {
-        if(loggedIn != "null" && disableButton == true) {
-            if(players.includes(loggedIn)) {
-                document.getElementById("register").disabled = true;
-            }
+    let userResponse = await fetch("/php/user.php?value=username");
+    let loggedIn = await userResponse.text();
+    if(loggedIn != "null") {
+        if(players.includes(loggedIn)) {
+            document.getElementById("register").disabled = true;
         }
-    })
+    }
 
-});
+}
+
+function configureEvents(events) {
+    let foundOpen = false;
+    for(let i = 0; i < events.length; i++) {
+        let event = events[i];
+        if(event.open || (!foundOpen && i == events.length - 1)) {
+            foundOpen = true;
+            title.innerHTML = "Faketour <i>" + event.name + "</i>";
+            if(event.open) {
+                configureButton(event);
+            } else {
+                let button = document.getElementById("register");
+                button.innerHTML = "View Results";
+                button.outerHTML = "<a href='/about/" + event.code + "/results'>" + button.outerHTML + "</a>";
+            }
+            document.getElementById("current-symbol").appendChild(createSetLink(event));
+        }
+        else {
+            let setLink = createSetLink(event);
+            previous.appendChild(setLink);
+        }
+    }
+}
 
 function configureButton(event) {
     let registerButton = document.getElementById("register");
     registerButton.onclick = function(e) {
-        getDataWait("events.php?reg=" + event.code, function(response) {
+        fetch("events.php?reg=" + event.code)
+        .then(response => response.text())
+        .then(response => {
             if(response == "success") {
                 showAlert("Registered", "Successfully registered for event: " + event.name, "success");
                 registerButton.disabled = true;

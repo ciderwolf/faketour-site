@@ -6,57 +6,56 @@ let pages = {
     "Matches": "/matches/"
 };
 
-function loadMenu(activeClass) {
+async function loadMenu(activePage) {
     let div = document.getElementsByClassName("topnav")[0];
     div.id = "topnav";
-    getDataWait("/php/user.php?page=menu", function(response) {
-        let loginPages;
-        let login = JSON.parse(response);
-        if(login == null) {
-            loginPages = {
-                "Log In": "/account/login/?",
-                "Create Account": "/account/create/?"
-            };
+    let response = await fetch("/php/user.php?page=menu");
+    let login = await response.json();
+    let loginPages;
+    if(login == null) {
+        loginPages = {
+            "Log In": "/account/login/?",
+            "Create Account": "/account/create/?"
+        };
+    } else {
+        loginPages = {"My Account": "/account/"};
+        if(login.admin == true) {
+            loginPages["Admin"] = "/admin/";
+        }
+    }
+    for(page of Object.keys(pages)) {
+        let name = page;
+        let link = pages[name];
+        let menuItem = document.createElement("a");
+        if(activePage == name) {
+            menuItem.classList.add("active");
         } else {
-            loginPages = {"My Account": "/account/"};
-            if(login.admin == true) {
-                loginPages["Admin"] = "/admin/";
-            }
+            menuItem.href = link;
         }
-        for(page of Object.keys(pages)) {
-            let name = page;
-            let link = pages[name];
-            let menuItem = document.createElement("a");
-            if(activeClass == name) {
-                menuItem.classList.add("active");
-            } else {
-                menuItem.href = link;
-            }
-            menuItem.innerHTML = name;
-            div.appendChild(menuItem);
+        menuItem.innerHTML = name;
+        div.appendChild(menuItem);
+    }
+    for(page of Object.keys(loginPages)) {
+        let name = page;
+        let link = loginPages[name];
+        let menuItem = document.createElement("a");
+        if(activePage == name) {
+            menuItem.classList.add("active");
+        } else {
+            menuItem.href = link;
         }
-        for(page of Object.keys(loginPages)) {
-            let name = page;
-            let link = loginPages[name];
-            let menuItem = document.createElement("a");
-            if(activeClass == name) {
-                menuItem.classList.add("active");
-            } else {
-                menuItem.href = link;
-            }
-            menuItem.innerHTML = name;
-            menuItem.style.float = "right";
-            div.appendChild(menuItem);
-        }
-        let show = document.createElement('a');
-        show.href = 'javascript:void(0);';
-        show.classList.add("icon");
-        show.onclick = function(e) {
-            showMenuItems();
-        }
-        show.innerHTML = "&#9776;";
-        div.appendChild(show);
-    });
+        menuItem.innerHTML = name;
+        menuItem.style.float = "right";
+        div.appendChild(menuItem);
+    }
+    let show = document.createElement('a');
+    show.href = 'javascript:void(0);';
+    show.classList.add("icon");
+    show.onclick = function(e) {
+        showMenuItems();
+    }
+    show.innerHTML = "&#9776;";
+    div.appendChild(show);
 }
 
 function showMenuItems() {

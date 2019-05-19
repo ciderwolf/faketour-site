@@ -1,32 +1,18 @@
 let accountData;
 let avatars;
 let events;
-const thingsToLoad = 2;
-let loaded = 0;
-getDataWait("avatar_names.json", function(response) {
-    avatars = JSON.parse(response);
-    loaded ++;
-    if(loaded == thingsToLoad) {
-        initialize();
-    }
-});
 
-logIn();
+loadData();
 
-
-function logIn() {
-    getDataWait("/php/user.php?page=account", function(response) {
-        if(response == "null") {
-            window.location.href = "login/?";
-        } else {
-            accountData = JSON.parse(response);
-            loaded ++;
-            if(loaded == thingsToLoad) {
-                initialize();
-            }
-        }
-    });
-    
+async function loadData() {
+    let data = await fetch("/php/user.php?page=account");
+    accountData = await data.json();
+    if(accountData == null) {
+        window.location.href = "login/?";
+    } 
+    let avatarData = await fetch("avatar_names.json");
+    avatars = await avatarData.json();
+    initialize();
 }
 
 function initialize() {
@@ -89,7 +75,8 @@ function changeAvatar() {
 
 function logout() {
     showAlert("Logging out", "", "info");
-    getDataWait("logout.php", function() {
+    fetch("logout.php")
+    .then(() => {
         window.location.href = window.location.origin;
     });
 }
@@ -124,7 +111,7 @@ function getNewAvatar() {
     }
 }
 
-function uploadChanges() {
+async function uploadChanges() {
     let queries = [];
 
     let newPassword = changePassword();
@@ -140,15 +127,15 @@ function uploadChanges() {
         queries.push("avatar=" + newAvatar);
     }
     if(queries.length != 0) {
-        getDataWait("updateInformation.php?" + queries.join("&"), function(response) {
-            if(response == "") {
-                showAlert("Success", "Account data updated", "success");
-            }
-            else {
-                console.log(response);
-                showAlert("Encountered an error", "Check the console for more information", "error");
-            }
-        });
+        let data = await fetch("updateInformation.php?" + queries.join("&"));
+        let response = await data.text();
+        if(response == "") {
+            showAlert("Success", "Account data updated", "success");
+        }
+        else {
+            console.log(response);
+            showAlert("Encountered an error", "Check the console for more information", "error");
+        }
     }
 }
 

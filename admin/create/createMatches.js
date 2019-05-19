@@ -5,8 +5,9 @@ let options = {
 let count = 0;
 let players = [];
 
-getDataWait("/events/getPlayers.php", function(response) {
-    players = JSON.parse(response);
+fetch("/events/getPlayers.php")
+.then(response => response.json())
+.then(players => {
     if(players.length % 2 == 1) {
         players.push("Bye");	
     }

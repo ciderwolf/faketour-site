@@ -2,12 +2,11 @@ let players = {};
 let isMobile = true;
 
 const formats = ["constructed", "limited"];
-getDataWait("getStandings.php", function(response) {
-    createStandings(response);
-});
+fetch("getStandings.php")
+.then(response => response.json())
+.then(createStandings)
 
-function createStandings(data) {
-    let players = JSON.parse(data);
+function createStandings(players) {
     let limitedRows = {};
     let constructedRows = {};
     let totalRows = {};

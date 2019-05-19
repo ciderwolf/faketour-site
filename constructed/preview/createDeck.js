@@ -2,28 +2,23 @@ let deckData;
 let decklist = {};
 let standardLegal;
 
-getDataWait("cards.json", function(response) {
-    standardLegal = JSON.parse(response);
-    if(deckData != undefined) {
+loadData();
+
+async function loadData() {
+    let cardData = await fetch("cards.json");
+    standardLegal = await cardData.json();
+
+    let url = "/php/user.php?page=submit_constructed";
+    let player = new URL(window.location.href).searchParams.get("user");
+    if(player != null) {
+        url = "getDeck.php?user=" + decodeURI(player);
+    }
+
+    let deckResponse = await fetch(url);
+    let response = await deckResponse.json();
+    if(response != true && response != null) {
+        deckData = response;
         createDecklist();
-    }
-});
-
-let url = "/php/user.php?page=submit_constructed";
-let player = new URL(window.location.href).searchParams.get("user");
-if(player != null) {
-    url = "getDeck.php?user=" + decodeURI(player);
-}
-
-getDataWait(url, function(response) {
-    let hasDeck = false;
-    if(response != "true" && response != "null") {
-        response = response.substring(1,response.length-1);
-        hasDeck = true;
-    }
-    let responseJSON = JSON.parse(response);
-    if(hasDeck) {
-        deckData = responseJSON;
     } else {
         let text = "Submit your deck to see it here";
         if(responseJSON == false) {
@@ -33,11 +28,7 @@ getDataWait(url, function(response) {
         message.innerHTML = text;
         document.getElementById("bg").appendChild(message);
     }
-
-    if(standardLegal != undefined) {
-        createDecklist();
-    }
-});
+}
 
 function getLineInfo(line) {
     let elements = line.split(' ');

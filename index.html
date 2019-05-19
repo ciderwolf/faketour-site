@@ -21,31 +21,28 @@
 
 <script type="text/javascript">
     let buttonAddress = ["matches", "matches/brackets"];
-    function loadButtons() {
-        getDataWait("/php/user.php?value=loggedIn", function(response) {
-            let button1 = document.getElementById("button1");
-            let button2 = document.getElementById("button2");
-            if(response == "false") {
-                button1.innerHTML = "Create Account";
-                button1.onclick = function(e) {
-                    window.location.href = "account/create/?";
-                }
-                button2.innerHTML = "Login";
-                button2.onclick = function(e) {
-                    window.location.href = "account/login/?";
-                }
+    async function loadButtons() {
+        let response = await fetch("/php/user.php?value=loggedIn");
+        let loggedIn = await response.json();
+        if(loggedIn) {
+            button1.innerHTML = "Matches";
+            button1.onclick = function(e) {
+                window.location.href = buttonAddress[0];
             }
-            else {
-                button1.innerHTML = "Matches";
-                button1.onclick = function(e) {
-                    window.location.href = buttonAddress[0];
-                }
-                button2.innerHTML = "Brackets";
-                button2.onclick = function(e) {
-                    window.location.href = buttonAddress[1];
-                }
+            button2.innerHTML = "Brackets";
+            button2.onclick = function(e) {
+                window.location.href = buttonAddress[1];
             }
-        });
+        } else {
+            button1.innerHTML = "Create Account";
+            button1.onclick = function(e) {
+                window.location.href = "account/create/?";
+            }
+            button2.innerHTML = "Login";
+            button2.onclick = function(e) {
+                window.location.href = "account/login/?";
+            }
+        }
     }
     loadButtons();
     setInterval(loadButtons, 5000);

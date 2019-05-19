@@ -16,6 +16,6 @@
     if($pool == "") {
         echo json_encode(true);
     } else {
-        echo str_replace('\\"', '"',json_encode($pool));
+        echo str_replace('\\"', '"', $pool);
     }
 ?>
