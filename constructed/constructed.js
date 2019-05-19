@@ -41,6 +41,7 @@ async function loadData() {
     let dateData = await fetch("getDate.php");
     let date = await dateData.text();
     due = new Date(date);
+    getTimer();
 }
 
 function uploadDeck(cardList, setCode) {
@@ -72,8 +73,8 @@ async function submit() {
     let maindeck = document.getElementById("maindeck").value.split("\n");
     let sideboard = document.getElementById("sideboard").value.split("\n");
     let valid = false;
-    if(standardLegal == undefined) {
-        showAlert("Validating deck", "", "info");
+    if(standardLegal === undefined) {
+        showAlert("Validating deck", "", "info", true);
         let response = await fetch("cards.json");
         standardLegal = await response.json();
     }         
@@ -87,10 +88,10 @@ async function submit() {
         "sideboard": sideboard
     };
     if(loggedIn === null) {
-        showAlert("Error", "You need to be logged in to submit your deck.", "error");
+        showAlert("Error", "You need to be logged in to submit your deck.", "error", true);
     }
     else if (dueTime < 0) {
-        showAlert("Deck submission is no longer available.", "", "warning");
+        showAlert("Deck submission is no longer available.", "", "warning", true);
     }
     else {
         uploadDeck(upload);

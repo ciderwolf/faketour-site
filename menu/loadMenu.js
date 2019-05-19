@@ -67,29 +67,7 @@ function showMenuItems() {
     }
 }
 
-function getDataWait(url, callback) {
-    let request = new XMLHttpRequest();
-    request.open("GET", url, true);
-    request.onload = function (e) {
-        if (request.readyState === 4) {
-            if (request.status === 200) {
-                callback(request.responseText);
-            } else {
-                console.log(request.responseText);
-            }
-        }
-    };  
-    request.send();	
-}
-
-function getData(url) {
-    let request = new XMLHttpRequest();
-    request.open("GET", url, false);
-    request.send();
-    return request.responseText;
-}
-
-function showAlert(title, text, kind) {
+function showAlert(title, text, kind, timeout = false, lifespan = 5000) {
     let alertBody = document.getElementById("alerts");
     if(alertBody == undefined) {
         alertBody = document.createElement("div");
@@ -122,10 +100,10 @@ function showAlert(title, text, kind) {
             removeAlert(div);
         }
     }
-    if(kind === "warning") {
+    if(timeout === true) {
         setTimeout(function() {
             removeAlert(alertElement);
-        }, 5000);
+        }, lifespan);
     }
 }
 

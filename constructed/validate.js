@@ -28,7 +28,7 @@ function validateDeck(maindeck, sideboard) {
         maindeckCount += count;        
     }
     if(maindeckCount < maindeckSize) {
-        showAlert("Deck too small", "Your maindeck has only " + maindeckCount + " cards.", "warning");
+        showAlert("Deck too small", "Your maindeck has only " + maindeckCount + " cards.", "warning", true);
         return false;
     }
     let sideboardCount = 0;
@@ -50,16 +50,16 @@ function validateDeck(maindeck, sideboard) {
         sideboardCount += count;
     }
     if(sideboardCount > sideboardSize) {
-        showAlert("Sideboard too large", "Your sideboard has " + sideboardCount + " cards.", "warning");
+        showAlert("Sideboard too large", "Your sideboard has " + sideboardCount + " cards.", "warning", true);
         return false;
     }
     for(card in deck) {
         if(!isStandardLegal(card)) {
-            showAlert("Illegal card", "'" + card + "' isn't standard legal", "warning");
+            showAlert("Illegal card", "'" + card + "' isn't standard legal", "warning", true);
             return false;
         }
         if(deck[card] > maxCardCount && !unlimitedCards.includes(card)) {
-            showAlert("Illegal card count", "You have " + deck[card] + " copies of '" + card + "' in your deck", "warning");
+            showAlert("Illegal card count", "You have " + deck[card] + " copies of '" + card + "' in your deck", "warning", true);
             return false;
         }
     }

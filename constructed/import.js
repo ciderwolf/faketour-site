@@ -2,6 +2,20 @@ function showModal() {
     document.getElementById("import-deck").style.display = "block";
 }
 
+window.onclick = function(event) {
+    let modals = document.getElementsByClassName('modal');
+    let dismiss = false;
+    if(event == null) {
+        event = new MouseEvent(null);
+        dismiss = true;
+    }
+    for(modal of modals) {
+        if (event.target == modal || dismiss) {
+            modal.style.display = "none";
+        }
+    }
+}
+
 function importDeck() {
     if(!readURL()) {
         if(!readFile()) {
