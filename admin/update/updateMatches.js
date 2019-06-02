@@ -1,10 +1,12 @@
 async function updateMatch(match) {
     let id = match.id;
+    console.log(match);
     let format = document.getElementById("format-selector" + id).value;
     let round = document.getElementById("round-name" + id).value;
     let playerOne = document.getElementById("player-one-name" + id).value;
     let playerTwo = document.getElementById("player-two-name" + id).value;
-    let data = await fetch("updateMatch.php?" + params({id, format, round, playerOne, playerTwo}));
+    let score = document.getElementById("score" + id).value;
+    let data = await fetch("updateMatch.php?" + params({id, format, round, playerOne, playerTwo, score}));
     let response = await data.text();
     if(response == "") {
         showAlert("Success", "Match updated successfully", "success");
