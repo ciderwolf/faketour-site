@@ -84,8 +84,8 @@
     <div class='section'>
         <h2>Matches</h2>
         <div class='section'>
-            <a href='create'><button>Create Pairings</button></a>
-            <a href='update'><button>Update Pairings</button></a>
+            <a href='create/'><button>Create Pairings</button></a>
+            <a href='update/'><button>Update Pairings</button></a>
         </div>
     </div>
 </body>

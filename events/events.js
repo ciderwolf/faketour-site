@@ -37,7 +37,7 @@ function configureEvents(events) {
             } else {
                 let button = document.getElementById("register");
                 button.innerHTML = "View Results";
-                button.outerHTML = "<a href='/about/" + event.code + "/results'>" + button.outerHTML + "</a>";
+                button.outerHTML = "<a href='/about/" + event.code + "/results/'>" + button.outerHTML + "</a>";
             }
             document.getElementById("current-symbol").appendChild(createSetLink(event));
         }
@@ -74,7 +74,7 @@ function configureButton(event) {
 
 function createSetLink(event) {
     let setLink = document.createElement("a"); 
-    setLink.href = "/about/" + event.code;
+    setLink.href = "/about/" + event.code + "/";
     setLink.title = "Faketour " + event.name;
     setLink.classList.add("symbol-link");
     let setSymbol = document.createElement("i");

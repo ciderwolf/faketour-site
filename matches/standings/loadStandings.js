@@ -1,10 +1,19 @@
-let players = {};
 let isMobile = true;
 
 const formats = ["constructed", "limited"];
 fetch("getStandings.php")
 .then(response => response.json())
-.then(createStandings)
+.then(response => {
+    if(Object.keys(response).length == 0) {
+        document.getElementById("container").style.display = "none";
+        let noStandings = document.createElement('h1');
+        noStandings.classList.add("no-standings");
+        noStandings.textContent = 'No standings right now';
+        document.body.appendChild(noStandings);
+    } else {
+        createStandings(response);
+    }
+});
 
 function createStandings(players) {
     let limitedRows = {};

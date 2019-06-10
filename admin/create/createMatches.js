@@ -7,10 +7,11 @@ let players = [];
 
 fetch("/events/getPlayers.php")
 .then(response => response.json())
-.then(players => {
-    if(players.length % 2 == 1) {
-        players.push("Bye");	
+.then(playerList => {
+    if(playerList.length % 2 == 1) {
+        playerList.push("Bye");	
     }
+    players = playerList;
 });
 
 function addMatchElement(format) {

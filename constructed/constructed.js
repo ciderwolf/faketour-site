@@ -36,6 +36,9 @@ async function loadData() {
         maindeck.value = response.maindeck.join("\n");
         sideboard.value = response.sideboard.join("\n");
     }
+    if(response == null) {
+        showAlert("Log in", "You need to be logged in to submit your deck list", "warning");
+    }
     loggedIn = response;
 
     let dateData = await fetch("getDate.php");
@@ -53,9 +56,9 @@ function uploadDeck(cardList, setCode) {
       if (request.readyState === 4) {
         if (request.status === 200) {
             if(request.responseText == "register") {
-                showAlert("Please <a class='alert-link' href='/events'>Register</a>", "You need to be registered for the event in order to submit your decklist", "warning");
+                showAlert("Please <a class='alert-link' href='/events/'>Register</a>", "You need to be registered for the event in order to submit your decklist", "warning");
             } else {
-                showAlert("Deck submitted successfully", "Click <a class='alert-link' href='preview'>here</a> to see a preview", "success");
+                showAlert("Deck submitted successfully", "Click <a class='alert-link' href='preview/'>here</a> to see a preview", "success");
             }
         } else {
             console.log(request.responseText);

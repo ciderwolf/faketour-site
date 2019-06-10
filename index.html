@@ -20,7 +20,7 @@
 <div class="footer"><a href='http://www.raymondswanland.com/'>Artwork by Raymond Swanland</a></div>
 
 <script type="text/javascript">
-    let buttonAddress = ["matches", "matches/brackets"];
+    let buttonAddress = ["matches/", "matches/brackets/"];
     async function loadButtons() {
         let response = await fetch("/php/user.php?value=loggedIn");
         let loggedIn = await response.json();

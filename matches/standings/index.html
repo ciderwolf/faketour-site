@@ -11,45 +11,46 @@
 
 <body>
     <div class="content"></div>
-
     <div class="topnav"></div>
     <script type="text/javascript">loadMenu();</script>
-    <div style="display: flex;" class="title">
-        <h1>Faketour Standings</h1>
-        <h3 id="disclaimer">By game record, not official order</h3>
-    </div>
+    <div id="container">
+        <div style="display: flex;" class="title">
+            <h1>Faketour Standings</h1>
+            <h3 id="disclaimer">By game record, not official order</h3>
+        </div>
 
-    <div id="standings">
-        <div class="tab">
-            <button id="initial" class="tablinks" onclick="showTab(event, 'limited-content')">Limited</button>
-            <button class="tablinks" onclick="showTab(event, 'constructed-content')">Constructed</button>
-            <button class="tablinks" onclick="showTab(event, 'total-content')">Total</button>
-        </div>
-        <h2 class="format-name">Limited</h2>
-        <div class="backdrop tabcontent" id="limited-content" align="center">
-            <table id="limited">
-                <tr>
-                    <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
-                </tr>
-            </table>
-        </div>
-        <h2 class="format-name">Constructed</h2>
-        <div class="backdrop tabcontent" id="constructed-content" align="center">
-            <table id="constructed">
-                <tr>
-                    <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
-                </tr>
-            </table>
-        </div>
-        <h2 class="format-name">Total</h2>
-        <div class="backdrop tabcontent" id="total-content" align="center">
-            <table id="total">
-                <tr>
-                    <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
-                </tr>
-            </table>
-        </div>
-    <div>
+        <div id="standings">
+            <div class="tab">
+                <button id="initial" class="tablinks" onclick="showTab(event, 'limited-content')">Limited</button>
+                <button class="tablinks" onclick="showTab(event, 'constructed-content')">Constructed</button>
+                <button class="tablinks" onclick="showTab(event, 'total-content')">Total</button>
+            </div>
+            <h2 class="format-name">Limited</h2>
+            <div class="backdrop tabcontent" id="limited-content" align="center">
+                <table id="limited">
+                    <tr>
+                        <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+                    </tr>
+                </table>
+            </div>
+            <h2 class="format-name">Constructed</h2>
+            <div class="backdrop tabcontent" id="constructed-content" align="center">
+                <table id="constructed">
+                    <tr>
+                        <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+                    </tr>
+                </table>
+            </div>
+            <h2 class="format-name">Total</h2>
+            <div class="backdrop tabcontent" id="total-content" align="center">
+                <table id="total">
+                    <tr>
+                        <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+                    </tr>
+                </table>
+            </div>
+        <div>
+    </div>
     <div class="footer"><a href='https://www.artstation.com/igorkieryluk'>Artwork by Igor Kieryluk</a></div>
 </body>
 <script type="text/javascript" src="loadStandings.js"></script>

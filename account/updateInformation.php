@@ -2,7 +2,7 @@
     session_start();
     $username = $_SESSION["username"];
     $params = array("password", "avatar");
-    $sqlArgs = "";
+    $sqlArgs = [];
     foreach($_REQUEST as $key => $value) {
         if(in_array($key, $params)) {
             $sqlArgs[] = $key . "='" . $value . "'";
