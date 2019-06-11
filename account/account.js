@@ -127,7 +127,11 @@ async function uploadChanges() {
         queries.push("avatar=" + newAvatar);
     }
     if(queries.length != 0) {
-        let data = await fetch("updateInformation.php?" + queries.join("&"));
+        let data = await fetch("updateInformation.php", {
+            method: 'POST', 
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            body: queries.join('&')
+        });
         let response = await data.text();
         if(response == "") {
             showAlert("Success", "Account data updated", "success");

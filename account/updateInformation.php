@@ -3,7 +3,7 @@
     $username = $_SESSION["username"];
     $params = array("password", "avatar");
     $sqlArgs = [];
-    foreach($_REQUEST as $key => $value) {
+    foreach($_POST as $key => $value) {
         if(in_array($key, $params)) {
             $sqlArgs[] = $key . "='" . $value . "'";
         }

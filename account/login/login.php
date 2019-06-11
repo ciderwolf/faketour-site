@@ -6,14 +6,14 @@
     }
     $sql = "";
     $username = "";
-    if(isset($_REQUEST["psw"])) {
-        $password = $_REQUEST["psw"];
-        $username = $_REQUEST["uname"];
+    if(isset($_POST["password"])) {
+        $password = $_POST["password"];
+        $username = $_POST["username"];
         $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     } else {
         list($username, $token) = explode("-", $_COOKIE["SID"]);
         $sql = "SELECT * FROM users WHERE username='$username' AND token='$token'";
-        $_REQUEST["rem"] = "true";
+        $_POST["remember"] = "true";
     }
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
     
@@ -21,8 +21,8 @@
     if($result->num_rows == 1) {
         $remember = false;
         $token = "";
-        if(isset($_REQUEST["rem"])) {
-            $remember = $_REQUEST["rem"] == "true";
+        if(isset($_POST["remember"])) {
+            $remember = $_POST["remember"] == "true";
             if($remember) {
                 $row = $result->fetch_assoc();
                 $token = $row["token"];

@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
-<iframe width="0" height="0" name="dummyframe" id="dummyframe" style="display:none;"></iframe>
 
 <body>
 <div class="topnav"></div>
 <div class="content"></div>
 <script type="text/javascript">loadMenu("Log In");</script>
 <h2>Log In</h2>
-<form onsubmit="login();" target="dummyframe">
+<form onsubmit="login(); return false;">
     <div class="imgcontainer">
         <img src="login_avatar.png" alt="Avatar" class="avatar">
     </div>
@@ -33,10 +32,15 @@
 <script>
     async function login() {
         let remember = document.getElementById("remember").checked;
-        let uname = document.getElementById("uname").value;
-        let psw = document.getElementById("psw").value;
+        let username = document.getElementById("uname").value;
+        let password = document.getElementById("psw").value;
+        let inputs = {remember, username, password};
         showAlert("Logging in", "", "info");
-        let data = await fetch("login.php?uname=" + uname + "&psw=" + psw + "&rem=" + remember);
+        let data = await fetch("login.php", {
+            method: 'POST',
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            body: Object.keys(inputs).map(e => `${e}=${inputs[e]}`).join('&')
+        });
         let response = await data.text();
         if(response === "true") {
             showAlert("Logged in", "Redirecting...", "success");

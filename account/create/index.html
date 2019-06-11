@@ -16,7 +16,7 @@
 <script type="text/javascript">loadMenu("Create Account");</script>
 <h2 style="margin-left:10%; color:white;">Create New Account</h2>
 <h2 style="color:red; text-align:center; background-color: rgba(51,51,51,50)">Warning: This site features negative encryption, so don't reuse a password from somewhere else</h2>
-<form onsubmit="login();" target="dummyframe">
+<form onsubmit="login(); return false;" target="dummyframe">
     <div class="imgcontainer">
         <img src="login_avatar.png" alt="Avatar" class="avatar">
     </div>
@@ -35,19 +35,31 @@
 
 <script>
     async function login() {
-        let uname = document.getElementById("uname").value;
-        let psw = document.getElementById("psw").value;
+        let username = document.getElementById("uname").value;
+        let password = document.getElementById("psw").value;
         let psw2 = document.getElementById("psw2").value;
-        if(psw != psw2) {
+        if(password != psw2) {
             showAlert("Error", "Passwords do not match", "error");
             return;
-        } else if(psw.length > 30) {
+        } else if(password.length > 30) {
             showAlert("Error", "Password max length has been exceeded", "error");
             return;
         }
-        let data = await fetch("newaccount.php?uname=" + uname + "&psw=" + psw);
-        let loggedIn = await data.json();
-        if(loggedIn) {
+        let inputs = {username, password}
+        let data = await fetch("newaccount.php", {
+            method:'POST',
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            body: Object.keys(inputs).map(e => `${e}=${inputs[e]}`).join('&')
+        });
+        let success = null;
+        try {
+            success = await data.json();
+        } catch {
+            showAlert("Faield to create account", "Check the console for more informatino", "error");
+        }
+        console.log(success);
+        
+        if(success == true) {
             window.location.href = "/account/";
         } else {
             showAlert("Username already taken", "Please choose a unique username", "warning");
