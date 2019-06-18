@@ -11,7 +11,7 @@ body {
     right: 0;
     z-index: -1;
     display: block;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("forced-landing.jpg");
+    background-image: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) ), url("/img/?bg=constructed");
     background-size:cover;
     width: 100%;
     height: 100%;

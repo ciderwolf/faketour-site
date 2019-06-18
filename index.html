@@ -7,50 +7,63 @@
     <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
-<div class="content"></div>
-<div class="topnav" style="font-family: Nunito"></div>
-<script type="text/javascript">loadMenu("Home");</script>
-<h1>FakeTour</h1>
-<img src="/about/war/war-logo.png"/>
-<div id="buttons">
-    <button id="button1" onclick="navigate(0);">Matches</button>
-    <button id="button2" onclick="navigate(1);">Brackets</button>
-</div>
-
-<div class="footer"><a href='http://www.raymondswanland.com/'>Artwork by Raymond Swanland</a></div>
-
+<body>
+    <div class="content"></div>
+    <div class="topnav" style="font-family: Nunito"></div>
+    <script type="text/javascript">loadMenu("Home");</script>
+    <h1>FakeTour</h1>
+    <img src="/img?image=current_icon"/>
+    <div id="buttons">
+        <button id="button1">Matches</button>
+        <button id="button2">Brackets</button>
+    </div>
+    <div class="footer"><a href='http://www.raymondswanland.com/'>Artwork by Raymond Swanland</a></div>
+</body>
 <script type="text/javascript">
-    let buttonAddress = ["matches/", "matches/brackets/"];
-    async function loadButtons() {
-        let response = await fetch("/php/user.php?value=loggedIn");
-        let loggedIn = await response.json();
-        if(loggedIn) {
-            button1.innerHTML = "Matches";
-            button1.onclick = function(e) {
-                window.location.href = buttonAddress[0];
-            }
-            button2.innerHTML = "Brackets";
-            button2.onclick = function(e) {
-                window.location.href = buttonAddress[1];
-            }
-        } else {
-            button1.innerHTML = "Create Account";
-            button1.onclick = function(e) {
-                window.location.href = "account/create/?";
-            }
-            button2.innerHTML = "Login";
-            button2.onclick = function(e) {
-                window.location.href = "account/login/?";
-            }
-        }
-    }
-    loadButtons();
-    setInterval(loadButtons, 5000);
 
-    function navigate(buttonIndex) {
-        if(buttonAddress[buttonIndex]) {
-            window.location.href = buttonAddress[buttonIndex];
+    const buttonMapping = {
+        0: {
+            a: {
+                name: "Results",
+                href: "event.php?target=results"
+            },
+            b: {
+                name: "Decklists",
+                href: "event.php?target=decks"
+            }
+        },
+        1: {
+            a: {
+                name: "About",
+                href: "event.php?target=about"
+            },
+            b: {
+                name: "Submit Decklist",
+                href: "/constructed/"
+            }
+        },
+        2: {
+            a: {
+                name: "Matches",
+                href: "/matches/"
+            },
+            b: {
+                name: "Brackets",
+                href: "/matches/brackets/"
+            }
         }
     }
+
+    fetch('event.php')
+    .then(response => response.text())
+    .then(response => {
+        const code = Number(response);
+        let targets = buttonMapping[code];
+        button1.innerHTML = targets.a.name;
+        button1.onclick = () => {window.location.href = targets.a.href}
+        button2.innerHTML = targets.b.name;
+        button2.onclick = () => {window.location.href = targets.b.href}
+    });
+
 </script>
 </html>
