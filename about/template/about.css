@@ -92,7 +92,7 @@ a {
 
 @font-face {
     font-family: Beleren;
-    src: url("/fonts/BelerenBold.woff");
+    src: url("/css/fonts/BelerenBold.woff");
 }
 
 @media screen and (max-width: 600px) {
