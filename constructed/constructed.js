@@ -18,7 +18,7 @@ function getTimer() {
     let minutes = Math.floor(difference/60) - hours*60 - days*24*60;
     let seconds = Math.floor(difference) - minutes*60 - hours*3600 - days*24*3600;
     let dateString = pad(days,2) + ":" + pad(hours,2) + ":" + pad(minutes,2) + ":" + pad(seconds,2);
-    timer.innerHTML = "Decklists Due: " + dateString + "<i><br>(" + due.toString().substring(0, due.toString().indexOf(" GMT")) + ")</i>";
+    timer.innerHTML = "Decklists Due: " + dateString + "<i><br>(" + due.toLocaleString() + ")</i>";
 }
 
 function pad(num, size) {

@@ -1,11 +1,11 @@
-CREATE TABLE war_players (
+CREATE TABLE mh1_players (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(30) NOT NULL,
     deck VARCHAR(3000),
     reg_date TIMESTAMP
-)
+);
 
-CREATE TABLE war_matches (
+CREATE TABLE mh1_matches (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     format VARCHAR(30) NOT NULL,
     round VARCHAR(30) NOT NULL,

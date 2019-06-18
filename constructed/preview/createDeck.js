@@ -1,12 +1,12 @@
 let deckData;
 let decklist = {};
-let standardLegal;
+let standardLegal = {};
 
 loadData();
 
 async function loadData() {
-    let cardData = await fetch("cards.json");
-    standardLegal = await cardData.json();
+    // let cardData = await fetch("cards.json");
+    // standardLegal = await cardData.json();
 
     let url = "/php/user.php?page=submit_constructed";
     let player = new URL(window.location.href).searchParams.get("user");
@@ -43,7 +43,7 @@ function getLineInfo(line) {
     return [name, count];
 }
 
-function createDecklist() {
+async function createDecklist() {
     for(line of deckData.maindeck) {
         if(line == "") {
             continue;
@@ -51,15 +51,18 @@ function createDecklist() {
         let data = getLineInfo(line);
         let name = data[0];
         let count = data[1];
-        let cardObject = getCard(name);
-        let type = cardObject.type;
+        let cardResponse = await fetch("https://api.scryfall.com/cards/named?fuzzy=" + name);
+        let cardObject = await cardResponse.json();
+        let types = cardObject.type_line.substring(0, cardObject.type_line.indexOf("\u2014")).trim().split(" ");
+        let type = types[types.length - 1];
         if(!decklist.hasOwnProperty(type)) {
             decklist[type] = [];
         }
+
         decklist[type].push({
             "count": count,
             "name": name,
-            "image_uri": cardObject.image_uri
+            "image_uri": "https://api.scryfall.com/cards/named?fuzzy=" + name + "&format=image&type=normal"
         });
     }
 
@@ -71,11 +74,11 @@ function createDecklist() {
         let data = getLineInfo(line);
         let name = data[0];
         let count = data[1];
-        let cardObject = getCard(name);
+        // let cardObject = getCard(name);
         decklist.Sideboard.push({
             "name": name,
             "count": count,
-            "image_uri": cardObject.image_uri
+            "image_uri": "https://api.scryfall.com/cards/named?fuzzy=" + name + "&format=image&type=normal"
         });
     }
 

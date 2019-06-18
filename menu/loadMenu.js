@@ -63,11 +63,13 @@ async function loadFooter(activePage) {
     const page = activePage.toLowerCase();
     let response = await fetch('/img/?artist=' + page);
     let artist = await response.json();
-    let footer = document.getElementById('footer');
-    let link = document.createElement('a');
-    link.textContent = "Artwork by " + artist.name;
-    link.href = artist.href;
-    footer.appendChild(link);
+    if(artist) {
+        let footer = document.getElementById('footer');
+        let link = document.createElement('a');
+        link.textContent = "Artwork by " + artist.name;
+        link.href = artist.href;
+        footer.appendChild(link);
+    }
 }
 
 function showMenuItems() {
