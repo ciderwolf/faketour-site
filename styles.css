@@ -75,7 +75,7 @@ button:hover {
 
 @font-face {
     font-family: Beleren;
-    src: url("/fonts/BelerenBold.woff");
+    src: url("/css/fonts/BelerenBold.woff");
 }
 
 @keyframes fadein {

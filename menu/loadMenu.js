@@ -7,6 +7,7 @@ let pages = {
 };
 
 async function loadMenu(activePage) {
+    loadFooter(activePage);
     let div = document.getElementsByClassName("topnav")[0];
     div.id = "topnav";
     let response = await fetch("/php/user.php?page=menu");
@@ -56,6 +57,17 @@ async function loadMenu(activePage) {
     }
     show.innerHTML = "&#9776;";
     div.appendChild(show);
+}
+
+async function loadFooter(activePage) {
+    const page = activePage.toLowerCase();
+    let response = await fetch('/img/?artist=' + page);
+    let artist = await response.json();
+    let footer = document.getElementById('footer');
+    let link = document.createElement('a');
+    link.textContent = "Artwork by " + artist.name;
+    link.href = artist.href;
+    footer.appendChild(link);
 }
 
 function showMenuItems() {

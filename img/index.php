@@ -6,6 +6,11 @@
     } else if(isset($_REQUEST["image"])) {
         $target = $_REQUEST["image"];
         $url = getImagePath($target);
+    } else if(isset($_REQUEST["artist"])) {
+        $artists = json_decode(file_get_contents("artists.json"), true);
+        header("Content-Type: application/json");
+        echo json_encode($artists[$_REQUEST["artist"]]);
+        return;
     }
 
     header("Location: $url");
