@@ -1,0 +1,23 @@
+body {
+    background-color: #141729;
+}
+
+.content:before {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("bioessence-hydra.jpg");
+}
+
+.backdrop {
+    background-color:#f4eee7;
+}
+
+#tab-bg {
+    background-color: #30455b;
+}
+
+.tab button:hover {
+    background-color: #bdbccc;
+}
+
+.tab button.active {
+    background-color: #d2d7e6;
+}

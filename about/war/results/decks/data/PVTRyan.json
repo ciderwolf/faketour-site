@@ -1,0 +1,156 @@
+{
+  "Sideboard": [
+    {
+      "number": "165",
+      "set": "grn",
+      "name": "Deafening Clarion",
+      "count": 1
+    },
+    {
+      "number": "193",
+      "set": "war",
+      "name": "Dovin's Veto",
+      "count": 3
+    },
+    {
+      "number": "26",
+      "set": "dom",
+      "name": "Lyra Dawnbringer",
+      "count": 3
+    },
+    {
+      "number": "156",
+      "set": "m19",
+      "name": "Shock",
+      "count": 3
+    },
+    {
+      "number": "221",
+      "set": "war",
+      "name": "Teferi, Time Raveler",
+      "count": 3
+    },
+    {
+      "number": "180",
+      "set": "rix",
+      "name": "The Immortal Sun",
+      "count": 2
+    }
+  ],
+  "Planeswalker": [
+    {
+      "number": "211",
+      "set": "war",
+      "name": "Ral, Storm Conduit",
+      "count": 4
+    },
+    {
+      "number": "207",
+      "set": "dom",
+      "name": "Teferi, Hero of Dominaria",
+      "count": 3
+    }
+  ],
+  "Instant": [
+    {
+      "number": "224",
+      "set": "grn",
+      "name": "Expansion // Explosion",
+      "count": 4
+    },
+    {
+      "number": "62",
+      "set": "war",
+      "name": "Narset's Reversal",
+      "count": 1
+    },
+    {
+      "number": "142",
+      "set": "dom",
+      "name": "Shivan Fire",
+      "count": 3
+    }
+  ],
+  "Sorcery": [
+    {
+      "number": "165",
+      "set": "grn",
+      "name": "Deafening Clarion",
+      "count": 3
+    },
+    {
+      "number": "137",
+      "set": "m19",
+      "name": "Doublecast",
+      "count": 3
+    },
+    {
+      "number": "102",
+      "set": "rna",
+      "name": "Gates Ablaze",
+      "count": 4
+    },
+    {
+      "number": "108",
+      "set": "grn",
+      "name": "Lava Coil",
+      "count": 4
+    }
+  ],
+  "Enchantment": [{
+    "number": "41",
+    "set": "grn",
+    "name": "Guild Summit",
+    "count": 4
+  }],
+  "Land": [
+    {
+      "number": "243",
+      "set": "rna",
+      "name": "Azorius Guildgate",
+      "count": 4
+    },
+    {
+      "number": "244",
+      "set": "war",
+      "name": "Blast Zone",
+      "count": 3
+    },
+    {
+      "number": "243",
+      "set": "grn",
+      "name": "Boros Guildgate",
+      "count": 4
+    },
+    {
+      "number": "249",
+      "set": "rna",
+      "name": "Gruul Guildgate",
+      "count": 3
+    },
+    {
+      "number": "251",
+      "set": "grn",
+      "name": "Izzet Guildgate",
+      "count": 4
+    },
+    {
+      "number": "254",
+      "set": "rna",
+      "name": "Plaza of Harmony",
+      "count": 4
+    },
+    {
+      "number": "74",
+      "set": "xln",
+      "name": "Search for Azcanta // Azcanta, the Sunken Ruin",
+      "count": 3
+    },
+    {
+      "number": "274",
+      "set": "war",
+      "name": "Simic Guildgate",
+      "count": 2
+    }
+  ]
+}
