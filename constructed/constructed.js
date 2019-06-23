@@ -76,10 +76,10 @@ async function submit() {
     let maindeck = document.getElementById("maindeck").value.split("\n");
     let sideboard = document.getElementById("sideboard").value.split("\n");
     let valid = false;
-    if(standardLegal === undefined) {
+    if(legalCards === undefined) {
         showAlert("Validating deck", "", "info", true);
-        let response = await fetch("cards.json");
-        standardLegal = await response.json();
+        let response = await fetch("names.json");
+        legalCards = await response.json();
     }         
     valid = validateDeck(maindeck, sideboard);
     if(!valid) {

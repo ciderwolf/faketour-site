@@ -18,6 +18,14 @@ body {
     filter: blur(5px);
 }
 
+#timer {
+    color: maroon;
+    background: #fff4;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 14px;
+}
+
 .title {
     padding: 30px;
 }

@@ -1,5 +1,5 @@
-const unlimitedCards = ["Plains", "Island", "Swamp", "Mountain", "Forest", "Relentless Rats", "Persistent Petitioners"];
-let standardLegal = undefined;
+const unlimitedCards = ["Plains", "Island", "Swamp", "Mountain", "Forest", "Snow-Covered Plains", "Snow-Covered Island", "Snow-Covered Swamp", "Snow-Covered Mountain", "Snow-Covered Forest", "Wastes", "Relentless Rats", "Persistent Petitioners", "Relentless Rats", "Shadowborn Apostle"];
+let legalCards = undefined;
 const maindeckSize = 60;
 const sideboardSize = 15;
 const maxCardCount = 4;
@@ -54,8 +54,8 @@ function validateDeck(maindeck, sideboard) {
         return false;
     }
     for(card in deck) {
-        if(!isStandardLegal(card)) {
-            showAlert("Illegal card", "'" + card + "' isn't standard legal", "warning", true);
+        if(!isLegal(card)) {
+            showAlert("Illegal card", "'" + card + "' isn't modern legal", "warning", true);
             return false;
         }
         if(deck[card] > maxCardCount && !unlimitedCards.includes(card)) {
@@ -66,12 +66,12 @@ function validateDeck(maindeck, sideboard) {
     return true;
 }
 
-function isStandardLegal(card) {
+function isLegal(card) {
     card = card.trim();
     if(card == "") {
         return true;
     }
-    for(cardName of standardLegal) {
+    for(cardName of legalCards) {
         if(cardName.toLowerCase() == card.toLowerCase()) {
             return true;
         }

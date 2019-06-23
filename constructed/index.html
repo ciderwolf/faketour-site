@@ -20,7 +20,7 @@
 
     <div class="title">
         <h1>Faketour Constructed</h1>
-        <h2 style="color:maroon"id="timer"></h2>
+        <h2 id="timer"></h2>
         <h2>Submit a deck made up of cards legal in modern 
             <!-- <i class="ss ss-war ss-2x"></i>&nbsp;
             <i class="ss ss-rna ss-2x"></i>&nbsp;
@@ -39,8 +39,8 @@
         <button id="submit" onclick="submit();">Submit Deck</button>
         <div id="floating">
             <button onclick="showModal()">Import Deck</button><br>
-            <div class="checkbox" hidden>
-                <input type="checkbox" name="validate-deck" id="validate-checkbox">
+            <div class="checkbox">
+                <input type="checkbox" name="validate-deck" id="validate-checkbox" checked>
                 <label for="validate-deck" onclick="validateClicked()"></label>
                 <h3 id="checkbox-label">Validate Decklist</h3>
             </div>

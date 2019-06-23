@@ -1,12 +1,12 @@
 let deckData;
 let decklist = {};
-let standardLegal = {};
+let legalCards;
 
 loadData();
 
 async function loadData() {
-    // let cardData = await fetch("cards.json");
-    // standardLegal = await cardData.json();
+    let cardData = await fetch("cards.json");
+    legalCards = await cardData.json();
 
     let url = "/php/user.php?page=submit_constructed";
     let player = new URL(window.location.href).searchParams.get("user");
@@ -43,7 +43,7 @@ function getLineInfo(line) {
     return [name, count];
 }
 
-async function createDecklist() {
+function createDecklist() {
     for(line of deckData.maindeck) {
         if(line == "") {
             continue;
@@ -51,18 +51,23 @@ async function createDecklist() {
         let data = getLineInfo(line);
         let name = data[0];
         let count = data[1];
-        let cardResponse = await fetch("https://api.scryfall.com/cards/named?fuzzy=" + name);
-        let cardObject = await cardResponse.json();
-        let types = cardObject.type_line.substring(0, cardObject.type_line.indexOf("\u2014")).trim().split(" ");
-        let type = types[types.length - 1];
+        let cardObject = getCard(name);
+        console.log(name);
+        let type = cardObject.type;
         if(!decklist.hasOwnProperty(type)) {
             decklist[type] = [];
+        }
+
+        if(cardObject.image_uri) {
+            image_uri = cardObject.image_uri;
+        } else {
+            image_uri = `https://api.scryfall.com/cards/${cardObject.id}?format=image&version=normal`;
         }
 
         decklist[type].push({
             "count": count,
             "name": name,
-            "image_uri": "https://api.scryfall.com/cards/named?fuzzy=" + name + "&format=image&type=normal"
+            "image_uri": image_uri
         });
     }
 
@@ -74,11 +79,17 @@ async function createDecklist() {
         let data = getLineInfo(line);
         let name = data[0];
         let count = data[1];
-        // let cardObject = getCard(name);
+        let cardObject = getCard(name);
+
+        if(cardObject.image_uri) {
+            image_uri = cardObject.image_uri;
+        } else {
+            image_uri = `https://api.scryfall.com/cards/${cardObject.id}?format=image&version=normal`;
+        }
         decklist.Sideboard.push({
             "name": name,
             "count": count,
-            "image_uri": "https://api.scryfall.com/cards/named?fuzzy=" + name + "&format=image&type=normal"
+            "image_uri": image_uri
         });
     }
 
@@ -179,12 +190,12 @@ function normalizePreviewY(e, preview) {
 }
 
 function getCard(name) {
-    if(standardLegal[name]) {
-        return standardLegal[name];
+    if(legalCards[name]) {
+        return legalCards[name];
     }
-    for(card in standardLegal) {
+    for(card in legalCards) {
         if(card.toLowerCase().includes(name.toLowerCase())) {
-            return standardLegal[card];
+            return legalCards[card];
         }
     }
     return undefined;
