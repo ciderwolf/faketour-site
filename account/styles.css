@@ -1,25 +1,13 @@
+body {
+    background: #c9b8a4;
+}
+
 .content:before {
-    overflow: auto;	
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    display: block;
     background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url("orzhov.jpg");
-    background-size:cover;
-    width: 100%;
-    height: 100%;
-    filter: blur(5px);
 }
 
 h1 {
     margin-left: 15px;
-}
-
-body {
-    font-family: 'Nunito', sans-serif;
-    background: #c9b8a4;
 }
 
 .flex {
@@ -80,23 +68,7 @@ input {
 }
 
 button {
-    margin: 25px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 3px;
-    border: 2px solid #555555;
-    color: #555555;
-    padding: 10px 10px;
     align-self: center;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    font-family: 'Nunito', sans-serif;
-}
-button:hover {
-    background-color: rgba(51, 51, 51, 0.7);
-    color: white;
 }
 
 .wide {
@@ -104,21 +76,21 @@ button:hover {
     margin: 25px 0px 25px 0px;
 }
 
-.logout {
+button.logout {
     color: maroon;
     background-color: rgba(255, 100, 100, 0.5);
     border-color: maroon;
 }
-.logout:hover {
+button.logout:hover {
     background-color: rgba(155, 51, 51, 0.7);
 }
 
-.save {
+button.save {
     color: darkgreen;
     background-color: rgba(100, 255, 100, 0.5);
     border-color: darkgreen;
 }
-.save:hover {
+button.save:hover {
     background-color: rgba(51, 155, 51, 0.7);
 }
 

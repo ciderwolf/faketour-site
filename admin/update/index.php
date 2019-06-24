@@ -46,7 +46,7 @@
                     echo "<input type=text id='player-one-name$id' value='" . $row["player_one"]. "'>";
                     echo "<label for='player-two-name'>vs</label><input type=text id='player-two-name$id' name='player-two-name' value='" . $row["player_two"]. "'>";
                     echo "<label for='score'>Score:</label><input class=short type=text id='score$id' name='score'></input>";
-                    echo "<div class=button-container><button onclick=updateMatch(this.parentElement.parentElement)>Update Match</button><button class=delete onclick=deleteMatch(this.parentElement.parentElement)>Delete Match</button></div>";
+                    echo "<div class=button-container><button class='transparent' onclick=updateMatch(this.parentElement.parentElement)>Update Match</button><button class=delete onclick=deleteMatch(this.parentElement.parentElement)>Delete Match</button></div>";
                     echo "</div>";
                 }
             } else {

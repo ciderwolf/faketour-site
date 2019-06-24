@@ -46,7 +46,7 @@ img {
     margin-top: -70px;
 }
 
-button {
+/* button {
     font-family: 'Nunito', sans-serif;
     margin: 25px;
     background-color: white;
@@ -59,12 +59,12 @@ button {
     display: inline-block;
     font-size: 16pt;
     transition-duration: 0.4s;
-}
+} */
 
-button:hover {
+/* button:hover {
     background-color: var(--bg-color); 
     color: white;
-}
+} */
 
 .footer {
     position: fixed;

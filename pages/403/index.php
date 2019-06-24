@@ -1,9 +1,14 @@
+<?php
+    http_response_code(403);
+?>
+
 <html>
     <head>
         <title>Forbidden | Faketour</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css"></head>
+        <link rel="stylesheet" href="/pages/styles.css"></head>
+        <link rel="stylesheet" href="/pages/403/styles.css"></head>
         <link rel="stylesheet" href="/menu/styles.css">
         <script type="text/javascript" src="/menu/loadMenu.js"></script>
     </head>

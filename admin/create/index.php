@@ -12,13 +12,13 @@
 <head>
     <title>Create Pairings | Faketour</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"></head>
     <link rel="stylesheet" href="/menu/styles.css">
+    <link rel="stylesheet" href="styles.css"></head>
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
 <body>
     <div class="topnav"></div>
-    <script type="text/javascript">loadMenu();</script>
+    <script type="text/javascript">loadMenu("Create Pairings");</script>
     <div class="title">
         <h1>Create Pairings</h1>
     </div>
@@ -28,14 +28,14 @@
 
         <div id="limited" class="match">
             <h2>Limited</h2>
-            <button style="position: absolute; right:10vw" onclick="addMatchElement('limited')">Add Pairing</button>
+            <button class="transparent thin" style="position: absolute; right:10vw" onclick="addMatchElement('limited')">Add Pairing</button>
         </div>
         <div id="constructed" class="match">
             <h2>Constructed</h2>
-            <button style="position: absolute; right:10vw" onclick="addMatchElement('constructed')">Add Pairing</button>
+            <button class="transparent thin" style="position: absolute; right:10vw" onclick="addMatchElement('constructed')">Add Pairing</button>
         </div>
     </div>
-    <div align="center" onclick="uploadPairings();"><button style="margin-top:100px;width:70%">Submit Pairings</button></div>
+    <div align="center" onclick="uploadPairings();"><button class="transparent thin" style="margin-top:100px;width:70%">Submit Pairings</button></div>
     
 
 </body>

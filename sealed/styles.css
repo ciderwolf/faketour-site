@@ -15,7 +15,6 @@ body {
 	background-image: url("selesnya-bg.jpeg");
 	padding: 90px;
 	background-size: cover;
-
 }
 
 #cards {
@@ -49,21 +48,6 @@ img {
 	margin-right: 5px;
 }
 
-button {
-	font-family: 'Nunito', sans-serif;
-	background-color: white;
-	border-radius: 5px;
-	border: 3px solid #37634b;
-	color: #37634b;
-	padding: 5px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16pt;
-	transition-duration: 0.4s;
-}
-button:hover {
-	background-color: #37634b;
-	color: white;
-	border-color: white;
+:root {
+	--bg-color: #37634b;
 }

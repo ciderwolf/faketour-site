@@ -87,7 +87,7 @@ h4 {
     font-family: inherit;
 }
 
-.tab button {
+.tab span {
     align-self: center;
     background-color: inherit;
     float: left;
@@ -101,12 +101,12 @@ h4 {
     font-family: inherit;
 }
 
-.tab button:hover {
+.tab span:hover {
     background-color: #ddd;
     color:black;
 }
 
-.tab button.active {
+.tab span.active {
     background-color: orange;
     opacity: 0.8;
     color: black;

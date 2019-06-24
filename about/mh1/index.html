@@ -23,12 +23,23 @@
             <p>Draft 3 packs of Modern Horizons.
                 <a class="underlight" href="https://scryfall.com/sets/mh1?as=grid&order=name"><i>View the set spoiler</i></a>
             </p>
-            <div align="center">
-                <button onclick="window.location.href='/results/'">Submit Constructed Deck</button>
+            <div style="display: flex; justify-content: center">
+                <a href="/constructed/"><button class="bold light">Submit Constructed Deck</button></a>
             </div>
         </div>
         <div class="footer"><a href='http://www.magali-villeneuve.com/'>Artwork by <br/>Magali Villeneuve</a></div>
-
     </body>
+    <script>
+        fetch('/event.php?set=mh1')
+        .then(response => response.text())
+        .then(response => {
+            const code = Number(response);
+            let targets = buttonMapping[code];
+            button1.innerHTML = targets.a.name;
+            button1.onclick = () => {window.location.href = targets.a.href}
+            button2.innerHTML = targets.b.name;
+            button2.onclick = () => {window.location.href = targets.b.href}
+        });
+    </script>
 
 </html>

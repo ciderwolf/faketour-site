@@ -1,20 +1,5 @@
 body {
-    font-family: 'Nunito', sans-serif;
     color: black;
-}
-
-.content:before {
-    overflow: auto;	
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    display: block;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    filter: blur(5px);
 }
 
 .backdrop {
@@ -61,7 +46,7 @@ a {
     height: 100%;
 }
 
-.tab button {
+.tab span {
     align-self: center;
     background-color: inherit;
     float: left;
@@ -73,13 +58,14 @@ a {
     font-size: 17px;
     font-family: inherit;
     color: inherit;
+    text-align: center;
 }
 
-.tab button:hover {
+.tab span:hover {
     color:black;
 }
 
-.tab button.active {
+.tab span.active {
     opacity: 0.8;
     color: black;
 }

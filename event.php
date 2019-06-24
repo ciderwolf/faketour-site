@@ -1,6 +1,9 @@
 <?php
 
     require("php/connect_db.php");
+    if(isset($_REQUEST["set"])) {
+        $set = $_REQUEST["set"];
+    }
 
     if(isset($_REQUEST["target"])) {
         $target = $_REQUEST["target"];
@@ -10,7 +13,7 @@
                 $url = "/about/$set/results/";
                 break;
             case "decks":
-                $url = "/about/$set/results/decks";
+                $url = "/about/$set/results/decks/";
                 break;
             case "about";
                 $url = "/about/$set/";

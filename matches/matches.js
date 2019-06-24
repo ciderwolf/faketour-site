@@ -76,6 +76,7 @@ function loadMatches(format) {
         let submitButton = document.createElement("button");
         submitButton.style = "width:100%;margin-left:0;";
         submitButton.innerHTML = "Report";
+        submitButton.className = "transparent thin";
         container.appendChild(submitButton);
         form.appendChild(container);
         modal.appendChild(form);

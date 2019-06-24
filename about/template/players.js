@@ -23,7 +23,7 @@ async function loadPlayer(player) {
 function createTab(player, data) {
     // create button
     let tabRow = document.getElementById("tabs");
-    let tabButton = document.createElement("button");
+    let tabButton = document.createElement("span");
     tabButton.classList.add("tablinks");
     tabButton.onclick = function(e) {
         showTab(e, player + "-content");

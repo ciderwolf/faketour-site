@@ -1,2 +1,2 @@
-ErrorDocument 403 http://faketour.22web.org/pages/403/
-ErrorDocument 404 http://faketour.22web.org/pages/404/
+ErrorDocument 403 /pages/403/
+ErrorDocument 404 /pages/404/

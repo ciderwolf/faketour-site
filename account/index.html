@@ -3,8 +3,8 @@
     <title>Account | Faketour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"></head>
     <link rel="stylesheet" href="/menu/styles.css">
+    <link rel="stylesheet" href="styles.css"></head>
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <h2>Avatar</h2>
         <div class="flex">
             <img id="avatar-img" class="avatar">
-            <button onclick="changeAvatar();">Change Avatar</button>
+            <button onclick="changeAvatar();" class="transparent">Change Avatar</button>
             <div class="modal" id="change-avatar">
                 <span class="close" title="Cancel" onclick="document.getElementById('change-avatar').style.display='none'">&times;</span>
                 <div class="container modal-content">
@@ -29,8 +29,8 @@
         <input onfocus="this.classList.remove('required');" type="password" id="password" placeholder="Enter Password" required>
         <input onfocus="this.classList.remove('required');" type="password" id="password2" placeholder="Reenter Password" required>
         <div class="bar"></div>
-        <button onclick="uploadChanges();" class="save wide">Save Changes</button>
-        <button onclick="logout();" class="logout wide">Log Out</button>
+        <button onclick="uploadChanges();" class="save wide transparent">Save Changes</button>
+        <button onclick="logout();" class="logout wide transparent">Log Out</button>
     </div>
     <div class="footer" ><a href='https://twitter.com/JennRavenna'>Artwork by @JennRavenna</a></div>
 

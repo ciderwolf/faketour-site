@@ -27,7 +27,7 @@ function addMatchElement(format) {
     line.appendChild(text);
     line.appendChild(createSelector(format, number));
     let remove = document.createElement("button");
-    remove.classList.add("delete");
+    remove.className = "delete transparent thin";
     remove.addEventListener('click', function(e) {
         options[format] = options[format].filter(option => option.name != number);
         matchForm.removeChild(line);

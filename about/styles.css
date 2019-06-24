@@ -1,21 +1,9 @@
-.content:before {
-    overflow: auto;	
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    display: block;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url("saproling-token.jpg");
-    background-size:cover;
-    width: 100%;
-    height: 100%;
-    filter: blur(15px);
+body {
+    background-color: #dfe0d9;
 }
 
-body {
-    font-family: 'Nunito', sans-serif;
-    background-color: #dfe0d9;
+.content:before {
+    background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url("saproling-token.jpg");
 }
 
 b {

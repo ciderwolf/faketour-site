@@ -14,10 +14,10 @@ body {
     background-color: #49274a;
 }
 
-.tab button:hover {
+.tab span:hover {
     background-color: #c5bccc;
 }
 
-.tab button.active {
+.tab span.active {
     background-color: #e6d2e6;
 }
