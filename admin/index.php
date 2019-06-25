@@ -50,8 +50,8 @@
                 echo "<h3>" . $event["name"] . "</h3>";
                 echo "<label for='event-duedate-input'>Decks submission due: </label>";
                 echo "<input type=text id='event-duedate-input' value='" . $event["decks_due"] . "'></input><br>";
-                echo "<button class='transparent danger' id='close-event-button' onclick='closeEvent()'>Close Event</button>";  
-                echo "<button class='transparent' id='update-duedate-button' onclick='updateDueDate()'>Update Submission Date</button>";  
+                echo "<button class='transparent danger thin' id='close-event-button' onclick='closeEvent()'>Close Event</button>";  
+                echo "<button class='transparent thin' id='update-duedate-button' onclick='updateDueDate()'>Update Submission Date</button>";  
             } else {
                 echo "<h3>New Event</h3>";
                 echo "<label for='event-name-input'>Event name: </label>";
@@ -84,8 +84,8 @@
     <div class='section'>
         <h2>Matches</h2>
         <div class='section'>
-            <a href='create/'><button class="transparent">Create Pairings</button></a>
-            <a href='update/'><button class="transparent">Update Pairings</button></a>
+            <a href='create/'><button class="transparent thin">Create Pairings</button></a>
+            <a href='update/'><button class="transparent thin">Update Pairings</button></a>
         </div>
     </div>
 </body>

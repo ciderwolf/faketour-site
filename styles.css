@@ -3,7 +3,11 @@
 }
 
 body {
-    background-color: #23120b; 
+    background-color: var(--bg-color);
+}
+
+:root {
+    --bg-color: #23120b;
 }
 
 h1 {
@@ -29,25 +33,6 @@ img {
     width: fit-content;
     margin-top: 100px;
     animation: fadein 5s;
-}
-
-button {
-    font-family: 'Nunito', sans-serif;
-    margin: 25px;
-    background-color: #23120b;
-    border-radius: 8px;
-    border: 5px solid white;
-    color: white;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25pt;
-    transition-duration: 0.4s;
-}
-button:hover {
-    background-color: white;
-    color: #23120b;
 }
 
 .footer {

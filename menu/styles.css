@@ -60,13 +60,22 @@ button {
     transition-duration: 0.4s;
     font-family: 'Nunito', sans-serif;
 }
-
-button.bold.light {
+button.bold {
     margin: 25px;
     border-radius: 8px;
+    font-size: 25pt;
+    border: 5px solid white;
+    color: white;
+    background-color: var(--bg-color);
+}
+button.bold:hover {
+    background: white;
+    color: var(--bg-color);
+}
+button.bold.light {
     font-size: 16pt;
     background-color: white;
-    border: 5px solid var(--bg-color); 
+    border-color: var(--bg-color); 
     color: var(--bg-color); 
 }
 button.bold.light:hover {
