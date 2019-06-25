@@ -63,7 +63,8 @@ button {
 button.bold.light {
     font-size: 16pt;
     background-color: white;
-    border-color: var(--bg-color); 
+    border: 5px solid var(--bg-color); 
+    border-radius: 8px;
     color: var(--bg-color); 
 }
 button.bold.light:hover {

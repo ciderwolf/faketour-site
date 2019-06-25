@@ -13,7 +13,7 @@
     <body>
         <div class="content">
         <div class="topnav"></div>
-        <script type="text/javascript">loadMenu();</script>
+        <script type="text/javascript">loadMenu("About MH1");</script>
         <h1>FakeTour</h1>
         <img class='top-gap' src="mh1-logo.png"/>
         <div id="bg">
@@ -29,17 +29,4 @@
         </div>
         <div class="footer"><a href='http://www.magali-villeneuve.com/'>Artwork by <br/>Magali Villeneuve</a></div>
     </body>
-    <script>
-        fetch('/event.php?set=mh1')
-        .then(response => response.text())
-        .then(response => {
-            const code = Number(response);
-            let targets = buttonMapping[code];
-            button1.innerHTML = targets.a.name;
-            button1.onclick = () => {window.location.href = targets.a.href}
-            button2.innerHTML = targets.b.name;
-            button2.onclick = () => {window.location.href = targets.b.href}
-        });
-    </script>
-
 </html>
