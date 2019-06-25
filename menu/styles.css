@@ -60,18 +60,6 @@ button {
     transition-duration: 0.4s;
     font-family: 'Nunito', sans-serif;
 }
-button.bold {
-    margin: 25px;
-    border-radius: 8px;
-    font-size: 25pt;
-    border: 5px solid white;
-    color: white;
-    background-color: var(--bg-color);
-}
-button.bold:hover {
-    background: white;
-    color: var(--bg-color);
-}
 button.bold.light {
     font-size: 16pt;
     background-color: white;
@@ -83,8 +71,16 @@ button.bold.light:hover {
     color: white;
 }
 button.bold.large {
+    border-radius: 8px;
     font-size: 25pt;
+    border: 5px solid white;
+    color: white;
+    background-color: var(--bg-color);
 }
+button.bold.large:hover {
+    background: white;
+    color: var(--bg-color);
+} 
 
 button.transparent {
     background-color: rgba(255, 255, 255, 0.7);
