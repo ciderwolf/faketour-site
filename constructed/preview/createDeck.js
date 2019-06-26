@@ -21,12 +21,11 @@ async function loadData() {
         createDecklist();
     } else {
         let text = "Submit your deck to see it here";
-        if(responseJSON == false) {
+        if(response == false) {
             text = "You need to be logged in to see your deck";
         }
-        let message = document.createElement("h2");
+        let message = document.getElementById("message");
         message.innerHTML = text;
-        document.getElementById("bg").appendChild(message);
     }
 }
 
@@ -52,7 +51,6 @@ function createDecklist() {
         let name = data[0];
         let count = data[1];
         let cardObject = getCard(name);
-        console.log(name);
         let type = cardObject.type;
         if(!decklist.hasOwnProperty(type)) {
             decklist[type] = [];
@@ -92,7 +90,7 @@ function createDecklist() {
             "image_uri": image_uri
         });
     }
-
+    document.getElementById("message").remove();
     document.getElementById("bg").appendChild(createDeckView(decklist));
 }
 
