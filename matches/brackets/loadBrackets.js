@@ -31,7 +31,6 @@ function createMatches(data) {
             else {
                 title.innerHTML = "Round " + round;
             }
-            console.log(title);
             roundBox.appendChild(title);
             for(match of matches[format][round]) {
                 if(match.playerTwo == "") {

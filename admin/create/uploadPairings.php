@@ -11,7 +11,7 @@
         $pairing = json_decode(json_encode($pairingData), true);
         $player_one = $pairing["player_one"];
         $player_two = $pairing["player_two"];
-        $sql = "INSERT INTO $table_name (format, round, games, player_one, player_two) VALUES ('$format', '$round', '$games', '$player_one', '$player_two')";
+        $sql = "INSERT INTO $table_name (format, round, games, player_one, player_two, score) VALUES ('$format', '$round', '$games', '$player_one', '$player_two', '')";
         if ($conn->query($sql) === TRUE) {
             echo $sql;
         } else {

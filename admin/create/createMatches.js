@@ -107,7 +107,6 @@ function uploadPairings() {
             upload.push(data);
         }
         sendData(format, roundName, games, upload);
-        console.log(upload);
     }
 }
 
@@ -116,7 +115,6 @@ function sendData(format, roundName, games, data) {
     request.open("POST", "uploadPairings.php?format=" + format + "&round=" + roundName + "&games=" + games, true);
     request.setRequestHeader("body", JSON.stringify(data));
     request.onload = function (e) {
-        console.log(request.responseText);
         if (request.readyState === 4) {
             if (request.status === 200) {
                 showAlert(format, "Pairings submitted successfully.", "success");

@@ -6,7 +6,7 @@
     $sql = "SELECT format, round, player_one, player_two, score FROM $table_name";
     $result = $conn->query($sql);
 
-    $output = "";
+    $output = array();
 
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {

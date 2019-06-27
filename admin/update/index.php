@@ -12,13 +12,13 @@
 <head>
     <title>Update Pairings | Faketour</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"></head>
     <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
+    <link rel="stylesheet" href="styles.css"></head>
 </head>
 <body>
     <div class="topnav"></div>
-    <script type="text/javascript">loadMenu();</script>
+    <script type="text/javascript">loadMenu("Update Pairings");</script>
     <div style="margin-left: 30px">
         <h1>Update Pairings</h1>
         <?php
@@ -46,7 +46,7 @@
                     echo "<input type=text id='player-one-name$id' value='" . $row["player_one"]. "'>";
                     echo "<label for='player-two-name'>vs</label><input type=text id='player-two-name$id' name='player-two-name' value='" . $row["player_two"]. "'>";
                     echo "<label for='score'>Score:</label><input class=short type=text id='score$id' name='score'></input>";
-                    echo "<div class=button-container><button class='transparent' onclick=updateMatch(this.parentElement.parentElement)>Update Match</button><button class=delete onclick=deleteMatch(this.parentElement.parentElement)>Delete Match</button></div>";
+                    echo "<div class=button-container><button class='transparent thin' onclick=updateMatch(this.parentElement.parentElement)>Update Match</button><button class='transparent delete thin' onclick=deleteMatch(this.parentElement.parentElement)>Delete Match</button></div>";
                     echo "</div>";
                 }
             } else {

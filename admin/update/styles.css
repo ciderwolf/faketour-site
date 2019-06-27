@@ -37,7 +37,11 @@ select {
     display: flex;
 }
 
-button.delete {
+button {
+    margin: 5px !important;
+}
+
+button.tranparent.delete {
     background-color: rgba(135, 36, 0, 0.7);
     border-radius: 3px;
     border: 2px solid #555555;
