@@ -1,23 +1,11 @@
-let players;
 loadData();
 
-window.onload = function(e) {
-    console.log(e);
-    document.getElementById("tab-bg").height = document.getElementById("players").offsetHeight;
-}
-
 async function loadData() {
-    let playerResponse = await fetch("players.json");
-    players = await playerResponse.json();
-    for(player of players) {
-        loadPlayer(player);
+    let data = await fetch("decks.json");
+    let decks = await data.json();
+    for(player in decks) {
+        createTab(player, decks[player])
     }
-}
-
-async function loadPlayer(player) {
-    let playerData = await fetch("data/" + player + ".json");
-    let playerJSON = await playerData.json();
-    createTab(player, playerJSON);
 }
 
 function createTab(player, data) {

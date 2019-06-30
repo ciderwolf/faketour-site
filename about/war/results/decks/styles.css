@@ -3,7 +3,7 @@ body {
 }
 
 .content:before {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("bioessence-hydra.jpg");
+    background-image: url("bioessence-hydra.jpg");
 }
 
 .backdrop {
@@ -11,13 +11,13 @@ body {
 }
 
 #tab-bg {
-    background-color: #30455b;
+    background-color: #163a2c;
 }
 
-.tab button:hover {
-    background-color: #bdbccc;
+.tab span:hover {
+    background-color: #bcccc9;
 }
 
-.tab button.active {
-    background-color: #d2d7e6;
+.tab span.active {
+    background-color: #d2e6e2;
 }

@@ -1,0 +1,970 @@
+{
+  "certi42": {
+    "Creature": [
+      {
+        "number": "122",
+        "set": "rna",
+        "name": "Biogenic Ooze",
+        "count": 2
+      },
+      {
+        "number": "179",
+        "set": "xln",
+        "name": "Carnage Tyrant",
+        "count": 2
+      },
+      {
+        "number": "128",
+        "set": "rna",
+        "name": "Growth-Chamber Guardian",
+        "count": 4
+      },
+      {
+        "number": "183",
+        "set": "rna",
+        "name": "Hydroid Krasis",
+        "count": 2
+      },
+      {
+        "number": "131",
+        "set": "rna",
+        "name": "Incubation Druid",
+        "count": 4
+      },
+      {
+        "number": "136",
+        "set": "rix",
+        "name": "Jadelight Ranger",
+        "count": 3
+      },
+      {
+        "number": "168",
+        "set": "dom",
+        "name": "Llanowar Elves",
+        "count": 4
+      },
+      {
+        "number": "82",
+        "set": "rix",
+        "name": "Ravenous Chupacabra",
+        "count": 2
+      },
+      {
+        "number": "214",
+        "set": "rna",
+        "name": "Zegana, Utopian Speaker",
+        "count": 2
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "129",
+        "set": "xln",
+        "name": "Vraska's Contempt",
+        "count": 1
+      },
+      {
+        "number": "37",
+        "set": "grn",
+        "name": "Disdainful Stroke",
+        "count": 2
+      },
+      {
+        "number": "79",
+        "set": "rix",
+        "name": "Moment of Craving",
+        "count": 2
+      },
+      {
+        "number": "44",
+        "set": "rix",
+        "name": "Negate",
+        "count": 2
+      },
+      {
+        "number": "206",
+        "set": "grn",
+        "name": "Thought Erasure",
+        "count": 4
+      },
+      {
+        "number": "148",
+        "set": "rix",
+        "name": "Thrashing Brontodon",
+        "count": 2
+      },
+      {
+        "number": "212",
+        "set": "grn",
+        "name": "Unmoored Ego",
+        "count": 2
+      }
+    ],
+    "Planeswalker": [
+      {
+        "number": "208",
+        "set": "m19",
+        "name": "Vivien Reid",
+        "count": 3
+      }
+    ],
+    "Instant": [
+      {
+        "number": "81",
+        "set": "dom",
+        "name": "Cast Down",
+        "count": 1
+      },
+      {
+        "number": "129",
+        "set": "xln",
+        "name": "Vraska's Contempt",
+        "count": 2
+      }
+    ],
+    "Sorcery": [
+      {
+        "number": "225",
+        "set": "grn",
+        "name": "Find // Finality",
+        "count": 3
+      }
+    ],
+    "Enchantment": [
+      {
+        "number": "158",
+        "set": "rix",
+        "name": "Hadana's Climb // Winged Temple of Orazca",
+        "count": 2
+      }
+    ],
+    "Land": [
+      {
+        "number": "246",
+        "set": "rna",
+        "name": "Breeding Pool",
+        "count": 4
+      },
+      {
+        "number": "253",
+        "set": "xln",
+        "name": "Drowned Catacomb",
+        "count": 3
+      },
+      {
+        "number": "133",
+        "set": "gk2",
+        "name": "Forest",
+        "count": 4
+      },
+      {
+        "number": "240",
+        "set": "dom",
+        "name": "Hinterland Harbor",
+        "count": 1
+      },
+      {
+        "number": "253",
+        "set": "grn",
+        "name": "Overgrown Tomb",
+        "count": 4
+      },
+      {
+        "number": "259",
+        "set": "grn",
+        "name": "Watery Grave",
+        "count": 4
+      },
+      {
+        "number": "248",
+        "set": "dom",
+        "name": "Woodland Cemetery",
+        "count": 4
+      }
+    ]
+  },
+  "PVTRyan": {
+    "Creature": [
+      {
+        "number": "165",
+        "set": "rna",
+        "name": "Deputy of Detention",
+        "count": 4
+      },
+      {
+        "number": "83",
+        "set": "m19",
+        "name": "Wall of Mist",
+        "count": 2
+      },
+      {
+        "number": "30",
+        "set": "m19",
+        "name": "Novice Knight",
+        "count": 2
+      },
+      {
+        "number": "19",
+        "set": "rna",
+        "name": "Resolute Watchdog",
+        "count": 4
+      },
+      {
+        "number": "178",
+        "set": "rix",
+        "name": "Gleaming Barrier",
+        "count": 4
+      },
+      {
+        "number": "142",
+        "set": "grn",
+        "name": "Portcullis Vine",
+        "count": 4
+      },
+      {
+        "number": "139",
+        "set": "rna",
+        "name": "Saruli Caretaker",
+        "count": 4
+      },
+      {
+        "number": "212",
+        "set": "m19",
+        "name": "Arcades, the Strategist",
+        "count": 4
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "9",
+        "set": "m19",
+        "name": "Cleansing Nova",
+        "count": 2
+      },
+      {
+        "number": "42",
+        "set": "xln",
+        "name": "Tocatli Honor Guard",
+        "count": 3
+      },
+      {
+        "number": "167",
+        "set": "rna",
+        "name": "Dovin, Grand Arbiter",
+        "count": 3
+      },
+      {
+        "number": "44",
+        "set": "rix",
+        "name": "Negate",
+        "count": 3
+      },
+      {
+        "number": "207",
+        "set": "dom",
+        "name": "Teferi, Hero of Dominaria",
+        "count": 4
+      }
+    ],
+    "Sorcery": [
+      {
+        "number": "9",
+        "set": "m19",
+        "name": "Cleansing Nova",
+        "count": 2
+      }
+    ],
+    "Enchantment": [
+      {
+        "number": "31",
+        "set": "dom",
+        "name": "Seal Away",
+        "count": 4
+      },
+      {
+        "number": "182",
+        "set": "rna",
+        "name": "High Alert",
+        "count": 3
+      }
+    ],
+    "Land": [
+      {
+        "number": "254",
+        "set": "xln",
+        "name": "Field of Ruin",
+        "count": 4
+      },
+      {
+        "number": "27",
+        "set": "gk2",
+        "name": "Island",
+        "count": 1
+      },
+      {
+        "number": "26",
+        "set": "gk2",
+        "name": "Plains",
+        "count": 2
+      },
+      {
+        "number": "106",
+        "set": "gk2",
+        "name": "Forest",
+        "count": 2
+      },
+      {
+        "number": "255",
+        "set": "xln",
+        "name": "Glacial Fortress",
+        "count": 3
+      },
+      {
+        "number": "240",
+        "set": "dom",
+        "name": "Hinterland Harbor",
+        "count": 3
+      },
+      {
+        "number": "246",
+        "set": "rna",
+        "name": "Breeding Pool",
+        "count": 4
+      },
+      {
+        "number": "258",
+        "set": "grn",
+        "name": "Temple Garden",
+        "count": 4
+      }
+    ]
+  },
+  "Manlin Never Lucky": {
+    "Creature": [
+      {
+        "number": "109",
+        "set": "rna",
+        "name": "Rix Maadi Reveler",
+        "count": 2
+      },
+      {
+        "number": "101",
+        "set": "rix",
+        "name": "Fanatical Firebrand",
+        "count": 4
+      },
+      {
+        "number": "127",
+        "set": "dom",
+        "name": "Ghitu Lavarunner",
+        "count": 4
+      },
+      {
+        "number": "166",
+        "set": "m19",
+        "name": "Viashino Pyromancer",
+        "count": 4
+      },
+      {
+        "number": "117",
+        "set": "rna",
+        "name": "Spear Spewer",
+        "count": 2
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "81",
+        "set": "rna",
+        "name": "Pestilent Spirit",
+        "count": 4
+      },
+      {
+        "number": "73",
+        "set": "rna",
+        "name": "Drill Bit",
+        "count": 4
+      },
+      {
+        "number": "108",
+        "set": "grn",
+        "name": "Lava Coil",
+        "count": 3
+      },
+      {
+        "number": "138",
+        "set": "dom",
+        "name": "Radiating Lightning",
+        "count": 2
+      },
+      {
+        "number": "185",
+        "set": "rna",
+        "name": "Judith, the Scourge Diva",
+        "count": 2
+      }
+    ],
+    "Instant": [
+      {
+        "number": "222",
+        "set": "rna",
+        "name": "Carnival // Carnage",
+        "count": 2
+      },
+      {
+        "number": "152",
+        "set": "dom",
+        "name": "Wizard's Lightning",
+        "count": 4
+      },
+      {
+        "number": "156",
+        "set": "m19",
+        "name": "Shock",
+        "count": 4
+      },
+      {
+        "number": "149",
+        "set": "xln",
+        "name": "Lightning Strike",
+        "count": 4
+      }
+    ],
+    "Sorcery": [
+      {
+        "number": "120",
+        "set": "m19",
+        "name": "Sovereign's Bite",
+        "count": 4
+      },
+      {
+        "number": "115",
+        "set": "rna",
+        "name": "Skewer the Critics",
+        "count": 4
+      }
+    ],
+    "Enchantment": [
+      {
+        "number": "213",
+        "set": "rna",
+        "name": "Theater of Horrors",
+        "count": 3
+      }
+    ],
+    "Land": [
+      {
+        "number": "252",
+        "set": "xln",
+        "name": "Dragonskull Summit",
+        "count": 4
+      },
+      {
+        "number": "245",
+        "set": "rna",
+        "name": "Blood Crypt",
+        "count": 4
+      },
+      {
+        "number": "79",
+        "set": "gk2",
+        "name": "Mountain",
+        "count": 9
+      },
+      {
+        "number": "78",
+        "set": "gk2",
+        "name": "Swamp",
+        "count": 2
+      }
+    ]
+  },
+  "Registered Faketour Player 2.0": {
+    "Creature": [
+      {
+        "number": "101",
+        "set": "rix",
+        "name": "Fanatical Firebrand",
+        "count": 4
+      },
+      {
+        "number": "127",
+        "set": "dom",
+        "name": "Ghitu Lavarunner",
+        "count": 4
+      },
+      {
+        "number": "216",
+        "set": "rna",
+        "name": "Footlight Fiend",
+        "count": 4
+      },
+      {
+        "number": "172",
+        "set": "rna",
+        "name": "Fireblade Artist",
+        "count": 4
+      },
+      {
+        "number": "185",
+        "set": "rna",
+        "name": "Judith, the Scourge Diva",
+        "count": 4
+      },
+      {
+        "number": "109",
+        "set": "grn",
+        "name": "Legion Warboss",
+        "count": 4
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "107",
+        "set": "rna",
+        "name": "Light Up the Stage",
+        "count": 3
+      },
+      {
+        "number": "108",
+        "set": "grn",
+        "name": "Lava Coil",
+        "count": 4
+      },
+      {
+        "number": "99",
+        "set": "rix",
+        "name": "Dire Fleet Daredevil",
+        "count": 2
+      },
+      {
+        "number": "130",
+        "set": "m19",
+        "name": "Banefire",
+        "count": 2
+      },
+      {
+        "number": "119",
+        "set": "dom",
+        "name": "Fight with Fire",
+        "count": 2
+      },
+      {
+        "number": "111",
+        "set": "rix",
+        "name": "Rekindling Phoenix",
+        "count": 2
+      }
+    ],
+    "Instant": [
+      {
+        "number": "156",
+        "set": "m19",
+        "name": "Shock",
+        "count": 4
+      },
+      {
+        "number": "149",
+        "set": "xln",
+        "name": "Lightning Strike",
+        "count": 4
+      },
+      {
+        "number": "113",
+        "set": "grn",
+        "name": "Risk Factor",
+        "count": 4
+      }
+    ],
+    "Sorcery": [
+      {
+        "number": "115",
+        "set": "rna",
+        "name": "Skewer the Critics",
+        "count": 3
+      }
+    ],
+    "Land": [
+      {
+        "number": "252",
+        "set": "xln",
+        "name": "Dragonskull Summit",
+        "count": 4
+      },
+      {
+        "number": "245",
+        "set": "rna",
+        "name": "Blood Crypt",
+        "count": 4
+      },
+      {
+        "number": "78",
+        "set": "gk2",
+        "name": "Swamp",
+        "count": 3
+      },
+      {
+        "number": "79",
+        "set": "gk2",
+        "name": "Mountain",
+        "count": 10
+      }
+    ]
+  },
+  "Ronald Skredlord Nafshi": {
+    "Creature": [
+      {
+        "number": "3",
+        "set": "rna",
+        "name": "Archway Angel",
+        "count": 3
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "130",
+        "set": "m19",
+        "name": "Banefire",
+        "count": 1
+      },
+      {
+        "number": "105",
+        "set": "xln",
+        "name": "Duress",
+        "count": 1
+      },
+      {
+        "number": "175",
+        "set": "dom",
+        "name": "Nature's Spiral",
+        "count": 1
+      },
+      {
+        "number": "44",
+        "set": "rix",
+        "name": "Negate",
+        "count": 1
+      },
+      {
+        "number": "70",
+        "set": "rna",
+        "name": "Cry of the Carnarium",
+        "count": 1
+      },
+      {
+        "number": "212",
+        "set": "grn",
+        "name": "Unmoored Ego",
+        "count": 1
+      },
+      {
+        "number": "129",
+        "set": "xln",
+        "name": "Vraska's Contempt",
+        "count": 1
+      },
+      {
+        "number": "9",
+        "set": "m19",
+        "name": "Cleansing Nova",
+        "count": 1
+      },
+      {
+        "number": "57",
+        "set": "dom",
+        "name": "The Mirari Conjecture",
+        "count": 1
+      },
+      {
+        "number": "170",
+        "set": "rna",
+        "name": "Ethereal Absolution",
+        "count": 1
+      },
+      {
+        "number": "54",
+        "set": "dom",
+        "name": "In Bolas's Clutches",
+        "count": 1
+      },
+      {
+        "number": "180",
+        "set": "rix",
+        "name": "The Immortal Sun",
+        "count": 1
+      },
+      {
+        "number": "306",
+        "set": "m19",
+        "name": "Nexus of Fate",
+        "count": 1
+      },
+      {
+        "number": "161",
+        "set": "xln",
+        "name": "Star of Extinction",
+        "count": 1
+      },
+      {
+        "number": "174",
+        "set": "rix",
+        "name": "Zacama, Primal Calamity",
+        "count": 1
+      }
+    ],
+    "Instant": [
+      {
+        "number": "223",
+        "set": "grn",
+        "name": "Discovery // Dispersal",
+        "count": 4
+      },
+      {
+        "number": "159",
+        "set": "grn",
+        "name": "Chance for Glory",
+        "count": 3
+      },
+      {
+        "number": "178",
+        "set": "rna",
+        "name": "Growth Spiral",
+        "count": 4
+      },
+      {
+        "number": "35",
+        "set": "m19",
+        "name": "Revitalize",
+        "count": 3
+      },
+      {
+        "number": "199",
+        "set": "m19",
+        "name": "Root Snare",
+        "count": 4
+      }
+    ],
+    "Sorcery": [
+      {
+        "number": "125",
+        "set": "grn",
+        "name": "Circuitous Route",
+        "count": 3
+      },
+      {
+        "number": "102",
+        "set": "rna",
+        "name": "Gates Ablaze",
+        "count": 3
+      },
+      {
+        "number": "77",
+        "set": "rix",
+        "name": "Mastermind's Acquisition",
+        "count": 2
+      }
+    ],
+    "Enchantment": [
+      {
+        "number": "41",
+        "set": "grn",
+        "name": "Guild Summit",
+        "count": 3
+      },
+      {
+        "number": "98",
+        "set": "dom",
+        "name": "Lich's Mastery",
+        "count": 2
+      },
+      {
+        "number": "57",
+        "set": "dom",
+        "name": "The Mirari Conjecture",
+        "count": 2
+      }
+    ],
+    "Land": [
+      {
+        "number": "243",
+        "set": "rna",
+        "name": "Azorius Guildgate",
+        "count": 1
+      },
+      {
+        "number": "243",
+        "set": "grn",
+        "name": "Boros Guildgate",
+        "count": 1
+      },
+      {
+        "number": "245",
+        "set": "grn",
+        "name": "Dimir Guildgate",
+        "count": 1
+      },
+      {
+        "number": "247",
+        "set": "grn",
+        "name": "Gateway Plaza",
+        "count": 4
+      },
+      {
+        "number": "248",
+        "set": "grn",
+        "name": "Golgari Guildgate",
+        "count": 2
+      },
+      {
+        "number": "249",
+        "set": "rna",
+        "name": "Gruul Guildgate",
+        "count": 1
+      },
+      {
+        "number": "251",
+        "set": "grn",
+        "name": "Izzet Guildgate",
+        "count": 1
+      },
+      {
+        "number": "252",
+        "set": "rna",
+        "name": "Orzhov Guildgate",
+        "count": 1
+      },
+      {
+        "number": "254",
+        "set": "rna",
+        "name": "Plaza of Harmony",
+        "count": 4
+      },
+      {
+        "number": "255",
+        "set": "rna",
+        "name": "Rakdos Guildgate",
+        "count": 1
+      },
+      {
+        "number": "255",
+        "set": "grn",
+        "name": "Selesnya Guildgate",
+        "count": 2
+      },
+      {
+        "number": "257",
+        "set": "rna",
+        "name": "Simic Guildgate",
+        "count": 4
+      },
+      {
+        "number": "51",
+        "set": "gk2",
+        "name": "Swamp",
+        "count": 1
+      }
+    ]
+  },
+  "HappyFeet": {
+    "Creature": [
+      {
+        "number": "44",
+        "set": "rna",
+        "name": "Persistent Petitioners",
+        "count": 22
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "207",
+        "set": "dom",
+        "name": "Teferi, Hero of Dominaria",
+        "count": 4
+      },
+      {
+        "number": "57",
+        "set": "rna",
+        "name": "Thought Collapse",
+        "count": 2
+      },
+      {
+        "number": "280",
+        "set": "xln",
+        "name": "Jace, Ingenious Mind-Mage",
+        "count": 3
+      },
+      {
+        "number": "39",
+        "set": "grn",
+        "name": "Drowned Secrets",
+        "count": 2
+      },
+      {
+        "number": "67",
+        "set": "m19",
+        "name": "Patient Rebuilding",
+        "count": 2
+      },
+      {
+        "number": "54",
+        "set": "m19",
+        "name": "Essence Scatter",
+        "count": 2
+      }
+    ],
+    "Instant": [
+      {
+        "number": "30",
+        "set": "xln",
+        "name": "Rallying Roar",
+        "count": 4
+      },
+      {
+        "number": "18",
+        "set": "rna",
+        "name": "Rally to Battle",
+        "count": 4
+      },
+      {
+        "number": "34",
+        "set": "xln",
+        "name": "Settle the Wreckage",
+        "count": 4
+      }
+    ],
+    "Sorcery": [
+      {
+        "number": "74",
+        "set": "m19",
+        "name": "Sleep",
+        "count": 2
+      }
+    ],
+    "Land": [
+      {
+        "number": "255",
+        "set": "xln",
+        "name": "Glacial Fortress",
+        "count": 4
+      },
+      {
+        "number": "251",
+        "set": "rna",
+        "name": "Hallowed Fountain",
+        "count": 4
+      },
+      {
+        "number": "27",
+        "set": "gk2",
+        "name": "Island",
+        "count": 12
+      },
+      {
+        "number": "26",
+        "set": "gk2",
+        "name": "Plains",
+        "count": 6
+      }
+    ]
+  }
+}
