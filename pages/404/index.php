@@ -7,10 +7,17 @@
         <title>Not Found | Faketour</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-        <link rel="stylesheet" href="/pages/styles.css"></head>
-        <link rel="stylesheet" href="/pages/404/styles.css"></head>
         <link rel="stylesheet" href="/menu/styles.css">
         <script type="text/javascript" src="/menu/loadMenu.js"></script>
+        <link rel="stylesheet" href="/pages/styles.css">
+        <style type="text/css">
+            body {
+                background-color: #264a65;
+            }
+            .content:before {
+                background-image: url("/pages/404/fblthb.jpeg");
+            }
+        </style>
     </head>
     <body>
         <div class="content"></div>
@@ -18,11 +25,11 @@
         <script type="text/javascript">loadMenu("Error 404");</script>
 
         <div align=center class="center">
-            <h2 style="font-family: MPlantin; font-size: 30pt; color:white; width:45%">
+            <h2 class="quote">
                 Target page gains shroud until your next turn.
                 <i>(It can’t be the target of spells, abilitiles, or HTTP requests.)</i>
             </h2>
-            <a href="/" id="back"><button style="font-family: MPlantin; font-size: 30pt; color:white; width: 25%">Draw a card</button></a>
+            <a href="/" id="back"><button>Draw a card</button></a>
         </div>
 
         <div class="footer"><a href='https://www.jasonchanart.com/'>Artwork by Jason Chan</a></div>
@@ -37,7 +44,7 @@
             back.title = "Go Back";
         }
         else {
-            back.title = "Go "
+            back.title = "Go Home"
         }
     </script>
 
