@@ -23,6 +23,13 @@ body {
     background-color: #333;
 }
 
+.topnav.fit {
+    position: absolute;
+    width: fill-available;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+}
+
 .topnav a {
     float: left;
     display: block;

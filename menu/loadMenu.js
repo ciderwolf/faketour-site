@@ -15,7 +15,7 @@ async function loadMenu(activePage) {
     let loginPages;
     if(login == null) {
         loginPages = {
-            "Log In": "/account/login/?",
+            "Sign In": "/account/login/?",
             "Create Account": "/account/create/?"
         };
     } else {

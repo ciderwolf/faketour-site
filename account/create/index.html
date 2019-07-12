@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html>
-<iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display:none;"></iframe>
+
 <head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
     <title>Create Account | Faketour</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="content"></div>
-<div class="topnav"></div>
-<script type="text/javascript">loadMenu("Create Account");</script>
-<h2 style="margin-left:10%; color:white;">Create New Account</h2>
-<h2 style="color:red; text-align:center; background-color: rgba(51,51,51,50)">Warning: This site features negative encryption, so don't reuse a password from somewhere else</h2>
-<form onsubmit="login(); return false;" target="dummyframe">
-    <div class="imgcontainer">
-        <img src="login_avatar.png" alt="Avatar" class="avatar">
-    </div>
-    <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
-        <label for="psw"><b>Password</b></label>
-        <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
-        <label for="psw"><b>Reenter Password</b></label>
-        <input id="psw2" type="password" placeholder="Reenter Password" name="psw" required>
-        <button type="submit">New Account</button>
-    </div>
-</form>
+    <link rel=stylesheet href=/account/login/styles.css>
+    <style>
+        .bg-wrapper {
+            background-image: url("league_guildmage.jpg");
+        }
 
-<div class="footer"><a href='https://twitter.com/velinovart'>Artwork by @velinovart</a></div>
+        .form-item.password {
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav fit"></div>
+    <script type="text/javascript">loadMenu("Create Account");</script>
+    <div class=login-wrapper>
+        <div class=login-inner>
+            <div class=login-header>
+                <h1 class=title>FakeTour</h1>
+            </div>
+            <form id=login-form onsubmit="createAccount(); return false;">
+                <div class="form-item is-required">
+                    <div class=form-item-content>
+                        <div class="email-input form-input">
+                            <input type="text" autocomplete="off" placeholder="Your Username" autofocus="autofocus" class="form-input-inner" name="username" id="username">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item password is-required">
+                    <div class=form-item-content>
+                        <div class="password-input form-input">
+                            <input type="password" autocomplete="off" placeholder="Your Password" class="form-input-inner" name="password" id="password">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item password is-required">
+                    <div class=form-item-content>
+                        <div class="password-input form-input">
+                            <input type="password" autocomplete="off" placeholder="Confirm Password" class="form-input-inner" name="password2" id="password2">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item is-required">
+                    <div class=form-item-content>
+                        <div class="email-input form-input">
+                            <input type="email" autocomplete="off" placeholder="Your Email Address" autofocus="autofocus" class="form-input-inner" name="email" id="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item signin-form-item">
+                    <div class=form-item-content>
+                        <button id=signin-button class="button sign-in" type="submit">
+                            <span style="display:none;" class="button-spinner">
+                                <svg viewBox="0 0 50 50" class="button-spinner-inner" style="width: 20px; height: 20px;"><circle cx="25" cy="25" r="20" fill="none" stroke="#efefef" stroke-width="5" class="path"></circle></svg>
+                            </span> Sign in
+                        </button>
+                        <a href="/account/password/" class="forgot-password">Forgot your password?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class=bg-wrapper></div>
+
+    <div class="footer"><a href="https://twitter.com/DaarkenArt">Artwork by @DaarkenArt</a></div>
+</body>
 
 <script>
-    async function login() {
-        let username = document.getElementById("uname").value;
-        let password = document.getElementById("psw").value;
-        let psw2 = document.getElementById("psw2").value;
-        if(password != psw2) {
+    async function createAccount() {
+        if(!validateInput()) {
+            return;
+        }
+        let email = document.getElementById("email").value;
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        let password2 = document.getElementById("password2").value;
+        if(password != password2) {
             showAlert("Error", "Passwords do not match", "error");
             return;
         } else if(password.length > 30) {
             showAlert("Error", "Password max length has been exceeded", "error");
             return;
         }
-        let inputs = {username, password}
+        let inputs = {email, username, password};
         let data = await fetch("newaccount.php", {
-            method:'POST',
+            method: 'POST',
             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
             body: Object.keys(inputs).map(e => `${e}=${inputs[e]}`).join('&')
         });
@@ -57,15 +103,64 @@
         } catch {
             showAlert("Faield to create account", "Check the console for more informatino", "error");
         }
-        console.log(success);
-        
         if(success == true) {
             window.location.href = "/account/";
         } else {
             showAlert("Username already taken", "Please choose a unique username", "warning");
         }
+        hideLoadingSpinner();
     }
-</script>
 
-</body>
+    function validateInput() {
+        const usernameBox = document.getElementsByClassName('email-input')[0];
+        const emailBox = document.getElementsByClassName('email-input')[1];
+        const passwordBox = document.getElementsByClassName('password-input')[0];
+        const passwordBox2 = document.getElementsByClassName('password-input')[1];
+        const inputs = {Email: emailBox, Username: usernameBox, Password: passwordBox, "Password again": passwordBox2};
+        let success = true;
+        for(inputName in inputs) {
+            let input = inputs[inputName]
+            if (input.children[0].value == "") {
+                success = false
+            }
+            if (input.children[0].value == "" && !input.classList.contains('is-error')) {
+                addError(inputName, input);
+            }
+        }
+
+        if(success) {
+            showLoadingSpinner();
+        }
+        return success;
+    }
+
+    function addError(name, element) {
+        element.classList.add('is-error');
+        let message = document.createElement('div');
+        message.textContent = `Please add your ${name}`;
+        message.classList.add('form-item-error');
+        element.parentElement.appendChild(message);
+    }
+
+    function showLoadingSpinner() {
+        let button = document.getElementById('signin-button');
+        button.disabled = true;
+        let spinner = button.getElementsByTagName('span')[0];
+        spinner.style.display = 'inline-block';
+        button.innerHTML = '';
+        button.appendChild(spinner);
+        button.innerHTML += 'Logging in';
+    }
+
+    function hideLoadingSpinner() {
+        let button = document.getElementById('signin-button');
+        button.disabled = false;
+        let spinner = button.getElementsByTagName('span')[0];
+        spinner.style.display = 'none';
+        button.innerHTML = '';
+        button.appendChild(spinner);
+        button.innerHTML += 'Sign in';
+    }
+
+</script>
 </html>

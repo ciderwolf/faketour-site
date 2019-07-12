@@ -4,52 +4,57 @@
 <head>
     <meta charset=utf-8>
     <meta name=viewport content="width=device-width,initial-scale=1">
-    <title>Sign In | Faketour</title>
+    <title>Reset Password | Faketour</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
-    <link rel=stylesheet href=styles.css>
+    <link rel=stylesheet href=/account/login/styles.css>
+    <style>
+        .bg-wrapper {
+            background-image: url("Tomik-Distinguished-Advokist.jpg");
+        }
+
+        .alert-link {
+            text-decoration: white underline;
+        }
+    </style>
 </head>
 
 <body>
     <div class="topnav fit"></div>
-    <script type="text/javascript">loadMenu("Sign In");</script>
+    <script type="text/javascript">loadMenu("New Password");</script>
     <div class=login-wrapper>
         <div class=login-inner>
             <div class=login-header>
-                <h1 class=title>FakeTour</h1>
+                <h1 class=title style="margin-bottom: 0px">FakeTour</h1>
             </div>
-            <form id=login-form onsubmit="login(); return false;">
+            <div style="color: black">
+                <h3>Choose a new password.</h3>
+                <p><strong>Warning:</strong> This site features negative encryption, so don't reuse a password from somewhere else.</p>
+            </div>
+            <form id=login-form onsubmit="resetPassword(); return false;">
                 <div class="form-item is-required">
                     <div class=form-item-content>
-                        <div class="email-input form-input">
-                            <input type="text" autocomplete="off" placeholder="Your Username" autofocus="autofocus" class="form-input-inner" name="username" id="username">
+                        <div class="password-input form-input">
+                            <input type="password" autocomplete="off" placeholder="Your New Password" autofocus="autofocus" class="form-input-inner" name="password" id="password">
                         </div>
                     </div>
                 </div>
-                <div class="form-item password is-required">
+                <div class="form-item is-required">
                     <div class=form-item-content>
                         <div class="password-input form-input">
-                            <input type="password" autocomplete="off" placeholder="Your Password" class="form-input-inner" name="password" id="password">
+                            <input type="password" autocomplete="off" placeholder="Confirm Password" autofocus="autofocus" class="form-input-inner" name="password2" id="password2">
                         </div>
                     </div>
                 </div>
-                <div class="form-item remember-me">
-                        <div class=form-item-content>
-                            <div class="checkbox-input form-input">
-                                <input type="checkbox" autocomplete="off" placeholder="Your Password" name="remember" id="remember">
-                                <label for="remember">Remember Me</label>
-                            </div>
-                        </div>
-                    </div>
                 <div class="form-item signin-form-item">
                     <div class=form-item-content>
                         <button id=signin-button class="button sign-in" type="submit">
                             <span style="display:none;" class="button-spinner">
                                 <svg viewBox="0 0 50 50" class="button-spinner-inner" style="width: 20px; height: 20px;"><circle cx="25" cy="25" r="20" fill="none" stroke="#efefef" stroke-width="5" class="path"></circle></svg>
-                            </span> Sign in
+                            </span> Reset Password
                         </button>
-                        <a href="/account/password/" class="forgot-password">Forgot your password?</a>
+                        <a href="/account/login/" class="forgot-password">Back to sign in page.</a>
                     </div>
                 </div>
             </form>
@@ -57,39 +62,32 @@
     </div>
     <div class=bg-wrapper></div>
 
-    <div class="footer"><a href="https://twitter.com/DaarkenArt">Artwork by @DaarkenArt</a></div>
+    <div class="footer"><a href="https://www.artstation.com/algenpfleger">Artwork by Johannes Voss</a></div>
 </body>
 
 <script>
-    async function login() {
+    async function resetPassword() {
         if(!validateInput()) {
             return;
         }
-        let remember = document.getElementById("remember").checked;
-        let username = document.getElementById("username").value;
+        const urlParams = new URLSearchParams(window.location.search);
         let password = document.getElementById("password").value;
-        let inputs = {remember, username, password};
-        let data = await fetch("login.php", {
-            method: 'POST',
-            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-            body: Object.keys(inputs).map(e => `${e}=${inputs[e]}`).join('&')
-        });
+        let data = await fetch("resetPassword.php?password=" + password + "&user=" + urlParams.get('user') + "&token=" + urlParams.get('token'));
         let response = await data.text();
+        let success = false;
         if(response === "true") {
-            showAlert("Logged in", "Redirecting...", "success");
-            history.back();
-        } else if (response === "fadetrue") {
-            showAlert("Failed to remember", "Log in status not saved", "warning");
+            showAlert("Password reset", "<a class=alert-link href='/account/login/'>Go to sign in</a>", "success");
+            success = true;
         } else {
-            showAlert("Failed to login", "Incorrect username or password", "error");
+            showAlert("Failed reset password", "Please try again later", "error");
         }
-        hideLoadingSpinner();
+        hideLoadingSpinner(success);
     }
 
     function validateInput() {
-        const emailBox = document.getElementsByClassName('email-input')[0];
         const passwordBox = document.getElementsByClassName('password-input')[0];
-        const inputs = {Email: emailBox, Password: passwordBox};
+        const passwordBox2 = document.getElementsByClassName('password-input')[1];
+        const inputs = {Password: passwordBox, "Password again": passwordBox2};
         let success = true;
         for(inputName in inputs) {
             let input = inputs[inputName]
@@ -100,17 +98,25 @@
                 addError(inputName, input);
             }
         }
-
+        if(passwordBox.children[0].value != passwordBox2.children[0].value) {
+            success = false;
+            if(!passwordBox.classList.contains('is-error')) {
+                addError(passwordBox, "", "Passwords don't match");
+            }
+            if(!passwordBox2.classList.contains('is-error')) {
+                addError(passwordBox2, "", "Passwords don't match");
+            }
+        }
         if(success) {
             showLoadingSpinner();
         }
         return success;
     }
 
-    function addError(name, element) {
+    function addError(name, element, prefix="Please add your") {
         element.classList.add('is-error');
         let message = document.createElement('div');
-        message.textContent = `Please add your ${name}`;
+        message.textContent = `${prefix} ${name}`;
         message.classList.add('form-item-error');
         element.parentElement.appendChild(message);
     }
@@ -122,17 +128,22 @@
         spinner.style.display = 'inline-block';
         button.innerHTML = '';
         button.appendChild(spinner);
-        button.innerHTML += 'Logging in';
+        button.innerHTML += 'Sending email';
     }
 
-    function hideLoadingSpinner() {
+    function hideLoadingSpinner(success) {
         let button = document.getElementById('signin-button');
-        button.disabled = false;
+        button.disabled = success;
         let spinner = button.getElementsByTagName('span')[0];
         spinner.style.display = 'none';
         button.innerHTML = '';
         button.appendChild(spinner);
-        button.innerHTML += 'Sign in';
+        if(success) {
+            button.innerHTML += "Password reset";
+        } else {
+            button.innerHTML += "Reset password";
+        }
+        
     }
 
 </script>
