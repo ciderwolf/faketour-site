@@ -84,7 +84,7 @@
 
     function loggedInAccount() {
         $username = $_SESSION["username"];
-        $sql = "SELECT username, avatar FROM users WHERE username='$username' LIMIT 1";
+        $sql = "SELECT username, avatar, email FROM users WHERE username='$username' LIMIT 1";
         require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
         $result = $conn->query($sql);
         $output = "";

@@ -17,6 +17,7 @@ async function loadData() {
 
 function initialize() {
     document.getElementById("title").innerHTML += " &ndash; " + accountData.username;
+    document.getElementById("email").value = accountData.email;
     let avatarImg = document.getElementById('avatar-img');
     avatarImg.src = "avatars/art_crop/" + avatars.filenames[accountData.avatar];
     avatarImg.name = avatars.cardnames[accountData.avatar];
@@ -126,6 +127,7 @@ async function uploadChanges() {
     if(newAvatar != undefined) {
         queries.push("avatar=" + newAvatar);
     }
+    queries.push("email=" + document.getElementById("email").value);
     if(queries.length != 0) {
         let data = await fetch("updateInformation.php", {
             method: 'POST', 

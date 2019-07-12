@@ -1,7 +1,7 @@
 <?php
     session_start();
     $username = $_SESSION["username"];
-    $params = array("password", "avatar");
+    $params = array("password", "avatar", "email");
     $sqlArgs = [];
     foreach($_POST as $key => $value) {
         if(in_array($key, $params)) {
