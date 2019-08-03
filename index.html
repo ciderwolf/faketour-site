@@ -20,7 +20,15 @@
     <div class="footer" id="footer"></div>
 </body>
 <script type="text/javascript">
-
+    fetch("/php/user.php?page=account")
+    .then(response => response.json())
+    .then(response => {
+        if(response !== null && response.email == "") {
+            showAlert("Add an email address to your account to enable password recovery", "Update your <a href=/account/ class=alert-link>account</a>.", "info");
+        }
+    
+    });
+    
     const buttonMapping = {
         0: {
             a: {

@@ -246,3 +246,8 @@ a {
     color: white;
     text-decoration: none;
 }
+
+@font-face {
+    font-family: Beleren;
+    src: url("/css/fonts/BelerenBold.woff");
+}

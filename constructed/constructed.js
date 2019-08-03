@@ -9,7 +9,7 @@ function getTimer() {
     let now = new Date();
     let difference = (due.getTime() - now.getTime())/1000;
     if(difference < 0) {
-        timer.innerHTML = "Decklists were due " +  due.toString().substring(0, due.toString().indexOf(" GMT"));
+        timer.innerHTML = "Decklists were due " +  due.toLocaleString();
         clearInterval(updateTimer);
         return;
     }
