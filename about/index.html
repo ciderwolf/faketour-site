@@ -11,7 +11,15 @@
     <body>
         <div class="content"></div>
         <div class="topnav"></div>
-        <script type="text/javascript">loadMenu("About");showAlert("Modern Horizons has arrived!", "Click <a class='alert-link' href='mh1/'>here</a> to find out more.", "info")</script>
+        <script type="text/javascript">
+            loadMenu("About");
+            fetch("/event.php?target=info")
+            .then(response => response.json())
+            .then(response => {
+                showAlert(response.name + " has arrived!", "Click <a class='alert-link' href='" + response.code + "/'>here</a> to find out more.", "info");
+            });
+            
+        </script>
         <div class="text" style="margin-bottom: 10%">
             <h1>About the Faketour</h1>
             <h2>What is a Faketour?</h2>

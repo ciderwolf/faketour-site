@@ -1,0 +1,1120 @@
+{
+  "Ronald Skredlord Nafshi": {
+    "Creature": [
+      {
+        "number": "50",
+        "set": "arb",
+        "name": "Bloodbraid Elf",
+        "count": 3
+      },
+      {
+        "number": "140",
+        "set": "dka",
+        "name": "Huntmaster of the Fells // Ravager of the Fells",
+        "count": 2
+      },
+      {
+        "number": "145",
+        "set": "mh1",
+        "name": "Seasoned Pyromancer",
+        "count": 3
+      },
+      {
+        "number": "233",
+        "set": "soi",
+        "name": "Tireless Tracker",
+        "count": 2
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "206",
+        "set": "m12",
+        "name": "Dragon's Claw",
+        "count": 3
+      },
+      {
+        "number": "83",
+        "set": "hou",
+        "name": "Abrade",
+        "count": 2
+      },
+      {
+        "number": "145",
+        "set": "m15",
+        "name": "Goblin Rabblemaster",
+        "count": 3
+      },
+      {
+        "number": "130",
+        "set": "nph",
+        "name": "Batterskull",
+        "count": 1
+      },
+      {
+        "number": "237",
+        "set": "m15",
+        "name": "Tormod's Crypt",
+        "count": 2
+      },
+      {
+        "number": "87",
+        "set": "wwk",
+        "name": "Ricochet Trap",
+        "count": 2
+      },
+      {
+        "number": "106",
+        "set": "mma",
+        "name": "Blood Moon",
+        "count": 1
+      },
+      {
+        "number": "213",
+        "set": "dom",
+        "name": "Damping Sphere",
+        "count": 1
+      }
+    ],
+    "Planeswalker": [
+      {
+        "number": "217",
+        "set": "mh1",
+        "name": "Wrenn and Six",
+        "count": 3
+      },
+      {
+        "number": "110",
+        "set": "kld",
+        "name": "Chandra, Torch of Defiance",
+        "count": 3
+      }
+    ],
+    "Instant": [
+      {
+        "number": "97",
+        "set": "csp",
+        "name": "Skred",
+        "count": 3
+      },
+      {
+        "number": "122",
+        "set": "mm2",
+        "name": "Lightning Bolt",
+        "count": 4
+      },
+      {
+        "number": "224",
+        "set": "dtk",
+        "name": "Kolaghan's Command",
+        "count": 2
+      }
+    ],
+    "Sorcery": [{
+      "number": "85",
+      "set": "mh1",
+      "name": "Dead of Winter",
+      "count": 3
+    }],
+    "Enchantment": [{
+      "number": "106",
+      "set": "mma",
+      "name": "Blood Moon",
+      "count": 2
+    }],
+    "Artifact": [
+      {
+        "number": "220",
+        "set": "mh1",
+        "name": "Arcum's Astrolabe",
+        "count": 4
+      },
+      {
+        "number": "219",
+        "set": "ima",
+        "name": "Mind Stone",
+        "count": 4
+      }
+    ],
+    "Land": [
+      {
+        "number": "253",
+        "set": "mh1",
+        "name": "Snow-Covered Mountain",
+        "count": 6
+      },
+      {
+        "number": "254",
+        "set": "mh1",
+        "name": "Snow-Covered Forest",
+        "count": 4
+      },
+      {
+        "number": "252",
+        "set": "mh1",
+        "name": "Snow-Covered Swamp",
+        "count": 3
+      },
+      {
+        "number": "240",
+        "set": "mh1",
+        "name": "Frostwalk Bastion",
+        "count": 1
+      },
+      {
+        "number": "230",
+        "set": "ktk",
+        "name": "Bloodstained Mire",
+        "count": 4
+      },
+      {
+        "number": "244",
+        "set": "mh1",
+        "name": "Prismatic Vista",
+        "count": 4
+      }
+    ]
+  },
+  "Registered Faketour Player 4.0": {
+    "Creature": [
+      {
+        "number": "83",
+        "set": "zen",
+        "name": "Bloodghast",
+        "count": 4
+      },
+      {
+        "number": "81",
+        "set": "mh1",
+        "name": "Carrion Feeder",
+        "count": 4
+      },
+      {
+        "number": "64",
+        "set": "dka",
+        "name": "Gravecrawler",
+        "count": 4
+      },
+      {
+        "number": "168",
+        "set": "soi",
+        "name": "Insolent Neonate",
+        "count": 4
+      },
+      {
+        "number": "121",
+        "set": "m19",
+        "name": "Stitcher's Supplier",
+        "count": 4
+      },
+      {
+        "number": "212",
+        "set": "roe",
+        "name": "Vengevine",
+        "count": 4
+      },
+      {
+        "number": "202",
+        "set": "mh1",
+        "name": "Hogaak, Arisen Necropolis",
+        "count": 4
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "167",
+        "set": "lrw",
+        "name": "Flamekin Harbinger",
+        "count": 2
+      },
+      {
+        "number": "180",
+        "set": "lrw",
+        "name": "Ingot Chewer",
+        "count": 2
+      },
+      {
+        "number": "48",
+        "set": "lrw",
+        "name": "Wispmare",
+        "count": 3
+      },
+      {
+        "number": "101",
+        "set": "m11",
+        "name": "Leyline of the Void",
+        "count": 3
+      },
+      {
+        "number": "170",
+        "set": "soi",
+        "name": "Lightning Axe",
+        "count": 2
+      },
+      {
+        "number": "24",
+        "set": "dka",
+        "name": "Thalia, Guardian of Thraben",
+        "count": 2
+      },
+      {
+        "number": "231",
+        "set": "rtr",
+        "name": "Pithing Needle",
+        "count": 1
+      }
+    ],
+    "Instant": [{
+      "number": "82",
+      "set": "rav",
+      "name": "Darkblast",
+      "count": 2
+    }],
+    "Sorcery": [{
+      "number": "87",
+      "set": "dka",
+      "name": "Faithless Looting",
+      "count": 4
+    }],
+    "Enchantment": [{
+      "number": "74",
+      "set": "mma",
+      "name": "Bridge from Below",
+      "count": 4
+    }],
+    "Artifact": [{
+      "number": "218",
+      "set": "mh1",
+      "name": "Altar of Dementia",
+      "count": 4
+    }],
+    "Land": [
+      {
+        "number": "239",
+        "set": "zen",
+        "name": "Swamp",
+        "count": 1
+      },
+      {
+        "number": "224",
+        "set": "som",
+        "name": "Blackcleave Cliffs",
+        "count": 4
+      },
+      {
+        "number": "245",
+        "set": "rna",
+        "name": "Blood Crypt",
+        "count": 3
+      },
+      {
+        "number": "230",
+        "set": "ktk",
+        "name": "Bloodstained Mire",
+        "count": 4
+      },
+      {
+        "number": "248",
+        "set": "rna",
+        "name": "Godless Shrine",
+        "count": 2
+      },
+      {
+        "number": "239",
+        "set": "ktk",
+        "name": "Polluted Delta",
+        "count": 4
+      }
+    ]
+  },
+  "PVTRyan": {
+    "Creature": [
+      {
+        "number": "121",
+        "set": "m19",
+        "name": "Stitcher's Supplier",
+        "count": 4
+      },
+      {
+        "number": "198",
+        "set": "m15",
+        "name": "Satyr Wayfinder",
+        "count": 2
+      },
+      {
+        "number": "170",
+        "set": "bfz",
+        "name": "Beastcaller Savant",
+        "count": 2
+      },
+      {
+        "number": "114",
+        "set": "bfz",
+        "name": "Kalastria Healer",
+        "count": 4
+      },
+      {
+        "number": "32",
+        "set": "wwk",
+        "name": "Jwari Shapeshifter",
+        "count": 4
+      },
+      {
+        "number": "72",
+        "set": "m12",
+        "name": "Phantasmal Image",
+        "count": 4
+      },
+      {
+        "number": "29",
+        "set": "wwk",
+        "name": "Halimar Excavator",
+        "count": 4
+      },
+      {
+        "number": "105",
+        "set": "wwk",
+        "name": "Harabaz Druid",
+        "count": 4
+      },
+      {
+        "number": "114",
+        "set": "bfz",
+        "name": "Kalastria Healer",
+        "count": 4
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "8",
+        "set": "arb",
+        "name": "Meddling Mage",
+        "count": 3
+      },
+      {
+        "number": "221",
+        "set": "war",
+        "name": "Teferi, Time Raveler",
+        "count": 3
+      },
+      {
+        "number": "18",
+        "set": "rtr",
+        "name": "Rest in Peace",
+        "count": 3
+      },
+      {
+        "number": "92",
+        "set": "roe",
+        "name": "Unified Will",
+        "count": 2
+      },
+      {
+        "number": "99",
+        "set": "mm2",
+        "name": "Surgical Extraction",
+        "count": 4
+      }
+    ],
+    "Instant": [{
+      "number": "22",
+      "set": "frf",
+      "name": "Rally the Ancestors",
+      "count": 4
+    }],
+    "Sorcery": [{
+      "number": "29",
+      "set": "m15",
+      "name": "Return to the Ranks",
+      "count": 3
+    }],
+    "Land": [
+      {
+        "number": "258",
+        "set": "xln",
+        "name": "Unclaimed Territory",
+        "count": 4
+      },
+      {
+        "number": "226",
+        "set": "avr",
+        "name": "Cavern of Souls",
+        "count": 4
+      },
+      {
+        "number": "119",
+        "set": "tsb",
+        "name": "Gemstone Mine",
+        "count": 4
+      },
+      {
+        "number": "163",
+        "set": "jou",
+        "name": "Mana Confluence",
+        "count": 4
+      },
+      {
+        "number": "221",
+        "set": "mma",
+        "name": "City of Brass",
+        "count": 1
+      }
+    ]
+  },
+  "HappyFeet": {
+    "Creature": [
+      {
+        "number": "174",
+        "set": "fut",
+        "name": "Dryad Arbor",
+        "count": 1
+      },
+      {
+        "number": "230",
+        "set": "mm2",
+        "name": "Spellskite",
+        "count": 1
+      },
+      {
+        "number": "151",
+        "set": "mm2",
+        "name": "Noble Hierarch",
+        "count": 4
+      },
+      {
+        "number": "29",
+        "set": "nph",
+        "name": "Blighted Agent",
+        "count": 4
+      },
+      {
+        "number": "111",
+        "set": "nph",
+        "name": "Glistener Elf",
+        "count": 4
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "230",
+        "set": "mm2",
+        "name": "Spellskite",
+        "count": 1
+      },
+      {
+        "number": "164",
+        "set": "mh1",
+        "name": "Force of Vigor",
+        "count": 2
+      },
+      {
+        "number": "206",
+        "set": "xln",
+        "name": "Shapers' Sanctuary",
+        "count": 2
+      },
+      {
+        "number": "57",
+        "set": "nph",
+        "name": "Dismember",
+        "count": 2
+      },
+      {
+        "number": "109",
+        "set": "zen",
+        "name": "Ravenous Trap",
+        "count": 3
+      },
+      {
+        "number": "81",
+        "set": "xln",
+        "name": "Spell Pierce",
+        "count": 1
+      },
+      {
+        "number": "99",
+        "set": "mm2",
+        "name": "Surgical Extraction",
+        "count": 2
+      },
+      {
+        "number": "221",
+        "set": "war",
+        "name": "Teferi, Time Raveler",
+        "count": 2
+      }
+    ],
+    "Instant": [
+      {
+        "number": "146",
+        "set": "kld",
+        "name": "Blossoming Defense",
+        "count": 4
+      },
+      {
+        "number": "168",
+        "set": "mm2",
+        "name": "Vines of Vastwood",
+        "count": 4
+      },
+      {
+        "number": "81",
+        "set": "xln",
+        "name": "Spell Pierce",
+        "count": 3
+      },
+      {
+        "number": "149",
+        "set": "mm2",
+        "name": "Mutagenic Growth",
+        "count": 4
+      },
+      {
+        "number": "130",
+        "set": "mm3",
+        "name": "Might of Old Krosa",
+        "count": 4
+      },
+      {
+        "number": "57",
+        "set": "nph",
+        "name": "Dismember",
+        "count": 1
+      },
+      {
+        "number": "130",
+        "set": "ktk",
+        "name": "Become Immense",
+        "count": 1
+      }
+    ],
+    "Sorcery": [
+      {
+        "number": "179",
+        "set": "mh1",
+        "name": "Scale Up",
+        "count": 4
+      },
+      {
+        "number": "60",
+        "set": "roe",
+        "name": "Distortion Strike",
+        "count": 2
+      }
+    ],
+    "Land": [
+      {
+        "number": "248",
+        "set": "ktk",
+        "name": "Windswept Heath",
+        "count": 3
+      },
+      {
+        "number": "249",
+        "set": "mh1",
+        "name": "Waterlogged Grove",
+        "count": 1
+      },
+      {
+        "number": "254",
+        "set": "mh1",
+        "name": "Snow-Covered Forest",
+        "count": 1
+      },
+      {
+        "number": "258",
+        "set": "grn",
+        "name": "Temple Garden",
+        "count": 1
+      },
+      {
+        "number": "120",
+        "set": "tsb",
+        "name": "Pendelhaven",
+        "count": 2
+      },
+      {
+        "number": "220",
+        "set": "zen",
+        "name": "Misty Rainforest",
+        "count": 4
+      },
+      {
+        "number": "145",
+        "set": "mbs",
+        "name": "Inkmoth Nexus",
+        "count": 4
+      },
+      {
+        "number": "249",
+        "set": "zen",
+        "name": "Forest",
+        "count": 1
+      },
+      {
+        "number": "246",
+        "set": "rna",
+        "name": "Breeding Pool",
+        "count": 2
+      }
+    ]
+  },
+  "certi42": {
+    "Creature": [
+      {
+        "number": "50",
+        "set": "arb",
+        "name": "Bloodbraid Elf",
+        "count": 2
+      },
+      {
+        "number": "75",
+        "set": "mm2",
+        "name": "Dark Confidant",
+        "count": 3
+      },
+      {
+        "number": "195",
+        "set": "m14",
+        "name": "Scavenging Ooze",
+        "count": 2
+      },
+      {
+        "number": "145",
+        "set": "mh1",
+        "name": "Seasoned Pyromancer",
+        "count": 3
+      },
+      {
+        "number": "165",
+        "set": "mm2",
+        "name": "Tarmogoyf",
+        "count": 4
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "127",
+        "set": "isd",
+        "name": "Ancient Grudge",
+        "count": 1
+      },
+      {
+        "number": "112",
+        "set": "ths",
+        "name": "Anger of the Gods",
+        "count": 2
+      },
+      {
+        "number": "158",
+        "set": "mh1",
+        "name": "Collector Ouphe",
+        "count": 2
+      },
+      {
+        "number": "204",
+        "set": "mma",
+        "name": "Engineered Explosives",
+        "count": 1
+      },
+      {
+        "number": "193",
+        "set": "mm2",
+        "name": "Fulminator Mage",
+        "count": 3
+      },
+      {
+        "number": "93",
+        "set": "emn",
+        "name": "Liliana, the Last Hope",
+        "count": 1
+      },
+      {
+        "number": "187",
+        "set": "som",
+        "name": "Nihil Spellbomb",
+        "count": 2
+      },
+      {
+        "number": "99",
+        "set": "mm2",
+        "name": "Surgical Extraction",
+        "count": 3
+      }
+    ],
+    "Planeswalker": [
+      {
+        "number": "105",
+        "set": "isd",
+        "name": "Liliana of the Veil",
+        "count": 3
+      },
+      {
+        "number": "217",
+        "set": "mh1",
+        "name": "Wrenn and Six",
+        "count": 2
+      }
+    ],
+    "Instant": [
+      {
+        "number": "141",
+        "set": "rtr",
+        "name": "Abrupt Decay",
+        "count": 1
+      },
+      {
+        "number": "152",
+        "set": "grn",
+        "name": "Assassin's Trophy",
+        "count": 3
+      },
+      {
+        "number": "57",
+        "set": "aer",
+        "name": "Fatal Push",
+        "count": 2
+      },
+      {
+        "number": "122",
+        "set": "mm2",
+        "name": "Lightning Bolt",
+        "count": 4
+      }
+    ],
+    "Sorcery": [
+      {
+        "number": "115",
+        "set": "roe",
+        "name": "Inquisition of Kozilek",
+        "count": 3
+      },
+      {
+        "number": "180",
+        "set": "mma",
+        "name": "Maelstrom Pulse",
+        "count": 1
+      },
+      {
+        "number": "145",
+        "set": "lrw",
+        "name": "Thoughtseize",
+        "count": 3
+      },
+      {
+        "number": "113",
+        "set": "mh1",
+        "name": "Unearth",
+        "count": 1
+      }
+    ],
+    "Land": [
+      {
+        "number": "224",
+        "set": "som",
+        "name": "Blackcleave Cliffs",
+        "count": 4
+      },
+      {
+        "number": "245",
+        "set": "rna",
+        "name": "Blood Crypt",
+        "count": 1
+      },
+      {
+        "number": "230",
+        "set": "ktk",
+        "name": "Bloodstained Mire",
+        "count": 3
+      },
+      {
+        "number": "249",
+        "set": "zen",
+        "name": "Forest",
+        "count": 1
+      },
+      {
+        "number": "244",
+        "set": "zen",
+        "name": "Mountain",
+        "count": 1
+      },
+      {
+        "number": "243",
+        "set": "mh1",
+        "name": "Nurturing Peatland",
+        "count": 1
+      },
+      {
+        "number": "253",
+        "set": "grn",
+        "name": "Overgrown Tomb",
+        "count": 2
+      },
+      {
+        "number": "141",
+        "set": "wwk",
+        "name": "Raging Ravine",
+        "count": 2
+      },
+      {
+        "number": "259",
+        "set": "rna",
+        "name": "Stomping Ground",
+        "count": 1
+      },
+      {
+        "number": "239",
+        "set": "zen",
+        "name": "Swamp",
+        "count": 2
+      },
+      {
+        "number": "229",
+        "set": "zen",
+        "name": "Verdant Catacombs",
+        "count": 3
+      },
+      {
+        "number": "249",
+        "set": "ktk",
+        "name": "Wooded Foothills",
+        "count": 2
+      }
+    ]
+  },
+  "Manlin Never Lucky": {
+    "Creature": [
+      {
+        "number": "64",
+        "set": "mm3",
+        "name": "Death's Shadow",
+        "count": 4
+      },
+      {
+        "number": "108",
+        "set": "a25",
+        "name": "Street Wraith",
+        "count": 4
+      },
+      {
+        "number": "78",
+        "set": "isd",
+        "name": "Snapcaster Mage",
+        "count": 3
+      },
+      {
+        "number": "145",
+        "set": "mh1",
+        "name": "Seasoned Pyromancer",
+        "count": 3
+      },
+      {
+        "number": "72",
+        "set": "frf",
+        "name": "Gurmag Angler",
+        "count": 2
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "99",
+        "set": "mm2",
+        "name": "Surgical Extraction",
+        "count": 3
+      },
+      {
+        "number": "139",
+        "set": "mh1",
+        "name": "Pillage",
+        "count": 1
+      },
+      {
+        "number": "112",
+        "set": "ths",
+        "name": "Anger of the Gods",
+        "count": 1
+      },
+      {
+        "number": "83",
+        "set": "hou",
+        "name": "Abrade",
+        "count": 1
+      },
+      {
+        "number": "146",
+        "set": "mh1",
+        "name": "Shenanigans",
+        "count": 1
+      },
+      {
+        "number": "81",
+        "set": "xln",
+        "name": "Spell Pierce",
+        "count": 1
+      },
+      {
+        "number": "100",
+        "set": "mh1",
+        "name": "Plague Engineer",
+        "count": 2
+      },
+      {
+        "number": "116",
+        "set": "frf",
+        "name": "Temur Battle Rage",
+        "count": 1
+      },
+      {
+        "number": "93",
+        "set": "emn",
+        "name": "Liliana, the Last Hope",
+        "count": 2
+      },
+      {
+        "number": "135",
+        "set": "mh1",
+        "name": "Magmatic Sinkhole",
+        "count": 1
+      },
+      {
+        "number": "85",
+        "set": "emn",
+        "name": "Collective Brutality",
+        "count": 1
+      }
+    ],
+    "Instant": [
+      {
+        "number": "57",
+        "set": "nph",
+        "name": "Dismember",
+        "count": 2
+      },
+      {
+        "number": "52",
+        "set": "dka",
+        "name": "Thought Scour",
+        "count": 4
+      },
+      {
+        "number": "122",
+        "set": "mm2",
+        "name": "Lightning Bolt",
+        "count": 1
+      },
+      {
+        "number": "57",
+        "set": "aer",
+        "name": "Fatal Push",
+        "count": 3
+      },
+      {
+        "number": "116",
+        "set": "frf",
+        "name": "Temur Battle Rage",
+        "count": 1
+      },
+      {
+        "number": "56",
+        "set": "ktk",
+        "name": "Stubborn Denial",
+        "count": 2
+      },
+      {
+        "number": "81",
+        "set": "xln",
+        "name": "Spell Pierce",
+        "count": 1
+      }
+    ],
+    "Sorcery": [
+      {
+        "number": "87",
+        "set": "dka",
+        "name": "Faithless Looting",
+        "count": 2
+      },
+      {
+        "number": "145",
+        "set": "lrw",
+        "name": "Thoughtseize",
+        "count": 4
+      },
+      {
+        "number": "113",
+        "set": "mh1",
+        "name": "Unearth",
+        "count": 3
+      },
+      {
+        "number": "115",
+        "set": "roe",
+        "name": "Inquisition of Kozilek",
+        "count": 2
+      }
+    ],
+    "Artifact": [{
+      "number": "138",
+      "set": "csp",
+      "name": "Mishra's Bauble",
+      "count": 2
+    }],
+    "Land": [
+      {
+        "number": "238",
+        "set": "mh1",
+        "name": "Fiery Islet",
+        "count": 1
+      },
+      {
+        "number": "239",
+        "set": "ktk",
+        "name": "Polluted Delta",
+        "count": 4
+      },
+      {
+        "number": "230",
+        "set": "ktk",
+        "name": "Bloodstained Mire",
+        "count": 4
+      },
+      {
+        "number": "223",
+        "set": "zen",
+        "name": "Scalding Tarn",
+        "count": 1
+      },
+      {
+        "number": "259",
+        "set": "grn",
+        "name": "Watery Grave",
+        "count": 2
+      },
+      {
+        "number": "245",
+        "set": "rna",
+        "name": "Blood Crypt",
+        "count": 2
+      },
+      {
+        "number": "257",
+        "set": "grn",
+        "name": "Steam Vents",
+        "count": 1
+      },
+      {
+        "number": "239",
+        "set": "zen",
+        "name": "Swamp",
+        "count": 1
+      },
+      {
+        "number": "237",
+        "set": "zen",
+        "name": "Island",
+        "count": 1
+      }
+    ]
+  }
+}

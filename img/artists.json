@@ -1,26 +1,26 @@
 {
     "brackets": {
-        "name": "Jason Rainville",
-        "href": "https://www.jasonrainville.com/"
+        "name": "Anna Steinbauer",
+        "href": "https://www.annasteinbauer.com/"
     }, 
     "constructed": {
-        "name": "Jesper Ejsing",
-        "href": "https://www.jesperejsing.dk/"
+        "name": "Johannes Voss",
+        "href": "https://www.artstation.com/algenpfleger"
     },
     "matches": {
+        "name": "Dmitry Burmak",
+        "href": "https://burmak.ru/"
+    },
+    "preview": {
         "name": "Chris Seaman",
         "href": "https://www.chrisseamanart.com/"
     },
-    "preview": {
-        "name": "Jason Felix",
-        "href": "https://www.jasonfelix.com/"
-    },
     "standings": {
-        "name": "Joe Slucher",
-        "href": "https://www.joeslucher.com"
+        "name": "Randy Vargas",
+        "href": "http://www.vargasni.com/"
     },
     "home": {
-        "name": "Magali Villeneuve",
-        "href": "http://www.magali-villeneuve.com/"
+        "name": "Paul Scott Canavan",
+        "href": "http://paulscottcanavan.com/"
     }
 }

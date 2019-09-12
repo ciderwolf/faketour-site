@@ -12,7 +12,7 @@ body {
     right: 0;
     z-index: -1;
     display: block;
-    background-image: url("/img/?bg=standings");
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/img/?bg=standings");
     background-size:cover;
     width: 100%;
     height: 100%;

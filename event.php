@@ -19,7 +19,17 @@
                 $url = "/about/$set/";
                 break;
         }
-        header("Location: $url");
+        if($url != "") {
+            header("Location: $url");
+        } else if($target == "info") {
+            $sql = "SELECT name FROM events WHERE code='$set'";
+            $result = $conn->query($sql);
+            if($result->num_rows > 0) {
+                $row = $result->fetch_assoc();
+                header("Content-Type: application/json");
+                echo json_encode(array("name" => $row["name"], "code" => $set));
+            }
+        }
     } else {
         $sql = "SELECT decks_due, open FROM events WHERE code='$set'";
         $result = $conn->query($sql);
