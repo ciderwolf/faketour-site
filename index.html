@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Faketour</title>
+    <title>Home | Faketour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -32,6 +32,16 @@
     const buttonMapping = {
         0: {
             a: {
+                name: "Login",
+                href: "account/login/"
+            },
+            b: {
+                name: "Create Account",
+                href: "account/create/"
+            }
+        },
+        1: {
+            a: {
                 name: "Results",
                 href: "event.php?target=results"
             },
@@ -40,7 +50,17 @@
                 href: "event.php?target=decks"
             }
         },
-        1: {
+        2: {
+            a: {
+                name: "About",
+                href: "event.php?target=about"
+            },
+            b: {
+                name: "Register",
+                href: "/events/"
+            }
+        },
+        3: {
             a: {
                 name: "About",
                 href: "event.php?target=about"
@@ -50,7 +70,7 @@
                 href: "/constructed/"
             }
         },
-        2: {
+        4: {
             a: {
                 name: "Matches",
                 href: "/matches/"

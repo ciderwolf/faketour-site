@@ -31,7 +31,12 @@ img {
 #buttons {
     margin: 0 auto;
     width: fit-content;
+    width: -moz-fit-content;
     animation: fadein 5s;
+}
+
+#buttons button {
+    cursor: pointer;
 }
 
 .footer {

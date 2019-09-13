@@ -31,24 +31,38 @@
             }
         }
     } else {
+        session_start();
+        if(!isset($_SESSION["username"])) {
+            echo "0";
+            return;
+        }
+        $username = $_SESSION["username"];
         $sql = "SELECT decks_due, open FROM events WHERE code='$set'";
         $result = $conn->query($sql);
         if($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             if($row["open"] == "0") {
-                echo "0";
+                echo "1";
                 return;
             }
             $due = strtotime($row["decks_due"]);
             if(time() - $due < 0) {
-                echo "1";
-                return;
+                $table = $set . "_players";
+                $sql = "SELECT * FROM $table WHERE username='$username'";
+                $result = $conn->query($sql);
+                if($result->num_rows > 0) {
+                    echo "3";
+                    return;
+                } else {
+                    echo "2";
+                    return;
+                }
             } else {
-                echo "2";
+                echo "4";
                 return;
             }
         } else {
-            echo "1";
+            echo "3";
         }
     }
 
