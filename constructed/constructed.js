@@ -9,7 +9,7 @@ function getTimer() {
     let now = new Date();
     let difference = (due.getTime() - now.getTime())/1000;
     if(difference < 0) {
-        timer.innerHTML = "Decklists were due " +  due.toLocaleString();
+        timer.innerHTML = "Decklists were due on " +  due.toLocaleString();
         clearInterval(updateTimer);
         return;
     }
@@ -36,15 +36,35 @@ async function loadData() {
         maindeck.value = response.maindeck.join("\n");
         sideboard.value = response.sideboard.join("\n");
     }
-    if(response == null) {
-        showAlert("Log in", "You need to be logged in to submit your deck list", "warning");
+    if(response === null) {
+        showAlert("Log in", "You need to be <a class=alert-link href='/account/login/'>logged in</a> to submit your deck list", "warning");
     }
+    else if(response === true) {
+        document.getElementById("preview").style.display = "none";
+    }
+    else {
+        updateDeckCounts(response.maindeck, response.sideboard);
+    }
+
     loggedIn = response;
+
 
     let dateData = await fetch("getDate.php");
     let date = await dateData.text();
     due = new Date(date);
+    if(new Date().getTime() - due.getTime() > 0) {
+        document.getElementById("submit").style.display = "none";
+    }
     getTimer();
+}
+
+function updateDeckCounts(maindeck, sideboard) {
+    deck = deckFromStrings(maindeck, sideboard);
+    for(let zone in deck) {
+        let size = 0;
+        Object.values(deck[zone]).forEach(v => size += v);
+        document.getElementById(zone + "-count").textContent = size;
+    }
 }
 
 function uploadDeck(cardList, setCode) {
@@ -82,6 +102,7 @@ async function submit() {
         legalCards = await response.json();
     }         
     valid = validateDeck(maindeck, sideboard);
+    updateDeckCounts(maindeck, sideboard);
     if(!valid) {
         return;
     }

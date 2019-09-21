@@ -29,7 +29,8 @@
     }
 
     function get_remote_data($url, $post_paramtrs=false)    {
-        $c = curl_init();curl_setopt($c, CURLOPT_URL, $url);
+        $c = curl_init();
+        curl_setopt($c, CURLOPT_URL, $url);
         curl_setopt($c, CURLOPT_RETURNTRANSFER, 1); 
         if($post_paramtrs) {
             curl_setopt($c, CURLOPT_POST,TRUE);

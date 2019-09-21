@@ -69,17 +69,40 @@ function readURL() {
             host = "t";
         } else if(url.host.includes("deckstats.net")) {
             host = "d";
+        } else if(url.host.includes("scryfall.com")) {
+            host = "s";
         }
-        showAlert("Loading Deck", "Importing decklist from " + urlSelector.value, "info");
-        fetch("readDeck.php?mode=" + host + "&url=" + url.href)
-        .then(response => response.text())
-        .then(response => {
-            if(response == "Invalid URL mode") {
-                showAlert("Invalid URL", "We don't support importing decks from " + url.host, "error");
+        if(host == "") {
+            showAlert("Invalid URL", "We don't support importing decks from " + url.host, "error");
+        } else {
+            showAlert("Loading Deck", "Importing decklist from " + urlSelector.value, "info");
+            if(host == "s") {
+                let deckId = url.href.split("/")[5];
+                fetch("https://api.scryfall.com/decks/" + deckId + "/export/text")
+                .then(response => {
+                    if(response.ok) {
+                        return response.text();
+                    } else {
+                        response.text();
+                        throw new Error("Failed to get deck");
+                    }
+                })
+                .then(loadDeck)
+                .catch(() => {
+                    showAlert("Invalid URL", "Couldn't read a decklist from the provided url");
+                });
             } else {
-                loadDeck(response);
+                fetch("readDeck.php?mode=" + host + "&url=" + url.href)
+                .then(response => response.text())
+                .then(response => {
+                    if(response == "Invalid URL mode") {
+                        showAlert("Invalid URL", "We don't support importing decks from " + url.host, "error");
+                    } else {
+                        loadDeck(response);
+                    }
+                });
             }
-        });
+        }
         return true;
     } catch(e) {
         if(urlSelector.value != "") {

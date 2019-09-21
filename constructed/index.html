@@ -30,11 +30,15 @@
         </h2>
     </div>
     <div style="display:inline-grid;">
+        <h2 id="card-counts"><span id="maindeck-count">0</span> maindeck / <span id="sideboard-count">0</span> sideboard</h2>
         <div id="sumbission-fields">
             <textarea class="text" id="maindeck" placeholder="Maindeck (60 cards)"></textarea>
             <textarea class="text" id="sideboard" placeholder="Sideboard (15 cards)"></textarea>
         </div>
-        <button id="submit" class="transparent" onclick="submit();">Submit Deck</button>
+        <div id="target-container">
+            <button id="submit" class="transparent target" onclick="submit();">Submit Deck</button>
+            <button id="preview" class="transparent target" onclick="window.location.href = 'preview/';">See Deck Preview</button>
+        </div>
         <div id="floating">
             <button onclick="showModal()" class="transparent">Import Deck</button><br>
             <div class="checkbox">

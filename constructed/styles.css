@@ -101,6 +101,21 @@ input[type=checkbox] {
     top: 5vh;
 }
 
+#card-counts {
+    padding-left: 30px;
+    margin: 0;
+}
+
+#target-container {
+    display: flex;
+    width: 100%;
+}
+
+.target {
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
 .footer {
     position: fixed;
     margin-left: 80%;
@@ -153,6 +168,12 @@ input[type=checkbox] {
         display: block;
     }
 
+    #target-container {
+        flex-direction: column;
+    }
+    .target {
+        width: 50%;
+    }
     .modal-content {
         width: auto;
     }

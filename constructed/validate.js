@@ -1,8 +1,45 @@
-const unlimitedCards = ["Plains", "Island", "Swamp", "Mountain", "Forest", "Snow-Covered Plains", "Snow-Covered Island", "Snow-Covered Swamp", "Snow-Covered Mountain", "Snow-Covered Forest", "Wastes", "Relentless Rats", "Persistent Petitioners", "Relentless Rats", "Shadowborn Apostle"];
 let legalCards = undefined;
+const unlimitedCards = ["Plains", "Island", "Swamp", "Mountain", "Forest", "Persistent Petitioners"];
 const maindeckSize = 60;
 const sideboardSize = 15;
 const maxCardCount = 4;
+
+function deckFromStrings(maindeck, sideboard) {
+    let deck = {maindeck: [], sideboard: []};
+    for(line of maindeck) {
+        let elements = line.split(' ');
+        let count = 1;
+        let name = line;
+        if(!isNaN(elements[0])) {
+            count = Number(elements[0]);
+            elements.splice(0, 1);
+            name = elements.join(' ');
+        }
+        if(deck[name] == undefined) {
+            deck.maindeck[name] = count;
+        }
+        else {
+            deck.maindeck[name] += count;
+        }
+    }
+    for(line of sideboard) {
+        let elements = line.split(' ');
+        let count = 1;
+        let name = line;
+        if(!isNaN(elements[0])) {
+            count = Number(elements[0]);
+            elements.splice(0, 1);
+            name = elements.join(' ');
+        }
+        if(deck[name] == undefined) {
+            deck.sideboard[name] = count;
+        }
+        else {
+            deck.sideboard[name] += count;
+        }
+    }
+    return deck;
+}
 
 function validateDeck(maindeck, sideboard) {
     if(document.getElementById("validate-checkbox").checked == false) {
@@ -25,7 +62,7 @@ function validateDeck(maindeck, sideboard) {
         else {
             deck[name] += count;
         }
-        maindeckCount += count;        
+        maindeckCount += count;
     }
     if(maindeckCount < maindeckSize) {
         showAlert("Deck too small", "Your maindeck has only " + maindeckCount + " cards.", "warning", true);
@@ -55,7 +92,7 @@ function validateDeck(maindeck, sideboard) {
     }
     for(card in deck) {
         if(!isLegal(card)) {
-            showAlert("Illegal card", "'" + card + "' isn't modern legal", "warning", true);
+            showAlert("Illegal card", "'" + card + "' isn't stanard legal", "warning", true);
             return false;
         }
         if(deck[card] > maxCardCount && !unlimitedCards.includes(card)) {
