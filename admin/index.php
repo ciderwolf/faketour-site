@@ -41,40 +41,52 @@
     <div class="topnav"></div>
     <script type="text/javascript">loadMenu("Admin");</script>
     <h1 style="margin-left:30px">Faketour Administration Station</h1>
-    <div class='section'>
-        <h2>Events</h2>
-        <div class='section'>
-        <?php
-            $event = getDataSingular("SELECT * FROM events WHERE open=1");
-            if(sizeof($event) > 0) {
-                echo "<h3>" . $event["name"] . "</h3>";
-                echo "<label for='event-duedate-input'>Decks submission due: </label>";
-                echo "<input type=text id='event-duedate-input' value='" . $event["decks_due"] . "'></input><br>";
-                echo "<button class='transparent danger thin' id='close-event-button' onclick='closeEvent()'>Close Event</button>";  
-                echo "<button class='transparent thin' id='update-duedate-button' onclick='updateDueDate()'>Update Submission Date</button>";  
-            } else {
-                echo "<h3>New Event</h3>";
-                echo "<label for='event-name-input'>Event name: </label>";
-                echo "<input type=text id='event-name-input' placeholder='Shadows over Innistrad'></input>";
-                echo "<label for='event-code-input'>Event set code: </label>";
-                echo "<input type=text id='event-code-input' placeholder='soi'></input>";
-                echo "<label for='event-duedate-input'>Decks due: </label>";
-                echo "<input type=text id='event-duedate-input' placeholder='Oct 29 2015'></input><br/>";
-                echo "<button class='transparent' onclick='uploadEvent()'>Create Event</button>";
-            }
-        ?>
+    <div class='section' style="display:flex">
+        <div>
+            <h2>Events</h2>
+            <div class='section'>        
+            <?php
+                $event = getDataSingular("SELECT * FROM events WHERE open=1");
+                if(sizeof($event) > 0) {
+                    echo "<h3>" . $event["name"] . "</h3>";
+                    echo "<label for='event-duedate-input'>Decks submission due: </label>";
+                    echo "<input type=text id='event-duedate-input' value='" . $event["decks_due"] . "'></input><br>";
+                    echo "<button class='transparent danger thin' id='close-event-button' onclick='closeEvent()'>Close Event</button>";
+                    echo "<button class='transparent thin' id='update-duedate-button' onclick='updateDueDate()'>Update Submission Date</button>";
+                    echo "</div></div><div style='margin:3.33em'><h3>Registered Players &emsp; <i style='color: #676970; font-size:0.8em'>(⭑ submitted deck)</i></h3><p>";
+                    $players = getData("SELECT username, deck FROM " . $event["code"] . "_players");
+                    foreach($players as $player) {
+                        echo $player["username"];
+                        if($player["deck"] != "") {
+                            echo "&emsp; ⭑";
+                        }
+                        echo "<br>";
+                    }
+                    echo "</p></div>";
+                } else {
+                    echo "<h3>New Event</h3>";
+                    echo "<label for='event-name-input'>Event name: </label>";
+                    echo "<input type=text id='event-name-input' placeholder='Shadows over Innistrad'></input>";
+                    echo "<label for='event-code-input'>Event set code: </label>";
+                    echo "<input type=text id='event-code-input' placeholder='soi'></input>";
+                    echo "<label for='event-duedate-input'>Decks due: </label>";
+                    echo "<input type=text id='event-duedate-input' placeholder='Oct 29 2015'></input><br/>";
+                    echo "<button class='transparent' onclick='uploadEvent()'>Create Event</button>";
+                }
+            ?>
+            </div>
         </div>
     </div>
     <div class='section'>
         <h2>Users</h2>
         <div class='section'>
-        <p>
+        <p style="margin:30px;">
         <?php 
             $users = getData("SELECT username FROM users");
             for($i = 0; $i < sizeof($users); $i += 1) {
                 echo $users[$i]["username"];
                 if($i != sizeof($users) - 1) {
-                    echo ", ";
+                    echo "<br>";
                 }
             }
         ?>
