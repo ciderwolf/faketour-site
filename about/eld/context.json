@@ -1,0 +1,26 @@
+{
+    "sets": {
+        "names": [
+            "Throne of Eldraine",
+            "Magic 2020",
+            "War of the Spark",
+            "Ravnica Allegiance",
+            "Guilds of Ravnica"
+        ],
+        "codes": [
+            "eld",
+            "m20",
+            "war",
+            "rna",
+            "grn"
+        ]
+    },
+    "artist": {
+        "name": "Paul Scott Canavan",
+        "url": "http://paulscottcanavan.com/"
+    },
+    "style": {
+        "bgcolor": "#1a1a1b",
+        "shadow": 0.3
+    }
+}

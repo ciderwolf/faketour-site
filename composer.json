@@ -1,5 +1,6 @@
 {
     "require": {
-        "mailjet/mailjet-apiv3-php": "^1.4"
+        "mailjet/mailjet-apiv3-php": "^1.4",
+        "twig/twig": "^2.0"
     }
 }

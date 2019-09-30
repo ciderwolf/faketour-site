@@ -1,0 +1,27 @@
+{
+    "sets": {
+        "names": [
+            "Kaladesh",
+            "Eldritch Moon",
+            "Shadows over Innistrad",
+            "Oath of the Gatewatch",
+            "Battle for Zendikar"
+        ],
+        "codes": [
+            "kld",
+            "emn",
+            "soi",
+            "ogw",
+            "bfz"
+        ],
+        "logo_gap": true
+    },
+    "artist": {
+        "name": "@Art_JasonFelix",
+        "url": "https://twitter.com/Art_JasonFelix"
+    },
+    "style": {
+        "bgcolor": "#302f3c",
+        "shadow": 0.5
+    }
+}

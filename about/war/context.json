@@ -1,0 +1,30 @@
+{
+    "sets": {
+        "names": [
+            "War of the Spark",
+            "Ravnica Allegiace",
+            "Guilds of Ravnica",
+            "Magic 2019",
+            "Dominaria",
+            "Rivals of Ixalan",
+            "Ixalan"
+        ],
+        "codes": [
+            "war",
+            "rna",
+            "grn",
+            "m19",
+            "dom",
+            "rix",
+            "xln"
+        ]
+    },
+    "artist": {
+        "name": "Raymond Swanland",
+        "url": "http://www.raymondswanland.com/"
+    },
+    "style": {
+        "bgcolor": "#0c0f13",
+        "shadow": 0.3
+    }
+}

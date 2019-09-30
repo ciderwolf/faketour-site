@@ -1,0 +1,29 @@
+{
+    "sets": {
+        "names": [
+            "Ravnica Allegiace",
+            "Guilds of Ravnica",
+            "Magic 2019",
+            "Dominaria",
+            "Rivals of Ixalan",
+            "Ixalan"
+        ],
+        "codes": [
+            "rna",
+            "grn",
+            "m19",
+            "dom",
+            "rix",
+            "xln"
+        ],
+        "logo_gap": true
+    },
+    "artist": {
+        "name": "@DaarkenArt",
+        "url": "https://twitter.com/DaarkenArt"
+    },
+    "style": {
+        "bgcolor": "#080725",
+        "shadow": 0.5
+    }
+}

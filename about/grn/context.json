@@ -1,0 +1,32 @@
+{
+    "sets": {
+        "names": [
+            "Guilds of Ravnica",
+            "Magic 2019",
+            "Dominaria",
+            "Rivals of Ixalan",
+            "Ixalan"
+        ],
+        "codes": [
+            "grn",
+            "m19",
+            "dom",
+            "rix",
+            "xln"
+        ]
+    },
+    "artist": {
+        "name": "@bram_sels",
+        "url": "https://twitter.com/bram_sels"
+    },
+    "style": {
+        "bgcolor": "#1c090a",
+        "shadow": 0.0
+    },
+    "format": {
+        "limited": {
+            "name": "Sealed",
+            "description": "Created a sealed pool 3 packs of <i class=\"ss ss-grn\"><\/i> and 3 packs selected at random from among: &ensp;\r\n                <i class=\"ss ss-rav\"><\/i> <i class=\"ss ss-gpt\"><\/i> <i class=\"ss ss-dis\"><\/i> \r\n                <i class=\"ss ss-rtr\"><\/i> <i class=\"ss ss-gtc\"><\/i> <i class=\"ss ss-dgm\"><\/i> <br>\r\n                <a class=\"underlight\" href=\"https:\/\/scryfall.com\/search?q=%28set%3Agrn+OR+set%3Arav+OR+set%3Agpt+OR+set%3Adis+OR+set%3Artr+OR+set%3Agtc+OR+set%3Adgm%29&unique=cards&as=grid&order=name\"><i>(Guilds of Ravnica, Ravnica: City of Guilds, Guildpact, Dissension, Return to Ravnica, Gatecrash, or Dragon's Maze)<\/i><\/a>"
+        }
+    }
+}

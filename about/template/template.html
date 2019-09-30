@@ -1,0 +1,85 @@
+
+<html>
+    <head>
+        <title>{{ sets.codes[0]|upper }} - About | Faketour</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="stylesheet" href="../template/about.css">
+        <style rel="text/css">
+            .content:before {
+                background-image: linear-gradient( rgba(0, 0, 0, {{ style.shadow }}), rgba(0, 0, 0, {{ style.shadow }}) ), url("bg_splash.jpg");
+            }
+            :root {
+                --bg-color: {{ style.bgcolor }};
+            }
+        </style>
+        <script type="text/javascript" src="/menu/loadMenu.js"></script>
+        <link rel="stylesheet" href="/menu/styles.css">
+        <link rel="stylesheet" href="/css/keyrune/css/keyrune.css">
+    </head>
+    <body>
+        <div class="content">
+        <div class="topnav"></div>
+        <script type="text/javascript">loadMenu("About {{ sets.codes[0]|upper }}");</script>
+        <h1>FakeTour</h1>
+        <img {% if sets.logo_gap == false %} class='top-gap' {% endif %} src="{{ sets.codes[0] }}-logo.png"/>
+        <div id="bg">
+            {% if format.constructed %}
+                <h2>{{ format.constructed.name }}</h2>
+                <p>{{ format.constructed.description }}</p>
+            {% else %}
+             <h2>Standard</h2>
+             <p>Submit a deck made up of cards from the following sets:
+                {% for code in sets.codes %}
+                    <i class="ss ss-{{ code }}"></i>&ensp;
+                {% endfor%}
+                <br><a class="underlight" href="https://scryfall.com/search?q=%28set%3A{{ sets.codes|join('+OR+set%3A') }}%29&unique=cards&as=grid&order=name">
+                    <i>({{ sets.names|join(", ") }})</i>
+                </a>
+            </p> 
+            {% endif %}
+            {% if format.limited %}
+                <h2>{{ format.limited.name }}</h2>
+                <p>{{ format.limited.description }}</p>
+            {% else %}
+            <h2>Draft</h2>
+            <p>Draft 3 packs of {{ sets.names[0] }}.
+                <a class="underlight" href="https://scryfall.com/sets/{{ sets.codes[0] }}?as=grid&order=name"><i>View the set spoiler</i></a>
+            </p>
+            {% endif %}
+            <div style="display: flex; justify-content: center">
+                <a id="button" href="/constructed/"><button class="bold light">Submit Constructed Deck</button></a>
+            </div>
+        </div>
+        <div class="footer"><a href='{{ artist.url }}'>Artwork by <br/>{{ artist.name }}</a></div>
+    </body>
+    <script>
+        const buttonMapping = {
+            0: {
+                name: "Login to Register",
+                href: "/account/login/"
+            },
+            1: {
+                name: "View Results",
+                href: "results/",
+            },
+            2: {
+                name: "Register",
+                href: "/events/"
+            },
+            3: {
+                name: "Matches",
+                href: "/matches/"
+            }
+        }
+        fetch('/event.php?set={{ sets.codes[0] }}&login=false')
+        .then(response => response.text())
+        .then(response => {
+            const code = Number(response);
+            let target = buttonMapping[code];
+            let button = document.getElementById("button");
+            button.firstChild.innerHTML = target.name;
+            button.href = target.href;
+        });
+    </script>
+</html>

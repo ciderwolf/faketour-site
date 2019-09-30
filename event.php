@@ -4,6 +4,10 @@
     if(isset($_REQUEST["set"])) {
         $set = $_REQUEST["set"];
     }
+    $require_login = true;
+    if(isset($_REQUEST["login"])) {
+        $require_login = $_REQUEST["login"] == "true";
+    }
 
     if(isset($_REQUEST["target"])) {
         $target = $_REQUEST["target"];
@@ -32,7 +36,7 @@
         }
     } else {
         session_start();
-        if(!isset($_SESSION["username"])) {
+        if(!isset($_SESSION["username"]) && $require_login == true) {
             echo "0";
             return;
         }
@@ -47,6 +51,10 @@
             }
             $due = strtotime($row["decks_due"]);
             if(time() - $due < 0) {
+                if(!$require_login && !isset($_SESSION["username"])) {
+                    echo "0";
+                    return;
+                }
                 $table = $set . "_players";
                 $sql = "SELECT * FROM $table WHERE username='$username'";
                 $result = $conn->query($sql);

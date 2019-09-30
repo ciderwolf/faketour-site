@@ -1,4 +1,5 @@
 loadData();
+let username = "";
 
 async function loadData() {
     let eventResponse = await fetch("events.php");
@@ -11,6 +12,7 @@ async function loadData() {
     }
     let display = document.getElementById("players");
     let play = document.createElement("p");
+    play.id = "player-list";
     for(player of players) {
         play.innerHTML += player + "<br>";
     }
@@ -18,6 +20,7 @@ async function loadData() {
     let userResponse = await fetch("/php/user.php?value=username");
     let loggedIn = await userResponse.text();
     if(loggedIn != "null") {
+        username = loggedIn;
         if(players.includes(loggedIn)) {
             document.getElementById("register").disabled = true;
         }
@@ -57,6 +60,7 @@ function configureButton(event) {
             if(response == "success") {
                 showAlert("Registered", "Successfully registered for event: " + event.name, "success");
                 registerButton.disabled = true;
+                document.getElementById("player-list").innerHTML += username + "<br>";
             }
             else if(response == "duplicate") {
                 showAlert("Error", "Already registered for event: " + event.name, "warning");
