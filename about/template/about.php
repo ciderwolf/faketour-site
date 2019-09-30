@@ -3,8 +3,7 @@
     $loader = new \Twig\Loader\FilesystemLoader($_SERVER["DOCUMENT_ROOT"] . "/about/template/");
     $twig = new \Twig\Environment($loader, [
         'cache' => $_SERVER["DOCUMENT_ROOT"] . "/template_cache",
-        'autoescape' => false,
-        'debug' => true
+        'autoescape' => false
     ]);
 
     $template = $twig->load("template.html");

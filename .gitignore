@@ -2,6 +2,7 @@ php/env.php
 .DS_Store
 .vscode
 .git-ftp-ignore
+.git-ftp-include
 composer.phar
 /vendor/
 /template_cache/
