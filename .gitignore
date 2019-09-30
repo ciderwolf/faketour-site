@@ -4,3 +4,4 @@ php/env.php
 .git-ftp-ignore
 composer.phar
 /vendor/
+/template_cache/
