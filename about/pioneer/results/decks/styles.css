@@ -1,0 +1,23 @@
+body {
+    background-color: #6e7477;
+}
+
+.content:before {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("gingerbread-cabin.jpg");
+}
+
+.backdrop {
+    background-color:#f4eee7;
+}
+
+#tab-bg {
+    background-color: #3d4629;
+}
+
+.tab span:hover {
+    background-color: #c2ccbc;
+}
+
+.tab span.active {
+    background-color: #dbe6d2;
+}

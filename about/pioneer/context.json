@@ -1,0 +1,24 @@
+{
+    "sets": {
+        "names": [],
+        "codes": ["pioneer"]
+    },
+    "artist": {
+        "name": "Cynthia Sheppard",
+        "url": "https://cynthia-sheppard.squarespace.com/"
+    },
+    "format": {
+        "constructed": {
+            "name": "Pioneer",
+            "description": "Submit a Pioneer legal deck\r\n                <a class=\"underlight\" href=\"https://scryfall.com/search?q=f%3Apioneer\"><i>&emsp;See the card list<\/i><\/a>"
+        },
+        "limited": {
+            "name": "", "description": ""
+        }
+    },
+    "style": {
+        "bgcolor": "#1a1a1b",
+        "shadow": 0.3
+    }
+    
+}

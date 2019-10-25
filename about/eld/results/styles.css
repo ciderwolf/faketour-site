@@ -1,0 +1,7 @@
+.content:before {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("thorn-mammoth.jpg");
+}
+
+:root {
+    --bg-color: #172814;
+}

@@ -1,0 +1,598 @@
+{
+  "Ronald Skredlord Nafshi": {
+    "Creature": [
+      {
+        "number": "150",
+        "set": "eld",
+        "name": "Curious Pair // Treats to Share",
+        "count": 4
+      },
+      {
+        "number": "160",
+        "set": "eld",
+        "name": "Gilded Goose",
+        "count": 4
+      },
+      {
+        "number": "185",
+        "set": "m20",
+        "name": "Nightpack Ambusher",
+        "count": 4
+      },
+      {
+        "number": "171",
+        "set": "war",
+        "name": "Paradise Druid",
+        "count": 4
+      },
+      {
+        "number": "224",
+        "set": "war",
+        "name": "Tolsimir, Friend to Wolves",
+        "count": 3
+      },
+      {
+        "number": "181",
+        "set": "eld",
+        "name": "Wicked Wolf",
+        "count": 4
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "13",
+        "set": "m20",
+        "name": "Devout Decree",
+        "count": 4
+      },
+      {
+        "number": "225",
+        "set": "grn",
+        "name": "Find // Finality",
+        "count": 1
+      },
+      {
+        "number": "69",
+        "set": "m20",
+        "name": "Negate",
+        "count": 3
+      },
+      {
+        "number": "169",
+        "set": "war",
+        "name": "Nissa, Who Shakes the World",
+        "count": 2
+      },
+      {
+        "number": "197",
+        "set": "m20",
+        "name": "Thrashing Brontodon",
+        "count": 3
+      },
+      {
+        "number": "198",
+        "set": "m20",
+        "name": "Veil of Summer",
+        "count": 2
+      }
+    ],
+    "Planeswalker": [
+      {
+        "number": "191",
+        "set": "eld",
+        "name": "Garruk, Cursed Huntsman",
+        "count": 3
+      },
+      {
+        "number": "197",
+        "set": "eld",
+        "name": "Oko, Thief of Crowns",
+        "count": 4
+      }
+    ],
+    "Instant": [{
+      "number": "169",
+      "set": "eld",
+      "name": "Once Upon a Time",
+      "count": 4
+    }],
+    "Artifact": [{
+      "number": "161",
+      "set": "eld",
+      "name": "The Great Henge",
+      "count": 2
+    }],
+    "Land": [
+      {
+        "number": "246",
+        "set": "rna",
+        "name": "Breeding Pool",
+        "count": 4
+      },
+      {
+        "number": "244",
+        "set": "eld",
+        "name": "Fabled Passage",
+        "count": 4
+      },
+      {
+        "number": "266",
+        "set": "eld",
+        "name": "Forest",
+        "count": 7
+      },
+      {
+        "number": "248",
+        "set": "rna",
+        "name": "Godless Shrine",
+        "count": 1
+      },
+      {
+        "number": "251",
+        "set": "rna",
+        "name": "Hallowed Fountain",
+        "count": 1
+      },
+      {
+        "number": "254",
+        "set": "eld",
+        "name": "Island",
+        "count": 1
+      },
+      {
+        "number": "253",
+        "set": "grn",
+        "name": "Overgrown Tomb",
+        "count": 2
+      },
+      {
+        "number": "250",
+        "set": "eld",
+        "name": "Plains",
+        "count": 1
+      },
+      {
+        "number": "258",
+        "set": "eld",
+        "name": "Swamp",
+        "count": 1
+      },
+      {
+        "number": "258",
+        "set": "grn",
+        "name": "Temple Garden",
+        "count": 2
+      }
+    ]
+  },
+  "HappyFeet": {
+    "Creature": [
+      {
+        "number": "76",
+        "set": "m20",
+        "name": "Spectral Sailor",
+        "count": 4
+      },
+      {
+        "number": "50",
+        "set": "m20",
+        "name": "Brineborn Cutthroat",
+        "count": 4
+      },
+      {
+        "number": "39",
+        "set": "eld",
+        "name": "Brazen Borrower // Petty Theft",
+        "count": 4
+      },
+      {
+        "number": "183",
+        "set": "rna",
+        "name": "Hydroid Krasis",
+        "count": 1
+      },
+      {
+        "number": "185",
+        "set": "m20",
+        "name": "Nightpack Ambusher",
+        "count": 4
+      },
+      {
+        "number": "182",
+        "set": "eld",
+        "name": "Wildborn Preserver",
+        "count": 2
+      },
+      {
+        "number": "174",
+        "set": "rna",
+        "name": "Frilled Mystic",
+        "count": 4
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "58",
+        "set": "eld",
+        "name": "Mystical Dispute",
+        "count": 2
+      },
+      {
+        "number": "194",
+        "set": "m20",
+        "name": "Shifting Ceratops",
+        "count": 2
+      },
+      {
+        "number": "171",
+        "set": "eld",
+        "name": "Questing Beast",
+        "count": 2
+      },
+      {
+        "number": "53",
+        "set": "m20",
+        "name": "Cerulean Drake",
+        "count": 4
+      },
+      {
+        "number": "42",
+        "set": "m20",
+        "name": "Aether Gust",
+        "count": 2
+      },
+      {
+        "number": "198",
+        "set": "m20",
+        "name": "Veil of Summer",
+        "count": 3
+      }
+    ],
+    "Instant": [
+      {
+        "number": "48",
+        "set": "rna",
+        "name": "Quench",
+        "count": 3
+      },
+      {
+        "number": "54",
+        "set": "grn",
+        "name": "Sinister Sabotage",
+        "count": 3
+      },
+      {
+        "number": "169",
+        "set": "eld",
+        "name": "Once Upon a Time",
+        "count": 4
+      },
+      {
+        "number": "37",
+        "set": "rna",
+        "name": "Essence Capture",
+        "count": 3
+      },
+      {
+        "number": "78",
+        "set": "m20",
+        "name": "Unsummon",
+        "count": 1
+      },
+      {
+        "number": "69",
+        "set": "m20",
+        "name": "Negate",
+        "count": 1
+      }
+    ],
+    "Land": [
+      {
+        "number": "246",
+        "set": "rna",
+        "name": "Breeding Pool",
+        "count": 4
+      },
+      {
+        "number": "255",
+        "set": "m20",
+        "name": "Temple of Mystery",
+        "count": 4
+      },
+      {
+        "number": "254",
+        "set": "eld",
+        "name": "Island",
+        "count": 8
+      },
+      {
+        "number": "266",
+        "set": "eld",
+        "name": "Forest",
+        "count": 4
+      },
+      {
+        "number": "244",
+        "set": "eld",
+        "name": "Fabled Passage",
+        "count": 2
+      }
+    ]
+  },
+  "certi42": {
+    "Creature": [
+      {
+        "number": "39",
+        "set": "eld",
+        "name": "Brazen Borrower // Petty Theft",
+        "count": 3
+      },
+      {
+        "number": "160",
+        "set": "eld",
+        "name": "Gilded Goose",
+        "count": 4
+      },
+      {
+        "number": "178",
+        "set": "m20",
+        "name": "Leafkin Druid",
+        "count": 4
+      },
+      {
+        "number": "171",
+        "set": "war",
+        "name": "Paradise Druid",
+        "count": 4
+      },
+      {
+        "number": "181",
+        "set": "eld",
+        "name": "Wicked Wolf",
+        "count": 4
+      },
+      {
+        "number": "183",
+        "set": "rna",
+        "name": "Hydroid Krasis",
+        "count": 4
+      },
+      {
+        "number": "200",
+        "set": "m20",
+        "name": "Voracious Hydra",
+        "count": 3
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "42",
+        "set": "m20",
+        "name": "Aether Gust",
+        "count": 1
+      },
+      {
+        "number": "43",
+        "set": "m20",
+        "name": "Agent of Treachery",
+        "count": 2
+      },
+      {
+        "number": "39",
+        "set": "eld",
+        "name": "Brazen Borrower // Petty Theft",
+        "count": 1
+      },
+      {
+        "number": "37",
+        "set": "grn",
+        "name": "Disdainful Stroke",
+        "count": 2
+      },
+      {
+        "number": "165",
+        "set": "eld",
+        "name": "Lovestruck Beast // Heart's Desire",
+        "count": 2
+      },
+      {
+        "number": "194",
+        "set": "m20",
+        "name": "Shifting Ceratops",
+        "count": 2
+      },
+      {
+        "number": "220",
+        "set": "war",
+        "name": "Tamiyo, Collector of Tales",
+        "count": 2
+      },
+      {
+        "number": "198",
+        "set": "m20",
+        "name": "Veil of Summer",
+        "count": 3
+      }
+    ],
+    "Planeswalker": [
+      {
+        "number": "169",
+        "set": "war",
+        "name": "Nissa, Who Shakes the World",
+        "count": 4
+      },
+      {
+        "number": "197",
+        "set": "eld",
+        "name": "Oko, Thief of Crowns",
+        "count": 4
+      },
+      {
+        "number": "220",
+        "set": "war",
+        "name": "Tamiyo, Collector of Tales",
+        "count": 1
+      }
+    ],
+    "Land": [
+      {
+        "number": "246",
+        "set": "rna",
+        "name": "Breeding Pool",
+        "count": 4
+      },
+      {
+        "number": "240",
+        "set": "eld",
+        "name": "Castle Garenbrig",
+        "count": 3
+      },
+      {
+        "number": "266",
+        "set": "eld",
+        "name": "Forest",
+        "count": 10
+      },
+      {
+        "number": "254",
+        "set": "eld",
+        "name": "Island",
+        "count": 4
+      },
+      {
+        "number": "255",
+        "set": "m20",
+        "name": "Temple of Mystery",
+        "count": 4
+      }
+    ]
+  },
+  "Manlin Never Lucky": {
+    "Creature": [
+      {
+        "number": "76",
+        "set": "rna",
+        "name": "Gutterbones",
+        "count": 4
+      },
+      {
+        "number": "105",
+        "set": "m20",
+        "name": "Knight of the Ebon Legion",
+        "count": 4
+      },
+      {
+        "number": "138",
+        "set": "eld",
+        "name": "Robber of the Rich",
+        "count": 4
+      },
+      {
+        "number": "203",
+        "set": "eld",
+        "name": "Stormfist Crusader",
+        "count": 4
+      },
+      {
+        "number": "109",
+        "set": "rna",
+        "name": "Rix Maadi Reveler",
+        "count": 2
+      },
+      {
+        "number": "85",
+        "set": "rna",
+        "name": "Spawn of Mayhem",
+        "count": 4
+      },
+      {
+        "number": "111",
+        "set": "m20",
+        "name": "Rotting Regisaur",
+        "count": 4
+      },
+      {
+        "number": "97",
+        "set": "eld",
+        "name": "Murderous Rider // Swift End",
+        "count": 4
+      },
+      {
+        "number": "115",
+        "set": "eld",
+        "name": "Bonecrusher Giant // Stomp",
+        "count": 4
+      }
+    ],
+    "Sideboard": [
+      {
+        "number": "110",
+        "set": "m20",
+        "name": "Noxious Grasp",
+        "count": 4
+      },
+      {
+        "number": "97",
+        "set": "m20",
+        "name": "Duress",
+        "count": 3
+      },
+      {
+        "number": "73",
+        "set": "rna",
+        "name": "Drill Bit",
+        "count": 2
+      },
+      {
+        "number": "106",
+        "set": "m20",
+        "name": "Legion's End",
+        "count": 3
+      },
+      {
+        "number": "99",
+        "set": "grn",
+        "name": "Experimental Frenzy",
+        "count": 3
+      }
+    ],
+    "Sorcery": [{
+      "number": "108",
+      "set": "grn",
+      "name": "Lava Coil",
+      "count": 2
+    }],
+    "Artifact": [{
+      "number": "120",
+      "set": "eld",
+      "name": "Embercleave",
+      "count": 1
+    }],
+    "Land": [
+      {
+        "number": "245",
+        "set": "rna",
+        "name": "Blood Crypt",
+        "count": 4
+      },
+      {
+        "number": "241",
+        "set": "eld",
+        "name": "Castle Locthwain",
+        "count": 2
+      },
+      {
+        "number": "258",
+        "set": "eld",
+        "name": "Swamp",
+        "count": 10
+      },
+      {
+        "number": "262",
+        "set": "eld",
+        "name": "Mountain",
+        "count": 7
+      }
+    ]
+  }
+}

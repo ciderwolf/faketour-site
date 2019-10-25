@@ -21,7 +21,7 @@ async function loadData() {
     let loggedIn = await userResponse.text();
     if(loggedIn != "null") {
         username = loggedIn;
-        if(players.includes(loggedIn)) {
+        if(players.includes(loggedIn) && events[events.length - 1].open == true) {
             document.getElementById("register").disabled = true;
         }
     }
