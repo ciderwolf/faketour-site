@@ -92,7 +92,7 @@ function validateDeck(maindeck, sideboard) {
     }
     for(card in deck) {
         if(!isLegal(card)) {
-            showAlert("Illegal card", "'" + card + "' isn't stanard legal", "warning", true);
+            showAlert("Illegal card", "'" + card + "' isn't pioneer legal", "warning", true);
             return false;
         }
         if(deck[card] > maxCardCount && !unlimitedCards.includes(card)) {
