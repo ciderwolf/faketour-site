@@ -29,7 +29,7 @@
             reg_date TIMESTAMP
         )";
         if($conn->query($create_tables_sql) === FALSE) {
-            echo "Error creating event tables";
+            echo "Error creating event tables: " . $conn->error;
         }
     }
     if($sql != "") {

@@ -1,4 +1,9 @@
 <?php
+    session_start();
+    if(!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
+        http_response_code(403);
+        die(json_encode(["error" => "Unauthorized"]));
+    }
     $format = $_REQUEST["format"];
     $round = $_REQUEST["round"];
     $player_one = $_REQUEST["playerOne"];

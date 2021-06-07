@@ -13,6 +13,12 @@
 
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
+                if($row["player_one"] == "") {
+                    $row["player_one"] = "Bye";
+                }
+                if($row["player_two"] == "") {
+                    $row["player_two"] = "Bye";
+                }
                 $output[] = $row;
             }
             echo json_encode($output);

@@ -10,6 +10,7 @@
     if ($conn->query($sql) === TRUE) {
         echo "Updated match record";
     } else {
+        http_response_code(500);
         die("Error: " . $sql . "<br>" . $conn->error);
     }
     $conn->close();
