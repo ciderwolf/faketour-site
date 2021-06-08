@@ -23,7 +23,7 @@
             }
             echo json_encode($output);
         } else {
-            echo "{}";
+            echo "[]";
         }
         $conn->close();
     } else {

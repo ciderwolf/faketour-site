@@ -1,4 +1,3 @@
-let matches = {};
 let buttonClicked = null;
 const formats = ["limited", "constructed"];
 
@@ -23,22 +22,23 @@ function loadMatches(format) {
         display.innerHTML += "<p>You need to be logged in to view your matches</p>";
         return;
     }
-    let match = matchData[format][0];
-    if(match != undefined && !(Object.keys(match).length === 0 && match.constructor === Object)) {
+    let i = 0;
+    for(let match of matchData[format]) {
+        if(match === undefined) {
+            continue;
+        }
         let opponent = match.player_one == username ? match.player_two : match.player_one;
         let roundName = match.round;
         if(!isNaN(roundName)) {
             roundName = "Round " + roundName;
         }
-        matches[format] = match;
         let matchDisplay = document.createElement("p");
         matchDisplay.innerHTML = roundName + ": " + username + " vs. " + opponent;
         let modal = document.createElement("div");
         modal.classList.add("modal");
-        modal.id = "submit_" + format;
         let close = document.createElement("span");
         close.addEventListener('click', function(e) {
-            document.getElementById('submit_' + format).style.display='none';
+            modal.style.display = 'none';
         });
         close.classList.add("close");
         close.innerHTML = "&times;";
@@ -46,7 +46,8 @@ function loadMatches(format) {
         modal.appendChild(close);
         let form = document.createElement("form");
         form.classList.add("modal-content");
-        form.classList.add(format);
+        form.dataset.format = format;
+        form.dataset.index = i;
         form.addEventListener('submit', function(e) {
             submit(this);
             window.onclick(null);
@@ -84,15 +85,17 @@ function loadMatches(format) {
 
         let button = document.createElement("button");
         button.addEventListener('click', function(e) {
-            document.getElementById('submit_' + format).style.display='block';
+            modal.style.display = 'block';
             buttonClicked = this;
         });
         button.innerHTML = "Submit Results";
         matchDisplay.appendChild(button);
 
         display.appendChild(matchDisplay);
+
+        i += 1;
     }
-    else {
+    if(matchData[format].length === 0) {
         display.innerHTML += "<p>No " + format + " matches right now</p>";
     }
 }
@@ -151,8 +154,9 @@ function submit(form) {
     let inputs = form.firstElementChild.getElementsByClassName("selector-bar");
     let userWins = inputs[0].value;
     let opponentWins = inputs[1].value;
-    let format = form.classList[1];
-    let match = matches[format];
+    let format = form.dataset.format;
+    let index = form.dataset.index;
+    let match = matchData[format][index];
     let score = userWins + "-" + opponentWins;
     if(username == match.player_two) {
         score = opponentWins + "-" + userWins;
