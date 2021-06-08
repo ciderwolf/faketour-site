@@ -30,6 +30,9 @@
 
         $response = [];
         foreach ($cards["maindeck"] as $line) {
+            if(trim($line) === "") {
+                continue;
+            }
             [$count, $name] = splitLine($line);
             $card_data = $all_cards[$name];
             $type = $card_data["type"];
@@ -46,6 +49,9 @@
 
         $side = [];
         foreach ($cards["sideboard"] as $line) {
+            if(trim($line) === "") {
+                continue;
+            }
             [$count, $name] = splitLine($line);
             $card_data = $all_cards[$name];
             $data = [

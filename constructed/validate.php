@@ -25,6 +25,9 @@
         $deck = [];
         $maindeckCount = 0;
         foreach ($maindeck as $line) {
+            if(trim($line) === "") {
+                continue;
+            }
             $elements = explode(" ", $line);
             $count = 1;
             $name = $line;
@@ -48,6 +51,9 @@
 
         $sideboardCount = 0;
         foreach ($sideboard as $line) {
+            if(trim($line) === "") {
+                continue;
+            }
             $elements = explode(" ", $line);
             $count = 1;
             $name = $line;
@@ -98,4 +104,3 @@
         }
         return false;
     }
-?>
