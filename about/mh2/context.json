@@ -1,0 +1,24 @@
+{
+    "sets": {
+        "names": [
+            "Modern Horizons 2"
+        ],
+        "codes": [
+            "mh2"
+        ]
+    },
+    "format": {
+        "constructed": {
+            "name": "Modern",
+            "description": "Submit a modern legal deck\r\n                <a class=\"underlight\" href=\"banlist\/\"><i>See the banlist<\/i><\/a>"
+        }
+    },
+    "artist": {
+        "name": "Magali Villeneuve",
+        "url": "http://www.magali-villeneuve.com/"
+    },
+    "style": {
+        "bgcolor": "#231b39",
+        "shadow": 0.3
+    }
+}
