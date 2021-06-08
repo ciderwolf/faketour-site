@@ -8,7 +8,7 @@ async function loadData() {
     let cardData = await fetch("cards.json");
     legalCards = await cardData.json();
 
-    let url = "/php/user.php?page=submit_constructed";
+    let url = "getDeck.php";
     let player = new URL(window.location.href).searchParams.get("user");
     if(player != null) {
         url = "getDeck.php?user=" + decodeURI(player);
@@ -43,53 +43,7 @@ function getLineInfo(line) {
 }
 
 function createDecklist() {
-    for(line of deckData.maindeck) {
-        if(line == "") {
-            continue;
-        }
-        let data = getLineInfo(line);
-        let name = data[0];
-        let count = data[1];
-        let cardObject = getCard(name);
-        let type = cardObject.type;
-        if(!decklist.hasOwnProperty(type)) {
-            decklist[type] = [];
-        }
-
-        if(cardObject.image_uri) {
-            image_uri = cardObject.image_uri;
-        } else {
-            image_uri = `https://api.scryfall.com/cards/${cardObject.id}?format=image&version=normal`;
-        }
-
-        decklist[type].push({
-            "count": count,
-            "name": name,
-            "image_uri": image_uri
-        });
-    }
-
-    decklist.Sideboard = [];
-    for(line of deckData.sideboard) {
-        if(line == "") {
-            continue;
-        }
-        let data = getLineInfo(line);
-        let name = data[0];
-        let count = data[1];
-        let cardObject = getCard(name);
-
-        if(cardObject.image_uri) {
-            image_uri = cardObject.image_uri;
-        } else {
-            image_uri = `https://api.scryfall.com/cards/${cardObject.id}?format=image&version=normal`;
-        }
-        decklist.Sideboard.push({
-            "name": name,
-            "count": count,
-            "image_uri": image_uri
-        });
-    }
+    decklist = deckData;
     document.getElementById("message").remove();
     document.getElementById("bg").appendChild(createDeckView(decklist));
 }
