@@ -1,13 +1,8 @@
-let deckData;
 let decklist = {};
-let legalCards;
 
 loadData();
 
 async function loadData() {
-    let cardData = await fetch("cards.json");
-    legalCards = await cardData.json();
-
     let url = "getDeck.php";
     let player = new URL(window.location.href).searchParams.get("user");
     if(player != null) {
@@ -17,7 +12,7 @@ async function loadData() {
     let deckResponse = await fetch(url);
     let response = await deckResponse.json();
     if(response != true && response != null) {
-        deckData = response;
+        decklist = response;
         createDecklist();
     } else {
         let text = "Submit your deck to see it here";
@@ -43,7 +38,6 @@ function getLineInfo(line) {
 }
 
 function createDecklist() {
-    decklist = deckData;
     document.getElementById("message").remove();
     document.getElementById("bg").appendChild(createDeckView(decklist));
 }
@@ -141,14 +135,3 @@ function normalizePreviewY(e, preview) {
     return newY;
 }
 
-function getCard(name) {
-    if(legalCards[name]) {
-        return legalCards[name];
-    }
-    for(card in legalCards) {
-        if(card.toLowerCase().includes(name.toLowerCase())) {
-            return legalCards[card];
-        }
-    }
-    return undefined;
-}
