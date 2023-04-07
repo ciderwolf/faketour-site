@@ -78,7 +78,7 @@
 
         foreach ($deck as $card => $count) {
             if (!isLegal($card)) {
-                return ["Illegal card", "'$card' isn't legal in modern."];
+                return ["Illegal card", "'$card' isn't legal in standard."];
             }
             if ($count > $MAX_CARD_COUNT && !in_array($card, $UNLIMITED_CARDS)) {
                 return ["Illegal card count", "You have $count copies of '$card' in your deck."];

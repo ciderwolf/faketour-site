@@ -1,0 +1,33 @@
+{
+    "sets": {
+        "names": [
+            "March of the Machine",
+            "Phyrexia: All Will Be One",
+            "The Brothers' War",
+            "Dominaria United",
+            "Streets of New Capenna",
+            "Kamigawa: Neon Dynasty",
+            "Innistrad: Crimson Vow",
+            "Innistrad: Midnight Hunt"
+        ],
+        "codes": [
+            "mom",
+            "one",
+            "bro",
+            "dmu",
+            "snc",
+            "neo",
+            "vow",
+            "mid"
+        ],
+        "logo_gap": true
+    },
+    "artist": {
+        "name": "Scott Murphy",
+        "url": "https://www.murphyillustration.com/"
+    },
+    "style": {
+        "bgcolor": "#4c1c18",
+        "shadow": 0.5
+    }
+}

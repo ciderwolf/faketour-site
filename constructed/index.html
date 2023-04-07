@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Constructed | Faketour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +22,7 @@
     <div class="title">
         <h1>Faketour Constructed</h1>
         <h2 id="timer"></h2>
-        <h2>Submit a deck made up of cards legal in Modern
+        <h2>Submit a deck made up of cards legal in Standard
             <!-- <i class="ss ss-eld ss-2x"></i>&nbsp;
             <i class="ss ss-m20 ss-2x"></i>&nbsp;
             <i class="ss ss-war ss-2x"></i>&nbsp;
@@ -30,14 +31,16 @@
         </h2>
     </div>
     <div style="display:inline-grid;">
-        <h2 id="card-counts"><span id="maindeck-count">0</span> maindeck / <span id="sideboard-count">0</span> sideboard</h2>
+        <h2 id="card-counts"><span id="maindeck-count">0</span> maindeck / <span id="sideboard-count">0</span> sideboard
+        </h2>
         <div id="sumbission-fields">
             <textarea class="text" id="maindeck" placeholder="Maindeck (60 cards)"></textarea>
             <textarea class="text" id="sideboard" placeholder="Sideboard (15 cards)"></textarea>
         </div>
         <div id="target-container">
             <button id="submit" class="transparent target" onclick="submit();">Submit Deck</button>
-            <button id="preview" class="transparent target" onclick="window.location.href = 'preview/';">See Deck Preview</button>
+            <button id="preview" class="transparent target" onclick="window.location.href = 'preview/';">See Deck
+                Preview</button>
         </div>
         <div id="floating">
             <button onclick="showModal()" class="transparent">Import Deck</button><br>
@@ -50,11 +53,13 @@
     </div>
 
     <div class="modal" id="import-deck">
-        <span class="close" title="Cancel" onclick="document.getElementById('import-deck').style.display='none'">&times;</span>
+        <span class="close" title="Cancel"
+            onclick="document.getElementById('import-deck').style.display='none'">&times;</span>
         <div class="container modal-content">
             <h1>Import Deck</h1>
             <label for="url">Import from URL</label>
-            <input type="text" name="url" id="url" placeholder="TappedOut, MTGGoldfish, Scryfall, or DeckStats"></input><br/>
+            <input type="text" name="url" id="url"
+                placeholder="TappedOut, MTGGoldfish, Scryfall, or DeckStats"></input><br />
             <label for="files">Import from text file</label>
             <input name="files" id="files" type="file" accept="text/*"></input><br>
             <button onclick="importDeck()" class="transparent" style="width:95%">Import</button>
@@ -67,4 +72,4 @@
 
 <script src="constructed.js" type="text/javascript"></script>
 
-</html>	
+</html>

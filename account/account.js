@@ -3,6 +3,14 @@ let avatars;
 let events;
 
 loadData();
+fetch("/php/user.php?page=account")
+    .then(response => response.json())
+    .then(response => {
+        if(response !== null && response.email == "") {
+            showAlert("Add an email address to your account to enable password recovery", "Update your <a href=/account/ class=alert-link>account</a>.", "info");
+        }
+
+    });
 
 async function loadData() {
     let data = await fetch("/php/user.php?page=account");

@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>Home | Faketour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="/menu/styles.css">
     <script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
+
 <body>
     <div class="content"></div>
     <div class="topnav" style="font-family: Nunito"></div>
     <script type="text/javascript">loadMenu("Home");</script>
     <h1>FakeTour</h1>
-    <img src="/img?image=current_icon"/>
+    <img src="/img?image=current_icon" />
     <div id="buttons">
         <button id="button1" class="bold large">Matches</button>
         <button id="button2" class="bold large">Brackets</button>
@@ -20,15 +22,6 @@
     <div class="footer" id="footer"></div>
 </body>
 <script type="text/javascript">
-    fetch("/php/user.php?page=account")
-    .then(response => response.json())
-    .then(response => {
-        if(response !== null && response.email == "") {
-            showAlert("Add an email address to your account to enable password recovery", "Update your <a href=/account/ class=alert-link>account</a>.", "info");
-        }
-    
-    });
-    
     const buttonMapping = {
         0: {
             a: {
@@ -83,15 +76,16 @@
     }
 
     fetch('event.php')
-    .then(response => response.text())
-    .then(response => {
-        const code = Number(response);
-        let targets = buttonMapping[code];
-        button1.innerHTML = targets.a.name;
-        button1.onclick = () => {window.location.href = targets.a.href}
-        button2.innerHTML = targets.b.name;
-        button2.onclick = () => {window.location.href = targets.b.href}
-    });
+        .then(response => response.text())
+        .then(response => {
+            const code = Number(response);
+            let targets = buttonMapping[code];
+            button1.innerHTML = targets.a.name;
+            button1.onclick = () => { window.location.href = targets.a.href }
+            button2.innerHTML = targets.b.name;
+            button2.onclick = () => { window.location.href = targets.b.href }
+        });
 
 </script>
+
 </html>
