@@ -5,8 +5,8 @@
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
     $score = $_REQUEST["score"];
     $id = $_REQUEST["id"];
-    $table_name = $set . "_matches";
-    $sql = "UPDATE $table_name SET score='$score' WHERE id=$id";
+
+    $sql = "UPDATE matches SET score='$score' WHERE id=$id AND `event` = '$set'";
     if ($conn->query($sql) === TRUE) {
         echo "Updated match record";
     } else {

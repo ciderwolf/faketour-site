@@ -2,8 +2,8 @@
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-    $table_name = $set . "_matches";
-    $sql = "SELECT format, round, player_one, player_two, score FROM $table_name";
+
+    $sql = "SELECT format, round, player_one, player_two, score FROM matches WHERE `event`='$set'";
     $result = $conn->query($sql);
 
     $output = array();

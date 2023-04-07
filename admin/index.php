@@ -54,7 +54,7 @@
                     echo "<button class='transparent danger thin' id='close-event-button' onclick='closeEvent()'>Close Event</button>";
                     echo "<button class='transparent thin' id='update-duedate-button' onclick='updateDueDate()'>Update Submission Date</button>";
                     echo "</div></div><div style='margin:3.33em'><h3>Registered Players &emsp; <i style='color: #676970; font-size:0.8em'>(⭑ submitted deck)</i></h3><p>";
-                    $players = getData("SELECT username, deck FROM " . $event["code"] . "_players");
+                    $players = getData("SELECT username, deck FROM players WHERE `event`='" . $event["code"] . "'");
                     foreach($players as $player) {
                         echo $player["username"];
                         if($player["deck"] != "") {

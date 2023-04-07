@@ -10,8 +10,8 @@
 
     require $_SERVER["DOCUMENT_ROOT"] . "/php/connect_db.php";
     $formats = ["limited", "constructed"];
-    $table_name = $set . "_matches";
-    $sql = "SELECT id, format, round, player_one as playerOne, player_two as playerTwo, score FROM $table_name WHERE score=''";
+
+    $sql = "SELECT id, format, round, player_one as playerOne, player_two as playerTwo, score FROM matches WHERE score='' AND `event`='$set'";
     $result = $conn->query($sql);
     $matches = array();
     if ($result->num_rows > 0) {

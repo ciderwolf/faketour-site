@@ -55,8 +55,8 @@
                     echo "0";
                     return;
                 }
-                $table = $set . "_players";
-                $sql = "SELECT * FROM $table WHERE username='$username'";
+
+                $sql = "SELECT * FROM players WHERE username='$username' AND `event`='$set'";
                 $result = $conn->query($sql);
                 if($result->num_rows > 0) {
                     echo "3";

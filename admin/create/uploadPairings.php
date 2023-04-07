@@ -6,16 +6,16 @@
     $games = $_REQUEST["games"];
     $pairings = json_decode($_SERVER["HTTP_BODY"]);
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-    $table_name = $set . "_matches";
+
     foreach($pairings as $pairingData) {
         $pairing = json_decode(json_encode($pairingData), true);
         $player_one = $pairing["player_one"];
         $player_two = $pairing["player_two"];
-        $sql = "INSERT INTO $table_name (format, round, games, player_one, player_two, score) VALUES ('$format', '$round', '$games', '$player_one', '$player_two', '')";
+        $sql = "INSERT INTO matches (`event`, format, round, games, player_one, player_two, score) VALUES ('$set', '$format', '$round', '$games', '$player_one', '$player_two', '')";
         if ($conn->query($sql) === TRUE) {
             echo $sql;
         } else {
             die("Error updating record: " . $conn->error);
         }
     }
-?>	
+?> 

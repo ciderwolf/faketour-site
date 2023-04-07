@@ -6,7 +6,7 @@
     if (isset($_REQUEST["set"])) {
         $set = $_REQUEST["set"];
     }
-    $table_name = $set . "_players";
+
     $username = "";
 
     if (!isset($_REQUEST["user"])) {
@@ -16,7 +16,7 @@
         $username = $_REQUEST["user"];
     }
 
-    $sql = "SELECT * FROM $table_name WHERE username='$username'";
+    $sql = "SELECT * FROM players WHERE username='$username' AND `event`='$set'";
     $result = $conn->query($sql);
     $pool = "";
     while ($row = $result->fetch_assoc()) {

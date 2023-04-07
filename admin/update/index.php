@@ -24,8 +24,8 @@
         <?php
             require $_SERVER["DOCUMENT_ROOT"] . "/php/connect_db.php";
             $formats = ["limited", "constructed"];
-            $table_name = $set . "_matches";
-            $sql = "SELECT * FROM $table_name WHERE score=''";
+
+            $sql = "SELECT * FROM matches WHERE score='' AND `event`='$set'";
             $result = $conn->query($sql);
             $matches = array();
             if ($result->num_rows > 0) {

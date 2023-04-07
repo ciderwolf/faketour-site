@@ -29,11 +29,11 @@
         $sql = "SELECT * FROM events WHERE code='$event'";
         $result = $conn->query($sql);
         if($result->num_rows > 0) {
-            $table_name = $set . "_players";
-            $sql = "SELECT * FROM $table_name WHERE username='$username'";
+
+            $sql = "SELECT * FROM players WHERE username='$username' AND `event`='$set'";
             $result = $conn->query($sql);
             if($result->num_rows == 0) {
-                $sql = "INSERT INTO $table_name (`username`) VALUES ('$username')";
+                $sql = "INSERT INTO players (`event`, `username`) VALUES ('$set', '$username')";
                 if ($conn->query($sql) === FALSE) {
                     echo "Error updating record: " . $conn->error;
                 }

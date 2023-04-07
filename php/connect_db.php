@@ -5,5 +5,6 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $set = "mh2";
+    $result = $conn->query("SELECT * FROM `events` ORDER BY `open` DESC, `events`.`id` DESC LIMIT 1");
+    $set = $result->fetch_assoc()["code"];
 ?>

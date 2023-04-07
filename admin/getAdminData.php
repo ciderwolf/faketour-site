@@ -28,8 +28,8 @@
     }
     if($event !== null) {
         $players = [];
-        $table_name = $event["code"] . "_players";
-        $result = $conn->query("SELECT username, (deck != 'null') AS deck FROM $table_name");
+        $code = $event["code"];
+        $result = $conn->query("SELECT username, (deck != 'null') AS deck FROM players WHERE `event`='$code'");
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 $row["deck"] = $row["deck"] == "1";

@@ -3,8 +3,8 @@
     ini_set("display_errors", 1);
     session_start();
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-    $table_name = $set . "_players";
-    $sql = "SELECT username FROM $table_name WHERE 1";
+
+    $sql = "SELECT username FROM players WHERE `event`='$set'";
     $result = $conn->query($sql);
     $players = array();
     while ($row = $result->fetch_assoc()) {

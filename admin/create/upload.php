@@ -17,19 +17,17 @@
         die(json_encode(["success" => true, "message" => "no matches"]));
     }
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-    $table_name = $set . "_matches";
 
     $inserts = [];
     foreach($data as $pairing) {
         $player_one = $pairing["player_one"];
         $player_two = $pairing["player_two"];
-        $inserts[] = "('$format', '$round', '$games', '$player_one', '$player_two', '')";
+        $inserts[] = "('$set', '$format', '$round', '$games', '$player_one', '$player_two', '')";
     }
     $inserts_sql = implode(", ", $inserts);
-    $sql = "INSERT INTO $table_name (format, round, games, player_one, player_two, score) VALUES $inserts_sql";
+    $sql = "INSERT INTO matches (`event`, format, round, games, player_one, player_two, score) VALUES $inserts_sql";
     if ($conn->query($sql) === TRUE) {
         die(json_encode(["success" => true, "message" => "matches inserted"]));
     } else {
         die(json_encode(["success" => false, "message" => $conn->error]));
     }
-?>	

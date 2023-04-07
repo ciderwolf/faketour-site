@@ -8,8 +8,8 @@
     }
     $id = $_REQUEST["id"];
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-    $table_name = $set . "_matches";
-    $sql = "DELETE FROM $table_name WHERE id='$id'";
+
+    $sql = "DELETE FROM matches WHERE id='$id' AND `event` = '$set'";
     if ($conn->query($sql) === FALSE) {
         die("Error removing record: " . $conn->error);
     }

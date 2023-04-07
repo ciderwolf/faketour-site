@@ -4,8 +4,8 @@
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-    $table_name = $set . "_players";
-    $sql = "SELECT username, deck FROM $table_name";
+
+    $sql = "SELECT username, deck FROM players WHERE `event`='$set'";
     $result = $conn->query($sql);
     $pool = [];
     while ($row = $result->fetch_assoc()) {

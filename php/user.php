@@ -67,9 +67,9 @@
 
     function loggedInConstructed() {
         require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
-        $table_name = $set . "_players";
+
         $username = $_SESSION["username"];
-        $sql = "SELECT * FROM $table_name WHERE username='$username'";
+        $sql = "SELECT * FROM players WHERE username='$username' AND `event`='$set'";
         $result = $conn->query($sql);
         $pool = "";
         while ($row = $result->fetch_assoc()) {
