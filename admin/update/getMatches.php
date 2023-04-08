@@ -5,7 +5,7 @@
     header("Content-Type: application/json");
     if(!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
         http_response_code(403);
-        die(json_encode(["error" => "Unauthorized"]));
+        die(json_encode(["error" => "Forbidden"]));
     }
 
     require $_SERVER["DOCUMENT_ROOT"] . "/php/connect_db.php";
@@ -20,4 +20,3 @@
         }
     }
     echo json_encode($matches);
-?>

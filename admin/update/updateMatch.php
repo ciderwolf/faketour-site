@@ -2,7 +2,8 @@
     session_start();
     if(!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
         http_response_code(403);
-        die(json_encode(["error" => "Unauthorized"]));
+        header("Content-Type: application/json");
+        die(json_encode(["error" => "Forbidden"]));
     }
     $format = $_REQUEST["format"];
     $round = $_REQUEST["round"];
@@ -17,4 +18,3 @@
         die("Error updating record: " . $conn->error);
     }
     echo "success";
-?>	

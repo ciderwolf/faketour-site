@@ -1,6 +1,12 @@
 <?php
-    error_reporting(E_ALL);
     ini_set("display_errors", 1);
+    session_start();
+    if(!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
+        http_response_code(403);
+        header("Content-Type: application/json");
+        die(json_encode(["error" => "Forbidden"]));
+        return;
+    }
     $format = $_REQUEST["format"];
     $round = $_REQUEST["round"];
     $games = $_REQUEST["games"];
@@ -18,4 +24,3 @@
             die("Error updating record: " . $conn->error);
         }
     }
-?> 

@@ -4,7 +4,8 @@
     session_start();
     if(!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
         http_response_code(403);
-        die(json_encode(["error" => "Unauthorized"]));
+        header("Content-Type: application/json");
+        die(json_encode(["error" => "Forbidden"]));
     }
     $id = $_REQUEST["id"];
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
@@ -13,4 +14,3 @@
     if ($conn->query($sql) === FALSE) {
         die("Error removing record: " . $conn->error);
     }
-?>	

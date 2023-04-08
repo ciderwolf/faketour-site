@@ -3,7 +3,8 @@
     ini_set("display_errors", 1);
     session_start();
     if(!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
-        header("Location: /pages/403/");
+        require($_SERVER["DOCUMENT_ROOT"] . "/pages/403/index.php");
+        return;
     }
 ?>
 

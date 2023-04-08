@@ -1,4 +1,12 @@
 <?php
+    ini_set("display_errors", 1);
+    session_start();
+    if(!isset($_SESSION["admin"]) || $_SESSION["admin"] !== true) {
+        http_response_code(403);
+        echo "403 Forbidden";
+        return;
+    }
+
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
     $sql = "";
     if(isset($_REQUEST["key"])) {
