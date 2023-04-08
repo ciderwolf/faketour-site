@@ -1,0 +1,92 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #272a33;
+    color: white;
+}
+h2 {
+    font-size: 20pt;
+} 
+
+button {
+    margin: 0;
+}
+
+input {
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 3px;
+    border: 2px solid #333333;
+    color: #333333;
+    padding: 5px 5px;
+    font-size: 16px;
+    width: 200px;
+    font-family: 'Nunito', sans-serif;
+}
+
+select {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 3px;
+    border: 2px solid #555555;
+    color: #555555;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.format {
+    display: flex;
+}
+
+
+.button-spinner {
+    height: 20px;
+    margin: -3px 8px -3px 0;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.button-spinner-inner {
+    animation: rotate 2s linear infinite;
+}
+
+.button-spinner-inner .path {
+    stroke: #ececec;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+#download-button {
+    margin-top: 100px;
+    width: 70%;
+    cursor: pointer;
+}
+
+#download-button:disabled {
+    cursor: not-allowed;
+}
+
+@keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}

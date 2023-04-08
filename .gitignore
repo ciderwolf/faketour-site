@@ -6,3 +6,7 @@ php/env.php
 composer.phar
 /vendor/
 /template_cache/
+
+# Ignore card lists for constructed
+/constructed/names.json
+/constructed/preview/cards.json
