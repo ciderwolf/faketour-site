@@ -34,7 +34,7 @@
                 continue;
             }
             [$count, $name] = splitLine($line);
-            $card_data = $all_cards[$name];
+            $card_data = getCard($name, $all_cards);
             $type = $card_data["type"];
             if (!isset($type)) {
                 $response[$type] = [];
@@ -53,7 +53,7 @@
                 continue;
             }
             [$count, $name] = splitLine($line);
-            $card_data = $all_cards[$name];
+            $card_data = getCard($name, $all_cards);
             $data = [
                 "name" => $name,
                 "count" => $count,
@@ -82,4 +82,21 @@
 
         return [$count, $name];
     }
-?>
+
+    function getCard($name, $all_cards) {
+        if(isset($all_cards[$name])) {
+            return $all_cards[$name];
+        } else {
+            // maybe this is a split card
+            foreach(array_keys($all_cards) as $card) {
+                if(strpos($card, " // ") !== false) {
+                    $parts = explode(" // ", $card);
+                    if($parts[0] === $name) {
+                        return $all_cards[$card];
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
