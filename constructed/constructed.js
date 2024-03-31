@@ -40,7 +40,7 @@ async function loadData() {
         showAlert("Log in", "You need to be <a class=alert-link href='/account/login/'>logged in</a> to submit your deck list", "warning");
     }
     else if(response === true) {
-        document.getElementById("preview").style.display = "none";
+        // document.getElementById("preview").style.display = "none";
     }
     else {
         updateDeckCounts(response.maindeck, response.sideboard);
