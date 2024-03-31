@@ -9,8 +9,13 @@
     } else if(isset($_REQUEST["artist"])) {
         $artists = json_decode(file_get_contents("artists.json"), true);
         header("Content-Type: application/json");
-        echo json_encode($artists[$_REQUEST["artist"]]);
-        return;
+        if(isset($artists[$_REQUEST["artist"]])) {
+            echo json_encode($artists[$_REQUEST["artist"]]);
+            return;
+        } else {
+            echo json_encode(false);
+            return;
+        }
     }
 
     header("Location: $url");

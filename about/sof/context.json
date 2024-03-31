@@ -1,0 +1,27 @@
+{
+    "sets": {
+        "names": [],
+        "codes": [
+            "sof"
+        ],
+        "logo_gap": true
+    },
+    "artist": {
+        "name": "Piotr Dura",
+        "url": "https://linktr.ee/piotrdura"
+    },
+    "format": {
+        "constructed": {
+            "name": "Constructed",
+            "description": "Submit a set constructed deck.\r\n                <a class=\"underlight\" href=\"http://sof.22web.org/search\"><i>&emsp;See the card list<\/i><\/a>"
+        },
+        "limited": {
+            "name": "Limited",
+            "description": "Draft three packs of Scrolls of Fate."
+        }
+    },
+    "style": {
+        "bgcolor": "#18374c",
+        "shadow": 0.3
+    }
+}

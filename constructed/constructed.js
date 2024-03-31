@@ -78,7 +78,8 @@ function uploadDeck(cardList, setCode) {
             if(request.responseText == "register") {
                 showAlert("Please <a class='alert-link' href='/events/'>Register</a>", "You need to be registered for the event in order to submit your decklist", "warning");
             } else {
-                showAlert("Deck submitted successfully", "Click <a class='alert-link' href='preview/'>here</a> to see a preview", "success");
+                //Click <a class='alert-link' href='preview/'>here</a> to see a preview
+                showAlert("Deck submitted successfully", "", "success");
             }
         } else {
             console.log(request.responseText);

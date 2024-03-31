@@ -22,7 +22,8 @@
     <div class="title">
         <h1>Faketour Constructed</h1>
         <h2 id="timer"></h2>
-        <h2>Submit a deck made up of cards legal in Standard
+        <h2>Submit a deck made up of cards from <a style="color: black" href="http://sof.22web.org/search">Scrolls of
+                Fate</a>
             <!-- <i class="ss ss-eld ss-2x"></i>&nbsp;
             <i class="ss ss-m20 ss-2x"></i>&nbsp;
             <i class="ss ss-war ss-2x"></i>&nbsp;
@@ -39,13 +40,13 @@
         </div>
         <div id="target-container">
             <button id="submit" class="transparent target" onclick="submit();">Submit Deck</button>
-            <button id="preview" class="transparent target" onclick="window.location.href = 'preview/';">See Deck
-                Preview</button>
+            <!-- <button id="preview" class="transparent target" onclick="window.location.href = 'preview/';">See Deck
+                Preview</button> -->
         </div>
         <div id="floating">
             <button onclick="showModal()" class="transparent">Import Deck</button><br>
-            <div class="checkbox">
-                <input type="checkbox" name="validate-deck" id="validate-checkbox" checked>
+            <div class="checkbox" style="display: none;">
+                <input type="checkbox" name="validate-deck" id="validate-checkbox">
                 <label for="validate-deck" onclick="validateClicked()"></label>
                 <h3 id="checkbox-label">Validate Decklist</h3>
             </div>

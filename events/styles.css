@@ -46,6 +46,10 @@ a {
     text-decoration: none;
 }
 
+.ss-sof::before {
+    content: url("symbol-sof.svg");
+}
+
 @media screen and (max-width: 600px) {
     .text {
         width: auto;
