@@ -1,0 +1,19 @@
+.content:before {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("background.jpg");
+}
+
+.backdrop {
+    background-color:#f4eee7;
+}
+
+#tab-bg {
+    background-color: #30455b;
+}
+
+.tab span:hover {
+    background-color: #bdbccc;
+}
+
+.tab span.active {
+    background-color: #d2d7e6;
+}

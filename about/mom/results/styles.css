@@ -1,0 +1,7 @@
+.content:before {
+    background-image: url("background.jpg");
+}
+
+:root {
+    --bg-color: #151308
+}
