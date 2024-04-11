@@ -1,7 +1,7 @@
 <?php
     session_start();
     $username = $_SESSION["username"];
-    $deck = str_replace("'", "\'", $_SERVER["HTTP_BODY"]);
+    $deck = file_get_contents('php://input');
     require($_SERVER['DOCUMENT_ROOT'] . "/php/connect_db.php");
     if(isset($_REQUEST["set"])) {
         $set = $_REQUEST["set"];
