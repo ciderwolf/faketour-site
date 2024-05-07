@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Standings | Faketour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"></head>
-    <link rel="stylesheet" href="/menu/styles.css">
-    <script type="text/javascript" src="/menu/loadMenu.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link rel="stylesheet" href="/menu/styles.css">
+<script type="text/javascript" src="/menu/loadMenu.js"></script>
 </head>
 
 <body>
@@ -16,7 +18,6 @@
     <div id="container">
         <div style="display: flex;" class="title">
             <h1>Faketour Standings</h1>
-            <h3 id="disclaimer">By game record, not official order</h3>
         </div>
 
         <div id="standings">
@@ -29,7 +30,21 @@
             <div class="backdrop tabcontent" id="limited-content" align="center">
                 <table id="limited">
                     <tr>
-                        <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+                        <th>
+                            <h4>Player</h4>
+                        </th>
+                        <th>
+                            <h4>Matches</h4>
+                        </th>
+                        <th>
+                            <h4 title="Opponent Match Win Percentage">OMW%</h4>
+                        </th>
+                        <th>
+                            <h4>Games</h4>
+                        </th>
+                        <th>
+                            <h4 title="Opponent Game Win Percentage">OGW%</h4>
+                        </th>
                     </tr>
                 </table>
             </div>
@@ -37,7 +52,21 @@
             <div class="backdrop tabcontent" id="constructed-content" align="center">
                 <table id="constructed">
                     <tr>
-                        <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+                        <th>
+                            <h4>Player</h4>
+                        </th>
+                        <th>
+                            <h4>Matches</h4>
+                        </th>
+                        <th>
+                            <h4 title="Opponent Match Win Percentage">OMW%</h4>
+                        </th>
+                        <th>
+                            <h4>Games</h4>
+                        </th>
+                        <th>
+                            <h4 title="Opponent Game Win Percentage">OGW%</h4>
+                        </th>
                     </tr>
                 </table>
             </div>
@@ -45,7 +74,21 @@
             <div class="backdrop tabcontent" id="total-content" align="center">
                 <table id="total">
                     <tr>
-                        <th><h4>Player</h4></th> <th><h4>Matches</h4></th> <th><h4>Games</h4></th>
+                        <th>
+                            <h4>Player</h4>
+                        </th>
+                        <th>
+                            <h4>Matches</h4>
+                        </th>
+                        <th>
+                            <h4 title="Opponent Match Win Percentage">OMW%</h4>
+                        </th>
+                        <th>
+                            <h4>Games</h4>
+                        </th>
+                        <th>
+                            <h4 title="Opponent Game Win Percentage">OGW%</h4>
+                        </th>
                     </tr>
                 </table>
             </div>
@@ -53,6 +96,7 @@
     </div>
     <div class="footer" id="footer"></div>
 </body>
+<script type="text/javascript" src="standings.js"></script>
 <script type="text/javascript" src="loadStandings.js"></script>
 
 

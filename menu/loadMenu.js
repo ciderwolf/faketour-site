@@ -66,7 +66,7 @@ async function loadFooter(activePage) {
     if(artist) {
         let footer = document.getElementById('footer');
         let link = document.createElement('a');
-        link.textContent = "Artwork by " + artist.name;
+        link.innerHTML = "Artwork by " + artist.name;
         link.href = artist.href;
         footer.appendChild(link);
     }

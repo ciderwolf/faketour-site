@@ -4,15 +4,15 @@ body {
 }
 
 .content:before {
-    overflow: auto;	
+    overflow: auto;
     content: "";
     position: fixed;
     left: 0;
     right: 0;
     z-index: -1;
     display: block;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/img/?bg=standings");
-    background-size:cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/?bg=standings");
+    background-size: cover;
     width: 100%;
     height: 100%;
     filter: blur(5px);
@@ -31,7 +31,8 @@ body {
 .backdrop {
     background-color: #272a33;
     padding: 50px;
-    width: 50%;
+    min-width: min-content;
+    width: 80%;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     margin: 0 auto;
@@ -46,11 +47,6 @@ td {
     margin: 50px;
     padding-right: 10px;
     padding-left: 10px;
-}
-
-h3 {
-    padding-top: 0.75em;
-    padding-right: 25px;
 }
 
 .standing {
@@ -80,7 +76,7 @@ h4 {
 .tab {
     overflow: hidden;
     background-color: #373A43;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     align-items: center;
     font-family: inherit;
@@ -102,7 +98,7 @@ h4 {
 
 .tab span:hover {
     background-color: #ddd;
-    color:black;
+    color: black;
 }
 
 .tab span.active {
@@ -136,12 +132,6 @@ h4 {
     display: none;
 }
 
-#disclaimer {
-    position: absolute; 
-    right: 0;
-}
-
-
 @media screen and (max-width:600px) {
     .tab {
         display: none;
@@ -154,6 +144,7 @@ h4 {
     .backdrop {
         width: 100%;
     }
+
     .cell {
         padding-right: 0px;
         padding-left: 0px;
